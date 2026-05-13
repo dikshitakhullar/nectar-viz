@@ -19,8 +19,8 @@ const ROOM_TYPES: { value: RoomType; label: string }[] = [
 ];
 
 const ROOM_STATES: { value: RoomState; label: string; desc: string }[] = [
-  { value: "furnished", label: "Fully Furnished", desc: "Room is complete — only add the product" },
-  { value: "under_construction", label: "Under Construction", desc: "Room is unfinished — add product, keep structure intact" },
+  { value: "furnished", label: "Fully Furnished", desc: "AI will seamlessly place the product in the right spot in your room" },
+  { value: "under_construction", label: "Under Construction", desc: "AI will place the product and visualize the interiors based on your vibe. Don't want any changes? Just mention it in the notes below." },
 ];
 
 const VIBE_SUGGESTIONS = ["Modern Indian", "Minimal & elegant", "Classical / ornate", "Warm & cozy", "Contemporary", "Rustic"];
