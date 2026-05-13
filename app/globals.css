@@ -3,25 +3,156 @@
 :root {
   --gold: #c9a84c;
   --gold-light: #dfc06b;
+  --gold-dim: #8a7434;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar for dark theme */
+/* === Liquid flowing background === */
+.liquid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.liquid-bg::before,
+.liquid-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.15;
+  animation: liquid-drift 20s ease-in-out infinite alternate;
+}
+
+.liquid-bg::before {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #c9a84c 0%, transparent 70%);
+  top: -200px;
+  right: -200px;
+  animation-duration: 25s;
+}
+
+.liquid-bg::after {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #8a5a1a 0%, transparent 70%);
+  bottom: -150px;
+  left: -150px;
+  animation-duration: 30s;
+  animation-delay: -5s;
+}
+
+.liquid-orb-1 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.08;
+  background: radial-gradient(circle, #dfc06b 0%, transparent 70%);
+  top: 40%;
+  left: 30%;
+  animation: liquid-drift-2 35s ease-in-out infinite alternate;
+}
+
+.liquid-orb-2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.06;
+  background: radial-gradient(circle, #c9a84c 0%, transparent 70%);
+  top: 20%;
+  right: 20%;
+  animation: liquid-drift-3 28s ease-in-out infinite alternate;
+}
+
+@keyframes liquid-drift {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(80px, -60px) scale(1.1); }
+  66% { transform: translate(-40px, 40px) scale(0.95); }
+  100% { transform: translate(30px, -30px) scale(1.05); }
+}
+
+@keyframes liquid-drift-2 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  50% { transform: translate(-100px, 80px) scale(1.2) rotate(20deg); }
+  100% { transform: translate(60px, -40px) scale(0.9) rotate(-10deg); }
+}
+
+@keyframes liquid-drift-3 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(70px, 60px) scale(1.15); }
+  100% { transform: translate(-50px, -30px) scale(0.85); }
+}
+
+/* === Noise grain overlay === */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* === Gold shimmer line === */
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--gold) 30%, var(--gold-light) 50%, var(--gold) 70%, transparent 100%);
+  opacity: 0.3;
+}
+
+/* === Custom scrollbar === */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   background: #0a0a0a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #2a2a2a;
   border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* === Utility animations === */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.animate-subtle-pulse {
+  animation: subtle-pulse 3s ease-in-out infinite;
 }
