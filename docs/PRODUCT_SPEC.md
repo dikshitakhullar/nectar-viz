@@ -1,13 +1,18 @@
 # Nectar Viz — Product Spec
 
-## What is this?
-An AI-powered room visualization tool. Customers upload a photo of their room, pick a lighting product, and get a photorealistic render of that product installed in their space.
+## Vision
+Customers upload a photo of their room, pick any home decor product — lights, chandeliers, pendants, wall lights, lamps, rugs, tables, sofas — and get a photorealistic render of that product in their space. Every product in the render is purchasable from our catalog.
 
-Starting with Delhi Brass's chandelier catalog. Eventually expanding to other brands and interior designers.
+Starting with Delhi Brass lighting. Expanding to multi-category, multi-brand, and eventually a platform for interior designers to source products for clients.
 
 ---
 
 ## V1 — Delhi Brass In-Store Tool
+
+### Scope
+- Delhi Brass product catalog only (~115 chandeliers, pendants, lanterns)
+- 1 product per image — customer picks one product, gets one render
+- In-store use, staff-assisted
 
 ### Who uses it
 Customers visiting the Delhi Brass showroom, assisted by staff. Accessed on the customer's phone (or store iPad) via QR code.
@@ -109,10 +114,16 @@ The prompt builder takes all user inputs and constructs the generation prompt. I
 - Then places products into the generated room
 - Useful for architects and designers working from blueprints
 
+### Multi-Product Renders
+- Place multiple products in one room (chandelier + matching wall sconces + table lamp)
+- Every item in the render is purchasable — tagged and linked to catalog
+- "Shop this room" — customer sees the full render, taps any product to buy
+
 ### Expanded Product Categories
-- Wall lights, table lamps, floor lamps
-- Eventually: furniture, decor, rugs, art
-- Cross-category coordination (e.g., chandelier + matching wall sconces)
+- Lighting: chandeliers, pendants, wall lights, table lamps, floor lamps
+- Furniture: sofas, tables, chairs, consoles
+- Decor: rugs, art, mirrors, vases, cushions
+- Cross-category coordination (e.g., chandelier + rug + coffee table that work together)
 
 ### Business Model Ideas
 - Free for Delhi Brass customers (drives sales)
