@@ -103,6 +103,7 @@ export default function ResultPage() {
         <button
           onClick={() => {
             sessionStorage.removeItem("resultImage");
+            // Keep room image, room type, state, vibe — just go back to upload with same product
             router.push(`/upload?product=${productSlug}`);
           }}
           className="w-full border border-neutral-800 rounded-xl py-3 text-xs tracking-wider uppercase text-neutral-400 hover:border-neutral-600 transition-colors"
@@ -113,6 +114,7 @@ export default function ResultPage() {
           onClick={() => {
             sessionStorage.removeItem("resultImage");
             sessionStorage.removeItem("productSlug");
+            // Keep room image, room type, state, vibe — user picks a new product, room is preserved
             router.push("/");
           }}
           className="w-full border border-neutral-800 rounded-xl py-3 text-xs tracking-wider uppercase text-neutral-400 hover:border-neutral-600 transition-colors"

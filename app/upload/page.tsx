@@ -91,11 +91,38 @@ function UploadForm() {
   const [vibe, setVibe] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // Restore room image from sessionStorage if returning from result page
+  useEffect(() => {
+    const savedPreview = sessionStorage.getItem("roomImagePreview");
+    const savedRoomType = sessionStorage.getItem("roomType") as RoomType | null;
+    const savedRoomState = sessionStorage.getItem("roomState") as RoomState | null;
+    const savedVibe = sessionStorage.getItem("vibe");
+
+    if (savedPreview && !roomPreview) {
+      setRoomPreview(savedPreview);
+      // Convert base64 back to File for form submission
+      fetch(savedPreview)
+        .then((res) => res.blob())
+        .then((blob) => setRoomImage(new File([blob], "room.jpg", { type: "image/jpeg" })));
+    }
+    if (savedRoomType) setRoomType(savedRoomType);
+    if (savedRoomState) setRoomState(savedRoomState);
+    if (savedVibe) setVibe(savedVibe);
+  }, []);
+
   function handleImageChange(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
     setRoomImage(file);
-    setRoomPreview(URL.createObjectURL(file));
+    const previewUrl = URL.createObjectURL(file);
+    setRoomPreview(previewUrl);
+
+    // Save as base64 to sessionStorage so it persists across navigations
+    const reader = new FileReader();
+    reader.onload = () => {
+      sessionStorage.setItem("roomImagePreview", reader.result as string);
+    };
+    reader.readAsDataURL(file);
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -103,6 +130,11 @@ function UploadForm() {
     if (!roomImage || !productSlug) return;
 
     setIsSubmitting(true);
+
+    // Persist room settings so they survive navigation
+    sessionStorage.setItem("roomType", roomType);
+    sessionStorage.setItem("roomState", roomState);
+    sessionStorage.setItem("vibe", vibe);
 
     const formData = new FormData();
     formData.append("roomImage", roomImage);
