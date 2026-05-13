@@ -15,6 +15,7 @@ export async function POST(request: NextRequest) {
     const roomType = formData.get("roomType") as RoomType;
     const roomState = formData.get("roomState") as RoomState;
     const vibe = formData.get("vibe") as string | null;
+    const notes = formData.get("notes") as string | null;
 
     if (!roomImageFile || !productSlug || !roomType || !roomState) {
       return NextResponse.json(
@@ -55,7 +56,11 @@ export async function POST(request: NextRequest) {
       vibe || undefined
     );
 
-    const fullPrompt = `${prompt}\n\nAvoid: ${negativePrompt}`;
+    let fullPrompt = `${prompt}\n\nAvoid: ${negativePrompt}`;
+
+    if (notes) {
+      fullPrompt += `\n\nADDITIONAL CUSTOMER INSTRUCTIONS: ${notes}`;
+    }
 
     // Call Gemini image generation
     const response = await genAI.models.generateContent({

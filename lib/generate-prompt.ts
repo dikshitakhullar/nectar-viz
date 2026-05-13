@@ -16,26 +16,24 @@ const ROOM_TYPE_LABELS: Record<RoomType, string> = {
 };
 
 function getScaleInstruction(product: Product, roomType: RoomType): string {
-  if (product.widthInches) {
-    return `The ${product.name} is approximately ${product.widthInches} inches wide${
-      product.heightInches ? ` and ${product.heightInches} inches tall` : ""
-    } in real life.`;
-  }
+  // The product design must be preserved EXACTLY — same number of arms, same proportions,
+  // same details. Only the overall scale in the room can be adjusted slightly.
+  let instruction = `PRODUCT INTEGRITY: The ${product.name} must look EXACTLY like the reference image — same design, same number of arms/shades/crystals, same proportions between parts. Do NOT add or remove any elements. Do NOT redesign or reinterpret the fixture.`;
 
-  const sizeGuide: Record<string, string> = {
-    small: "This is a SMALL light fixture — about 12-16 inches wide. It should look compact and delicate relative to the room, NOT dominant.",
-    medium: "This is a MEDIUM sized light fixture — about 18-24 inches wide. It should look proportionate to the room, like a tasteful accent — NOT oversized or dominant.",
-    large: "This is a LARGE light fixture — about 28-36 inches wide. It is a statement piece but must still be proportionate to the room.",
-  };
+  instruction += "\n\nSCALE: Place the fixture at a size that looks proportionate and natural for this room. Minor scaling is fine — the fixture can be rendered slightly smaller or larger than the reference to suit the room, but its internal proportions and design must stay the same.";
 
-  let instruction = sizeGuide[product.size] || sizeGuide["medium"];
+  instruction += "\n\nSizing reference points:";
+  instruction += "\n- A standard sofa is ~7 feet wide, a dining table ~3-4 feet wide, a door is ~7 feet tall.";
+  instruction += "\n- For standard 9-10 foot ceilings: fixture should typically be 20-30 inches wide.";
+  instruction += "\n- For small rooms (mandir, passage): keep it compact, 12-18 inches.";
+  instruction += "\n- The fixture should feel proportionate — never oversized or too tiny.";
 
   if (roomType === "stairwell") {
-    instruction += " In this double-height space, the fixture can hang on a longer chain and appear larger than in a standard room.";
+    instruction += "\n- This is a double-height space — the fixture can be larger and hang on a longer chain.";
   }
 
   if (["formal_living", "family_lounge", "bedroom", "mandir"].includes(roomType)) {
-    instruction += " This is a standard 9-10 foot ceiling room. The fixture should hang on a short chain, close to the ceiling, well above head height.";
+    instruction += "\n- Standard ceiling height — fixture should hang on a short chain, well above head height.";
   }
 
   return instruction;

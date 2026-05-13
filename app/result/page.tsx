@@ -57,11 +57,46 @@ function SingleResult() {
     setProductSlug(aiOptions[index].slug);
   }
 
+  async function addLogoWatermark(imageBlob: Blob): Promise<Blob> {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement("canvas");
+        canvas.width = img.width;
+        canvas.height = img.height;
+        const ctx = canvas.getContext("2d")!;
+        ctx.drawImage(img, 0, 0);
+
+        const logo = new Image();
+        logo.crossOrigin = "anonymous";
+        logo.onload = () => {
+          // Logo in bottom-right, ~8% of image width, with some padding
+          const logoWidth = Math.max(80, img.width * 0.08);
+          const logoHeight = (logo.height / logo.width) * logoWidth;
+          const padding = img.width * 0.02;
+          const x = img.width - logoWidth - padding;
+          const y = img.height - logoHeight - padding;
+          ctx.globalAlpha = 0.7;
+          ctx.drawImage(logo, x, y, logoWidth, logoHeight);
+          ctx.globalAlpha = 1;
+          canvas.toBlob((blob) => resolve(blob!), "image/png");
+        };
+        logo.onerror = () => {
+          // If logo fails to load, just use the original image
+          canvas.toBlob((blob) => resolve(blob!), "image/png");
+        };
+        logo.src = "/logo.png";
+      };
+      img.src = URL.createObjectURL(imageBlob);
+    });
+  }
+
   async function handleDownload() {
     if (!imageUrl) return;
     const res = await fetch(imageUrl);
     const blob = await res.blob();
-    const url = URL.createObjectURL(blob);
+    const watermarked = await addLogoWatermark(blob);
+    const url = URL.createObjectURL(watermarked);
     const a = document.createElement("a");
     a.href = url;
     a.download = `delhi-brass-${productSlug}-room.png`;
@@ -77,7 +112,8 @@ function SingleResult() {
     try {
       const res = await fetch(imageUrl);
       const blob = await res.blob();
-      const file = new File([blob], `delhi-brass-${productSlug}.png`, { type: "image/png" });
+      const watermarked = await addLogoWatermark(blob);
+      const file = new File([watermarked], `delhi-brass-${productSlug}.png`, { type: "image/png" });
       await navigator.share({
         title: "Delhi Brass — Room Visualization",
         text: "See how this light looks in my room!",

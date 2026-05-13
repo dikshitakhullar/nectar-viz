@@ -91,6 +91,7 @@ function UploadForm() {
   const [roomType, setRoomType] = useState<RoomType>("formal_living");
   const [roomState, setRoomState] = useState<RoomState>("furnished");
   const [vibe, setVibe] = useState("");
+  const [notes, setNotes] = useState("");
   const [productType, setProductType] = useState<ProductType>("chandelier");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [loadingMessage, setLoadingMessage] = useState<string | undefined>();
@@ -138,6 +139,7 @@ function UploadForm() {
     formData.append("roomType", roomType);
     formData.append("roomState", roomState);
     if (vibe) formData.append("vibe", vibe);
+    if (notes) formData.append("notes", notes);
 
     try {
       const res = await fetch("/api/generate", { method: "POST", body: formData });
@@ -183,6 +185,7 @@ function UploadForm() {
         genFormData.append("roomType", roomType);
         genFormData.append("roomState", roomState);
         if (vibe) genFormData.append("vibe", vibe);
+        if (notes) genFormData.append("notes", notes);
 
         const genRes = await fetch("/api/generate", { method: "POST", body: genFormData });
         if (genRes.ok) {
@@ -369,6 +372,20 @@ function UploadForm() {
             </button>
           ))}
         </div>
+      </div>
+
+      {/* Additional notes */}
+      <div>
+        <label className="block text-xs tracking-wider uppercase text-neutral-400 mb-2">
+          Additional Notes <span className="text-neutral-600">(optional)</span>
+        </label>
+        <textarea
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}
+          placeholder="e.g. place the light on the left side, change the flooring to wood, don't add curtains..."
+          rows={3}
+          className="w-full border border-neutral-800 rounded-xl px-4 py-3 text-sm bg-neutral-900/50 text-neutral-200 placeholder:text-neutral-600 focus:border-[#c9a84c]/50 focus:outline-none transition-colors resize-none"
+        />
       </div>
 
       {/* Submit */}
