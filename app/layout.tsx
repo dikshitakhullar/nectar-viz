@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Delhi Brass — Room Visualizer",
-  description: "See how Delhi Brass lighting looks in your room",
+  title: "Nectar Visualizer",
+  description: "See how luxury lighting looks in your room — powered by AI",
 };
 
 export default function RootLayout({
@@ -32,14 +32,14 @@ export default function RootLayout({
             <div className="max-w-lg mx-auto flex items-baseline justify-between">
               <div>
                 <h1 className="text-lg font-light tracking-[0.25em] uppercase text-neutral-200">
-                  Delhi Brass
+                  Nectar
                 </h1>
                 <p className="text-[10px] tracking-[0.2em] uppercase text-[#c9a84c] mt-0.5 animate-subtle-pulse">
-                  Room Visualizer
+                  Visualizer
                 </p>
               </div>
               <span className="text-[10px] tracking-widest uppercase text-neutral-600">
-                Est. 1949
+                by Delhi Brass
               </span>
             </div>
             <div className="gold-line mt-3" />

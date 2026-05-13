@@ -81,11 +81,22 @@ export default async function ProductPage({
 
   return (
     <div className="space-y-6 animate-fade-in-up">
+      {/* Intro */}
+      <div className="text-center py-4">
+        <h2 className="text-2xl font-extralight tracking-wide text-neutral-200">
+          See It In Your Room
+        </h2>
+        <p className="text-sm text-neutral-500 mt-2 max-w-sm mx-auto leading-relaxed">
+          Pick a light from our collection — or let AI choose for you — upload a photo of your room, and see a realistic render in seconds.
+        </p>
+        <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-[#c9a84c] to-transparent mx-auto mt-4" />
+      </div>
+
       {/* Header */}
       <div>
         <div className="w-12 h-[1px] bg-gradient-to-r from-[#c9a84c] to-transparent mb-4" />
-        <h2 className="text-2xl font-extralight tracking-wide text-neutral-200">
-          Choose a Light
+        <h2 className="text-lg font-extralight tracking-wide text-neutral-200">
+          Browse Collection
         </h2>
         <p className="text-sm text-neutral-500 mt-1">
           {products.length} products · Tap to visualize in your room

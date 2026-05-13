@@ -16,25 +16,31 @@ const ROOM_TYPE_LABELS: Record<RoomType, string> = {
 };
 
 function getScaleInstruction(product: Product, roomType: RoomType): string {
-  // The product design must be preserved EXACTLY — same number of arms, same proportions,
-  // same details. Only the overall scale in the room can be adjusted slightly.
   let instruction = `PRODUCT INTEGRITY: The ${product.name} must look EXACTLY like the reference image — same design, same number of arms/shades/crystals, same proportions between parts. Do NOT add or remove any elements. Do NOT redesign or reinterpret the fixture.`;
 
-  instruction += "\n\nSCALE: Place the fixture at a size that looks proportionate and natural for this room. Minor scaling is fine — the fixture can be rendered slightly smaller or larger than the reference to suit the room, but its internal proportions and design must stay the same.";
+  instruction += "\n\nSCALE — COMMON MISTAKE: AI tends to make fixtures TOO SMALL. Err on the side of LARGER rather than smaller. A light fixture should be a prominent design element, not a tiny afterthought lost in the room.";
 
-  instruction += "\n\nSizing reference points:";
-  instruction += "\n- A standard sofa is ~7 feet wide, a dining table ~3-4 feet wide, a door is ~7 feet tall.";
-  instruction += "\n- For standard 9-10 foot ceilings: fixture should typically be 20-30 inches wide.";
-  instruction += "\n- For small rooms (mandir, passage): keep it compact, 12-18 inches.";
-  instruction += "\n- The fixture should feel proportionate — never oversized or too tiny.";
+  instruction += "\n\nSize by room type:";
 
-  if (roomType === "stairwell") {
-    instruction += "\n- This is a double-height space — the fixture can be larger and hang on a longer chain.";
-  }
+  const sizeByRoom: Record<string, string> = {
+    formal_living: "For a formal living room: the fixture should be substantial — at least 24-36 inches wide. It is the centerpiece of the room. Hang it centered in the main seating area, not off to the side or in front of a wall.",
+    family_lounge: "For a family lounge: 24-30 inches wide. Centered over the main seating area.",
+    dining_room: "For a dining room: centered directly above the dining table, spanning about 1/2 to 2/3 the width of the table. Hang 30-36 inches above the table surface.",
+    bedroom: "For a bedroom: 20-28 inches wide. Centered in the room or over the bed.",
+    entrance_lobby: "For an entrance lobby/foyer: the fixture should be LARGE and dramatic — 28-40 inches wide. This is the first thing visitors see. Hang it centered in the entrance space, NOT in front of a console or wall — in the CENTER of the open area where people walk in.",
+    mandir: "For a mandir: 16-24 inches wide, centered above the prayer area.",
+    stairwell: "For a stairwell/double-height space: the fixture can be very large — 36-60 inches. Hang on a long chain so it occupies the vertical space dramatically.",
+    passage: "For a passage/corridor: 14-20 inches wide. If multiple fixtures, space them evenly along the passage.",
+    terrace: "For a terrace: 24-32 inches wide. Centered in the covered area.",
+    other: "Place the fixture centered in the main area of the room at a proportionate size — at least 24 inches wide for standard rooms.",
+  };
 
-  if (["formal_living", "family_lounge", "bedroom", "mandir"].includes(roomType)) {
-    instruction += "\n- Standard ceiling height — fixture should hang on a short chain, well above head height.";
-  }
+  instruction += "\n" + (sizeByRoom[roomType] || sizeByRoom["other"]);
+
+  instruction += "\n\nPlacement rules:";
+  instruction += "\n- ALWAYS center the fixture in the PRIMARY open area of the room — where people gather or walk through.";
+  instruction += "\n- Do NOT place the fixture in front of a wall, console, or artwork. It belongs in the CENTER of the space.";
+  instruction += "\n- For reference: a standard sofa is ~7 feet wide, a dining table ~3-4 feet wide, a door is ~7 feet tall.";
 
   return instruction;
 }
