@@ -87,7 +87,7 @@ export default async function ProductPage({
           See It In Your Room
         </h2>
         <p className="text-sm text-neutral-500 mt-2 max-w-sm mx-auto leading-relaxed">
-          Pick a light from our collection — or let AI choose for you — upload a photo of your room, and see a realistic render in seconds.
+          Pick a light you love, upload a photo of your room, and see how it looks in your space.
         </p>
         <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-[#c9a84c] to-transparent mx-auto mt-4" />
       </div>

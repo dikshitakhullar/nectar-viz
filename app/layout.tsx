@@ -39,7 +39,7 @@ export default function RootLayout({
                 </p>
               </div>
               <span className="text-[10px] tracking-widest uppercase text-neutral-600">
-                by Delhi Brass
+                for Delhi Brass
               </span>
             </div>
             <div className="gold-line mt-3" />
