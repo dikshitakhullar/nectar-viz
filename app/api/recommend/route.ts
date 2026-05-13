@@ -99,3 +99,5 @@ No explanation, no markdown, just the JSON array.`;
     return NextResponse.json({ error: "Recommendation failed" }, { status: 500 });
   }
 }
+
+export const maxDuration = 60;
