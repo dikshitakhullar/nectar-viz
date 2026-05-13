@@ -1,6 +1,74 @@
 import { Product, RoomType, RoomState } from "./types";
 
-const DEFAULT_STYLE = "Modern Indian luxury — clean marble surfaces, warm brass accents, contemporary Indian art, elegant sheer curtains, Italian marble or dark wood flooring, paneled walls with brass trim, warm ambient lighting. Not traditional or bohemian — sophisticated Delhi luxury.";
+const DEFAULT_STYLE = "Modern Indian";
+
+const VIBE_DETAILS: Record<string, string> = {
+  "Modern Indian": `AESTHETIC — Modern Indian Luxury:
+- Walls: paneled walls in warm taupe/cream with brass trim, or dark wood paneling accent walls
+- Flooring: Italian marble (Calacatta/gold veining) or dark polished wood
+- Furniture: quilted/textured fabric sofas in cream, beige, charcoal, or warm grey. Marble-top coffee tables with ornate brass jali-cut legs. Dining chairs with ribbed/fluted fabric and brass handles.
+- Decor: contemporary Indian art (Thota Vaikuntam, Husain style, abstract), embroidered cushions in dark navy/black with Indian motifs, crystal bowls, brass figurines, coffee table books, candles
+- Curtains: elegant sheer curtains with pleated valance — NOT velvet, NOT jewel-tone
+- Color palette: warm neutrals — cream, taupe, warm grey, touches of gold/brass, navy accents
+- DO NOT add: brass pots/urlis/jars, jute rugs, block prints, velvet curtains/sofas, jewel-tone furniture, olive green sofas`,
+
+  "Minimal & elegant": `AESTHETIC — Minimal & Elegant:
+- Walls: clean white or off-white plaster, one textured stone feature wall (travertine or limestone). No paneling, no heavy moldings.
+- Flooring: light oak hardwood or pale limestone tiles
+- Furniture: low-profile sofas in white/light grey linen. Simple wooden coffee table with clean lines. Slim dining chairs in natural wood. No ornate detailing.
+- Decor: one large abstract artwork (monochrome or muted), a single ceramic vase, a few hardcover books. Less is more — leave breathing room.
+- Curtains: floor-to-ceiling sheer white linen panels
+- Color palette: white, off-white, light grey, pale wood, one muted accent (sage, soft clay, or dusty blue)
+- DO NOT add: heavy ornate pieces, busy patterns, brass detailing, dark colors, cluttered surfaces`,
+
+  "Classical / ornate": `AESTHETIC — Classical Ornate:
+- Walls: rich paneled walls with crown molding, possibly in cream/ivory with gold leaf trim. Arched doorways or niches.
+- Flooring: dark marble (Nero Marquina or dark emperador) or polished dark wood parquet
+- Furniture: rolled-arm sofas in rich neutral fabric (not velvet), carved wood side tables, wingback chairs. Dining table with turned legs, upholstered dining chairs.
+- Decor: ornate gilt-frame mirrors, classical oil paintings or Mughal miniatures, crystal decanters, silver candlesticks, heavy silk curtains with tassels, Pichwai art
+- Curtains: layered — sheer underneath with heavier silk/damask drapes
+- Color palette: ivory, gold, burgundy accents, dark wood, rich but not garish
+- DO NOT add: modern minimalist pieces, industrial elements, plastic/acrylic`,
+
+  "Warm & cozy": `AESTHETIC — Warm & Cozy:
+- Walls: warm plaster in soft terracotta/clay tones, or warm white with one accent wall in deep warm tone
+- Flooring: warm-toned wood (walnut, teak) with layered area rugs (Persian or kilim style)
+- Furniture: deep comfortable sofas in warm brown leather (cognac Chesterfield) or warm-toned fabric. Chunky wooden coffee table. Cozy armchairs with throw blankets.
+- Decor: stacked books, lit candles (multiple), warm-toned pottery, woven baskets, table lamps with warm glow, family photos in simple frames, fresh flowers
+- Curtains: natural linen in warm oatmeal/camel tones
+- Color palette: warm browns, cognac, camel, burnt orange, warm cream, touches of forest green
+- DO NOT add: cold grey tones, chrome/steel, stark white, clinical modern pieces`,
+
+  "Contemporary": `AESTHETIC — Contemporary:
+- Walls: clean lines — smooth white or light grey, one bold feature wall (dark charcoal, textured concrete, or large-format stone)
+- Flooring: polished concrete, large-format grey tiles, or dark engineered wood
+- Furniture: modular sofas in charcoal or deep navy, geometric coffee tables in marble or blackened steel, sculptural dining chairs. Clean geometric forms.
+- Decor: large-scale abstract art (bold color or monochrome), sculptural objects, architectural coffee table books, a single dramatic plant (monstera, fiddle leaf)
+- Curtains: motorized roller shades or minimal track curtains in grey
+- Color palette: black, white, grey, one bold accent (deep blue, terracotta, or emerald)
+- DO NOT add: traditional ornate pieces, busy patterns, brass urlis, rustic elements`,
+
+  "Rustic": `AESTHETIC — Rustic:
+- Walls: exposed brick (one or two walls), remaining walls in warm plaster or lime wash
+- Flooring: reclaimed wood planks or aged terracotta tiles
+- Furniture: solid wood tables with visible grain (not too polished), leather sofas in aged brown, wrought iron accents. Farmhouse dining table with bench seating.
+- Decor: woven baskets, terracotta pots with greenery, wrought iron candle holders, vintage frames, linen napkins, wooden cutting boards displayed
+- Curtains: simple cotton or burlap panels, or no curtains — wooden shutters
+- Color palette: earth tones — warm brown, terracotta, sage green, cream, charcoal
+- DO NOT add: shiny chrome, velvet, crystal, ornate gilding, overly polished surfaces`,
+};
+
+function getVibeDetails(vibe: string): string {
+  // Check for exact match first
+  if (VIBE_DETAILS[vibe]) return VIBE_DETAILS[vibe];
+  // Check for partial match
+  const lower = vibe.toLowerCase();
+  for (const [key, value] of Object.entries(VIBE_DETAILS)) {
+    if (lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) return value;
+  }
+  // If user typed a custom vibe, wrap it with the default as fallback
+  return `AESTHETIC — ${vibe}:\nApply this style: "${vibe}". Use your best judgment for furniture, materials, and decor that match this description.\n\nFallback reference (if unsure):\n${VIBE_DETAILS["Modern Indian"]}`;
+}
 
 const ROOM_TYPE_LABELS: Record<RoomType, string> = {
   formal_living: "formal living room / drawing room",
@@ -106,15 +174,10 @@ WHAT YOU MAY DO:
 SCALE — THIS IS CRITICAL:
 ${scaleInstruction}
 
-STYLE DIRECTION: ${styleDirection}
+${getVibeDetails(styleDirection)}
 Apply this style ONLY to unfinished bare surfaces and added furniture/decor.
 
-DEFAULT AESTHETIC (Delhi luxury Indian modern):
-- Walls (bare plaster only): paneled walls in warm taupe/cream with brass trim, or dark wood paneling
-- Flooring (ONLY if floor is bare concrete/cement): Italian marble or dark polished wood. If floor already has tiles/marble/stone — DO NOT CHANGE IT.
-- Furniture: quilted fabric sofas in cream/beige/charcoal/warm grey. Marble-top coffee tables with brass jali-cut legs. Dining chairs with ribbed fabric and brass handles.
-- Decor: contemporary Indian art, embroidered cushions in dark navy/black, crystal bowls, brass figurines, coffee table books, candles, elegant sheer curtains
-- DO NOT add: brass pots/urlis/jars, jute rugs, block prints, velvet curtains/sofas, jewel-tone furniture, olive green sofas
+CRITICAL FLOORING RULE: If floor already has tiles/marble/stone — DO NOT CHANGE IT. Only apply new flooring to bare concrete/cement.
 
 QUALITY:
 - Maintain the exact same camera angle and perspective.
