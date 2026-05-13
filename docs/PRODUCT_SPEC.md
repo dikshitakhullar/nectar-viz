@@ -68,10 +68,14 @@ The prompt builder takes all user inputs and constructs the generation prompt. I
 
 ## V2 — Enhanced Experience
 
-### Product Discovery (when user doesn't have a specific product)
-- **Option A:** AI matching — user describes what they want ("something modern with crystals, not too big") and AI suggests 2-3 products from the catalog
-- **Option B:** Guided flow — 2-3 quick questions (type? size? vibe?) that narrow to 3-5 suggestions
-- **Option C:** Both — text search + guided filters
+### Product Discovery — No Specific Product Needed
+Customer doesn't need to pick a product. They just say:
+- Product type: "chandelier", "wall light", "table lamp"
+- Vibe: "modern with crystals", "warm brass, not too ornate", "minimal"
+
+The system searches the catalog, picks 2-3 best-matching products, and generates a render for each — same room, different products. Customer compares and picks their favorite.
+
+This is the key unlock: the customer describes what they want, and we show them real purchasable options in their actual room.
 
 ### Better Placement Control
 - User can circle/tap where they want the product placed in their room photo
