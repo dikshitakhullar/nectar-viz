@@ -54,7 +54,6 @@ function ProductCard({ product }: { product: Product }) {
           sizes="(max-width: 768px) 50vw, 200px"
           unoptimized
         />
-        {/* Hover glow overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#c9a84c]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
       <div className="p-3 border-t border-neutral-800/30">
@@ -92,6 +91,26 @@ export default async function ProductPage({
           {products.length} products · Tap to visualize in your room
         </p>
       </div>
+
+      {/* AI Choose option */}
+      <Link
+        href="/upload?mode=ai"
+        className="block bg-gradient-to-r from-[#c9a84c]/10 to-transparent rounded-xl border border-[#c9a84c]/20 p-4 hover:border-[#c9a84c]/40 transition-all duration-300 group"
+      >
+        <div className="flex items-center gap-4">
+          <div className="w-10 h-10 rounded-full bg-[#c9a84c]/10 border border-[#c9a84c]/30 flex items-center justify-center shrink-0 group-hover:bg-[#c9a84c]/20 transition-colors">
+            <span className="text-[#c9a84c] text-lg">✦</span>
+          </div>
+          <div>
+            <p className="text-sm font-light text-neutral-200 tracking-wide">
+              Let AI Choose For You
+            </p>
+            <p className="text-[11px] text-neutral-500 mt-0.5">
+              Upload your room & tell us the vibe — we&apos;ll pick the 3 best options
+            </p>
+          </div>
+        </div>
+      </Link>
 
       {/* Type filters */}
       <TypeFilter types={types} selected={typeFilter} />
