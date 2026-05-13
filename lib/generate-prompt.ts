@@ -84,26 +84,33 @@ QUALITY:
 
     prompt = `Edit this under-construction room photograph to add this exact light fixture: ${productDesc}.
 
-CRITICAL — PRESERVE ALL STRUCTURE AND INSTALLED FINISHES:
-- Keep ALL structural elements EXACTLY as they are: walls, windows, doors, ceiling shape, room dimensions, steps, platforms. These are IMMOVABLE.
-- Keep ALL already-installed finishes EXACTLY as they are: any stone cladding, tiles, woodwork, flooring, paneling that is already in place. These are DONE and must not change.
-- Do NOT change the shape or position of any window or door opening.
-- The ONLY surfaces you may finish are bare plaster, raw concrete, or clearly unfinished areas.
+ABSOLUTE RULES — STRUCTURAL PRESERVATION (CANNOT BE VIOLATED):
+- EVERY wall, window, door, column, beam, ceiling structure, floor level, step, and platform MUST remain EXACTLY where they are. Do NOT add, remove, or move any wall.
+- Exposed steel framing, metal studs, construction scaffolding, false ceiling grid/framework = these are STRUCTURAL. They MUST stay visible exactly as they are.
+- Every window and door opening MUST keep its exact position, size, and shape. Do NOT fill in, shrink, or enlarge any opening.
+- Construction equipment, tools, building materials visible in the photo = keep them OR remove them, but do NOT build new walls or structures in their place.
+- Already-installed finishes (stone cladding, tiles, woodwork, marble, flooring) = keep exactly as-is. These are DONE. If the floor is already tiled or has marble/stone, do NOT change it — it stays as-is even if the rest of the room is unfinished.
 
-WHAT TO ADD:
-- Hang this light fixture from the ceiling in the appropriate position for a ${roomLabel}.
+WHAT YOU MAY DO:
+- Add this light fixture to the ceiling in the appropriate position for a ${roomLabel}
+- Apply paint, wall treatment, or paneling ONLY on bare plaster/concrete surfaces (NOT where steel framing is exposed — that stays as-is)
+- Add furniture and movable decor items
+- Add curtains/window treatments over existing windows (without changing the window itself)
+- Minor ceiling finishing where there is bare plaster (NOT where false ceiling grid is exposed — that framework stays visible)
+- Add a partition or room divider (movable furniture), but NEVER a new wall
+
+SCALE — THIS IS CRITICAL:
 ${scaleInstruction}
 
 STYLE DIRECTION: ${styleDirection}
-Apply this style ONLY to unfinished surfaces and added decor — never to already-installed elements.
+Apply this style ONLY to unfinished bare surfaces and added furniture/decor.
 
-DEFAULT AESTHETIC FOR UNFINISHED SURFACES (Delhi luxury Indian modern):
-- Walls: paneled walls in warm taupe/cream with brass trim, or dark wood paneling accent walls
-- Flooring: Italian marble throughout, or dark polished wood
-- Ceiling: smooth finish with subtle cove lighting in warm white
-- Furniture (if room needs it): quilted/textured fabric sofas in cream, beige, charcoal, or warm grey. Marble-top coffee tables with ornate brass jali-cut legs. Dining chairs with ribbed/fluted fabric and brass handles.
-- Decor: contemporary Indian art, embroidered cushions in dark navy/black with Indian motifs, crystal bowls, brass figurines, coffee table books, candles, elegant sheer curtains with pleated valance
-- DO NOT add: brass pots/urlis/jars, jute rugs, block prints, velvet curtains, velvet sofas, jewel-tone furniture, olive green sofas, kitchen settings, plain/empty rooms
+DEFAULT AESTHETIC (Delhi luxury Indian modern):
+- Walls (bare plaster only): paneled walls in warm taupe/cream with brass trim, or dark wood paneling
+- Flooring (ONLY if floor is bare concrete/cement): Italian marble or dark polished wood. If floor already has tiles/marble/stone — DO NOT CHANGE IT.
+- Furniture: quilted fabric sofas in cream/beige/charcoal/warm grey. Marble-top coffee tables with brass jali-cut legs. Dining chairs with ribbed fabric and brass handles.
+- Decor: contemporary Indian art, embroidered cushions in dark navy/black, crystal bowls, brass figurines, coffee table books, candles, elegant sheer curtains
+- DO NOT add: brass pots/urlis/jars, jute rugs, block prints, velvet curtains/sofas, jewel-tone furniture, olive green sofas
 
 QUALITY:
 - Maintain the exact same camera angle and perspective.
@@ -117,8 +124,10 @@ QUALITY:
   const negativePrompt = [
     "oversized fixture", "wrong scale", "too large",
     "CGI", "3D render", "composite look", "pasted look",
-    "different furniture", "changed room", "altered walls", "altered windows",
-    "structural changes", "different room layout",
+    "new walls added", "walls moved", "walls removed",
+    "window changed", "window filled in", "door moved",
+    "structural changes", "different room layout", "different room shape",
+    "exposed framing hidden", "steel studs covered",
     "brass pots", "urli", "jute rug", "block print",
     "velvet curtains", "velvet sofa", "olive green sofa",
     "jewel-tone furniture", "bohemian", "kitchen island",

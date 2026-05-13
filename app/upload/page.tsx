@@ -57,10 +57,14 @@ function GeneratingOverlay() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
+
   return (
-    <div className="fixed inset-0 bg-[#0a0a0a]/95 backdrop-blur-md z-50 flex flex-col items-center justify-center px-6">
+    <div className="fixed inset-0 bg-[#0a0a0a] z-50 flex flex-col items-center justify-center px-6">
       {/* Pulsing gold ring */}
-      <div className="relative">
+      <div className="relative w-16 h-16">
         <div className="w-16 h-16 border border-[#c9a84c]/30 rounded-full animate-ping absolute inset-0" />
         <div className="w-16 h-16 border-2 border-[#c9a84c] rounded-full animate-spin" style={{ borderTopColor: 'transparent' }} />
       </div>
