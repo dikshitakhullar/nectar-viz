@@ -4,58 +4,83 @@ const DEFAULT_STYLE = "Modern Indian";
 
 const VIBE_DETAILS: Record<string, string> = {
   "Modern Indian": `AESTHETIC — Modern Indian Luxury:
-- Walls: paneled walls in warm taupe/cream with brass trim, or dark wood paneling accent walls
-- Flooring: Italian marble (Calacatta/gold veining) or dark polished wood
-- Furniture: quilted/textured fabric sofas in cream, beige, charcoal, or warm grey. Marble-top coffee tables with ornate brass jali-cut legs. Dining chairs with ribbed/fluted fabric and brass handles.
-- Decor: contemporary Indian art (Thota Vaikuntam, Husain style, abstract), embroidered cushions in dark navy/black with Indian motifs, crystal bowls, brass figurines, coffee table books, candles
-- Curtains: elegant sheer curtains with pleated valance — NOT velvet, NOT jewel-tone
-- Color palette: warm neutrals — cream, taupe, warm grey, touches of gold/brass, navy accents
-- DO NOT add: brass pots/urlis/jars, jute rugs, block prints, velvet curtains/sofas, jewel-tone furniture, olive green sofas`,
+- Walls: cream/warm white paneled walls with thin brass trim or molding frames. Walnut wood accent paneling with jali-screen cutouts or beaded vertical trim. Some walls in smooth warm plaster or microcement.
+- Flooring: polished Italian marble — white/grey with dramatic veining (Calacatta or Statuario style) OR warm sand-toned stone. Never dark floors.
+- Ceiling: layered tray ceiling with fluted/ribbed border details and warm LED cove lighting. Cream or warm taupe tones.
+- Furniture: cream/off-white contemporary sofas with clean curved lines. Green marble or onyx coffee tables on gold/brass conical bases. Ribbed/fluted cream dining chairs. Walnut side tables with brass accents. Low-profile but substantial.
+- Decor: Indian figurative art is the HERO — Pichwai paintings (Krishna, cows, lotus), M.F. Husain-style figures, Kalighat paintings, Mughal miniatures in ornate frames. Silver or brass figurines (Nandi, elephants). Red crystal bowls. Embroidered cushions in navy/black with Indian motifs. Coffee table books. Kashmiri shawls framed as wall art.
+- Curtains: elegant sheer curtains in champagne/cream with pleated valance — NOT velvet, NOT jewel-tone
+- Color palette: cream, warm white, gold/brass, sage/jade green, warm walnut brown. Pops of vivid color ONLY from artwork (blues, reds, greens). Base stays neutral.
+- DO NOT add: brass pots/urlis/jars, jute rugs, block prints, velvet curtains/sofas, jewel-tone furniture, olive green sofas, temple bells`,
 
   "Minimal & elegant": `AESTHETIC — Minimal & Elegant:
-- Walls: clean white or off-white plaster, one textured stone feature wall (travertine or limestone). No paneling, no heavy moldings.
-- Flooring: light oak hardwood or pale limestone tiles
-- Furniture: low-profile sofas in white/light grey linen. Simple wooden coffee table with clean lines. Slim dining chairs in natural wood. No ornate detailing.
-- Decor: one large abstract artwork (monochrome or muted), a single ceramic vase, a few hardcover books. Less is more — leave breathing room.
-- Curtains: floor-to-ceiling sheer white linen panels
-- Color palette: white, off-white, light grey, pale wood, one muted accent (sage, soft clay, or dusty blue)
-- DO NOT add: heavy ornate pieces, busy patterns, brass detailing, dark colors, cluttered surfaces`,
+- Walls: smooth warm beige/sand plaster or microcement. One dramatic feature: backlit onyx/marble slab panel OR a large-scale organic art installation (river-shaped cutouts, abstract landscape murals). Sheer curtains as soft dividers.
+- Flooring: light marble or pale limestone with subtle veining. Light oak hardwood as alternative. Soft wave-pattern or organic-shaped area rugs in cream/sand.
+- Ceiling: sculptural tray ceilings with organic flowing plaster forms. Painted sky/cloud panels in soft blue-grey for dreamy effect. Warm LED cove lighting. Rounded, never angular.
+- Furniture: curved serpentine sofas in white/cream boucle. Organic-shaped coffee tables in light stone or cream. Rounded poufs/ottomans. Everything low-profile with soft edges. NO sharp geometric forms.
+- Decor: ONE dramatic art piece (backlit installation, abstract mural, or large sculpture). A single white floral arrangement. One or two hardcover books. LEAVE BREATHING ROOM — surfaces should be mostly empty. The architecture IS the decoration.
+- Curtains: floor-to-ceiling sheer white or champagne linen panels
+- Color palette: cream, warm sand, soft beige, pale grey, touches of blue-grey. Entirely monochromatic warm neutrals. ONE muted accent maximum.
+- DO NOT add: heavy ornate pieces, busy patterns, brass detailing, dark colors, cluttered surfaces, multiple art pieces, decorative objects on every surface`,
 
   "Classical / ornate": `AESTHETIC — Classical Ornate:
-- Walls: rich paneled walls with crown molding, possibly in cream/ivory with gold leaf trim. Arched doorways or niches.
-- Flooring: dark marble (Nero Marquina or dark emperador) or polished dark wood parquet
-- Furniture: rolled-arm sofas in rich neutral fabric (not velvet), carved wood side tables, wingback chairs. Dining table with turned legs, upholstered dining chairs.
-- Decor: ornate gilt-frame mirrors, classical oil paintings or Mughal miniatures, crystal decanters, silver candlesticks, heavy silk curtains with tassels, Pichwai art
-- Curtains: layered — sheer underneath with heavier silk/damask drapes
-- Color palette: ivory, gold, burgundy accents, dark wood, rich but not garish
-- DO NOT add: modern minimalist pieces, industrial elements, plastic/acrylic`,
+- Walls: classical raised panel molding with deep crown profiles in cream/ivory. Deep teal or petrol blue paint as a rich alternative. Antique European pastoral tapestries in ornate frames as focal walls. Arched niches and doorways with carved trim.
+- Flooring: dark marble (Nero Marquina, dark emperador) OR polished dark wood parquet/herringbone. Black-and-white geometric marble inlays (star/pinwheel patterns) for foyers/hallways.
+- Ceiling: coffered/paneled with classical plaster medallions, acanthus leaf molding, deep crown profiles. Cream/warm white. High and grand.
+- Furniture: cream skirted sofas with wood-trimmed arms (English style). Gilt-frame bergere chairs. Glass-top brass coffee tables. Wingback chairs in neutral fabric. Dark wood dining table with carved legs, upholstered dining chairs. Crystal balustrades on staircases.
+- Decor: ornate gilt-frame mirrors, antique European tapestries, crystal candlesticks with black tapers, blue-and-white chinoiserie plates, silver tea service, classical white marble figurines/busts, heavy silk curtains with tassels. Oil paintings in gold frames.
+- Curtains: layered — sheer underneath with heavier silk/damask drapes in champagne or taupe. Full-height, puddling slightly.
+- Color palette: cream, deep teal, antique gold, dark wood, burgundy accents, black-and-white marble. Rich but not garish.
+- DO NOT add: modern minimalist pieces, industrial elements, plastic/acrylic, chrome`,
 
   "Warm & cozy": `AESTHETIC — Warm & Cozy:
-- Walls: warm plaster in soft terracotta/clay tones, or warm white with one accent wall in deep warm tone
-- Flooring: warm-toned wood (walnut, teak) with layered area rugs (Persian or kilim style)
-- Furniture: deep comfortable sofas in warm brown leather (cognac Chesterfield) or warm-toned fabric. Chunky wooden coffee table. Cozy armchairs with throw blankets.
-- Decor: stacked books, lit candles (multiple), warm-toned pottery, woven baskets, table lamps with warm glow, family photos in simple frames, fresh flowers
-- Curtains: natural linen in warm oatmeal/camel tones
-- Color palette: warm browns, cognac, camel, burnt orange, warm cream, touches of forest green
-- DO NOT add: cold grey tones, chrome/steel, stark white, clinical modern pieces`,
+- Walls: channel-tufted fabric or upholstered panels in champagne/beige behind beds. Warm walnut wood paneling. Warm plaster in soft clay/terracotta tones. Fluted/ribbed panel details.
+- Flooring: warm-toned wood (walnut, honey oak) with layered rugs — Persian rug underneath, textured cream/sand rug on top. Chevron or parquet patterns.
+- Ceiling: dark painted ceiling (chocolate brown or warm taupe) to COMPRESS the space into a cocoon. Tray ceiling with gold accent trim and warm LED cove lighting. Low and intimate.
+- Furniture: deep channel-tufted sofas and headboards in cream/beige. Cognac leather Chesterfield or barrel chairs. Chunky walnut coffee tables. Upholstered benches at foot of bed. Everything invites sinking in.
+- Decor: lit candles (multiple, pillar style), cashmere/knit throw blankets in dusty blue or camel, stacked books, warm-toned pottery, smoked glass table lamps with amber glow, reed diffusers, olive branches in simple vases, autumn-toned botanical art.
+- Curtains: natural linen in warm oatmeal/camel tones, heavy enough to feel cocooning
+- Color palette: cognac, camel, champagne, warm walnut brown, soft terracotta/rust accents, dusty blue as one cool accent. Everything warm-toned.
+- DO NOT add: cold grey tones, chrome/steel, stark white, clinical modern pieces, bright overhead lighting`,
 
   "Contemporary": `AESTHETIC — Contemporary:
-- Walls: clean lines — smooth white or light grey, one bold feature wall (dark charcoal, textured concrete, or large-format stone)
-- Flooring: polished concrete, large-format grey tiles, or dark engineered wood
-- Furniture: modular sofas in charcoal or deep navy, geometric coffee tables in marble or blackened steel, sculptural dining chairs. Clean geometric forms.
-- Decor: large-scale abstract art (bold color or monochrome), sculptural objects, architectural coffee table books, a single dramatic plant (monstera, fiddle leaf)
-- Curtains: motorized roller shades or minimal track curtains in grey
-- Color palette: black, white, grey, one bold accent (deep blue, terracotta, or emerald)
-- DO NOT add: traditional ornate pieces, busy patterns, brass urlis, rustic elements`,
+- Walls: flat walnut wood paneling with clean seams (NOT ornate). 3D sculptural relief panels in cream/white with abstract organic shapes. Backlit marble or onyx slab feature walls. Fluted/ribbed vertical panels. Crane/nature murals for artistic accent.
+- Flooring: light warm stone or concrete-look tiles in sand/beige. Large-format. Textured area rugs in neutral tones with abstract or wave patterns.
+- Ceiling: flat modern in warm taupe/grey with black recessed linear track lighting. Stepped false ceiling with warm cove lighting. Clean and architectural.
+- Furniture: large curved/modular sectional sofas in olive/sage, cream boucle, or chocolate brown. Sculptural coffee tables in green marble, travertine, or bronze. Mushroom-shaped walnut stools. Houndstooth or bold-pattern accent pieces. Organic flowing forms mixed with geometric.
+- Decor: ONE bold abstract or figurative painting (pop-art, surrealist, Cubist style in vivid colors). Sculptural objects. Tall ceramic cacti or single dramatic plant. Dried branches in dark vases. Architectural coffee table books. MINIMAL objects — let materials speak.
+- Curtains: heavy taupe curtains for windows OR minimal roller shades. Not fussy.
+- Color palette: warm sand, walnut brown, olive/sage green, terracotta, charcoal, cream. Earth tones with ONE bold art-driven color pop.
+- DO NOT add: traditional ornate pieces, busy textile patterns, brass urlis, chinoiserie, multiple small decorative objects`,
 
   "Rustic": `AESTHETIC — Rustic:
-- Walls: exposed brick (one or two walls), remaining walls in warm plaster or lime wash
-- Flooring: reclaimed wood planks or aged terracotta tiles
-- Furniture: solid wood tables with visible grain (not too polished), leather sofas in aged brown, wrought iron accents. Farmhouse dining table with bench seating.
-- Decor: woven baskets, terracotta pots with greenery, wrought iron candle holders, vintage frames, linen napkins, wooden cutting boards displayed
+- Walls: exposed brick (one or two walls), remaining walls in warm lime-wash plaster or raw plaster finish
+- Flooring: reclaimed wood planks with visible grain or aged terracotta tiles
+- Furniture: solid wood tables with visible grain and natural imperfections (not polished), aged brown leather sofas, wrought iron accents. Farmhouse dining table with bench seating. Chunky proportions.
+- Decor: woven baskets, terracotta pots with trailing greenery, wrought iron candle holders, vintage frames, linen napkins, wooden cutting boards displayed, dried herbs
 - Curtains: simple cotton or burlap panels, or no curtains — wooden shutters
 - Color palette: earth tones — warm brown, terracotta, sage green, cream, charcoal
-- DO NOT add: shiny chrome, velvet, crystal, ornate gilding, overly polished surfaces`,
+- DO NOT add: shiny chrome, velvet, crystal, ornate gilding, overly polished surfaces, glass furniture`,
+
+  "Indian Maximalist": `AESTHETIC — Indian Maximalist:
+- Walls: BOLD saturated wall color — coral-red/vermilion lacquer, deep teal/hunter green, or rich navy. Salon-style gallery hanging with MULTIPLE framed artworks covering the wall (Indian miniatures, landscape oils, figurative art in ornate gold and dark frames). Antique tapestries in warm sepia/gold tones. Lacquered built-in bookshelves.
+- Flooring: deep red/navy Persian or Oriental rugs with intricate traditional patterns. Navy-and-white striped dhurrie rugs as alternative. Geometric marble inlays for grand spaces.
+- Ceiling: varied — natural wood plank, woven cane/rattan barrel vault, or dark painted to match walls. Not minimal.
+- Furniture: eclectic MIX is key — toile-upholstered daybed with hunting scenes ALONGSIDE carved cane-back colonial chairs ALONGSIDE tufted Chesterfield in gold/olive. Black lacquer chests with brass hardware. Gothic-carved side cabinets. Chinoiserie X-leg tables. Red leather bar stools. Vintage leather travel trunks as side tables.
+- Decor: blue-and-white chinoiserie porcelain (ginger jars, vases, plates — ESSENTIAL). Brass foo-dog or griffin figural lamps with green tole shades. Ikat, kilim, and floral-embroidered cushions mixed together. Silver elephant/Nandi figurines. Red berries and white hydrangea arrangements. Stacked Chanel/Louis Vuitton coffee table books. Black tapers in crystal holders. Red military jacket on mannequin form.
+- Curtains: heavy drapes in dark teal or cream silk. Layered with sheers.
+- Color palette: coral-red, deep teal, navy, cream, sepia gold, black lacquer. BOLD and saturated — warm undertones throughout. Many colors coexisting confidently.
+- DO NOT add: minimalist furniture, bare walls, monochrome palette, modern track lighting, empty surfaces. This vibe is about ABUNDANCE and LAYERING.`,
+
+  "Art Deco": `AESTHETIC — Art Deco:
+- Walls: warm taupe or putty-colored smooth plaster. Archways with curved molding. Sage green paneled cabinetry with glass-fronted displays. Geometric carved or relief details.
+- Flooring: geometric marble inlay — star/pinwheel/chevron patterns using white marble with dark grey or burgundy stone. Ornamental and high-contrast.
+- Ceiling: mirrored or reflective glass panels with geometric brass/gold Art Deco framing. Woven natural cane barrel-vault ceilings with backlit center panels. Dramatic and glamorous.
+- Furniture: oval-back chairs in dark wood with chinoiserie/floral upholstered seats. Barley-sugar or twisted carved columns. Houndstooth-check upholstered benches in pink-red and cream. Marble-topped vanity islands. Dark wood pieces with strong geometric silhouettes.
+- Decor: crystal multi-arm chandeliers, globe/orb wall sconces in brass, Indian deity paintings as focal art, geometric brass framing on everything, perfume bottles, displayed accessories as decor.
+- Curtains: silk or satin in champagne/gold tones, geometric pleating
+- Color palette: warm taupe, black, white marble, gold/brass, sage green, burgundy, houndstooth patterns. Glamorous geometry.
+- DO NOT add: rustic elements, distressed finishes, casual fabrics, minimal/bare surfaces`,
 };
 
 function getVibeDetails(vibe: string): string {
