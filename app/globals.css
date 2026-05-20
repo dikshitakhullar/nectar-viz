@@ -1,14 +1,62 @@
 @import "tailwindcss";
 
+@theme {
+  --color-gold: #c9a84c;
+  --color-gold-light: #dfc06b;
+  --color-gold-dim: rgba(201,168,76,0.2);
+  --color-bg: #0a0a0a;
+  --color-surface: #141414;
+}
+
 :root {
-  --gold: #c9a84c;
-  --gold-light: #dfc06b;
-  --gold-dim: #8a7434;
+  /* Colors */
+  --color-bg: #0a0a0a;
+  --color-surface: #141414;
+  --color-border: rgba(255,255,255,0.08);
+  --color-gold: #c9a84c;
+  --color-gold-light: #dfc06b;
+  --color-gold-dim: rgba(201,168,76,0.2);
+  --color-text-primary: #e5e5e5;
+  --color-text-secondary: #737373;
+  --color-text-muted: #525252;
+  --color-destructive: #dc2626;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* Motion */
+  --transition: 200ms ease-out;
+
+  /* Legacy aliases (used in existing components) */
+  --gold: var(--color-gold);
+  --gold-light: var(--color-gold-light);
+  --gold-dim: rgba(138,116,52,1);
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   overflow-x: hidden;
+}
+
+/* Ensure minimum touch targets */
+button, a, [role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Except inline text links and tiny badges */
+a.inline-link, .badge {
+  min-height: unset;
+  min-width: unset;
 }
 
 html {
@@ -155,4 +203,40 @@ html {
 
 .animate-subtle-pulse {
   animation: subtle-pulse 3s ease-in-out infinite;
+}
+
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out forwards;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* Scrollbar hide utility */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up,
+  .animate-subtle-pulse,
+  .animate-slide-up,
+  .animate-shimmer {
+    animation: none !important;
+  }
+  .liquid-bg, .liquid-bg::before, .liquid-bg::after,
+  .liquid-orb-1, .liquid-orb-2 {
+    animation: none !important;
+  }
 }

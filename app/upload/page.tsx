@@ -67,10 +67,10 @@ function GeneratingOverlay({ message }: { message?: string }) {
   }, []);
 
   return (
-    <div className="fixed inset-0 bg-[#0a0a0a] z-50 flex flex-col items-center justify-center px-6">
+    <div className="fixed inset-0 bg-bg z-50 flex flex-col items-center justify-center px-6">
       <div className="relative w-16 h-16">
-        <div className="w-16 h-16 border border-[#c9a84c]/30 rounded-full animate-ping absolute inset-0" />
-        <div className="w-16 h-16 border-2 border-[#c9a84c] rounded-full animate-spin" style={{ borderTopColor: "transparent" }} />
+        <div className="w-16 h-16 border border-gold/30 rounded-full animate-ping absolute inset-0" />
+        <div className="w-16 h-16 border-2 border-gold rounded-full animate-spin" style={{ borderTopColor: "transparent" }} />
       </div>
       <p className="text-sm font-light tracking-wide text-neutral-200 mt-6">
         {message || activeMessages[msgIndex]}
@@ -166,12 +166,28 @@ function UploadForm() {
       });
       if (!res.ok) throw new Error("Generation failed");
       const blob = await res.blob();
-      const reader = new FileReader();
-      const dataUrl = await new Promise<string>((resolve) => {
-        reader.onload = () => resolve(reader.result as string);
-        reader.readAsDataURL(blob);
-      });
-      sessionStorage.setItem("resultImage", dataUrl);
+
+      // Store as blob URL (persists within this browser session)
+      // and also try data URL for cross-page navigation
+      const blobUrl = URL.createObjectURL(blob);
+
+      // Try data URL first (works across navigation), fall back to blob URL
+      try {
+        const reader = new FileReader();
+        const dataUrl = await new Promise<string>((resolve, reject) => {
+          reader.onload = () => resolve(reader.result as string);
+          reader.onerror = reject;
+          reader.readAsDataURL(blob);
+        });
+        // Clear old items to make space
+        sessionStorage.removeItem("resultImage");
+        sessionStorage.removeItem("roomImagePreview");
+        sessionStorage.setItem("resultImage", dataUrl);
+      } catch {
+        // Data URL too large for sessionStorage — use blob URL
+        sessionStorage.setItem("resultImage", blobUrl);
+      }
+
       sessionStorage.setItem("productSlug", productSlug);
       posthog.capture("visualization_completed", {
         product_slug: productSlug,
@@ -227,33 +243,39 @@ function UploadForm() {
       if (!recRes.ok) throw new Error("Recommendation failed");
       const { slugs } = await recRes.json();
 
-      // Step 2: Generate renders for each recommended product
-      const results: { slug: string; imageUrl: string }[] = [];
-      for (let i = 0; i < slugs.length; i++) {
-        setLoadingMessage(`Generating option ${i + 1} of ${slugs.length}...`);
+      // Step 2: Generate renders for all recommended products in parallel
+      setLoadingMessage(`Generating ${slugs.length} options...`);
+
+      const renderPromises = slugs.map(async (slug: string) => {
         const genFormData = new FormData();
         genFormData.append("roomImage", roomImage);
-        genFormData.append("productSlug", slugs[i]);
+        genFormData.append("productSlug", slug);
         genFormData.append("roomType", roomType);
         genFormData.append("roomState", roomState);
         if (vibe) genFormData.append("vibe", vibe);
         if (notes) genFormData.append("notes", notes);
 
-        const genRes = await fetch("/api/generate", {
-          method: "POST",
-          body: genFormData,
-          headers: { "X-POSTHOG-DISTINCT-ID": distinctId },
-        });
-        if (genRes.ok) {
+        try {
+          const genRes = await fetch("/api/generate", {
+            method: "POST",
+            body: genFormData,
+            headers: { "X-POSTHOG-DISTINCT-ID": distinctId },
+          });
+          if (!genRes.ok) return null;
           const blob = await genRes.blob();
           const reader = new FileReader();
           const dataUrl = await new Promise<string>((resolve) => {
             reader.onload = () => resolve(reader.result as string);
             reader.readAsDataURL(blob);
           });
-          results.push({ slug: slugs[i], imageUrl: dataUrl });
+          return { slug, imageUrl: dataUrl };
+        } catch {
+          return null;
         }
-      }
+      });
+
+      const settled = await Promise.all(renderPromises);
+      const results = settled.filter((r): r is { slug: string; imageUrl: string } => r !== null);
 
       if (results.length === 0) throw new Error("No renders generated");
 
@@ -290,7 +312,7 @@ function UploadForm() {
     return (
       <div className="text-center py-16">
         <p className="text-neutral-500">No product selected.</p>
-        <a href="/" className="text-[#c9a84c] underline mt-2 inline-block text-sm">Go back and choose a product</a>
+        <a href="/" className="text-gold underline mt-2 inline-block text-sm">Go back and choose a product</a>
       </div>
     );
   }
@@ -301,9 +323,9 @@ function UploadForm() {
 
       {/* Mode indicator */}
       {isAiMode ? (
-        <div className="bg-gradient-to-r from-[#c9a84c]/10 to-transparent rounded-xl border border-[#c9a84c]/20 p-4">
+        <div className="bg-gradient-to-r from-gold/10 to-transparent rounded-xl border border-gold/20 p-4">
           <div className="flex items-center gap-3">
-            <span className="text-[#c9a84c] text-lg">✦</span>
+            <span className="text-gold text-lg">✦</span>
             <div>
               <p className="text-sm font-light text-neutral-200 tracking-wide">AI-Powered Selection</p>
               <p className="text-[11px] text-neutral-500 mt-0.5">We&apos;ll pick the 3 best products for your space</p>
@@ -326,7 +348,7 @@ function UploadForm() {
             <p className="font-light text-sm text-neutral-200 tracking-wide">
               {productSlug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
             </p>
-            <a href="/" className="text-[11px] text-[#c9a84c] tracking-wider uppercase">Change product</a>
+            <a href="/" className="text-[11px] text-gold tracking-wider uppercase">Change product</a>
           </div>
         </div>
       )}
@@ -343,7 +365,7 @@ function UploadForm() {
                 onClick={() => setProductType(pt.value)}
                 className={`px-4 py-2 rounded-xl text-xs tracking-wider uppercase border transition-all duration-300 ${
                   productType === pt.value
-                    ? "bg-[#c9a84c] text-black border-[#c9a84c]"
+                    ? "bg-gold text-black border-gold"
                     : "border-neutral-700 text-neutral-400 hover:border-neutral-500"
                 }`}
               >
@@ -377,7 +399,7 @@ function UploadForm() {
           <button
             type="button"
             onClick={() => fileInputRef.current?.click()}
-            className="w-full border border-dashed border-neutral-700 rounded-xl p-10 text-center text-neutral-500 hover:border-[#c9a84c]/50 hover:text-[#c9a84c]/70 transition-all duration-300 bg-neutral-900/30"
+            className="w-full border border-dashed border-neutral-700 rounded-xl p-10 text-center text-neutral-500 hover:border-gold/50 hover:text-gold/70 transition-all duration-300 bg-neutral-900/30"
           >
             <span className="block text-3xl mb-2 font-extralight">+</span>
             <span className="text-xs tracking-wider uppercase">Tap to upload or take a photo</span>
@@ -392,7 +414,7 @@ function UploadForm() {
         <select
           value={roomType}
           onChange={(e) => setRoomType(e.target.value as RoomType)}
-          className="w-full border border-neutral-800 rounded-xl px-4 py-3 text-sm bg-neutral-900/50 text-neutral-200 focus:border-[#c9a84c]/50 focus:outline-none transition-colors"
+          className="w-full border border-neutral-800 rounded-xl px-4 py-3 text-sm bg-neutral-900/50 text-neutral-200 focus:border-gold/50 focus:outline-none transition-colors"
         >
           {ROOM_TYPES.map((rt) => (
             <option key={rt.value} value={rt.value}>{rt.label}</option>
@@ -409,7 +431,7 @@ function UploadForm() {
               key={rs.value}
               className={`block border rounded-xl p-4 cursor-pointer transition-all duration-300 ${
                 roomState === rs.value
-                  ? "border-[#c9a84c]/50 bg-[#c9a84c]/5"
+                  ? "border-gold/50 bg-gold/5"
                   : "border-neutral-800 bg-neutral-900/30 hover:border-neutral-700"
               }`}
             >
@@ -431,7 +453,7 @@ function UploadForm() {
           value={vibe}
           onChange={(e) => setVibe(e.target.value)}
           placeholder="e.g. modern Indian, minimal, warm and cozy"
-          className="w-full border border-neutral-800 rounded-xl px-4 py-3 text-sm bg-neutral-900/50 text-neutral-200 placeholder:text-neutral-600 focus:border-[#c9a84c]/50 focus:outline-none transition-colors"
+          className="w-full border border-neutral-800 rounded-xl px-4 py-3 text-sm bg-neutral-900/50 text-neutral-200 placeholder:text-neutral-600 focus:border-gold/50 focus:outline-none transition-colors"
         />
         <div className="flex flex-wrap gap-2 mt-3">
           {VIBE_SUGGESTIONS.map((v) => (
@@ -440,7 +462,7 @@ function UploadForm() {
               type="button"
               onClick={() => setVibe(v)}
               className={`px-3 py-1.5 rounded-full text-[11px] tracking-wider uppercase border transition-all duration-300 ${
-                vibe === v ? "bg-[#c9a84c] text-black border-[#c9a84c]" : "border-neutral-700 text-neutral-500 hover:border-neutral-500"
+                vibe === v ? "bg-gold text-black border-gold" : "border-neutral-700 text-neutral-500 hover:border-neutral-500"
               }`}
             >
               {v}
@@ -459,7 +481,7 @@ function UploadForm() {
           onChange={(e) => setNotes(e.target.value)}
           placeholder="e.g. place the light on the left side, change the flooring to wood, don't add curtains..."
           rows={3}
-          className="w-full border border-neutral-800 rounded-xl px-4 py-3 text-sm bg-neutral-900/50 text-neutral-200 placeholder:text-neutral-600 focus:border-[#c9a84c]/50 focus:outline-none transition-colors resize-none"
+          className="w-full border border-neutral-800 rounded-xl px-4 py-3 text-sm bg-neutral-900/50 text-neutral-200 placeholder:text-neutral-600 focus:border-gold/50 focus:outline-none transition-colors resize-none"
         />
       </div>
 
@@ -467,7 +489,7 @@ function UploadForm() {
       <button
         type="submit"
         disabled={!roomImage || isSubmitting}
-        className="w-full bg-[#c9a84c] text-black rounded-xl py-3.5 text-sm font-medium tracking-wider uppercase disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#dfc06b] transition-colors duration-300"
+        className="w-full bg-gold text-black rounded-xl py-3.5 text-sm font-medium tracking-wider uppercase disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gold-light transition-colors duration-300"
       >
         {isAiMode ? "Find Best Products & Visualize" : "Visualize in My Room"}
       </button>
