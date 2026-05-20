@@ -4,6 +4,8 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { useState, useRef, useEffect, Suspense } from "react";
 import Image from "next/image";
 import { RoomState, RoomType, ProductType } from "@/lib/types";
+import catalogData from "@/data/catalog.json";
+import posthog from "posthog-js";
 
 const ROOM_TYPES: { value: RoomType; label: string }[] = [
   { value: "formal_living", label: "Formal Living / Drawing Room" },
@@ -84,6 +86,7 @@ function UploadForm() {
   const router = useRouter();
   const productSlug = searchParams.get("product") || "";
   const isAiMode = searchParams.get("mode") === "ai";
+  const catalogProduct = catalogData.find((p: any) => p.slug === productSlug);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [roomImage, setRoomImage] = useState<File | null>(null);
@@ -123,6 +126,10 @@ function UploadForm() {
     const reader = new FileReader();
     reader.onload = () => sessionStorage.setItem("roomImagePreview", reader.result as string);
     reader.readAsDataURL(file);
+    posthog.capture("room_photo_uploaded", {
+      mode: isAiMode ? "ai" : "specific",
+      product_slug: productSlug || null,
+    });
   }
 
   async function handleSubmitSpecific(e: React.FormEvent) {
@@ -133,6 +140,14 @@ function UploadForm() {
     sessionStorage.setItem("roomState", roomState);
     sessionStorage.setItem("vibe", vibe);
 
+    posthog.capture("visualization_submitted", {
+      product_slug: productSlug,
+      room_type: roomType,
+      room_state: roomState,
+      vibe: vibe || null,
+      has_notes: !!notes,
+    });
+
     const formData = new FormData();
     formData.append("roomImage", roomImage);
     formData.append("productSlug", productSlug);
@@ -141,14 +156,31 @@ function UploadForm() {
     if (vibe) formData.append("vibe", vibe);
     if (notes) formData.append("notes", notes);
 
+    const distinctId = posthog.get_distinct_id();
     try {
-      const res = await fetch("/api/generate", { method: "POST", body: formData });
+      const res = await fetch("/api/generate", {
+        method: "POST",
+        body: formData,
+        headers: { "X-POSTHOG-DISTINCT-ID": distinctId },
+      });
       if (!res.ok) throw new Error("Generation failed");
       const blob = await res.blob();
       sessionStorage.setItem("resultImage", URL.createObjectURL(blob));
       sessionStorage.setItem("productSlug", productSlug);
+      posthog.capture("visualization_completed", {
+        product_slug: productSlug,
+        room_type: roomType,
+        room_state: roomState,
+        vibe: vibe || null,
+      });
       router.push("/result");
-    } catch {
+    } catch (err) {
+      posthog.capture("visualization_failed", {
+        mode: "specific",
+        product_slug: productSlug,
+        room_type: roomType,
+      });
+      posthog.captureException(err);
       alert("Something went wrong. Please try again.");
       setIsSubmitting(false);
     }
@@ -163,6 +195,16 @@ function UploadForm() {
     sessionStorage.setItem("roomState", roomState);
     sessionStorage.setItem("vibe", vibe);
 
+    posthog.capture("ai_recommendation_submitted", {
+      product_type: productType,
+      room_type: roomType,
+      room_state: roomState,
+      vibe: vibe || null,
+      has_notes: !!notes,
+    });
+
+    const distinctId = posthog.get_distinct_id();
+
     try {
       // Step 1: Get AI recommendations
       const recFormData = new FormData();
@@ -171,7 +213,11 @@ function UploadForm() {
       recFormData.append("roomType", roomType);
       if (vibe) recFormData.append("vibe", vibe);
 
-      const recRes = await fetch("/api/recommend", { method: "POST", body: recFormData });
+      const recRes = await fetch("/api/recommend", {
+        method: "POST",
+        body: recFormData,
+        headers: { "X-POSTHOG-DISTINCT-ID": distinctId },
+      });
       if (!recRes.ok) throw new Error("Recommendation failed");
       const { slugs } = await recRes.json();
 
@@ -187,7 +233,11 @@ function UploadForm() {
         if (vibe) genFormData.append("vibe", vibe);
         if (notes) genFormData.append("notes", notes);
 
-        const genRes = await fetch("/api/generate", { method: "POST", body: genFormData });
+        const genRes = await fetch("/api/generate", {
+          method: "POST",
+          body: genFormData,
+          headers: { "X-POSTHOG-DISTINCT-ID": distinctId },
+        });
         if (genRes.ok) {
           const blob = await genRes.blob();
           results.push({ slug: slugs[i], imageUrl: URL.createObjectURL(blob) });
@@ -203,8 +253,22 @@ function UploadForm() {
         sessionStorage.setItem(`aiResultSlug_${i}`, r.slug);
       });
       sessionStorage.setItem("aiResultCount", String(results.length));
+      posthog.capture("ai_visualization_completed", {
+        product_type: productType,
+        room_type: roomType,
+        room_state: roomState,
+        vibe: vibe || null,
+        renders_count: results.length,
+        recommended_slugs: slugs,
+      });
       router.push("/result?mode=ai");
-    } catch {
+    } catch (err) {
+      posthog.capture("visualization_failed", {
+        mode: "ai",
+        product_type: productType,
+        room_type: roomType,
+      });
+      posthog.captureException(err);
       alert("Something went wrong. Please try again.");
       setIsSubmitting(false);
       setLoadingMessage(undefined);
@@ -239,7 +303,7 @@ function UploadForm() {
         <div className="flex items-center gap-4 bg-neutral-900/50 rounded-xl border border-neutral-800/50 p-3">
           <div className="w-16 h-16 relative shrink-0 bg-neutral-900 rounded-lg overflow-hidden">
             <Image
-              src={`https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/${productSlug}/studio.png`}
+              src={catalogProduct?.imagePath || `https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/${productSlug}/studio.png`}
               alt={productSlug}
               fill
               className="object-contain p-1"
@@ -308,7 +372,7 @@ function UploadForm() {
             <span className="text-xs tracking-wider uppercase">Tap to upload or take a photo</span>
           </button>
         )}
-        <input ref={fileInputRef} type="file" accept="image/*" capture="environment" onChange={handleImageChange} className="hidden" />
+        <input ref={fileInputRef} type="file" accept="image/*" onChange={handleImageChange} className="hidden" />
       </div>
 
       {/* Room type */}
