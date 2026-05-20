@@ -165,7 +165,12 @@ function UploadForm() {
       });
       if (!res.ok) throw new Error("Generation failed");
       const blob = await res.blob();
-      sessionStorage.setItem("resultImage", URL.createObjectURL(blob));
+      const reader = new FileReader();
+      const dataUrl = await new Promise<string>((resolve) => {
+        reader.onload = () => resolve(reader.result as string);
+        reader.readAsDataURL(blob);
+      });
+      sessionStorage.setItem("resultImage", dataUrl);
       sessionStorage.setItem("productSlug", productSlug);
       posthog.capture("visualization_completed", {
         product_slug: productSlug,
@@ -240,7 +245,12 @@ function UploadForm() {
         });
         if (genRes.ok) {
           const blob = await genRes.blob();
-          results.push({ slug: slugs[i], imageUrl: URL.createObjectURL(blob) });
+          const reader = new FileReader();
+          const dataUrl = await new Promise<string>((resolve) => {
+            reader.onload = () => resolve(reader.result as string);
+            reader.readAsDataURL(blob);
+          });
+          results.push({ slug: slugs[i], imageUrl: dataUrl });
         }
       }
 
