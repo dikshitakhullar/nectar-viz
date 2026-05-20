@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { PostHogProvider } from "./providers";
 
 export const metadata: Metadata = {
   title: "Nectar Visualizer",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <div className="grain-overlay" />
 
         {/* Content */}
+        <PostHogProvider>
         <div className="relative z-10">
           <header className="px-5 py-4 bg-[#0a0a0a]/60 backdrop-blur-xl sticky top-0 z-40">
             <div className="max-w-lg mx-auto flex items-baseline justify-between">
@@ -49,6 +51,7 @@ export default function RootLayout({
             {children}
           </main>
         </div>
+        </PostHogProvider>
       </body>
     </html>
   );

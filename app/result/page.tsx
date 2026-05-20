@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
+import posthog from "posthog-js";
 
 interface AiOption {
   slug: string;
@@ -55,6 +56,11 @@ function SingleResult() {
     setSelectedAiIndex(index);
     setImageUrl(aiOptions[index].imageUrl);
     setProductSlug(aiOptions[index].slug);
+    posthog.capture("ai_option_switched", {
+      option_index: index,
+      product_slug: aiOptions[index].slug,
+      total_options: aiOptions.length,
+    });
   }
 
   async function addLogoWatermark(imageBlob: Blob): Promise<Blob> {
@@ -93,6 +99,10 @@ function SingleResult() {
 
   async function handleDownload() {
     if (!imageUrl) return;
+    posthog.capture("result_downloaded", {
+      product_slug: productSlug,
+      mode: isAiMode ? "ai" : "specific",
+    });
     const res = await fetch(imageUrl);
     const blob = await res.blob();
     const watermarked = await addLogoWatermark(blob);
@@ -109,6 +119,10 @@ function SingleResult() {
       handleDownload();
       return;
     }
+    posthog.capture("result_shared", {
+      product_slug: productSlug,
+      mode: isAiMode ? "ai" : "specific",
+    });
     try {
       const res = await fetch(imageUrl);
       const blob = await res.blob();
@@ -199,6 +213,10 @@ function SingleResult() {
       <div className="space-y-2 pt-2">
         <button
           onClick={() => {
+            posthog.capture("try_different_room_clicked", {
+              product_slug: productSlug,
+              mode: isAiMode ? "ai" : "specific",
+            });
             sessionStorage.removeItem("resultImage");
             if (isAiMode) {
               router.push("/upload?mode=ai");
@@ -212,6 +230,10 @@ function SingleResult() {
         </button>
         <button
           onClick={() => {
+            posthog.capture("try_another_product_clicked", {
+              current_product_slug: productSlug,
+              mode: isAiMode ? "ai" : "specific",
+            });
             sessionStorage.removeItem("resultImage");
             sessionStorage.removeItem("productSlug");
             router.push("/");

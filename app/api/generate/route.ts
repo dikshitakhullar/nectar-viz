@@ -3,10 +3,14 @@ import { GoogleGenAI, Modality } from "@google/genai";
 import { getProductBySlug } from "@/lib/catalog";
 import { buildPrompt } from "@/lib/generate-prompt";
 import { RoomState, RoomType } from "@/lib/types";
+import { createPostHogClient } from "@/lib/posthog-server";
 
 const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
 
 export async function POST(request: NextRequest) {
+  const distinctId = request.headers.get("X-POSTHOG-DISTINCT-ID") || "anonymous";
+  const posthog = createPostHogClient();
+
   try {
     const formData = await request.formData();
 
@@ -93,6 +97,12 @@ export async function POST(request: NextRequest) {
     // Extract generated image
     const parts = response.candidates?.[0]?.content?.parts;
     if (!parts) {
+      posthog.capture({
+        distinctId,
+        event: "visualization_generation_failed",
+        properties: { product_slug: productSlug, room_type: roomType, reason: "no_response_parts" },
+      });
+      await posthog.shutdown();
       return NextResponse.json(
         { error: "No response from AI" },
         { status: 500 }
@@ -102,6 +112,20 @@ export async function POST(request: NextRequest) {
     for (const part of parts) {
       if (part.inlineData?.mimeType?.startsWith("image/")) {
         const imageBuffer = Buffer.from(part.inlineData.data!, "base64");
+        posthog.capture({
+          distinctId,
+          event: "visualization_generated",
+          properties: {
+            product_slug: productSlug,
+            product_name: product.name,
+            product_category: product.category,
+            room_type: roomType,
+            room_state: roomState,
+            vibe: vibe || null,
+            has_notes: !!notes,
+          },
+        });
+        await posthog.shutdown();
         return new NextResponse(imageBuffer, {
           headers: {
             "Content-Type": part.inlineData.mimeType,
@@ -111,12 +135,24 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    posthog.capture({
+      distinctId,
+      event: "visualization_generation_failed",
+      properties: { product_slug: productSlug, room_type: roomType, reason: "no_image_in_response" },
+    });
+    await posthog.shutdown();
     return NextResponse.json(
       { error: "AI did not return an image" },
       { status: 500 }
     );
   } catch (error) {
     console.error("Generation error:", error);
+    posthog.capture({
+      distinctId,
+      event: "visualization_generation_failed",
+      properties: { reason: "exception" },
+    });
+    await posthog.shutdown();
     return NextResponse.json(
       { error: "Generation failed" },
       { status: 500 }

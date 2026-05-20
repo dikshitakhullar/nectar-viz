@@ -2,10 +2,14 @@ import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenAI } from "@google/genai";
 import { getAllProducts } from "@/lib/catalog";
 import { ProductType } from "@/lib/types";
+import { createPostHogClient } from "@/lib/posthog-server";
 
 const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
 
 export async function POST(request: NextRequest) {
+  const distinctId = request.headers.get("X-POSTHOG-DISTINCT-ID") || "anonymous";
+  const posthog = createPostHogClient();
+
   try {
     const formData = await request.formData();
 
@@ -24,7 +28,7 @@ export async function POST(request: NextRequest) {
 
     // Filter catalog to the requested type
     const allProducts = getAllProducts();
-    const candidates = allProducts.filter((p) => p.type === productType as ProductType);
+    const candidates = allProducts.filter((p) => p.category === productType as ProductType);
 
     if (candidates.length === 0) {
       return NextResponse.json({ error: "No products of that type" }, { status: 404 });
@@ -79,6 +83,12 @@ No explanation, no markdown, just the JSON array.`;
     // Parse the JSON array from response
     const jsonMatch = text.match(/\[[\s\S]*?\]/);
     if (!jsonMatch) {
+      posthog.capture({
+        distinctId,
+        event: "recommendation_generation_failed",
+        properties: { product_type: productType, room_type: roomType, reason: "invalid_json_response" },
+      });
+      await posthog.shutdown();
       return NextResponse.json({ error: "AI did not return valid recommendations" }, { status: 500 });
     }
 
@@ -90,12 +100,31 @@ No explanation, no markdown, just the JSON array.`;
     if (validSlugs.length === 0) {
       // Fallback: pick 3 random from candidates
       const shuffled = [...candidates].sort(() => Math.random() - 0.5);
-      return NextResponse.json({ slugs: shuffled.slice(0, 3).map((p) => p.slug) });
+      const fallbackSlugs = shuffled.slice(0, 3).map((p) => p.slug);
+      posthog.capture({
+        distinctId,
+        event: "recommendation_generated",
+        properties: { product_type: productType, room_type: roomType, vibe: vibe || null, slugs: fallbackSlugs, used_fallback: true },
+      });
+      await posthog.shutdown();
+      return NextResponse.json({ slugs: fallbackSlugs });
     }
 
+    posthog.capture({
+      distinctId,
+      event: "recommendation_generated",
+      properties: { product_type: productType, room_type: roomType, vibe: vibe || null, slugs: validSlugs, used_fallback: false },
+    });
+    await posthog.shutdown();
     return NextResponse.json({ slugs: validSlugs });
   } catch (error) {
     console.error("Recommend error:", error);
+    posthog.capture({
+      distinctId,
+      event: "recommendation_generation_failed",
+      properties: { reason: "exception" },
+    });
+    await posthog.shutdown();
     return NextResponse.json({ error: "Recommendation failed" }, { status: 500 });
   }
 }
