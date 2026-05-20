@@ -105,6 +105,7 @@ const ROOM_TYPE_LABELS: Record<RoomType, string> = {
   stairwell: "stairwell / double-height space",
   passage: "passage / corridor",
   terrace: "terrace / covered patio",
+  bar: "bar / home bar area",
   other: "room",
 };
 
@@ -125,6 +126,7 @@ function getScaleInstruction(product: Product, roomType: RoomType): string {
     stairwell: "For a stairwell/double-height space: the fixture can be very large — 36-60 inches. Hang on a long chain so it occupies the vertical space dramatically.",
     passage: "For a passage/corridor: 14-20 inches wide. If multiple fixtures, space them evenly along the passage.",
     terrace: "For a terrace: 24-32 inches wide. Centered in the covered area.",
+    bar: "For a bar/home bar: 18-28 inches wide. Hang directly above the bar counter, 30-36 inches above the counter surface. If using multiple pendants, space 24-30 inches apart along the bar length.",
     other: "Place the fixture centered in the main area of the room at a proportionate size — at least 24 inches wide for standard rooms.",
   };
 

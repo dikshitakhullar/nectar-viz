@@ -58,6 +58,7 @@ export type RoomType =
   | "stairwell"
   | "passage"
   | "terrace"
+  | "bar"
   | "other";
 
 export interface GenerateRequest {

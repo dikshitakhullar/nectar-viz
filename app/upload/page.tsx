@@ -17,6 +17,7 @@ const ROOM_TYPES: { value: RoomType; label: string }[] = [
   { value: "stairwell", label: "Stairwell / Double Height" },
   { value: "passage", label: "Passage / Corridor" },
   { value: "terrace", label: "Terrace / Patio" },
+  { value: "bar", label: "Bar / Home Bar" },
   { value: "other", label: "Other" },
 ];
 
