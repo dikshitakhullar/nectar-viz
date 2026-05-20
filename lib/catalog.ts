@@ -1,28 +1,60 @@
 import catalogData from "@/data/catalog.json";
-import { Product, ProductType } from "./types";
+import { Product, ProductCategory, Brand } from "./types";
 
-const products: Product[] = catalogData as Product[];
+const allProducts: Product[] = catalogData as Product[];
+
+// Brands shown on the main product grid
+const GRID_BRANDS: Brand[] = ["delhi_brass", "house_of_samavar"];
+
+// === Product grid functions ===
 
 export function getAllProducts(): Product[] {
-  return products;
+  return allProducts.filter((p) => GRID_BRANDS.includes(p.brand));
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
-  return products.find((p) => p.slug === slug);
+  return allProducts.find((p) => p.slug === slug);
 }
 
-export function getProductsByType(type: ProductType): Product[] {
-  return products.filter((p) => p.type === type);
+export function getProductsByType(type: ProductCategory): Product[] {
+  return allProducts.filter((p) => GRID_BRANDS.includes(p.brand) && p.category === type);
 }
 
-export function getProductTypes(): ProductType[] {
-  const types = new Set(products.map((p) => p.type));
-  return Array.from(types) as ProductType[];
+export function getProductTypes(): ProductCategory[] {
+  const types = new Set(
+    allProducts.filter((p) => GRID_BRANDS.includes(p.brand)).map((p) => p.category)
+  );
+  return Array.from(types);
 }
 
 export function getCollections(): string[] {
   const collections = new Set(
-    products.map((p) => p.collection).filter(Boolean)
+    allProducts
+      .filter((p) => p.brand === "delhi_brass")
+      .map((p) => p.collection)
+      .filter(Boolean)
   );
   return Array.from(collections) as string[];
+}
+
+// === New multi-brand functions ===
+
+export function getAllCatalogProducts(): Product[] {
+  return allProducts;
+}
+
+export function getProductsByBrand(brand: Brand): Product[] {
+  return allProducts.filter((p) => p.brand === brand);
+}
+
+export function getProductsByCategory(category: ProductCategory): Product[] {
+  return allProducts.filter((p) => p.category === category);
+}
+
+export function getCatalogCategories(): ProductCategory[] {
+  return Array.from(new Set(allProducts.map((p) => p.category)));
+}
+
+export function getBrands(): Brand[] {
+  return Array.from(new Set(allProducts.map((p) => p.brand)));
 }

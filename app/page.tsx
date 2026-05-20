@@ -59,7 +59,7 @@ function ProductCard({ product }: { product: Product }) {
       <div className="p-3 border-t border-neutral-800/30">
         <p className="font-light text-sm text-neutral-200 tracking-wide">{product.name}</p>
         <p className="text-[11px] text-neutral-500 mt-0.5 uppercase tracking-wider">
-          {product.type.replace("_", " ")} · {product.material}
+          {product.category.replace("_", " ")} · {product.material}
         </p>
       </div>
     </Link>
@@ -76,7 +76,7 @@ export default async function ProductPage({
   const types = getProductTypes();
   const allProducts = getAllProducts();
   const products = typeFilter
-    ? allProducts.filter((p) => p.type === typeFilter)
+    ? allProducts.filter((p) => p.category === typeFilter)
     : allProducts;
 
   return (
@@ -103,25 +103,48 @@ export default async function ProductPage({
         </p>
       </div>
 
-      {/* AI Choose option */}
-      <Link
-        href="/upload?mode=ai"
-        className="block bg-gradient-to-r from-[#c9a84c]/10 to-transparent rounded-xl border border-[#c9a84c]/20 p-4 hover:border-[#c9a84c]/40 transition-all duration-300 group"
-      >
-        <div className="flex items-center gap-4">
-          <div className="w-10 h-10 rounded-full bg-[#c9a84c]/10 border border-[#c9a84c]/30 flex items-center justify-center shrink-0 group-hover:bg-[#c9a84c]/20 transition-colors">
-            <span className="text-[#c9a84c] text-lg">✦</span>
+      {/* Quick actions */}
+      <div className="space-y-3">
+        <Link
+          href="/inspire"
+          className="block bg-gradient-to-r from-[#c9a84c]/10 to-transparent rounded-xl border border-[#c9a84c]/20 p-4 hover:border-[#c9a84c]/40 transition-all duration-300 group"
+        >
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full bg-[#c9a84c]/10 border border-[#c9a84c]/30 flex items-center justify-center shrink-0 group-hover:bg-[#c9a84c]/20 transition-colors">
+              <svg className="w-4 h-4 text-[#c9a84c]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <div>
+              <p className="text-sm font-light text-neutral-200 tracking-wide">
+                Find Similar Products
+              </p>
+              <p className="text-[11px] text-neutral-500 mt-0.5">
+                Upload an inspo image — we&apos;ll find matching products
+              </p>
+            </div>
           </div>
-          <div>
-            <p className="text-sm font-light text-neutral-200 tracking-wide">
-              Let AI Choose For You
-            </p>
-            <p className="text-[11px] text-neutral-500 mt-0.5">
-              Upload your room & tell us the vibe — we&apos;ll pick the 3 best options
-            </p>
+        </Link>
+
+        <Link
+          href="/upload?mode=ai"
+          className="block bg-gradient-to-r from-[#c9a84c]/10 to-transparent rounded-xl border border-[#c9a84c]/20 p-4 hover:border-[#c9a84c]/40 transition-all duration-300 group"
+        >
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full bg-[#c9a84c]/10 border border-[#c9a84c]/30 flex items-center justify-center shrink-0 group-hover:bg-[#c9a84c]/20 transition-colors">
+              <span className="text-[#c9a84c] text-lg">✦</span>
+            </div>
+            <div>
+              <p className="text-sm font-light text-neutral-200 tracking-wide">
+                Let AI Choose For You
+              </p>
+              <p className="text-[11px] text-neutral-500 mt-0.5">
+                Upload your room & tell us the vibe — we&apos;ll pick the 3 best options
+              </p>
+            </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
 
       {/* Type filters */}
       <TypeFilter types={types} selected={typeFilter} />

@@ -140,7 +140,7 @@ function getScaleInstruction(product: Product, roomType: RoomType): string {
 
 function getProductDescription(product: Product): string {
   if (product.description) return product.description;
-  return `${product.name} — a ${product.size} ${product.material} ${product.type} with ${product.finish} finish`;
+  return `${product.name} — a ${product.size || "medium"} ${product.material || "brass"} ${product.category} with ${product.finish || "antique"} finish`;
 }
 
 export function buildPrompt(

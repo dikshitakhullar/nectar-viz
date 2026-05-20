@@ -39,9 +39,13 @@ yarn-error.log*
 # reference images (large, local only)
 /references/
 
+# visual search logs (user images + results for feedback)
+/data/search-logs/
+
 # screenshots
 Screenshot*
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.env.local
