@@ -6,10 +6,18 @@ const allProducts: Product[] = catalogData as Product[];
 // Brands shown on the main product grid
 const GRID_BRANDS: Brand[] = ["delhi_brass", "house_of_samavar"];
 
+// Delhi Brass categories with images on GitHub (others pending upload)
+const DB_LIVE_CATEGORIES: ProductCategory[] = ["chandelier", "pendant", "lantern", "cluster", "flush_mount", "hanging_lamp"];
+
 // === Product grid functions ===
 
 export function getAllProducts(): Product[] {
-  return allProducts.filter((p) => GRID_BRANDS.includes(p.brand));
+  return allProducts.filter((p) => {
+    if (!GRID_BRANDS.includes(p.brand)) return false;
+    // Hide Delhi Brass products without images on GitHub yet
+    if (p.brand === "delhi_brass" && !DB_LIVE_CATEGORIES.includes(p.category)) return false;
+    return true;
+  });
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
