@@ -60,10 +60,12 @@ export async function POST(request: NextRequest) {
       vibe || undefined
     );
 
-    let fullPrompt = `${prompt}\n\nAvoid: ${negativePrompt}`;
+    let fullPrompt: string;
 
     if (notes) {
-      fullPrompt += `\n\nADDITIONAL CUSTOMER INSTRUCTIONS: ${notes}`;
+      fullPrompt = `HIGHEST PRIORITY — THE CUSTOMER HAS SPECIFIC INSTRUCTIONS. FOLLOW THESE ABOVE ALL ELSE:\n"${notes}"\n\nNow generate the image following these instructions while also applying the guidelines below:\n\n${prompt}\n\nAvoid: ${negativePrompt}`;
+    } else {
+      fullPrompt = `${prompt}\n\nAvoid: ${negativePrompt}`;
     }
 
     // Call Gemini image generation

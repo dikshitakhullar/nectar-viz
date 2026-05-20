@@ -158,9 +158,13 @@ export function buildPrompt(
   if (roomState === "furnished") {
     prompt = `Edit this room photograph to add this exact light fixture: ${productDesc}.
 
-CRITICAL — PRESERVE THE ROOM:
-- Keep the ENTIRE room EXACTLY as it is. Do NOT change, move, or alter any furniture, wall, floor, ceiling, curtain, rug, decor object, or any other element in the room.
-- The ONLY change is: add this light fixture in the appropriate position for a ${roomLabel}.
+⚠️ ABSOLUTE RULE — DO NOT MODIFY THE ROOM STRUCTURE:
+- Do NOT add, remove, move, resize, or alter ANY wall, window, door, column, or ceiling.
+- Do NOT change the number of windows. Do NOT add windows that don't exist. Do NOT remove windows that do exist.
+- Do NOT change wall colors, wall textures, or wall finishes — they stay EXACTLY as photographed.
+- Do NOT change flooring, ceiling, or any surface finish.
+- Do NOT move, remove, or alter ANY furniture, rug, curtain, artwork, or decor.
+- The ONLY change allowed is: add this ONE light fixture. Nothing else changes. NOTHING.
 - If there is an existing ceiling fan or basic light where this fixture should go, replace ONLY that element.
 
 SCALE — THIS IS CRITICAL:
@@ -181,26 +185,34 @@ QUALITY:
 
     prompt = `Edit this under-construction room photograph to add this exact light fixture: ${productDesc}.
 
-ABSOLUTE RULES — STRUCTURAL PRESERVATION (CANNOT BE VIOLATED):
-- EVERY wall, window, door, column, beam, ceiling structure, floor level, step, and platform MUST remain EXACTLY where they are. Do NOT add, remove, or move any wall.
-- Exposed steel framing, metal studs, construction scaffolding, false ceiling grid/framework = these are STRUCTURAL. They MUST stay visible exactly as they are.
-- Every window and door opening MUST keep its exact position, size, and shape. Do NOT fill in, shrink, or enlarge any opening.
-- Construction equipment, tools, building materials visible in the photo = keep them OR remove them, but do NOT build new walls or structures in their place.
-- Already-installed finishes (stone cladding, tiles, woodwork, marble, flooring) = keep exactly as-is. These are DONE. If the floor is already tiled or has marble/stone, do NOT change it — it stays as-is even if the rest of the room is unfinished.
+⚠️ ABSOLUTE RULE #1 — STRUCTURAL PRESERVATION (THIS OVERRIDES EVERYTHING BELOW):
+- COUNT the walls in the photo. The output MUST have the SAME number of walls.
+- COUNT the windows in the photo. The output MUST have the SAME number of windows in the SAME positions.
+- COUNT the doors in the photo. The output MUST have the SAME number of doors in the SAME positions.
+- Do NOT add, remove, move, resize, or alter ANY wall, window, door, column, beam, or ceiling structure.
+- Exposed steel framing, metal studs, construction scaffolding, false ceiling grid = STRUCTURAL. Keep visible exactly as-is.
+- Already-installed finishes (stone, tiles, woodwork, marble, flooring) = DONE. Keep exactly as-is.
+- If the style instructions below mention "walls" (e.g., "cream paneled walls") — that means PAINT or TREATMENT on existing bare plaster walls ONLY. It does NOT mean add new walls or change the room layout.
 
 WHAT YOU MAY DO:
 - Add this light fixture to the ceiling in the appropriate position for a ${roomLabel}
-- Apply paint, wall treatment, or paneling ONLY on bare plaster/concrete surfaces (NOT where steel framing is exposed — that stays as-is)
-- Add furniture and movable decor items
-- Add curtains/window treatments over existing windows (without changing the window itself)
-- Minor ceiling finishing where there is bare plaster (NOT where false ceiling grid is exposed — that framework stays visible)
-- Add a partition or room divider (movable furniture), but NEVER a new wall
+- Apply paint, wall treatment, or paneling ONLY on bare plaster/concrete surfaces
+- Add furniture and movable decor items on empty floor areas
+- Add curtains/window treatments over EXISTING windows (do NOT add new windows)
+- Minor ceiling finishing where there is bare plaster
+
+WHAT YOU MAY NOT DO:
+- Add walls that don't exist in the photo
+- Remove walls that exist in the photo
+- Add windows that don't exist in the photo
+- Remove or fill in windows that exist in the photo
+- Change the room shape or layout in ANY way
 
 SCALE — THIS IS CRITICAL:
 ${scaleInstruction}
 
+STYLE DIRECTION (apply ONLY to bare surfaces and added furniture — NOT to room structure):
 ${getVibeDetails(styleDirection)}
-Apply this style ONLY to unfinished bare surfaces and added furniture/decor.
 
 CRITICAL FLOORING RULE: If floor already has tiles/marble/stone — DO NOT CHANGE IT. Only apply new flooring to bare concrete/cement.
 
