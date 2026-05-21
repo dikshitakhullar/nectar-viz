@@ -13,15 +13,16 @@ const NAV_ITEMS = [
       </svg>
     ),
   },
-  {
-    href: "/inspire",
-    label: "Inspire",
-    icon: (active: boolean) => (
-      <svg className="w-5 h-5" fill={active ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={active ? 0 : 1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803a7.5 7.5 0 0010.607 0z" />
-      </svg>
-    ),
-  },
+  // Inspire tab — uncomment when Visual Search ships to prod
+  // {
+  //   href: "/inspire",
+  //   label: "Inspire",
+  //   icon: (active: boolean) => (
+  //     <svg className="w-5 h-5" fill={active ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={active ? 0 : 1.5}>
+  //       <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803a7.5 7.5 0 0010.607 0z" />
+  //     </svg>
+  //   ),
+  // },
   {
     href: "/upload?mode=ai",
     label: "AI Pick",
