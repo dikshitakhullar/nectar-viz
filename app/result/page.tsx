@@ -202,7 +202,10 @@ function SingleResult() {
                     setGeneratingIndex(i);
                     try {
                       const roomPreview = sessionStorage.getItem("roomImagePreview");
-                      if (!roomPreview) return;
+                      if (!roomPreview) {
+                        alert("Room image expired. Please go back and try again.");
+                        return;
+                      }
                       const roomBlob = await fetch(roomPreview).then((r) => r.blob());
                       const formData = new FormData();
                       formData.append("roomImage", new File([roomBlob], "room.jpg", { type: "image/jpeg" }));

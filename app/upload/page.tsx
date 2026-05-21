@@ -273,7 +273,7 @@ function UploadForm() {
           reader.readAsDataURL(blob);
         });
         sessionStorage.removeItem("resultImage");
-        sessionStorage.removeItem("roomImagePreview");
+        // Keep roomImagePreview — needed for on-demand generation of Options 2/3
         sessionStorage.setItem(`aiResultImage_0`, imageUrl);
       } catch {
         imageUrl = URL.createObjectURL(blob);
