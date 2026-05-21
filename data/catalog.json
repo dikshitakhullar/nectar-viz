@@ -10,7 +10,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/amber-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/amber-cascade/studio.png"
   },
   {
     "slug": "amber-hurricane-scroll-sconce",
@@ -23,7 +23,7 @@
     "size": "small",
     "material": "iron, glass",
     "finish": "patina",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/amber-hurricane-scroll-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/amber-hurricane-scroll-sconce/01-white-bg-studio.png",
     "styleTags": [
       "hurricane",
       "scroll",
@@ -57,12 +57,12 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/antler-crown/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/antler-crown/studio.png"
   },
   {
     "slug": "arc-pendant-lamp-and-light",
     "name": "Arc Pendant Lamp",
-    "description": "The Arc Pendant Lamp draws its character from its silhouette \u2014 a sweeping, asymmetric arc form handcrafted from premium spandex fabric that holds its shape while casting a broad, diffused warmth across the room below. Where most pendant lamps hang straight and predictable, the Arc introduces movemen",
+    "description": "The Arc Pendant Lamp draws its character from its silhouette — a sweeping, asymmetric arc form handcrafted from premium spandex fabric that holds its shape while casting a broad, diffused warmth across the room below. Where most pendant lamps hang straight and predictable, the Arc introduces movemen",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -114,7 +114,7 @@
   {
     "slug": "artura-prism-console",
     "name": "Artura Prism Console",
-    "description": "Geometric Illusion Bone Inlay Console Table\u2014Handcrafted Statement Piece Turn your entryway into a work of art with this stunning geometric illusion console table handcrafted in natural bone inlay. Designed by skilled artisans, this console features meticulously arranged patterns that blend stripes, ",
+    "description": "Geometric Illusion Bone Inlay Console Table—Handcrafted Statement Piece Turn your entryway into a work of art with this stunning geometric illusion console table handcrafted in natural bone inlay. Designed by skilled artisans, this console features meticulously arranged patterns that blend stripes, ",
     "brand": "casagold",
     "category": "console_table",
     "parentCategory": "table",
@@ -143,12 +143,12 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/aurum-frond/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/aurum-frond/studio.png"
   },
   {
     "slug": "sunstrike-oval-luxe-coffee-table-radial-inlay-with-gold-base",
-    "name": "Azure Sunstrike Oval Luxe Coffee Table \u2013 Radial Inlay with Gold Base",
-    "description": "Fluid form meets radiant geometry \u2014 a modern heirloom crafted by master artisans. The Azure Sunstrike Table by CasaGold is a statement in luxury inlay furniture, blending timeless Indian craftsmanship with contemporary design sensibilities. Handcrafted by skilled artisans, this modern coffee table s",
+    "name": "Azure Sunstrike Oval Luxe Coffee Table – Radial Inlay with Gold Base",
+    "description": "Fluid form meets radiant geometry — a modern heirloom crafted by master artisans. The Azure Sunstrike Table by CasaGold is a statement in luxury inlay furniture, blending timeless Indian craftsmanship with contemporary design sensibilities. Handcrafted by skilled artisans, this modern coffee table s",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -210,7 +210,7 @@
     "size": "medium",
     "material": "brass, glass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/baroque-amber-double-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/baroque-amber-double-sconce/01-white-bg-studio.png",
     "styleTags": [
       "baroque",
       "double-arm",
@@ -245,7 +245,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/baroque-candelabra-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/baroque-candelabra-sconce/01-white-bg-studio.png",
     "styleTags": [
       "baroque",
       "candelabra",
@@ -279,7 +279,7 @@
     "size": "medium",
     "material": "iron, fabric, crystal",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/baroque-crystal-shade-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/baroque-crystal-shade-sconce/01-white-bg-studio.png",
     "styleTags": [
       "baroque",
       "crystal-drops",
@@ -315,7 +315,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/barrel-rustic/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/barrel-rustic/studio.png"
   },
   {
     "slug": "bead-cascade",
@@ -328,12 +328,12 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/bead-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/bead-cascade/studio.png"
   },
   {
     "slug": "big-pleat-linen-pendant-lamp",
     "name": "Big Pleat Linen Pendant Lamp",
-    "description": "Masterclass in Lighting Design \u2013 This exquisite Japandi pendant lamp is crafted with precision die-cut accuracy and hand-folded shade artistry, using premium special fibre paper and 100% European linen for lasting durability. Perfect for modern interiors , it adds a touch of brilliance to dining roo",
+    "description": "Masterclass in Lighting Design – This exquisite Japandi pendant lamp is crafted with precision die-cut accuracy and hand-folded shade artistry, using premium special fibre paper and 100% European linen for lasting durability. Perfect for modern interiors , it adds a touch of brilliance to dining roo",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -371,7 +371,7 @@
     "size": "large",
     "material": "iron",
     "finish": "patina",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/birdcage-botanical-wall-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/birdcage-botanical-wall-sconce/01-white-bg-studio.png",
     "styleTags": [
       "birdcage",
       "botanical",
@@ -405,7 +405,7 @@
     "size": "medium",
     "material": "ceramic, brass, fabric",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/black-ceramic-torpedo-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/black-ceramic-torpedo-table-lamp/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -422,7 +422,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 13500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_c776ee32-f2d6-4d7b-99c5-cca9ea65ad30.jpg"
+    "imagePath": "/images/house-of-samavar/vases/c776ee32-f2d6-4d7b-99c5-cca9ea65ad30.jpg"
   },
   {
     "slug": "bone-inlay-console",
@@ -499,7 +499,7 @@
   {
     "slug": "inlay-round-coffee-table-borris-copy",
     "name": "Bone Inlay Round Coffee Table- Axis Flair",
-    "description": "A feature item you\u2019ll fall in love with. The gorgeous combination of natural texture of bone and white resin has everlasting appeal and creates a relaxed eclectic elegance in your home. This versatile furniture piece looks great in any space and is sure to be a conversation starter. Each piece has b",
+    "description": "A feature item you’ll fall in love with. The gorgeous combination of natural texture of bone and white resin has everlasting appeal and creates a relaxed eclectic elegance in your home. This versatile furniture piece looks great in any space and is sure to be a conversation starter. Each piece has b",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -595,7 +595,7 @@
     "size": "medium",
     "material": "brass, glass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/botanical-brass-hurricane-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/botanical-brass-hurricane-sconce/01-white-bg-studio.png",
     "styleTags": [
       "botanical",
       "leaf",
@@ -621,7 +621,7 @@
   {
     "slug": "bouquet-origami-table-lamp",
     "name": "Bouquet Table Lamp",
-    "description": "This cute and versatile rechargeable table lamp is designed to enhance the mood throughout your home or caf\u00e9, fitting seamlessly on the smallest shelf or tabletop. Made from high-quality mill-made paper with a protective layer by Dupont and paired with an iron powder-coated base, this lamp is both s",
+    "description": "This cute and versatile rechargeable table lamp is designed to enhance the mood throughout your home or café, fitting seamlessly on the smallest shelf or tabletop. Made from high-quality mill-made paper with a protective layer by Dupont and paired with an iron powder-coated base, this lamp is both s",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -645,7 +645,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-bell-linear/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-bell-linear/studio.png"
   },
   {
     "slug": "brass-bloom-cluster",
@@ -658,7 +658,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-bloom-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-bloom-cluster/studio.png"
   },
   {
     "slug": "brass-blossom-cluster",
@@ -671,7 +671,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-blossom-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-blossom-cluster/studio.png"
   },
   {
     "slug": "brass-bough",
@@ -684,7 +684,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-bough/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-bough/studio.png"
   },
   {
     "slug": "brass-candelabra-bouillotte-table-lamp",
@@ -697,7 +697,7 @@
     "size": "large",
     "material": "brass, fabric",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/brass-candelabra-bouillotte-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/brass-candelabra-bouillotte-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "candelabra",
       "bouillotte",
@@ -733,7 +733,7 @@
     "size": "small",
     "material": "brass",
     "finish": "brushed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/brass-cylinder-picture-light/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brass-cylinder-picture-light/01-white-bg-studio.png",
     "styleTags": [
       "cylinder",
       "picture-light",
@@ -758,7 +758,7 @@
   {
     "slug": "brass-cylinder-vanity-light",
     "name": "Brass Cylinder Vanity Light",
-    "description": "Long horizontal wall light with three segments \u2014 matte black cylinders alternating with a central polished brass filigree band. Modern yet ornate.",
+    "description": "Long horizontal wall light with three segments — matte black cylinders alternating with a central polished brass filigree band. Modern yet ornate.",
     "brand": "delhi_brass",
     "category": "wall_light",
     "parentCategory": "wall_light",
@@ -766,7 +766,7 @@
     "size": "large",
     "material": "brass",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/brass-cylinder-vanity-light/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brass-cylinder-vanity-light/01-white-bg-studio.png",
     "styleTags": [
       "cylinder",
       "vanity",
@@ -801,7 +801,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-dome-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-dome-cluster/studio.png"
   },
   {
     "slug": "brass-dome-pendant",
@@ -814,7 +814,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-dome-pendant/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-dome-pendant/studio.png"
   },
   {
     "slug": "brass-facet-long",
@@ -827,7 +827,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-facet-long/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-facet-long/studio.png"
   },
   {
     "slug": "brass-facet-short",
@@ -840,7 +840,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-facet-short/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-facet-short/studio.png"
   },
   {
     "slug": "brass-geometric-cluster",
@@ -853,7 +853,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-geometric-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-geometric-cluster/studio.png"
   },
   {
     "slug": "brass-globe-sconce",
@@ -866,7 +866,7 @@
     "size": "medium",
     "material": "brass, glass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/brass-globe-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brass-globe-sconce/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -883,7 +883,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-hexagon-lantern/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-hexagon-lantern/studio.png"
   },
   {
     "slug": "brass-lantern-cascade",
@@ -896,7 +896,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-lantern-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lantern-cascade/studio.png"
   },
   {
     "slug": "brass-lantern-tiered",
@@ -909,7 +909,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-lantern-tiered/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lantern-tiered/studio.png"
   },
   {
     "slug": "brass-lattice",
@@ -922,7 +922,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-lattice/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lattice/studio.png"
   },
   {
     "slug": "brass-lattice-linear",
@@ -935,7 +935,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-lattice-linear/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lattice-linear/studio.png"
   },
   {
     "slug": "brass-leaf-glass-lantern-sconce",
@@ -948,7 +948,7 @@
     "size": "medium",
     "material": "brass, glass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/brass-leaf-glass-lantern-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brass-leaf-glass-lantern-sconce/01-white-bg-studio.png",
     "styleTags": [
       "lantern",
       "leaf-scroll",
@@ -982,7 +982,7 @@
     "size": "large",
     "material": "brass, fabric",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/brass-leaf-triple-cylinder-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brass-leaf-triple-cylinder-sconce/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -999,7 +999,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-linear-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-linear-cluster/studio.png"
   },
   {
     "slug": "brass-medallion-crystal-crown",
@@ -1013,7 +1013,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Brass Medallion",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-medallion-crystal-crown/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-medallion-crystal-crown/studio.png"
   },
   {
     "slug": "brass-medallion-shield",
@@ -1027,7 +1027,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Brass Medallion",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-medallion-shield/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-medallion-shield/studio.png"
   },
   {
     "slug": "brass-medallion-sunburst",
@@ -1041,7 +1041,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Brass Medallion",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-medallion-sunburst/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-medallion-sunburst/studio.png"
   },
   {
     "slug": "brass-petals",
@@ -1054,7 +1054,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-petals/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-petals/studio.png"
   },
   {
     "slug": "brass-ribbed-cylinder",
@@ -1067,7 +1067,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/brass-ribbed-cylinder/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-ribbed-cylinder/studio.png"
   },
   {
     "slug": "brass-ribbed-globe-sconce",
@@ -1080,7 +1080,7 @@
     "size": "medium",
     "material": "brass, glass",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/brass-ribbed-globe-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brass-ribbed-globe-sconce/01-white-bg-studio.png",
     "styleTags": [
       "ribbed-glass",
       "globe",
@@ -1107,7 +1107,7 @@
   {
     "slug": "samavar-brass-scroll-candle-holder",
     "name": "Brass Scroll Candle Holder",
-    "description": "Unrolling brass scroll candle holder set with hand-engraved wildlife scenes \u2014 leopard, deer, and foliage motifs",
+    "description": "Unrolling brass scroll candle holder set with hand-engraved wildlife scenes — leopard, deer, and foliage motifs",
     "brand": "house_of_samavar",
     "category": "decorative_object",
     "type": "decorative_object",
@@ -1127,7 +1127,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/brass-tiered-slat-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brass-tiered-slat-sconce/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -1144,7 +1144,7 @@
     "size": "medium",
     "material": "brass, fabric",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/brass-torchiere-shade-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brass-torchiere-shade-sconce/01-white-bg-studio.png",
     "styleTags": [
       "torchiere",
       "turned",
@@ -1178,7 +1178,7 @@
     "size": "small",
     "material": "metal, fabric",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/bronze-dancing-figures-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/bronze-dancing-figures-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "conical-shade",
       "figurine-base",
@@ -1212,7 +1212,7 @@
     "size": "small",
     "material": "brass",
     "finish": "brushed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/brushed-brass-modern-torch/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brushed-brass-modern-torch/01-white-bg-studio.png",
     "styleTags": [
       "minimal",
       "torch",
@@ -1247,7 +1247,7 @@
     "size": "medium",
     "material": "metal, fabric",
     "finish": "brushed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/brushed-gold-cylinder-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/brushed-gold-cylinder-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "conical-shade",
       "cylinder-base",
@@ -1282,7 +1282,7 @@
     "size": "large",
     "material": "metal, fabric",
     "finish": "brushed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/brushed-silver-cylinder-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/brushed-silver-cylinder-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "drum-shade",
       "cylinder-base",
@@ -1333,7 +1333,7 @@
     "size": "large",
     "material": "wood, fabric",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/carved-elephant-temple-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/carved-elephant-temple-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "rectangular-shade",
       "temple-carving",
@@ -1368,7 +1368,7 @@
     "size": "grand",
     "material": "wood, fabric",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/floor-lamps/carved-wood-baluster-floor-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/floor-lamps/carved-wood-baluster-floor-lamp/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -1385,7 +1385,7 @@
     "size": "large",
     "material": "wood, fabric, brass",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/floor-lamps/carved-wood-column-floor-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/floor-lamps/carved-wood-column-floor-lamp/01-white-bg-studio.png",
     "styleTags": [
       "carved-wood",
       "baluster",
@@ -1420,7 +1420,7 @@
     "size": "large",
     "material": "wood, fabric, brass",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/floor-lamps/carved-wood-column-floor-lamp-short/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/floor-lamps/carved-wood-column-floor-lamp-short/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -1437,7 +1437,7 @@
     "size": "large",
     "material": "wood, fabric",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/carved-wood-urn-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/carved-wood-urn-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "drum-shade",
       "urn-base",
@@ -1477,8 +1477,8 @@
   },
   {
     "slug": "coffee-table-3",
-    "name": "CasaGold \u201cElysian Bloom\u201d Black & White Inlay Coffee Table",
-    "description": "CasaGold \u201cElysian Bloom\u201d Black & White Inlay Coffee Table \u2013 Exclusive Round Designer Statement Piece Step into the world of timeless artistry with CasaGold\u2019s \u201cElysian Bloom\u201d Inlay Coffee Table\u2014where bold geometry meets delicate floral craftsmanship. This round masterpiece is handcrafted with precisi",
+    "name": "CasaGold “Elysian Bloom” Black & White Inlay Coffee Table",
+    "description": "CasaGold “Elysian Bloom” Black & White Inlay Coffee Table – Exclusive Round Designer Statement Piece Step into the world of timeless artistry with CasaGold’s “Elysian Bloom” Inlay Coffee Table—where bold geometry meets delicate floral craftsmanship. This round masterpiece is handcrafted with precisi",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -1502,8 +1502,8 @@
   },
   {
     "slug": "console",
-    "name": "CasaGold \u201cLunar Arc\u201d Inlay Cabinet",
-    "description": "CasaGold \u201cLunar Arc\u201d Black & White Inlay Cabinet \u2013 Designer Half-Moon Sideboard, Chester & Media Console Bold. Artistic. Unforgettable. The \u201cLunar Arc\u201d Inlay Cabinet by CasaGold is a masterpiece that redefines modern luxury furniture. With its half-moon silhouette and mesmerizing black-and-white geo",
+    "name": "CasaGold “Lunar Arc” Inlay Cabinet",
+    "description": "CasaGold “Lunar Arc” Black & White Inlay Cabinet – Designer Half-Moon Sideboard, Chester & Media Console Bold. Artistic. Unforgettable. The “Lunar Arc” Inlay Cabinet by CasaGold is a masterpiece that redefines modern luxury furniture. With its half-moon silhouette and mesmerizing black-and-white geo",
     "brand": "casagold",
     "category": "console_table",
     "parentCategory": "table",
@@ -1522,8 +1522,8 @@
   },
   {
     "slug": "coffee-table-set",
-    "name": "CasaGold \u201cWings of Eternity\u201d Inlay \u2013 Exclusive Coffee Table with Matching Side Tables",
-    "description": "CasaGold \u201cWings of Eternity\u201d Inlay Collection \u2013 Exclusive Coffee Table with Matching Side Tables (Luxury Designer Set) The \u201cWings of Eternity\u201d Inlay Collection by CasaGold is where furniture transforms into art. With bold geometric lines and a radiant wing-inspired motif, this designer set\u2014featuring",
+    "name": "CasaGold “Wings of Eternity” Inlay – Exclusive Coffee Table with Matching Side Tables",
+    "description": "CasaGold “Wings of Eternity” Inlay Collection – Exclusive Coffee Table with Matching Side Tables (Luxury Designer Set) The “Wings of Eternity” Inlay Collection by CasaGold is where furniture transforms into art. With bold geometric lines and a radiant wing-inspired motif, this designer set—featuring",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -1549,7 +1549,7 @@
   {
     "slug": "nesting-coffee-table-new",
     "name": "CasaGold Aurora Luxe Inlay Nested Coffee Table Set",
-    "description": "CasaGold Aurora Luxe Inlay Nested Coffee Table Set \u2013 Designer Bone & Mother of Pearl Statement Tables Elevate your living space with the Aurora Luxe Inlay Nested Coffee Table Set, a refined blend of functionality, heritage craftsmanship, and contemporary luxury. Thoughtfully designed for modern home",
+    "description": "CasaGold Aurora Luxe Inlay Nested Coffee Table Set – Designer Bone & Mother of Pearl Statement Tables Elevate your living space with the Aurora Luxe Inlay Nested Coffee Table Set, a refined blend of functionality, heritage craftsmanship, and contemporary luxury. Thoughtfully designed for modern home",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -1607,7 +1607,7 @@
     "size": "large",
     "material": "ceramic, fabric, brass",
     "finish": "matte",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/cement-texture-urn-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/cement-texture-urn-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "empire-shade",
       "urn-base",
@@ -1634,7 +1634,7 @@
   {
     "slug": "ceramic-sphere-floral-drum-lamp",
     "name": "Ceramic Sphere Floral Drum Lamp",
-    "description": "A sculptural white matte ceramic sphere base paired with a cheerful botanical drum shade printed with colourful garden flowers \u2014 daisies, sunflowers, and wildflowers on an ivory ground. The brass connector ring and warm ambient glow give it an eclectic, artistic personality. The bold floral print shade makes this lamp a standalone art object.",
+    "description": "A sculptural white matte ceramic sphere base paired with a cheerful botanical drum shade printed with colourful garden flowers — daisies, sunflowers, and wildflowers on an ivory ground. The brass connector ring and warm ambient glow give it an eclectic, artistic personality. The bold floral print shade makes this lamp a standalone art object.",
     "brand": "delhi_brass",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -1642,7 +1642,7 @@
     "size": "medium",
     "material": "ceramic, fabric, brass",
     "finish": "matte",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/ceramic-sphere-floral-drum-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/ceramic-sphere-floral-drum-lamp/01-white-bg-studio.png",
     "styleTags": [
       "drum-shade",
       "botanical-print",
@@ -1676,7 +1676,7 @@
     "size": "large",
     "material": "ceramic, fabric, brass",
     "finish": "matte",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/chalk-white-plaster-urn-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/chalk-white-plaster-urn-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "empire-shade",
       "plaster-finish",
@@ -1711,7 +1711,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/cherub-botanical/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/cherub-botanical/studio.png"
   },
   {
     "slug": "samavar-chinar-autumn-vase",
@@ -1724,7 +1724,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 13500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_f6da23d7-12b6-4a3f-b9d6-d63aeb49350c.jpg"
+    "imagePath": "/images/house-of-samavar/vases/f6da23d7-12b6-4a3f-b9d6-d63aeb49350c.jpg"
   },
   {
     "slug": "chrome-portable-lamp-in-gold",
@@ -1756,7 +1756,7 @@
     "size": "large",
     "material": "glass, brass, fabric",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/clear-glass-urn-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/clear-glass-urn-table-lamp/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -1773,7 +1773,7 @@
     "size": "large",
     "material": "glass, brass, fabric",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/clear-globe-glass-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/clear-globe-glass-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "drum-shade",
       "globe-base",
@@ -1800,7 +1800,7 @@
   {
     "slug": "cloud-shaped-pendant-light",
     "name": "Cloud Pendant Lamp",
-    "description": "Made from special paper, this Cloud Pendant Lamp comes with a 30cm diameter. The awe-inspiring light is inspired by clouds and gives a feeling that you\u2019re suspended inside the skies. The Cloud Pendant Lamp has sold widely internationally and is designed originally by FIG Living. It has sturdy constr",
+    "description": "Made from special paper, this Cloud Pendant Lamp comes with a 30cm diameter. The awe-inspiring light is inspired by clouds and gives a feeling that you’re suspended inside the skies. The Cloud Pendant Lamp has sold widely internationally and is designed originally by FIG Living. It has sturdy constr",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -1848,7 +1848,7 @@
   {
     "slug": "colour-story-400-table-lamp",
     "name": "Colour Story 400 Table Lamp",
-    "description": "The Colour Story 400 table lamp is a perfect blend of Scandinavian design and Indian craftsmanship. Crafted in India by FIG Living, this handmade table lamp features intricate threading techniques and comes with a specially chosen LED bulb. Its elegant packaging and dimensions of 35\u00d735\u00d747 cm make it",
+    "description": "The Colour Story 400 table lamp is a perfect blend of Scandinavian design and Indian craftsmanship. Crafted in India by FIG Living, this handmade table lamp features intricate threading techniques and comes with a specially chosen LED bulb. Its elegant packaging and dimensions of 35×35×47 cm make it",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -1864,7 +1864,7 @@
   {
     "slug": "colour-story-500-colourful-handwoven-table-lamp",
     "name": "Colour Story 500 Table Lamp",
-    "description": "The Colour Story 500 table lamp is a perfect blend of Scandinavian design and Indian craftsmanship. Crafted in India by FIG Living, this handmade table lamp features intricate threading techniques and comes with a specially chosen LED bulb. With dimensions of 31\u00d731\u00d735 cm, it is a compact yet strikin",
+    "description": "The Colour Story 500 table lamp is a perfect blend of Scandinavian design and Indian craftsmanship. Crafted in India by FIG Living, this handmade table lamp features intricate threading techniques and comes with a specially chosen LED bulb. With dimensions of 31×31×35 cm, it is a compact yet strikin",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -1880,7 +1880,7 @@
   {
     "slug": "colour-weave-handmade-pendant-light",
     "name": "Colour Weave Pendant Lamp",
-    "description": "The Colour Weave Pendant Lamp is handcrafted the slow way \u2014 threads woven by hand over a structured form, building depth and texture that no machine-made shade can replicate. The result is a pendant that carries visible craft in every square centimetre, with a colour palette rich enough to anchor a ",
+    "description": "The Colour Weave Pendant Lamp is handcrafted the slow way — threads woven by hand over a structured form, building depth and texture that no machine-made shade can replicate. The result is a pendant that carries visible craft in every square centimetre, with a colour palette rich enough to anchor a ",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -1896,7 +1896,7 @@
   {
     "slug": "colourway-100-pendant-lamp",
     "name": "ColourWay BP Pendant Lamp",
-    "description": "Natural, textural and quietly striking, the Fig Living ColourWay 100 Pendant Lamp brings the warmth of handcraft into modern spaces. Its shade, threaded by hand in natural raffia, carries an ease that only comes from honest materials. The raffia\u2019s grain catches light in soft, uneven tones, turning a",
+    "description": "Natural, textural and quietly striking, the Fig Living ColourWay 100 Pendant Lamp brings the warmth of handcraft into modern spaces. Its shade, threaded by hand in natural raffia, carries an ease that only comes from honest materials. The raffia’s grain catches light in soft, uneven tones, turning a",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -1911,7 +1911,7 @@
   {
     "slug": "colourway100",
     "name": "ColourWay WB Pendant Lamp",
-    "description": "Give your space a warm, sculpted glow with this statement raffia pendant lamp in a modern black & white palette. The flared shade adds drama without feeling heavy, making it perfect for dining tables, living rooms, caf\u00e9s or bedside corners. Crafted from raffia, it diffuses light softly to create a c",
+    "description": "Give your space a warm, sculpted glow with this statement raffia pendant lamp in a modern black & white palette. The flared shade adds drama without feeling heavy, making it perfect for dining tables, living rooms, cafés or bedside corners. Crafted from raffia, it diffuses light softly to create a c",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -1926,7 +1926,7 @@
   {
     "slug": "decorative-interior-game-tic-tac-toe",
     "name": "Concrete Game - Tic-Tac-Toe",
-    "description": "Introducing the Concrete Tic-Tac-Toe Set, a modern twist on the beloved classic game. This exquisitely crafted game features a sleek concrete board with contrasting black X and O pieces, offering endless entertainment both indoors and outdoors. Designed for two players, it\u2019s a perfect thinking game ",
+    "description": "Introducing the Concrete Tic-Tac-Toe Set, a modern twist on the beloved classic game. This exquisitely crafted game features a sleek concrete board with contrasting black X and O pieces, offering endless entertainment both indoors and outdoors. Designed for two players, it’s a perfect thinking game ",
     "brand": "fig_living",
     "category": "decorative_object",
     "parentCategory": "decor",
@@ -1942,7 +1942,7 @@
   {
     "slug": "cone-casa-black-brown-terracotta-table-lamp",
     "name": "Cone Casa Table Lamp",
-    "description": "The Cone Casa table lamp stands as a testament to creative design, showcasing a geometrically inspired masterpiece. Available in three distinct colours \u2014 Black, Olive Green, and Mocha Mousse \u2014 it is a popular choice in the hospitality industry for those seeking to add a touch of elegance to their in",
+    "description": "The Cone Casa table lamp stands as a testament to creative design, showcasing a geometrically inspired masterpiece. Available in three distinct colours — Black, Olive Green, and Mocha Mousse — it is a popular choice in the hospitality industry for those seeking to add a touch of elegance to their in",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -1982,7 +1982,7 @@
     "size": "medium",
     "material": "iron, fabric",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/coral-reef-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/coral-reef-sconce/01-white-bg-studio.png",
     "styleTags": [
       "coral",
       "coastal",
@@ -2017,7 +2017,7 @@
     "size": "large",
     "material": "metal, fabric",
     "finish": "brushed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/corrugated-silver-cylinder-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/corrugated-silver-cylinder-table-lamp/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -2034,7 +2034,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-bell-pendant/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-bell-pendant/studio.png"
   },
   {
     "slug": "crystal-blossom",
@@ -2047,7 +2047,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-blossom/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-blossom/studio.png"
   },
   {
     "slug": "crystal-bough",
@@ -2060,7 +2060,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-bough/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-bough/studio.png"
   },
   {
     "slug": "crystal-candelabra-floor-lamp",
@@ -2073,7 +2073,7 @@
     "size": "large",
     "material": "brass, crystal",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/floor-lamps/crystal-candelabra-floor-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/floor-lamps/crystal-candelabra-floor-lamp/01-white-bg-studio.png",
     "styleTags": [
       "candelabra",
       "crystal",
@@ -2108,7 +2108,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-cascade-chandelier/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cascade-chandelier/studio.png"
   },
   {
     "slug": "crystal-cascade-cluster",
@@ -2121,7 +2121,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-cascade-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cascade-cluster/studio.png"
   },
   {
     "slug": "crystal-cascade-trio",
@@ -2134,7 +2134,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-cascade-trio/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cascade-trio/studio.png"
   },
   {
     "slug": "crystal-column-corinthian-table-lamp",
@@ -2147,7 +2147,7 @@
     "size": "large",
     "material": "crystal, brass, fabric",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/crystal-column-corinthian-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/crystal-column-corinthian-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "empire-shade",
       "Corinthian-column",
@@ -2183,7 +2183,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-cylinder/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cylinder/studio.png"
   },
   {
     "slug": "crystal-dome",
@@ -2196,7 +2196,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-dome/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-dome/studio.png"
   },
   {
     "slug": "crystal-dome-pendant",
@@ -2209,7 +2209,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-dome-pendant/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-dome-pendant/studio.png"
   },
   {
     "slug": "crystal-filigree-box-table-lamp",
@@ -2222,7 +2222,7 @@
     "size": "large",
     "material": "iron, crystal, fabric",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/crystal-filigree-box-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/crystal-filigree-box-table-lamp/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -2240,7 +2240,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Crystal Fringe",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-fringe-solo/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-fringe-solo/studio.png"
   },
   {
     "slug": "crystal-fringe-trio",
@@ -2254,7 +2254,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Crystal Fringe",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-fringe-trio/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-fringe-trio/studio.png"
   },
   {
     "slug": "crystal-garden-amber-prism",
@@ -2268,7 +2268,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Crystal Garden",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-garden-amber-prism/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-amber-prism/studio.png"
   },
   {
     "slug": "crystal-garden-antique-scroll",
@@ -2282,7 +2282,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Crystal Garden",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-garden-antique-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-antique-scroll/studio.png"
   },
   {
     "slug": "crystal-garden-bloom",
@@ -2296,7 +2296,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Crystal Garden",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-garden-bloom/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-bloom/studio.png"
   },
   {
     "slug": "crystal-garden-floral-scroll",
@@ -2310,7 +2310,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Crystal Garden",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-garden-floral-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-floral-scroll/studio.png"
   },
   {
     "slug": "crystal-grid-wall-sconce",
@@ -2323,7 +2323,7 @@
     "size": "medium",
     "material": "brass, crystal",
     "finish": "gilt",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/crystal-grid-wall-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/crystal-grid-wall-sconce/01-white-bg-studio.png",
     "styleTags": [
       "crystal-grid",
       "prisms",
@@ -2357,7 +2357,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-lantern/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-lantern/studio.png"
   },
   {
     "slug": "crystal-linear",
@@ -2370,7 +2370,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-linear/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-linear/studio.png"
   },
   {
     "slug": "crystal-prism-leaf-sconce",
@@ -2383,7 +2383,7 @@
     "size": "medium",
     "material": "brass, crystal",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/crystal-prism-leaf-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/crystal-prism-leaf-sconce/01-white-bg-studio.png",
     "styleTags": [
       "crystal-prism",
       "acanthus",
@@ -2417,7 +2417,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-shell-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-shell-cascade/studio.png"
   },
   {
     "slug": "crystal-teardrop",
@@ -2430,7 +2430,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/crystal-teardrop/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-teardrop/studio.png"
   },
   {
     "slug": "cut-crystal-chandelier-table-lamp",
@@ -2443,7 +2443,7 @@
     "size": "medium",
     "material": "crystal, brass, iron",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/cut-crystal-chandelier-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/cut-crystal-chandelier-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "crystal-fringe",
       "dome-shade",
@@ -2525,7 +2525,7 @@
     "size": "large",
     "material": "metal, fabric",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/dancing-figures-table-lamp-large/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/dancing-figures-table-lamp-large/01-white-bg-studio.png",
     "styleTags": [
       "figurine",
       "sculptural",
@@ -2559,12 +2559,12 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/deco-lantern/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/deco-lantern/studio.png"
   },
   {
     "slug": "dinosaur-decorative-figure",
     "name": "Dinorex",
-    "description": "Bring a playful touch to your interiors with Dinorex , a dinosaur-themed decorative figurine crafted from durable paper mache. Designed with a fun and creative form, this d\u00e9cor piece adds personality to kids\u2019 rooms, play areas, or imaginative interior setups. Its handcrafted construction gives it a ",
+    "description": "Bring a playful touch to your interiors with Dinorex , a dinosaur-themed decorative figurine crafted from durable paper mache. Designed with a fun and creative form, this décor piece adds personality to kids’ rooms, play areas, or imaginative interior setups. Its handcrafted construction gives it a ",
     "brand": "fig_living",
     "category": "figurine",
     "parentCategory": "decor",
@@ -2589,7 +2589,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Distressed Scroll",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/distressed-scroll-baroque/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/distressed-scroll-baroque/studio.png"
   },
   {
     "slug": "distressed-scroll-frosted-sconce",
@@ -2602,7 +2602,7 @@
     "size": "medium",
     "material": "iron, glass",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/distressed-scroll-frosted-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/distressed-scroll-frosted-sconce/01-white-bg-studio.png",
     "styleTags": [
       "scrollwork",
       "distressed",
@@ -2638,7 +2638,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Distressed Scroll",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/distressed-scroll-shield/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/distressed-scroll-shield/studio.png"
   },
   {
     "slug": "distressed-white-crystal-candelabra-sconce",
@@ -2651,7 +2651,7 @@
     "size": "medium",
     "material": "iron, crystal",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/distressed-white-crystal-candelabra-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/distressed-white-crystal-candelabra-sconce/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -2668,7 +2668,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/dome-crystal/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/dome-crystal/studio.png"
   },
   {
     "slug": "dome-pendant-light-linen-modern-design",
@@ -2696,7 +2696,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/dome-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/dome-scroll/studio.png"
   },
   {
     "slug": "dragon-phoenix-double-sconce",
@@ -2709,7 +2709,7 @@
     "size": "large",
     "material": "brass, glass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/dragon-phoenix-double-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/dragon-phoenix-double-sconce/01-white-bg-studio.png",
     "styleTags": [
       "dragon",
       "phoenix",
@@ -2744,7 +2744,7 @@
     "size": "medium",
     "material": "brass, glass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/dragon-phoenix-single-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/dragon-phoenix-single-sconce/01-white-bg-studio.png",
     "styleTags": [
       "dragon",
       "phoenix",
@@ -2771,7 +2771,7 @@
   {
     "slug": "drum-marble-print-decorative-pendant-light",
     "name": "Drum Pendant (Marble Print) Pendant Lamp",
-    "description": "The Drum Pendant Lamp wears marble on paper \u2014 a design recognised at the 2024 Messe Frankfurt trend showcase. Its cylindrical drum form is wrapped in a precisely printed marble-effect origami paper, creating a lamp that looks as considered as the furniture beneath it. The drum shape distributes ligh",
+    "description": "The Drum Pendant Lamp wears marble on paper — a design recognised at the 2024 Messe Frankfurt trend showcase. Its cylindrical drum form is wrapped in a precisely printed marble-effect origami paper, creating a lamp that looks as considered as the furniture beneath it. The drum shape distributes ligh",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -2803,7 +2803,7 @@
   {
     "slug": "ebony-cascade-inlay-console",
     "name": "Ebony Cascade Inlay Console",
-    "description": "CasaGold \"Ebony Cascade\" Inlay Console\u2014Symmetrical Waterfall Design in Vegan Shell Elevate your interiors with the bold elegance of the CasaGold Ebony Cascade Console, crafted with precision using black vegan shell inlay arranged in a stunning waterfall pattern that flows seamlessly from top to side",
+    "description": "CasaGold \"Ebony Cascade\" Inlay Console—Symmetrical Waterfall Design in Vegan Shell Elevate your interiors with the bold elegance of the CasaGold Ebony Cascade Console, crafted with precision using black vegan shell inlay arranged in a stunning waterfall pattern that flows seamlessly from top to side",
     "brand": "casagold",
     "category": "other",
     "parentCategory": "other",
@@ -2866,7 +2866,7 @@
   {
     "slug": "echo-sphere-paper-mache-table-lamp",
     "name": "Eco Sphere Table Lamp",
-    "description": "Introducing the Eco Sphere Table Lamp, a masterpiece that blends minimalistic design with the rich heritage of paper mach\u00e9 craftsmanship. Each lamp is meticulously handcrafted using eco-friendly paper pulp, offering a raw, earthy texture that embodies sustainable elegance. The lampshade, shaped with",
+    "description": "Introducing the Eco Sphere Table Lamp, a masterpiece that blends minimalistic design with the rich heritage of paper maché craftsmanship. Each lamp is meticulously handcrafted using eco-friendly paper pulp, offering a raw, earthy texture that embodies sustainable elegance. The lampshade, shaped with",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -2890,7 +2890,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_e9c3e33e-ca1b-4415-b0ec-751d387aa30e.jpg"
+    "imagePath": "/images/house-of-samavar/vases/e9c3e33e-ca1b-4415-b0ec-751d387aa30e.jpg"
   },
   {
     "slug": "empire-crystal-wall-lantern",
@@ -2903,7 +2903,7 @@
     "size": "large",
     "material": "brass, crystal",
     "finish": "patina",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/empire-crystal-wall-lantern/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/empire-crystal-wall-lantern/01-white-bg-studio.png",
     "styleTags": [
       "empire",
       "cut-crystal",
@@ -2953,7 +2953,7 @@
     "size": "medium",
     "material": "wood, iron",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/farmhouse-baluster-double-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/farmhouse-baluster-double-sconce/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -2971,7 +2971,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Farmhouse Bead",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/farmhouse-bead-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/farmhouse-bead-cascade/studio.png"
   },
   {
     "slug": "farmhouse-bead-crown",
@@ -2985,7 +2985,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Farmhouse Bead",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/farmhouse-bead-crown/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/farmhouse-bead-crown/studio.png"
   },
   {
     "slug": "felt-ornaments-hanging-birds-decor-handmade-woolen",
@@ -3005,7 +3005,7 @@
   {
     "slug": "ornaments-hanging-cloud-kids-decor",
     "name": "Felt Ornaments - Hanging Mobile (Cloud)",
-    "description": "Introducing our delightful Felt Cloud Ornaments Hanging Mobile, a whimsical addition to any space, perfect for infusing a playful charm into children\u2019s rooms or adding a touch of wonder to any interior decor. Crafted with care from premium quality felt wool, each hanging features adorable cloud and ",
+    "description": "Introducing our delightful Felt Cloud Ornaments Hanging Mobile, a whimsical addition to any space, perfect for infusing a playful charm into children’s rooms or adding a touch of wonder to any interior decor. Crafted with care from premium quality felt wool, each hanging features adorable cloud and ",
     "brand": "fig_living",
     "category": "decorative_object",
     "parentCategory": "decor",
@@ -3028,7 +3028,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/fern-nocturne/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/fern-nocturne/studio.png"
   },
   {
     "slug": "samavar-festival-bloom-grand-vase",
@@ -3041,7 +3041,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_0917c13e-3f1a-47fb-ad48-ac807ba07b27.jpg"
+    "imagePath": "/images/house-of-samavar/vases/0917c13e-3f1a-47fb-ad48-ac807ba07b27.jpg"
   },
   {
     "slug": "filigree-amber-double-sconce",
@@ -3054,7 +3054,7 @@
     "size": "medium",
     "material": "brass, glass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/filigree-amber-double-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/filigree-amber-double-sconce/01-white-bg-studio.png",
     "styleTags": [
       "filigree",
       "double-arm",
@@ -3100,7 +3100,7 @@
     "size": "large",
     "material": "brass, glass",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/fluted-column-wall-light/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/fluted-column-wall-light/01-white-bg-studio.png",
     "styleTags": [
       "fluted",
       "column",
@@ -3135,12 +3135,12 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/fluted-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/fluted-scroll/studio.png"
   },
   {
     "slug": "fold-axis-table-lamp-lavender",
     "name": "Fold Axis Table Lamp - Beige",
-    "description": "There\u2019s a certain rhythm to the Fold Axis Table Lamp . Its origami-inspired folds follow a clear direction, giving the form a sense of continuity, as if it\u2019s unfolding in a single, uninterrupted motion. This directional quality makes it feel alive in a space, adding just enough visual movement to br",
+    "description": "There’s a certain rhythm to the Fold Axis Table Lamp . Its origami-inspired folds follow a clear direction, giving the form a sense of continuity, as if it’s unfolding in a single, uninterrupted motion. This directional quality makes it feel alive in a space, adding just enough visual movement to br",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -3157,7 +3157,7 @@
   {
     "slug": "fold-axis-table-lamp",
     "name": "Fold Axis Table Lamp - Lavender",
-    "description": "There\u2019s a certain rhythm to the Fold Axis Table Lamp . Its origami-inspired folds follow a clear direction, giving the form a sense of continuity, as if it\u2019s unfolding in a single, uninterrupted motion. This directional quality makes it feel alive in a space, adding just enough visual movement to br",
+    "description": "There’s a certain rhythm to the Fold Axis Table Lamp . Its origami-inspired folds follow a clear direction, giving the form a sense of continuity, as if it’s unfolding in a single, uninterrupted motion. This directional quality makes it feel alive in a space, adding just enough visual movement to br",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -3208,7 +3208,7 @@
   {
     "slug": "ash-grey-fold-delta-pendent-lamp",
     "name": "Fold Delta Pendant Lamp - Ash Grey",
-    "description": "The Fold Delta Pendant Lamp feels precise, almost like a form distilled to its essentials. Its origami-inspired folds create a triangular profile that\u2019s clean and confident, offering a subtle departure from more conventional pendant shapes. Suspended in a space, it introduces a sense of rhythm, brea",
+    "description": "The Fold Delta Pendant Lamp feels precise, almost like a form distilled to its essentials. Its origami-inspired folds create a triangular profile that’s clean and confident, offering a subtle departure from more conventional pendant shapes. Suspended in a space, it introduces a sense of rhythm, brea",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -3226,7 +3226,7 @@
   {
     "slug": "fold-delta-pendent-lamp",
     "name": "Fold Delta Pendant Lamp - Beige",
-    "description": "The Fold Delta Pendant Lamp feels precise, almost like a form distilled to its essentials. Its origami-inspired folds create a triangular profile that\u2019s clean and confident, offering a subtle departure from more conventional pendant shapes. Suspended in a space, it introduces a sense of rhythm, brea",
+    "description": "The Fold Delta Pendant Lamp feels precise, almost like a form distilled to its essentials. Its origami-inspired folds create a triangular profile that’s clean and confident, offering a subtle departure from more conventional pendant shapes. Suspended in a space, it introduces a sense of rhythm, brea",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -3280,7 +3280,7 @@
   {
     "slug": "fold-prism-table-lamp-beige",
     "name": "Fold Prism Table Lamp - Beige",
-    "description": "There\u2019s something quietly striking about the Fold Prism Table Lamp . Inspired by origami\u2019s precision, its design focuses on clean intersections and well-defined planes. The symmetry gives it a sense of balance, while the folded surfaces add just enough complexity to keep it interesting. It feels int",
+    "description": "There’s something quietly striking about the Fold Prism Table Lamp . Inspired by origami’s precision, its design focuses on clean intersections and well-defined planes. The symmetry gives it a sense of balance, while the folded surfaces add just enough complexity to keep it interesting. It feels int",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -3297,7 +3297,7 @@
   {
     "slug": "tangerine-fold-prism-table-lamp",
     "name": "Fold Prism Table Lamp - Tangerine",
-    "description": "There\u2019s something quietly striking about the Fold Prism Table Lamp . Inspired by origami\u2019s precision, its design focuses on clean intersections and well-defined planes. The symmetry gives it a sense of balance, while the folded surfaces add just enough complexity to keep it interesting. It feels int",
+    "description": "There’s something quietly striking about the Fold Prism Table Lamp . Inspired by origami’s precision, its design focuses on clean intersections and well-defined planes. The symmetry gives it a sense of balance, while the folded surfaces add just enough complexity to keep it interesting. It feels int",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -3373,7 +3373,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/foliate-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/foliate-cascade/studio.png"
   },
   {
     "slug": "foliate-crown",
@@ -3386,7 +3386,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/foliate-crown/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/foliate-crown/studio.png"
   },
   {
     "slug": "fossil-texture-urn-table-lamp",
@@ -3399,7 +3399,7 @@
     "size": "large",
     "material": "ceramic, fabric",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/fossil-texture-urn-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/fossil-texture-urn-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "drum-shade",
       "urn-base",
@@ -3427,7 +3427,7 @@
   {
     "slug": "four-finger-floor-lamp-linen-and-100-mango-wood",
     "name": "Four Finger Floor Lamp",
-    "description": "Enhance your space with our elegant Four Finger Floor Lamp , crafted from 100% FSC-certified mango wood. Featuring a minimalist design with a cylindrical shade and a four-stand base, it\u2019s perfect for any modern, luxury, or vintage-inspired interior. With dimensions of 25x25x100 cm, this lamp offers ",
+    "description": "Enhance your space with our elegant Four Finger Floor Lamp , crafted from 100% FSC-certified mango wood. Featuring a minimalist design with a cylindrical shade and a four-stand base, it’s perfect for any modern, luxury, or vintage-inspired interior. With dimensions of 25x25x100 cm, this lamp offers ",
     "brand": "fig_living",
     "category": "floor_lamp",
     "parentCategory": "floor_lamp",
@@ -3442,7 +3442,7 @@
   {
     "slug": "copy-of-bone-inlay-console-blue-rectangular-design-console",
     "name": "Geo Luxe Black Console Table",
-    "description": "Artfully geometric. Endlessly versatile. Elevate your interior with the Geo Luxe Console by CasaGold\u2014a symphony of handcrafted inlay artistry and modern design. This rectangular console table features a meticulously crafted black and bone geometric inlay pattern, creating visual depth and dimension ",
+    "description": "Artfully geometric. Endlessly versatile. Elevate your interior with the Geo Luxe Console by CasaGold—a symphony of handcrafted inlay artistry and modern design. This rectangular console table features a meticulously crafted black and bone geometric inlay pattern, creating visual depth and dimension ",
     "brand": "casagold",
     "category": "console_table",
     "parentCategory": "table",
@@ -3477,7 +3477,7 @@
     "size": "medium",
     "material": "brass, glass",
     "finish": "brushed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/geometric-circle-panel-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/geometric-circle-panel-sconce/01-white-bg-studio.png",
     "styleTags": [
       "geometric",
       "circles",
@@ -3538,7 +3538,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/glass-bell-pendant/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/glass-bell-pendant/studio.png"
   },
   {
     "slug": "golden-curve-chandelier",
@@ -3551,7 +3551,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/golden-curve-chandelier/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/golden-curve-chandelier/studio.png"
   },
   {
     "slug": "samavar-golden-medallion-grand-vase",
@@ -3564,7 +3564,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_11c15553-f0a8-4247-88f7-502db2b9538c.jpg"
+    "imagePath": "/images/house-of-samavar/vases/11c15553-f0a8-4247-88f7-502db2b9538c.jpg"
   },
   {
     "slug": "samavar-golden-medallion-grand-vase-2",
@@ -3577,7 +3577,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_7bc90c3a-7a0d-4df8-89c7-69e7d86cc377.jpg"
+    "imagePath": "/images/house-of-samavar/vases/7bc90c3a-7a0d-4df8-89c7-69e7d86cc377.jpg"
   },
   {
     "slug": "gothic-diamond-drum-sconce",
@@ -3590,7 +3590,7 @@
     "size": "medium",
     "material": "brass, fabric, crystal",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/gothic-diamond-drum-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/gothic-diamond-drum-sconce/01-white-bg-studio.png",
     "styleTags": [
       "gothic",
       "diamond",
@@ -3624,7 +3624,7 @@
     "size": "large",
     "material": "iron, glass",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/gothic-lattice-outdoor-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/gothic-lattice-outdoor-sconce/01-white-bg-studio.png",
     "styleTags": [
       "gothic",
       "lattice",
@@ -3659,7 +3659,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Grand Lantern",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/grand-lantern-crown/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-crown/studio.png"
   },
   {
     "slug": "grand-lantern-cylinder",
@@ -3673,7 +3673,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Grand Lantern",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/grand-lantern-cylinder/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-cylinder/studio.png"
   },
   {
     "slug": "grand-lantern-glass",
@@ -3687,7 +3687,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Grand Lantern",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/grand-lantern-glass/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-glass/studio.png"
   },
   {
     "slug": "grand-lantern-pavilion",
@@ -3701,7 +3701,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Grand Lantern",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/grand-lantern-pavilion/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-pavilion/studio.png"
   },
   {
     "slug": "samavar-gulzar-wide-rim-vase-3",
@@ -3714,7 +3714,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_cf30dcab-474e-4990-9944-ffb8af55161a.jpg"
+    "imagePath": "/images/house-of-samavar/vases/cf30dcab-474e-4990-9944-ffb8af55161a.jpg"
   },
   {
     "slug": "samavar-hammered-brass-coffee-table",
@@ -3739,7 +3739,7 @@
     "size": "medium",
     "material": "brass, fabric",
     "finish": "brushed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/hammered-brass-cylinder-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/hammered-brass-cylinder-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "empire-shade",
       "cylinder-base",
@@ -3772,7 +3772,7 @@
     "size": "large",
     "material": "brass, fabric",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/hammered-brass-grand-urn-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/hammered-brass-grand-urn-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "drum-shade",
       "grand-urn",
@@ -3805,7 +3805,7 @@
     "size": "medium",
     "material": "brass, fabric",
     "finish": "brushed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/hammered-brass-oval-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/hammered-brass-oval-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "drum-shade",
       "oval-base",
@@ -3839,7 +3839,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/hammered-brass-picture-light/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/hammered-brass-picture-light/01-white-bg-studio.png",
     "styleTags": [
       "hammered",
       "picture-light",
@@ -3873,7 +3873,7 @@
     "size": "medium",
     "material": "glass, brass, fabric",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/hammered-glass-pot-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/hammered-glass-pot-table-lamp/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -3882,7 +3882,7 @@
   {
     "slug": "hammered-glass-sphere-table-lamp",
     "name": "Hammered Glass Sphere Table Lamp",
-    "description": "A bold spherical base in hand-translucent hammered glass in smoked amber/champagne tone with a rich all-over honeycomb dimpled texture, mounted on a wide brass disc plinth. The lamp is offered with two shade options \u2014 a dark grey pleated drum shade for a moody, dramatic look, and a cream pleated empire shade for a warmer, classic feel. The substantial weight and hand-worked surface give it an heirloom quality.",
+    "description": "A bold spherical base in hand-translucent hammered glass in smoked amber/champagne tone with a rich all-over honeycomb dimpled texture, mounted on a wide brass disc plinth. The lamp is offered with two shade options — a dark grey pleated drum shade for a moody, dramatic look, and a cream pleated empire shade for a warmer, classic feel. The substantial weight and hand-worked surface give it an heirloom quality.",
     "brand": "delhi_brass",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -3890,7 +3890,7 @@
     "size": "large",
     "material": "glass, brass, fabric",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/hammered-glass-sphere-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/hammered-glass-sphere-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "pleated-drum-shade",
       "sphere-base",
@@ -3968,7 +3968,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-acanthus-crown/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-acanthus-crown/studio.png"
   },
   {
     "slug": "heritage-shade-baroque-foliage",
@@ -3982,7 +3982,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-baroque-foliage/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-baroque-foliage/studio.png"
   },
   {
     "slug": "heritage-shade-curved-linen",
@@ -3996,7 +3996,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-curved-linen/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-curved-linen/studio.png"
   },
   {
     "slug": "heritage-shade-drum-luminaire",
@@ -4010,7 +4010,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-drum-luminaire/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-drum-luminaire/studio.png"
   },
   {
     "slug": "heritage-shade-frosted-scroll",
@@ -4024,7 +4024,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-frosted-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-frosted-scroll/studio.png"
   },
   {
     "slug": "heritage-shade-gilt-ornament",
@@ -4038,7 +4038,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-gilt-ornament/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-gilt-ornament/studio.png"
   },
   {
     "slug": "heritage-shade-gilt-plume",
@@ -4052,7 +4052,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-gilt-plume/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-gilt-plume/studio.png"
   },
   {
     "slug": "heritage-shade-ivory-descent",
@@ -4066,7 +4066,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-ivory-descent/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-ivory-descent/studio.png"
   },
   {
     "slug": "heritage-shade-prism-drift",
@@ -4080,7 +4080,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-prism-drift/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-prism-drift/studio.png"
   },
   {
     "slug": "heritage-shade-scrolled-orb",
@@ -4094,7 +4094,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-scrolled-orb/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-scrolled-orb/studio.png"
   },
   {
     "slug": "heritage-shade-scrolled-prism",
@@ -4108,7 +4108,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-scrolled-prism/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-scrolled-prism/studio.png"
   },
   {
     "slug": "heritage-shade-scrollwork-radiance",
@@ -4122,7 +4122,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/heritage-shade-scrollwork-radiance/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-scrollwork-radiance/studio.png"
   },
   {
     "slug": "hexagon-cascade-rectangular",
@@ -4135,7 +4135,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/hexagon-cascade-rectangular/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/hexagon-cascade-rectangular/studio.png"
   },
   {
     "slug": "hexagon-cascade-square",
@@ -4148,7 +4148,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/hexagon-cascade-square/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/hexagon-cascade-square/studio.png"
   },
   {
     "slug": "copy-of-hexagon-sunflower-coffee-table",
@@ -4203,7 +4203,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/hexagon-lantern/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/hexagon-lantern/studio.png"
   },
   {
     "slug": "hikari-linen-origami-table-lamp",
@@ -4224,7 +4224,7 @@
   {
     "slug": "hippoceros-decorative-figurine",
     "name": "Hippoceros",
-    "description": "Add a creative accent to your space with the Hippoceros decorative figurine, a unique animal-inspired d\u00e9cor piece crafted from durable paper mache. Designed with an artistic form, this playful figurine brings character and visual interest to modern interiors, study tables, shelves, or kids\u2019 rooms. I",
+    "description": "Add a creative accent to your space with the Hippoceros decorative figurine, a unique animal-inspired décor piece crafted from durable paper mache. Designed with an artistic form, this playful figurine brings character and visual interest to modern interiors, study tables, shelves, or kids’ rooms. I",
     "brand": "fig_living",
     "category": "figurine",
     "parentCategory": "decor",
@@ -4240,7 +4240,7 @@
   {
     "slug": "hoa-sphere-black-table-lamp",
     "name": "Hoa Sphere Table Lamp",
-    "description": "The Hoa Sphere Table Lamp is a study in minimalist form \u2014 a perfect sphere of powder-coated metal that sits with quiet authority on any surface. The smooth, matte finish catches light differently at every angle, and the internal diffuser ensures the glow it casts is warm and even, never harsh. Avail",
+    "description": "The Hoa Sphere Table Lamp is a study in minimalist form — a perfect sphere of powder-coated metal that sits with quiet authority on any surface. The smooth, matte finish catches light differently at every angle, and the internal diffuser ensures the glow it casts is warm and even, never harsh. Avail",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -4265,7 +4265,7 @@
     "size": "large",
     "material": "ceramic, fabric, brass",
     "finish": "matte",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/honeycomb-ceramic-urn-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/honeycomb-ceramic-urn-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "empire-shade",
       "urn-base",
@@ -4324,7 +4324,7 @@
   {
     "slug": "horizon-collection-floor-lamp",
     "name": "Horizon collection floor lamp",
-    "description": "Bring home the calm of a painted horizon. The Fig Living Horizon Floor Lamp captures the quiet beauty of dusk with a satin shade that fades from orange to sky blue to white, a soft ombr\u00e9 reminiscent of the evening sky. Its matte exterior and glossy inner lining cast a warm, diffused glow that gently",
+    "description": "Bring home the calm of a painted horizon. The Fig Living Horizon Floor Lamp captures the quiet beauty of dusk with a satin shade that fades from orange to sky blue to white, a soft ombré reminiscent of the evening sky. Its matte exterior and glossy inner lining cast a warm, diffused glow that gently",
     "brand": "fig_living",
     "category": "floor_lamp",
     "parentCategory": "floor_lamp",
@@ -4393,7 +4393,7 @@
     "size": "medium",
     "material": "iron",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/industrial-gear-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/industrial-gear-sconce/01-white-bg-studio.png",
     "styleTags": [
       "industrial",
       "gear",
@@ -5103,7 +5103,7 @@
   {
     "slug": "bone-inlay-entryway-console-new-eterna",
     "name": "Inlay Entryway Console - Eterna Console",
-    "description": "Geometric Inlay Console Table \u2013 A Masterpiece of Elegance and Artistry Add a touch of timeless sophistication to your home with the Eterna Inlay Console Table , a stunning fusion of modern minimalism and antique craftsmanship. This exquisite console is handcrafted using ethically sourced bone resin,",
+    "description": "Geometric Inlay Console Table – A Masterpiece of Elegance and Artistry Add a touch of timeless sophistication to your home with the Eterna Inlay Console Table , a stunning fusion of modern minimalism and antique craftsmanship. This exquisite console is handcrafted using ethically sourced bone resin,",
     "brand": "casagold",
     "category": "console_table",
     "parentCategory": "table",
@@ -5659,7 +5659,7 @@
   {
     "slug": "copy-of-geometric-floral-coffee-table-bone-inlay-with-metal-stand",
     "name": "Inlay Georgia Coffee Table With Metal Stand - Floral",
-    "description": "A feature item you\u2019ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
+    "description": "A feature item you’ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -5711,7 +5711,7 @@
   {
     "slug": "copy-of-honeycomb-coffee-table-bone-inlay-with-metal-stand",
     "name": "Inlay Georgia Round Coffee Table with Metal Stand - Geo",
-    "description": "A feature item you\u2019ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
+    "description": "A feature item you’ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -5758,7 +5758,7 @@
   {
     "slug": "copy-of-geometric-stripes-coffee-table-bone-inlay-with-metal-stand",
     "name": "Inlay Georgia Round Coffee Table with Metal Stand - Geometric Floral",
-    "description": "A feature item you\u2019ll fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of a beautiful metal stand. This versatile furniture piece looks great in any space and will be a conversation starter. Eac",
+    "description": "A feature item you’ll fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of a beautiful metal stand. This versatile furniture piece looks great in any space and will be a conversation starter. Eac",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -5858,7 +5858,7 @@
   {
     "slug": "copy-of-coffee-table-bone-inlay-with-metal-stand",
     "name": "Inlay Georgia Round Coffee Table with Metal Stand - HoneyComb",
-    "description": "A feature item you\u2019ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
+    "description": "A feature item you’ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -5935,7 +5935,7 @@
   {
     "slug": "copy-of-waterfall-coffee-table-bone-inlay-with-metal-stand",
     "name": "Inlay Georgia Round Coffee Table with Metal Stand - Overlay Floral",
-    "description": "A feature item you\u2019ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
+    "description": "A feature item you’ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -5990,7 +5990,7 @@
   {
     "slug": "copy-of-floral-coffee-table-bone-inlay-with-metal-stand",
     "name": "Inlay Georgia Round Coffee Table with Metal Stand - Sunflower",
-    "description": "A feature item you\u2019ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
+    "description": "A feature item you’ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -6043,7 +6043,7 @@
   {
     "slug": "copy-of-sunflower-coffee-table-bone-inlay-with-metal-stand",
     "name": "Inlay Georgia Round Coffee Table with Metal Stand - Targua",
-    "description": "A feature item you\u2019ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
+    "description": "A feature item you’ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -6096,7 +6096,7 @@
   {
     "slug": "copy-of-targua-coffee-table-bone-inlay-with-metal-stand",
     "name": "Inlay Georgia Round Coffee Table With Metal Stand - Waterfall",
-    "description": "A feature item you\u2019ll fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of a beautiful metal stand. This versatile furniture piece looks great in any space and will be a conversation starter. Eac",
+    "description": "A feature item you’ll fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of a beautiful metal stand. This versatile furniture piece looks great in any space and will be a conversation starter. Eac",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -6151,7 +6151,7 @@
   {
     "slug": "morrisson-georgia-coffee-table",
     "name": "Inlay Georgia Round Coffee Table with Metal Stand- Morrisson",
-    "description": "A feature item you\u2019ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
+    "description": "A feature item you’ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -6189,7 +6189,7 @@
   {
     "slug": "coffee-table-bone-inlay-with-metal-stand",
     "name": "Inlay Georgia Round Coffee Table with Metal Stand- New Waterfall",
-    "description": "A feature item you\u2019ll absolutely fall in love with. The gorgeous combination of black and white has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
+    "description": "A feature item you’ll absolutely fall in love with. The gorgeous combination of black and white has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -6241,7 +6241,7 @@
   {
     "slug": "copy-of-geo-coffee-table-bone-inlay-with-metal-stand",
     "name": "Inlay Georgia Round Coffee Table with Metal Stand-Chevron",
-    "description": "A feature item you\u2019ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
+    "description": "A feature item you’ll absolutely fall in love with. The gorgeous combination of inlay and color has everlasting appeal and creates a relaxed eclectic elegance in your home with the fusion of beautiful metal stand. This versatile furniture piece looks great in any space and is sure to be a conversati",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -7885,7 +7885,7 @@
   {
     "slug": "luxom-rectangle-coffee-table-blossom-floral",
     "name": "Inlay Luxom Rectangular Coffee Table - Floral Blossom",
-    "description": "Introducing our Luxom Rectangle Inlay Coffee Table \u2013 a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
+    "description": "Introducing our Luxom Rectangle Inlay Coffee Table – a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -7972,7 +7972,7 @@
   {
     "slug": "luxom-rectangle-coffee-table-kingsley",
     "name": "Inlay Luxom Rectangular Coffee Table - Kingsley",
-    "description": "Introducing our Luxom Rectangle Inlay Coffee Table \u2013 a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
+    "description": "Introducing our Luxom Rectangle Inlay Coffee Table – a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -8008,7 +8008,7 @@
   {
     "slug": "luxom-rectangle-coffee-table-morrisson",
     "name": "Inlay Luxom Rectangular Coffee Table - Morrisson",
-    "description": "Introducing our Luxom Rectangle Inlay Coffee Table \u2013 a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
+    "description": "Introducing our Luxom Rectangle Inlay Coffee Table – a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -8102,7 +8102,7 @@
   {
     "slug": "luxom-rectangle-coffee-table-phoenix",
     "name": "Inlay Luxom Rectangular Coffee Table - Phoenix",
-    "description": "Introducing our Luxom Rectangle Inlay Coffee Table \u2013 a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
+    "description": "Introducing our Luxom Rectangle Inlay Coffee Table – a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -8243,7 +8243,7 @@
   {
     "slug": "luxom-rectangle-coffee-table-tulip",
     "name": "Inlay Luxom Rectangular Coffee Table - Tulip",
-    "description": "Introducing our Luxom Rectangle Inlay Coffee Table \u2013 a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
+    "description": "Introducing our Luxom Rectangle Inlay Coffee Table – a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -8485,7 +8485,7 @@
   {
     "slug": "morrisson-luxom-coffee-table",
     "name": "Inlay Luxom Rectangular Coffee Table- Morrisson",
-    "description": "Introducing our Luxom Rectangle Inlay Coffee Table \u2013 a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
+    "description": "Introducing our Luxom Rectangle Inlay Coffee Table – a stunning blend of craftsmanship and elegance that adds a touch of sophistication to your living space. Meticulously crafted with intricate inlay work, this coffee table is designed to be a statement piece, creating a luxurious focal point in you",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -9502,7 +9502,7 @@
   {
     "slug": "bone-inlay-coffee-table-floral-black",
     "name": "Inlay Round Coffee Table- Floral",
-    "description": "A feature item you\u2019ll fall in love with. The gorgeous combination of black and white has everlasting appeal and creates a relaxed eclectic elegance in your home. This versatile furniture piece looks great in any space and is sure to be a conversation starter. Each piece has been handcrafted in a pro",
+    "description": "A feature item you’ll fall in love with. The gorgeous combination of black and white has everlasting appeal and creates a relaxed eclectic elegance in your home. This versatile furniture piece looks great in any space and is sure to be a conversation starter. Each piece has been handcrafted in a pro",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -9847,7 +9847,7 @@
   {
     "slug": "inlay-vanity-geometric",
     "name": "Inlay Vanity Console Table - Chevron",
-    "description": "Introducing our Inlay Vanity \u2013 a luxurious and sophisticated addition to your bedroom or dressing area that combines timeless elegance with intricate craftsmanship. Meticulously handcrafted, this vanity is designed to be a statement piece, adding a touch of opulence to your daily grooming routine. I",
+    "description": "Introducing our Inlay Vanity – a luxurious and sophisticated addition to your bedroom or dressing area that combines timeless elegance with intricate craftsmanship. Meticulously handcrafted, this vanity is designed to be a statement piece, adding a touch of opulence to your daily grooming routine. I",
     "brand": "casagold",
     "category": "other",
     "parentCategory": "other",
@@ -10370,7 +10370,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Iron Brass",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/iron-brass-cage/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/iron-brass-cage/studio.png"
   },
   {
     "slug": "iron-brass-ring",
@@ -10384,7 +10384,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Iron Brass",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/iron-brass-ring/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/iron-brass-ring/studio.png"
   },
   {
     "slug": "iron-scroll",
@@ -10397,7 +10397,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/iron-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/iron-scroll/studio.png"
   },
   {
     "slug": "iron-scroll-floor-lamp",
@@ -10410,7 +10410,7 @@
     "size": "large",
     "material": "iron, fabric",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/floor-lamps/iron-scroll-floor-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/floor-lamps/iron-scroll-floor-lamp/01-white-bg-studio.png",
     "styleTags": [
       "wrought-iron",
       "tripod",
@@ -10444,7 +10444,7 @@
     "size": "medium",
     "material": "iron, marble",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/iron-scroll-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/iron-scroll-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "sculptural",
       "scroll",
@@ -10478,7 +10478,7 @@
     "size": "medium",
     "material": "iron, fabric",
     "finish": "patina",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/iron-torch-drum-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/iron-torch-drum-sconce/01-white-bg-studio.png",
     "styleTags": [
       "torch",
       "hammered",
@@ -10513,7 +10513,7 @@
     "size": "medium",
     "material": "iron, fabric",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/iron-vine-burlap-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/iron-vine-burlap-sconce/01-white-bg-studio.png",
     "styleTags": [
       "vine",
       "scrollwork",
@@ -10547,7 +10547,7 @@
     "size": "medium",
     "material": "iron, fabric",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/iron-vine-burlap-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/iron-vine-burlap-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "vine",
       "scrollwork",
@@ -10580,7 +10580,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/jewel-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/jewel-cascade/studio.png"
   },
   {
     "slug": "jeweled-curve",
@@ -10593,12 +10593,12 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/jeweled-curve/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/jeweled-curve/studio.png"
   },
   {
     "slug": "jordan-nesting-coffee-table-waterfall",
     "name": "Jordan Nesting Coffee Table - Waterfall",
-    "description": "Introducing our Oblong Nesting Coffee Table \u2013 a sleek and functional addition to your living space that offers versatility and style. Meticulously crafted, this set of nesting tables is designed to provide dynamic options for your coffee or living room arrangement. Immerse yourself in the practical ",
+    "description": "Introducing our Oblong Nesting Coffee Table – a sleek and functional addition to your living space that offers versatility and style. Meticulously crafted, this set of nesting tables is designed to provide dynamic options for your coffee or living room arrangement. Immerse yourself in the practical ",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -10646,7 +10646,7 @@
   {
     "slug": "juglar-off-white-modern-pendant-lights",
     "name": "Juglar Pendant Lamp",
-    "description": "The Juglar Pendant Lamp is a statement piece built on the tension between softness and structure. Its form \u2014 sculpted from premium spandex fabric \u2014 holds a clean, geometric silhouette that catches the eye from across a room, while the fabric itself diffuses light into a warm, enveloping glow. Handcr",
+    "description": "The Juglar Pendant Lamp is a statement piece built on the tension between softness and structure. Its form — sculpted from premium spandex fabric — holds a clean, geometric silhouette that catches the eye from across a room, while the fabric itself diffuses light into a warm, enveloping glow. Handcr",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -10661,7 +10661,7 @@
   {
     "slug": "jumbo-elephant-decor-grey",
     "name": "Jumbo - Grey",
-    "description": "Add a subtle artistic touch to your home with this handcrafted Grey Elephant Figurine , made from durable paper mache. Featuring a clean silhouette and modern grey finish, it blends effortlessly with contemporary, minimalist, and kids\u2019 room d\u00e9cor while adding a playful accent to the space. Lightweig",
+    "description": "Add a subtle artistic touch to your home with this handcrafted Grey Elephant Figurine , made from durable paper mache. Featuring a clean silhouette and modern grey finish, it blends effortlessly with contemporary, minimalist, and kids’ room décor while adding a playful accent to the space. Lightweig",
     "brand": "fig_living",
     "category": "figurine",
     "parentCategory": "decor",
@@ -10677,7 +10677,7 @@
   {
     "slug": "jumbo-elephant-decor-white",
     "name": "Jumbo - White",
-    "description": "Add a touch of charm and simplicity to your space with this handcrafted White Elephant Figurine , made from durable paper mache and finished in an elegant matte white. Its clean, minimal design and neutral tone allow it to blend effortlessly with modern, contemporary, or kids\u2019 room d\u00e9cor. Lightweigh",
+    "description": "Add a touch of charm and simplicity to your space with this handcrafted White Elephant Figurine , made from durable paper mache and finished in an elegant matte white. Its clean, minimal design and neutral tone allow it to blend effortlessly with modern, contemporary, or kids’ room décor. Lightweigh",
     "brand": "fig_living",
     "category": "figurine",
     "parentCategory": "decor",
@@ -10717,7 +10717,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_aa65422a-6a8f-42f4-ae45-42d3816b811e.jpg"
+    "imagePath": "/images/house-of-samavar/vases/aa65422a-6a8f-42f4-ae45-42d3816b811e.jpg"
   },
   {
     "slug": "square-kingsley-table",
@@ -10758,7 +10758,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/lantern-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/lantern-cluster/studio.png"
   },
   {
     "slug": "laurel-wreath-double-shade-sconce",
@@ -10771,7 +10771,7 @@
     "size": "large",
     "material": "brass, fabric",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/laurel-wreath-double-shade-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/laurel-wreath-double-shade-sconce/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -10780,7 +10780,7 @@
   {
     "slug": "layered-edition-dawn-table-lamp-3d-printed",
     "name": "Layers Edition : Dawn Table Lamp",
-    "description": "Crafted for design lovers and cozy corners, the Echo Lamp from our Layers Edition is a fusion of form, function, and future-ready craftsmanship. Made using recyclable PLA filament and precision 3D printing, each piece is part of a curated 100-unit drop \u2013 never mass-produced, always intentional. Eco-",
+    "description": "Crafted for design lovers and cozy corners, the Echo Lamp from our Layers Edition is a fusion of form, function, and future-ready craftsmanship. Made using recyclable PLA filament and precision 3D printing, each piece is part of a curated 100-unit drop – never mass-produced, always intentional. Eco-",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -10796,7 +10796,7 @@
   {
     "slug": "layers-edition-echo-lamp-3d-printed",
     "name": "Layers Edition : Echo Table Lamp",
-    "description": "Crafted for design lovers and cozy corners, the Echo Lamp from our Layers Edition is a fusion of form, function, and future-ready craftsmanship. Made using recyclable PLA filament and precision 3D printing, each piece is part of a curated 100-unit drop \u2013 never mass-produced, always intentional. Eco-",
+    "description": "Crafted for design lovers and cozy corners, the Echo Lamp from our Layers Edition is a fusion of form, function, and future-ready craftsmanship. Made using recyclable PLA filament and precision 3D printing, each piece is part of a curated 100-unit drop – never mass-produced, always intentional. Eco-",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -10812,7 +10812,7 @@
   {
     "slug": "layers-edition-non-la-table-lamp-3d-printed",
     "name": "Layers Edition : Non La Lamp",
-    "description": "Crafted for design lovers and cozy corners, the Echo Lamp from our Layers Edition is a fusion of form, function, and future-ready craftsmanship. Made using recyclable PLA filament and precision 3D printing, each piece is part of a curated 100-unit drop \u2013 never mass-produced, always intentional. Eco-",
+    "description": "Crafted for design lovers and cozy corners, the Echo Lamp from our Layers Edition is a fusion of form, function, and future-ready craftsmanship. Made using recyclable PLA filament and precision 3D printing, each piece is part of a curated 100-unit drop – never mass-produced, always intentional. Eco-",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -10836,7 +10836,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/leaf-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/leaf-cascade/studio.png"
   },
   {
     "slug": "leaf-frosted-glass-sconce",
@@ -10849,7 +10849,7 @@
     "size": "small",
     "material": "brass, glass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/leaf-frosted-glass-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/leaf-frosted-glass-sconce/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -10858,7 +10858,7 @@
   {
     "slug": "lifo-floor-lamp-origami-tripod-standing-lamp",
     "name": "Lifo Floor Lamp",
-    "description": "The Lifo Floor Lamp is the taller, more architectural sibling in FIG Living's origami floor lamp lineup. Where the Ori sits quietly in a corner, the Lifo commands \u2014 its linen origami shade sits higher on the tripod, making it the natural choice for open-plan spaces, studio apartments, and rooms wher",
+    "description": "The Lifo Floor Lamp is the taller, more architectural sibling in FIG Living's origami floor lamp lineup. Where the Ori sits quietly in a corner, the Lifo commands — its linen origami shade sits higher on the tripod, making it the natural choice for open-plan spaces, studio apartments, and rooms wher",
     "brand": "fig_living",
     "category": "floor_lamp",
     "parentCategory": "floor_lamp",
@@ -10874,7 +10874,7 @@
   {
     "slug": "lifo-floor-lamp-white",
     "name": "Lifo Floor Lamp White",
-    "description": "Elevate your interiors with the Lifo Origami Floor Lamp , a sculptural lighting piece that blends modern Scandinavian minimalism with innovative material design. Crafted with a DuPont\u2122 Tyvek\u00ae origami shade , this lamp offers the delicate look of paper with enhanced durability and structure, diffusin",
+    "description": "Elevate your interiors with the Lifo Origami Floor Lamp , a sculptural lighting piece that blends modern Scandinavian minimalism with innovative material design. Crafted with a DuPont™ Tyvek® origami shade , this lamp offers the delicate look of paper with enhanced durability and structure, diffusin",
     "brand": "fig_living",
     "category": "floor_lamp",
     "parentCategory": "floor_lamp",
@@ -10968,7 +10968,7 @@
     "size": "medium",
     "material": "brass, glass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/lotus-leaf-double-bell-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/lotus-leaf-double-bell-sconce/01-white-bg-studio.png",
     "styleTags": [
       "lotus",
       "double-arm",
@@ -11011,7 +11011,7 @@
   {
     "slug": "luna-floor-lamp-modern-tripod-lamp",
     "name": "Luna Floor Lamp",
-    "description": "Introducing the Luna Floor Lamp, a modern masterpiece inspired by the moon\u2019s surface. This floor light, with its unique design mimicking the craters and texture of the lunar surface, adds a touch of celestial elegance to any space. Standing on a tripod base with a powder-coated finish, it features a",
+    "description": "Introducing the Luna Floor Lamp, a modern masterpiece inspired by the moon’s surface. This floor light, with its unique design mimicking the craters and texture of the lunar surface, adds a touch of celestial elegance to any space. Standing on a tripod base with a powder-coated finish, it features a",
     "brand": "fig_living",
     "category": "floor_lamp",
     "parentCategory": "floor_lamp",
@@ -11026,7 +11026,7 @@
   {
     "slug": "luna-table-lamp-modern-handcrafted-desk-lamp",
     "name": "Luna Table Lamp",
-    "description": "Introducing the Luna Table Lamp, a modern masterpiece inspired by the moon\u2019s surface. This table light, with its unique design mimicking the craters and texture of the lunar surface, adds a touch of celestial elegance to any space. Standing on a tripod base with a sturdy finish, it features a 1.5-me",
+    "description": "Introducing the Luna Table Lamp, a modern masterpiece inspired by the moon’s surface. This table light, with its unique design mimicking the craters and texture of the lunar surface, adds a touch of celestial elegance to any space. Standing on a tripod base with a sturdy finish, it features a 1.5-me",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -11075,7 +11075,7 @@
   {
     "slug": "rome-pendant-light-luxe-collection-off-white",
     "name": "Luxe Collection - Rome Pendant Lamp",
-    "description": "Rome Pendant Lamp \u2014 Georgette Elegance. Dive into an era of classical luxury with the Rome Pendant Lamp, inspired by the timeless charm of the Eternal City. Made from the finest selection of Georgette fabric, this pendant lamp not only illuminates but also elevates. The gentle interplay of light wit",
+    "description": "Rome Pendant Lamp — Georgette Elegance. Dive into an era of classical luxury with the Rome Pendant Lamp, inspired by the timeless charm of the Eternal City. Made from the finest selection of Georgette fabric, this pendant lamp not only illuminates but also elevates. The gentle interplay of light wit",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -11092,7 +11092,7 @@
   {
     "slug": "tokyo-pendant-lamp-luxe-collection-black-white",
     "name": "Luxe Collection - Tokyo Pendant Lamp",
-    "description": "Drawing inspiration from the subtle elegance of Tokyo\u2019s urban landscape, our Tokyo Georgette Pendant Lamp marries the delicate touch of Georgette with the sophistication of modern design. This pendant light exudes a soft, ethereal glow, harmonising form and function. Whether it\u2019s a serene bedroom se",
+    "description": "Drawing inspiration from the subtle elegance of Tokyo’s urban landscape, our Tokyo Georgette Pendant Lamp marries the delicate touch of Georgette with the sophistication of modern design. This pendant light exudes a soft, ethereal glow, harmonising form and function. Whether it’s a serene bedroom se",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -11166,7 +11166,7 @@
   {
     "slug": "meiji-collection-rattan-wabi-sabi-lamp",
     "name": "Meiji Collection - Table Lamp",
-    "description": "Crafted from 100% Natural Rattan with a gold electroplated wireframe and base \u2014 a refined balance of earthy texture and modern elegance. Handwoven by Skilled Artisans \u2013 No two pieces are exactly alike, celebrating slow design and craftsmanship. Compact Yet Impactful \u2013 Measuring 18 x 18 x 33 cm, it\u2019s",
+    "description": "Crafted from 100% Natural Rattan with a gold electroplated wireframe and base — a refined balance of earthy texture and modern elegance. Handwoven by Skilled Artisans – No two pieces are exactly alike, celebrating slow design and craftsmanship. Compact Yet Impactful – Measuring 18 x 18 x 33 cm, it’s",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -11218,7 +11218,7 @@
   {
     "slug": "meiji-collection-rattan-tripod-floor-lamp",
     "name": "Meiji Collection - Tripod Floor Lamp",
-    "description": "Sculptural Basket Silhouette \u2013 Features a handwoven rattan shade with a wide, rounded form perched on sleek, tripod-style metal legs. Warm Ambient L ighting \u2013 The open-weave design casts soft, diffused light, adding a cozy glow to living rooms, corners, or reading spaces. Earthy Meets Elegant \u2013 Natu",
+    "description": "Sculptural Basket Silhouette – Features a handwoven rattan shade with a wide, rounded form perched on sleek, tripod-style metal legs. Warm Ambient L ighting – The open-weave design casts soft, diffused light, adding a cozy glow to living rooms, corners, or reading spaces. Earthy Meets Elegant – Natu",
     "brand": "fig_living",
     "category": "floor_lamp",
     "parentCategory": "floor_lamp",
@@ -11243,7 +11243,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/meridian-brass/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/meridian-brass/studio.png"
   },
   {
     "slug": "midnight-cylinder",
@@ -11256,7 +11256,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/midnight-cylinder/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/midnight-cylinder/studio.png"
   },
   {
     "slug": "samavar-midnight-gold-vine-vase",
@@ -11269,7 +11269,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_b7dee06c-781b-4e18-86f3-98fec5b166ad.jpg"
+    "imagePath": "/images/house-of-samavar/vases/b7dee06c-781b-4e18-86f3-98fec5b166ad.jpg"
   },
   {
     "slug": "samavar-midnight-vine-vase",
@@ -11282,12 +11282,12 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_149b038c-edc6-42b7-bc21-ea96bf2f9ead.jpg"
+    "imagePath": "/images/house-of-samavar/vases/149b038c-edc6-42b7-bc21-ea96bf2f9ead.jpg"
   },
   {
     "slug": "mini-elephant-figurine",
     "name": "Mini Jumbo - Grey",
-    "description": "Add a subtle decorative touch to compact spaces with this Mini Elephant Figurine , crafted from durable paper mache and finished in an elegant grey tone. Designed with a minimal silhouette, this d\u00e9cor piece blends effortlessly with modern, contemporary, and kids\u2019 room interiors while adding a playfu",
+    "description": "Add a subtle decorative touch to compact spaces with this Mini Elephant Figurine , crafted from durable paper mache and finished in an elegant grey tone. Designed with a minimal silhouette, this décor piece blends effortlessly with modern, contemporary, and kids’ room interiors while adding a playfu",
     "brand": "fig_living",
     "category": "figurine",
     "parentCategory": "decor",
@@ -11303,7 +11303,7 @@
   {
     "slug": "mini-white-elephant-figurine",
     "name": "Mini Jumbo - White",
-    "description": "Add a subtle decorative accent to your space with this Mini White Elephant Figurine , crafted from eco-friendly paper mache and finished in a clean white tone. Its minimal design allows it to blend effortlessly with modern, contemporary, and kids\u2019 room interiors, making it a versatile d\u00e9cor piece fo",
+    "description": "Add a subtle decorative accent to your space with this Mini White Elephant Figurine , crafted from eco-friendly paper mache and finished in a clean white tone. Its minimal design allows it to blend effortlessly with modern, contemporary, and kids’ room interiors, making it a versatile décor piece fo",
     "brand": "fig_living",
     "category": "figurine",
     "parentCategory": "decor",
@@ -11319,7 +11319,7 @@
   {
     "slug": "c2",
     "name": "Monarch Maze Console",
-    "description": "A bold interplay of form, contrast, and artisan craft. Step into the extraordinary with the Monarch Maze Console by CasaGold\u2014a modern masterpiece in luxury inlay furniture that redefines the silhouette of console tables. Crafted from ethically sourced mother-of-pearl/bone inlay, this console feature",
+    "description": "A bold interplay of form, contrast, and artisan craft. Step into the extraordinary with the Monarch Maze Console by CasaGold—a modern masterpiece in luxury inlay furniture that redefines the silhouette of console tables. Crafted from ethically sourced mother-of-pearl/bone inlay, this console feature",
     "brand": "casagold",
     "category": "console_table",
     "parentCategory": "table",
@@ -11413,7 +11413,7 @@
   {
     "slug": "round-shaped-concrete-table-off-white",
     "name": "Monolith Table - Off White",
-    "description": "Introducing our Concrete Table, a perfect blend of style and functionality. Designed with a unique, minimalist and modern aesthetic, this table features a sleek concrete base that complements any d\u00e9cor. The table comes in knock-down packaging, making it easy to assemble while ensuring space efficien",
+    "description": "Introducing our Concrete Table, a perfect blend of style and functionality. Designed with a unique, minimalist and modern aesthetic, this table features a sleek concrete base that complements any décor. The table comes in knock-down packaging, making it easy to assemble while ensuring space efficien",
     "brand": "fig_living",
     "category": "decorative_object",
     "parentCategory": "decor",
@@ -11429,7 +11429,7 @@
   {
     "slug": "concrete-outdoor-table-grey",
     "name": "Monolith Table Grey",
-    "description": "Introducing our Concrete Table, a perfect blend of style and functionality. Designed with a unique, minimalist and modern aesthetic, this table features a sleek concrete base that complements any d\u00e9cor. The table comes in knock-down packaging, making it easy to assemble while ensuring space efficien",
+    "description": "Introducing our Concrete Table, a perfect blend of style and functionality. Designed with a unique, minimalist and modern aesthetic, this table features a sleek concrete base that complements any décor. The table comes in knock-down packaging, making it easy to assemble while ensuring space efficien",
     "brand": "fig_living",
     "category": "side_table",
     "parentCategory": "table",
@@ -11453,7 +11453,7 @@
     "size": "small",
     "material": "brass, glass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/moon-globe-brass-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/moon-globe-brass-sconce/01-white-bg-studio.png",
     "styleTags": [
       "moon",
       "globe",
@@ -11488,7 +11488,7 @@
     "size": "small",
     "material": "iron, glass",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/moroccan-diamond-torch-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/moroccan-diamond-torch-sconce/01-white-bg-studio.png",
     "styleTags": [
       "diamond",
       "filigree",
@@ -11523,7 +11523,7 @@
     "size": "medium",
     "material": "brass, metal",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/moroccan-filigree-brass-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/moroccan-filigree-brass-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "filigree",
       "pierced-metal-shade",
@@ -11735,7 +11735,7 @@
   {
     "slug": "3d-vase-04",
     "name": "Muse Vase RY - 3D Printed",
-    "description": "Make your space feel artfully composed with the Fig Living Phantom 3D Vase that brings together sculptural geometry and a luminous, shifting gradient that moves from green to indigo, modern, fluid, and endlessly captivating. Crafted from premium PLA, it\u2019s lightweight yet sturdy, with crisp, ribbed d",
+    "description": "Make your space feel artfully composed with the Fig Living Phantom 3D Vase that brings together sculptural geometry and a luminous, shifting gradient that moves from green to indigo, modern, fluid, and endlessly captivating. Crafted from premium PLA, it’s lightweight yet sturdy, with crisp, ribbed d",
     "brand": "fig_living",
     "category": "decorative_object",
     "parentCategory": "decor",
@@ -11798,7 +11798,7 @@
   {
     "slug": "natural-opulence-natural-pendant-light",
     "name": "Natural Opulence Cane Pendant Lamp",
-    "description": "The Natural Opulence Cane Pendant Lamp is a study in material honesty. Handwoven from natural rattan, it lets the raw beauty of the material do the work \u2014 the open weave casting intricate, ever-shifting light patterns on walls and ceilings as the bulb warms up inside. Designed for statement placemen",
+    "description": "The Natural Opulence Cane Pendant Lamp is a study in material honesty. Handwoven from natural rattan, it lets the raw beauty of the material do the work — the open weave casting intricate, ever-shifting light patterns on walls and ceilings as the bulb warms up inside. Designed for statement placemen",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -11823,12 +11823,12 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/nautilus-lantern/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/nautilus-lantern/studio.png"
   },
   {
     "slug": "nimbus-pendant-light-off-white",
     "name": "Nimbus Pendant Lamp",
-    "description": "The Nimbus Pendant Lamp takes its name from the cloud \u2014 and lives up to it. A full, rounded form handcrafted from premium spandex fabric, it hangs with quiet presence and fills the room with a soft, omnidirectional glow that feels less like a light source and more like a mood. Designed for living ro",
+    "description": "The Nimbus Pendant Lamp takes its name from the cloud — and lives up to it. A full, rounded form handcrafted from premium spandex fabric, it hangs with quiet presence and fills the room with a soft, omnidirectional glow that feels less like a light source and more like a mood. Designed for living ro",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -11852,7 +11852,7 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Noir Crystal",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/noir-crystal-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/noir-crystal-cascade/studio.png"
   },
   {
     "slug": "noir-lantern",
@@ -11865,7 +11865,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/noir-lantern/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/noir-lantern/studio.png"
   },
   {
     "slug": "noir-scroll-crystal-sconce",
@@ -11878,7 +11878,7 @@
     "size": "medium",
     "material": "iron, crystal",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/noir-scroll-crystal-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/noir-scroll-crystal-sconce/01-white-bg-studio.png",
     "styleTags": [
       "noir",
       "scroll",
@@ -11952,7 +11952,7 @@
   {
     "slug": "nordic-night-table-lamp-vedancy-print",
     "name": "Nordic Night - Verdancy Table Lamp",
-    "description": "The Nordic Night Verdancy Table Lamp captures the quiet density of a forest interior \u2014 layers of green rendered in hand block-printed cotton fabric, with the kind of considered repeat pattern that reveals more detail the closer you look. The warm light filtering through the Verdancy print creates a ",
+    "description": "The Nordic Night Verdancy Table Lamp captures the quiet density of a forest interior — layers of green rendered in hand block-printed cotton fabric, with the kind of considered repeat pattern that reveals more detail the closer you look. The warm light filtering through the Verdancy print creates a ",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -11984,7 +11984,7 @@
   {
     "slug": "nordic-night-leaflet-flow",
     "name": "Nordic Night Table Lamp - Indian Block Printing Technique, Made from Cotton Recycled Paper, Premium Matte Finish for Base",
-    "description": "The Nordic Night Leaflet Flow Table Lamp is a quietly considered piece \u2014 hand block-printed on high-quality cotton fabric using traditional Indian block printing techniques, with a leaf motif that brings a sense of calm and organic rhythm to any room. The warm glow it casts through the printed cotto",
+    "description": "The Nordic Night Leaflet Flow Table Lamp is a quietly considered piece — hand block-printed on high-quality cotton fabric using traditional Indian block printing techniques, with a leaf motif that brings a sense of calm and organic rhythm to any room. The warm glow it casts through the printed cotto",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -12000,7 +12000,7 @@
   {
     "slug": "disc-shaped-linen-pendant-lamp",
     "name": "Oblong 2 - Linen Pendant Lamp",
-    "description": "The Oblong 2 Linen Pendant Lamp is a disc-shaped origami pendant lamp. Drench your space in the luxurious warmth of the Oblong 2 Linen Lamp, showcased in a refined grey linen. The lamp\u2019s rich shade combined with the precision of origami craftsmanship brings forth an ensemble that speaks of grandeur ",
+    "description": "The Oblong 2 Linen Pendant Lamp is a disc-shaped origami pendant lamp. Drench your space in the luxurious warmth of the Oblong 2 Linen Lamp, showcased in a refined grey linen. The lamp’s rich shade combined with the precision of origami craftsmanship brings forth an ensemble that speaks of grandeur ",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -12031,7 +12031,7 @@
   {
     "slug": "oblong-origami-modern-pendant-light",
     "name": "Oblong Origami Pendant Lamp",
-    "description": "Discover the refined artistry of the FIG Oblong Origami Pendant Lamp. Handcrafted to perfection, this distinguished piece measures 42cm diameter \u00d7 56cm height. Ideal for commercial spaces or as a compelling centrepiece in your home, it transforms light into a captivating experience, imbuing every sp",
+    "description": "Discover the refined artistry of the FIG Oblong Origami Pendant Lamp. Handcrafted to perfection, this distinguished piece measures 42cm diameter × 56cm height. Ideal for commercial spaces or as a compelling centrepiece in your home, it transforms light into a captivating experience, imbuing every sp",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -12063,7 +12063,7 @@
   {
     "slug": "two-tier-long-chandelier-pendant-lamp",
     "name": "Oblong-2 Two - Tier Pendant Lamp",
-    "description": "Transform your living space with the Oblong-2 Two-Tier Pendant Lamp \u2014 a long, architectural chandelier that makes a sweeping vertical statement. Unlike the Velocity\u2019s circular tiers, the Oblong-2 Two-Tier elongates the form with its distinctive oblong profile, creating a more directional, dramatic s",
+    "description": "Transform your living space with the Oblong-2 Two-Tier Pendant Lamp — a long, architectural chandelier that makes a sweeping vertical statement. Unlike the Velocity’s circular tiers, the Oblong-2 Two-Tier elongates the form with its distinctive oblong profile, creating a more directional, dramatic s",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -12101,7 +12101,7 @@
     "size": "medium",
     "material": "stone, fabric",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/onyx-egg-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/onyx-egg-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "onyx",
       "egg",
@@ -12128,7 +12128,7 @@
   {
     "slug": "ori-floor-lamp-origami-linen-standing-lamp",
     "name": "Ori Floor Lamp",
-    "description": "The Ori Floor Lamp is FIG Living's origami craft translated into a standing form. The shade is folded from premium linen using the same accordion pleating technique as our Origami pendant collection \u2014 creating a lamp that rewards close attention with the precision of its construction, and rewards a ",
+    "description": "The Ori Floor Lamp is FIG Living's origami craft translated into a standing form. The shade is folded from premium linen using the same accordion pleating technique as our Origami pendant collection — creating a lamp that rewards close attention with the precision of its construction, and rewards a ",
     "brand": "fig_living",
     "category": "floor_lamp",
     "parentCategory": "floor_lamp",
@@ -12162,7 +12162,7 @@
   {
     "slug": "origami-mini-orilamp-pink",
     "name": "Orilamp - Mini Lamp (Limited Edition)",
-    "description": "Bring home a soft, romantic glow with the Orilamp \u2013 Mini, a sculptural accent designed to turn everyday spaces into intimate moments. Inspired by the art of origami, its elegant pleated silhouette unfolds into a statement piece that diffuses light gently and evenly, creating a warm, comforting ambia",
+    "description": "Bring home a soft, romantic glow with the Orilamp – Mini, a sculptural accent designed to turn everyday spaces into intimate moments. Inspired by the art of origami, its elegant pleated silhouette unfolds into a statement piece that diffuses light gently and evenly, creating a warm, comforting ambia",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -12197,8 +12197,8 @@
     "sourceUrl": "https://figliving.com/products/orilamp-bedside-cozy-table-lamp"
   },
   {
-    "slug": "orilamp-aurora-green-aurora-skies-edition\u2122",
-    "name": "Orilamp Aurora Green - Aurora Skies Edition\u2122",
+    "slug": "orilamp-aurora-green-aurora-skies-edition™",
+    "name": "Orilamp Aurora Green - Aurora Skies Edition™",
     "description": "Introducing our refreshing take on Orilamp, a vibrant addition to brighten up your space with its unique color gradient of Aurora Skies, Peach Glow, and Tangerine Dusk. Made from special paper crafted specifically for lighting, it offers durability and a premium finish. The hand-pleated design not o",
     "brand": "fig_living",
     "category": "table_lamp",
@@ -12211,7 +12211,7 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/orilamp-aurora-green-aurora-skies-edition\u2122"
+    "sourceUrl": "https://figliving.com/products/orilamp-aurora-green-aurora-skies-edition™"
   },
   {
     "slug": "ori-deepotsav-origami-lamp",
@@ -12232,8 +12232,8 @@
     "sourceUrl": "https://figliving.com/products/ori-deepotsav-origami-lamp"
   },
   {
-    "slug": "orilamp-peach-glow-aurora-skies-edition\u2122-copy",
-    "name": "Orilamp Peach Glow - Aurora Skies Edition\u2122",
+    "slug": "orilamp-peach-glow-aurora-skies-edition™-copy",
+    "name": "Orilamp Peach Glow - Aurora Skies Edition™",
     "description": "Introducing our refreshing take on Orilamp, a vibrant addition to brighten up your space with its unique color gradient of Aurora Skies, Peach Glow, and Tangerine Dusk. Made from special paper crafted specifically for lighting, it offers durability and a premium finish. The hand-pleated design not o",
     "brand": "fig_living",
     "category": "table_lamp",
@@ -12246,11 +12246,11 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/orilamp-peach-glow-aurora-skies-edition\u2122-copy"
+    "sourceUrl": "https://figliving.com/products/orilamp-peach-glow-aurora-skies-edition™-copy"
   },
   {
     "slug": "orilamp-aurora-skies-origami-table-lamp",
-    "name": "Orilamp Tangerine Dusk - Aurora Skies Edition\u2122",
+    "name": "Orilamp Tangerine Dusk - Aurora Skies Edition™",
     "description": "Introducing our refreshing take on Orilamp, a vibrant addition to brighten up your space with its unique color gradient of Aurora Skies, Peach Glow, and Tangerine Dusk. Made from special paper crafted specifically for lighting, it offers durability and a premium finish. The hand-pleated design not o",
     "brand": "fig_living",
     "category": "table_lamp",
@@ -12288,7 +12288,7 @@
     "size": "large",
     "material": "brass, fabric",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/ornate-brass-double-shade-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/ornate-brass-double-shade-sconce/01-white-bg-studio.png",
     "styleTags": [
       "ornate",
       "double-arm",
@@ -12323,7 +12323,7 @@
     "size": "large",
     "material": "brass, glass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/ornate-torch-hurricane-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/ornate-torch-hurricane-sconce/01-white-bg-studio.png",
     "styleTags": [
       "torch",
       "acanthus",
@@ -12357,7 +12357,7 @@
     "size": "medium",
     "material": "iron, glass",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/outdoor-iron-torch-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/outdoor-iron-torch-sconce/01-white-bg-studio.png",
     "styleTags": [
       "torch",
       "outdoor",
@@ -12390,7 +12390,7 @@
     "size": "medium",
     "material": "iron, glass",
     "finish": "patina",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/outdoor-torch-hurricane-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/outdoor-torch-hurricane-sconce/01-white-bg-studio.png",
     "styleTags": [
       "torch",
       "hurricane",
@@ -12416,7 +12416,7 @@
   {
     "slug": "pagen-100-black-table-lamp",
     "name": "Pagen 100 Table Lamp",
-    "description": "Introducing the Pagen 100 table lamp \u2014 a meticulously crafted metal table lamp that brings a touch of modern sophistication to any space. Engineered to perfection, it features a sturdy harp for perfect stability and a double powder coating that keeps it rust-free for years. The inner white coat ensu",
+    "description": "Introducing the Pagen 100 table lamp — a meticulously crafted metal table lamp that brings a touch of modern sophistication to any space. Engineered to perfection, it features a sturdy harp for perfect stability and a double powder coating that keeps it rust-free for years. The inner white coat ensu",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -12440,7 +12440,7 @@
     "size": "small",
     "material": "iron, glass",
     "finish": "patina",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/pagoda-outdoor-wall-lantern/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/pagoda-outdoor-wall-lantern/01-white-bg-studio.png",
     "styleTags": [
       "pagoda",
       "outdoor",
@@ -12481,7 +12481,7 @@
   {
     "slug": "paper-mache-vase-home-decor",
     "name": "Paper Mache Vase - Black",
-    "description": "Discover the charm of minimalism with FIG Living\u2019s Original Paper Mache Vase home decor\u2014a distinctive tabletop decor item exclusively crafted for modern, compact living spaces. Its modest size makes it an impeccable choice for flats and apartments, allowing you to embellish your home without comprom",
+    "description": "Discover the charm of minimalism with FIG Living’s Original Paper Mache Vase home decor—a distinctive tabletop decor item exclusively crafted for modern, compact living spaces. Its modest size makes it an impeccable choice for flats and apartments, allowing you to embellish your home without comprom",
     "brand": "fig_living",
     "category": "decorative_object",
     "parentCategory": "decor",
@@ -12497,7 +12497,7 @@
   {
     "slug": "paper-mache-flower-vase-white-minimal-shape",
     "name": "Paper Mache Vase - Off White",
-    "description": "Discover the charm of minimalism with FIG Living\u2019s Original Paper Mache Vase\u2014a distinctive tabletop home decor item exclusively crafted for modern, compact living spaces. Its modest size makes it an impeccable choice for flats and apartments, allowing you to embellish your home without compromising ",
+    "description": "Discover the charm of minimalism with FIG Living’s Original Paper Mache Vase—a distinctive tabletop home decor item exclusively crafted for modern, compact living spaces. Its modest size makes it an impeccable choice for flats and apartments, allowing you to embellish your home without compromising ",
     "brand": "fig_living",
     "category": "decorative_object",
     "parentCategory": "decor",
@@ -12521,12 +12521,12 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/peacock-dome/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/peacock-dome/studio.png"
   },
   {
     "slug": "petal-bloom-flower-bouquet-floor-lamp",
     "name": "Petal Bloom Floor Lamp",
-    "description": "Petal Bloom Floor Lamp \u2013 a striking blend of artistry and innovation, crafted to transform any space into a haven of elegance. Standing at an impressive 145 cm tall and 55 cm wide, this lamp is designed to be a distinctive lighting centerpiece. Why Choose the Petal Bloom Floor Lamp? Realistic Flower",
+    "description": "Petal Bloom Floor Lamp – a striking blend of artistry and innovation, crafted to transform any space into a haven of elegance. Standing at an impressive 145 cm tall and 55 cm wide, this lamp is designed to be a distinctive lighting centerpiece. Why Choose the Petal Bloom Floor Lamp? Realistic Flower",
     "brand": "fig_living",
     "category": "floor_lamp",
     "parentCategory": "floor_lamp",
@@ -12573,7 +12573,7 @@
   {
     "slug": "3d-vase-02",
     "name": "Phantom Vase RYB - 3D Printed",
-    "description": "Transform any surface into a statement with the Phantom Vase RYB, a piece that blurs the line between art and function. Designed with Fig Living\u2019s signature undulating, ribbed geometry, it captures light in motion and reveals a dynamic UV-smart gradient that flows from red to yellow, echoing the war",
+    "description": "Transform any surface into a statement with the Phantom Vase RYB, a piece that blurs the line between art and function. Designed with Fig Living’s signature undulating, ribbed geometry, it captures light in motion and reveals a dynamic UV-smart gradient that flows from red to yellow, echoing the war",
     "brand": "fig_living",
     "category": "decorative_object",
     "parentCategory": "decor",
@@ -12699,7 +12699,7 @@
     "size": "small",
     "material": "iron, fabric",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/pleated-bell-silver-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/pleated-bell-silver-sconce/01-white-bg-studio.png",
     "styleTags": [
       "pleated",
       "bell-shade",
@@ -12733,12 +12733,12 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/pleated-pendant/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/pleated-pendant/studio.png"
   },
   {
     "slug": "porto-table-lamp-001",
     "name": "Porto Table Lamp",
-    "description": "A modern essential designed to move with you. The Porto Table Lamp blends clean form with effortless functionality, casting a soft, ambient glow wherever it\u2019s placed. Crafted in metal with a minimal silhouette, it adds a quiet sophistication to desks, bedsides, and outdoor settings alike. Cordless a",
+    "description": "A modern essential designed to move with you. The Porto Table Lamp blends clean form with effortless functionality, casting a soft, ambient glow wherever it’s placed. Crafted in metal with a minimal silhouette, it adds a quiet sophistication to desks, bedsides, and outdoor settings alike. Cordless a",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -12762,7 +12762,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/prism-filigree/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/prism-filigree/studio.png"
   },
   {
     "slug": "prism-tier",
@@ -12775,7 +12775,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/prism-tier/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/prism-tier/studio.png"
   },
   {
     "slug": "purple-glass-urn-table-lamp",
@@ -12788,7 +12788,7 @@
     "size": "large",
     "material": "glass, fabric, brass",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/purple-glass-urn-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/purple-glass-urn-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "empire-shade",
       "urn-base",
@@ -12822,7 +12822,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/radiant-geometry/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/radiant-geometry/studio.png"
   },
   {
     "slug": "samavar-rainbow-festival-vase",
@@ -12835,12 +12835,12 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_41444b51-7924-4768-96c7-5eca8ab9a0c9.jpg"
+    "imagePath": "/images/house-of-samavar/vases/41444b51-7924-4768-96c7-5eca8ab9a0c9.jpg"
   },
   {
     "slug": "repousse-silver-surahi-table-lamp",
-    "name": "Repouss\u00e9 Silver Surahi Table Lamp",
-    "description": "A compact Indian-craft table lamp with a round, globular surahi-form base entirely covered in fine hand-worked repouss\u00e9 silver-tone brass with dense floral scrollwork. A broad white linen drum shade in a proportional width gives the lamp balance. The intricate metalwork makes it a collector-quality artisan piece.",
+    "name": "Repoussé Silver Surahi Table Lamp",
+    "description": "A compact Indian-craft table lamp with a round, globular surahi-form base entirely covered in fine hand-worked repoussé silver-tone brass with dense floral scrollwork. A broad white linen drum shade in a proportional width gives the lamp balance. The intricate metalwork makes it a collector-quality artisan piece.",
     "brand": "delhi_brass",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -12848,10 +12848,10 @@
     "size": "small",
     "material": "brass, fabric",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/repousse-silver-surahi-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/repousse-silver-surahi-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "drum-shade",
-      "repouss\u00e9",
+      "repoussé",
       "surahi-base",
       "Indian-craft",
       "floral-engraved"
@@ -12933,7 +12933,7 @@
     "size": "large",
     "material": "glass, fabric, brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/ribbed-amber-glass-urn-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/ribbed-amber-glass-urn-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "drum-shade",
       "ribbed-glass",
@@ -12968,7 +12968,7 @@
     "size": "large",
     "material": "ceramic, fabric, brass",
     "finish": "matte",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/ribbed-sand-ceramic-urn-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/ribbed-sand-ceramic-urn-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "empire-shade",
       "ribbed",
@@ -13015,7 +13015,7 @@
     "size": "large",
     "material": "brass, fabric",
     "finish": "patina",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/rope-twist-double-shade-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/rope-twist-double-shade-sconce/01-white-bg-studio.png",
     "styleTags": [
       "rope-twist",
       "double-arm",
@@ -13049,7 +13049,7 @@
     "size": "medium",
     "material": "wood, brass, fabric",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/rosewood-fluted-urn-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/rosewood-fluted-urn-table-lamp/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -13066,7 +13066,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/royal-crown-pendant/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/royal-crown-pendant/studio.png"
   },
   {
     "slug": "rustic-scroll-hurricane-sconce",
@@ -13079,7 +13079,7 @@
     "size": "medium",
     "material": "iron, glass",
     "finish": "patina",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/rustic-scroll-hurricane-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/rustic-scroll-hurricane-sconce/01-white-bg-studio.png",
     "styleTags": [
       "rustic",
       "scrollwork",
@@ -13115,7 +13115,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_f104f8c9-566d-481a-bab5-2683537fbe38.jpg"
+    "imagePath": "/images/house-of-samavar/vases/f104f8c9-566d-481a-bab5-2683537fbe38.jpg"
   },
   {
     "slug": "samavar-sapphire-rose-vase",
@@ -13128,7 +13128,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_b5702083-bc6f-4a90-82f8-b77c58557e2d.jpg"
+    "imagePath": "/images/house-of-samavar/vases/b5702083-bc6f-4a90-82f8-b77c58557e2d.jpg"
   },
   {
     "slug": "scroll-crystal-glass-double-sconce",
@@ -13141,7 +13141,7 @@
     "size": "medium",
     "material": "brass, glass, crystal",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/scroll-crystal-glass-double-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/scroll-crystal-glass-double-sconce/01-white-bg-studio.png",
     "styleTags": [
       "scroll",
       "crystal-drops",
@@ -13176,7 +13176,7 @@
     "size": "medium",
     "material": "brass, fabric",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/scroll-rosette-double-shade-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/scroll-rosette-double-shade-sconce/01-white-bg-studio.png",
     "styleTags": [
       "rosette",
       "scroll-arms",
@@ -13210,7 +13210,7 @@
     "size": "large",
     "material": "brass, fabric",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/scrollwork-drum-accent-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/scrollwork-drum-accent-sconce/01-white-bg-studio.png",
     "styleTags": [
       "scrollwork",
       "horizontal",
@@ -13273,7 +13273,7 @@
     "size": "large",
     "material": "metal, fabric",
     "finish": "brushed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/ribbed-silver-cylinder-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/ribbed-silver-cylinder-table-lamp/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -13290,7 +13290,7 @@
     "size": "large",
     "material": "metal, fabric",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/silver-ribbed-gourd-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/silver-ribbed-gourd-table-lamp/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -13322,7 +13322,7 @@
     "size": "medium",
     "material": "glass, fabric, brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/smoked-glass-disc-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/smoked-glass-disc-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "empire-shade",
       "disc-base",
@@ -13364,7 +13364,7 @@
   {
     "slug": "sonobe-tetris-origami-table-lamp",
     "name": "Sonobe Tetris Table Lamp",
-    "description": "The Sonobe Tetris Lamp is a modern masterpiece that blends art, innovation, and functionality into one striking lighting statement. Crafted using our patented modular origami folding technique, each piece is meticulously hand-assembled by master craftsmen, creating a sculptural form that\u2019s as unique",
+    "description": "The Sonobe Tetris Lamp is a modern masterpiece that blends art, innovation, and functionality into one striking lighting statement. Crafted using our patented modular origami folding technique, each piece is meticulously hand-assembled by master craftsmen, creating a sculptural form that’s as unique",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -13380,7 +13380,7 @@
   {
     "slug": "space-rover-floor-lamp-fabric-tripod-standing-lamp",
     "name": "Space Rover Floor Lamp",
-    "description": "Introducing the Space Rover Floor Lamp, an epitome of contemporary design fused with a celestial essence. 1. Stature and Stability: Towering at a height of 140cm, it\u2019s a substantial presence in any room. With a base spread of 100cm, the Space Rover stands firm and grounded. 2. Modern Finish: The sil",
+    "description": "Introducing the Space Rover Floor Lamp, an epitome of contemporary design fused with a celestial essence. 1. Stature and Stability: Towering at a height of 140cm, it’s a substantial presence in any room. With a base spread of 100cm, the Space Rover stands firm and grounded. 2. Modern Finish: The sil",
     "brand": "fig_living",
     "category": "floor_lamp",
     "parentCategory": "floor_lamp",
@@ -13395,7 +13395,7 @@
   {
     "slug": "marble-print-paper-sphere-pendant-light",
     "name": "Sphere Pendant Lamp - Marble Print",
-    "description": "The Sphere Pendant Lamp (Marble Print) brings one of the most classic forms in lighting \u2014 the perfect sphere \u2014 to life in marble-print origami paper. Also recognised at the 2024 Messe Frankfurt trend showcase, it's a piece that holds its own as sculpture when unlit and becomes something entirely dif",
+    "description": "The Sphere Pendant Lamp (Marble Print) brings one of the most classic forms in lighting — the perfect sphere — to life in marble-print origami paper. Also recognised at the 2024 Messe Frankfurt trend showcase, it's a piece that holds its own as sculpture when unlit and becomes something entirely dif",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -13419,7 +13419,7 @@
     "size": "medium",
     "material": "stone, brass, fabric",
     "finish": "matte",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/stone-pebble-drum-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/stone-pebble-drum-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "stone",
       "pebble",
@@ -13454,7 +13454,7 @@
     "size": "large",
     "material": "brass, fabric",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/sunburst-double-shade-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/sunburst-double-shade-sconce/01-white-bg-studio.png",
     "styleTags": [
       "sunburst",
       "starburst",
@@ -13512,7 +13512,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 13500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_089e0b01-faa9-47de-8ea6-c27e9dc7ed0b.jpg"
+    "imagePath": "/images/house-of-samavar/vases/089e0b01-faa9-47de-8ea6-c27e9dc7ed0b.jpg"
   },
   {
     "slug": "samavar-surahi-paisley-vase-2",
@@ -13525,7 +13525,7 @@
     "material": "paper mache",
     "finish": "lacquer",
     "priceINR": 16500,
-    "imagePath": "/images/house-of-samavar/lifestyle/lifestyle_b743f94c-ddca-410a-9435-cb0500c903e2.jpg"
+    "imagePath": "/images/house-of-samavar/vases/b743f94c-ddca-410a-9435-cb0500c903e2.jpg"
   },
   {
     "slug": "suspended-foliage",
@@ -13538,7 +13538,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/suspended-foliage/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/suspended-foliage/studio.png"
   },
   {
     "slug": "swag-constellation",
@@ -13551,7 +13551,7 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/swag-constellation/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/swag-constellation/studio.png"
   },
   {
     "slug": "tabla-origami-pendant-light",
@@ -13626,7 +13626,7 @@
     "size": "large",
     "material": "ceramic, fabric, brass",
     "finish": "matte",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/teal-pebble-texture-cylinder-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/teal-pebble-texture-cylinder-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "drum-shade",
       "cylinder-base",
@@ -13685,7 +13685,7 @@
   {
     "slug": "draft16",
     "name": "The Arcadia Inlay Console",
-    "description": "The Arcadia Inlay Console by CasaGold Elevate your entryway, hallway, or living space with the Arcadia Inlay Console Table \u2014 a bold fusion of modern geometry and timeless craftsmanship. Handcrafted with meticulous attention to detail, this stunning piece features arched legs and a monochrome checker",
+    "description": "The Arcadia Inlay Console by CasaGold Elevate your entryway, hallway, or living space with the Arcadia Inlay Console Table — a bold fusion of modern geometry and timeless craftsmanship. Handcrafted with meticulous attention to detail, this stunning piece features arched legs and a monochrome checker",
     "brand": "casagold",
     "category": "console_table",
     "parentCategory": "table",
@@ -13777,7 +13777,7 @@
   {
     "slug": "the-scarlet-arch-console",
     "name": "The Scarlet Arch Console",
-    "description": "The Scarlet Arch Console \u2013 Handcrafted Inlay Console with Chevron Design & Red Arch Detail. Transform your entryway with this architectural masterpiece, designed to captivate with its unique shape, bold colour palette, and intricate pattern. The stunning design, paired with the striped inlay, create",
+    "description": "The Scarlet Arch Console – Handcrafted Inlay Console with Chevron Design & Red Arch Detail. Transform your entryway with this architectural masterpiece, designed to captivate with its unique shape, bold colour palette, and intricate pattern. The stunning design, paired with the striped inlay, create",
     "brand": "casagold",
     "category": "console_table",
     "parentCategory": "table",
@@ -13798,7 +13798,7 @@
   {
     "slug": "tote-table-lamp-modern-scandinavian-design-origami-lampshade-metal-base",
     "name": "Tote Table Lamp",
-    "description": "This globally acclaimed, award-winning tote lamp is now in India. It features a sleek metal base and an origami-inspired paper shade, blending modern Scandinavian design with artisanal craftsmanship. Ergonomically designed to fit effortlessly into any space, it\u2019s both stylish and highly functional, ",
+    "description": "This globally acclaimed, award-winning tote lamp is now in India. It features a sleek metal base and an origami-inspired paper shade, blending modern Scandinavian design with artisanal craftsmanship. Ergonomically designed to fit effortlessly into any space, it’s both stylish and highly functional, ",
     "brand": "fig_living",
     "category": "table_lamp",
     "parentCategory": "table_lamp",
@@ -13824,7 +13824,7 @@
     "size": "large",
     "material": "iron, fabric",
     "finish": "matte_black",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/floor-lamps/tripod-drum-floor-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/floor-lamps/tripod-drum-floor-lamp/01-white-bg-studio.png",
     "styleTags": [
       "tripod",
       "drum-shade",
@@ -13850,7 +13850,7 @@
   {
     "slug": "square-tulip-table",
     "name": "Tulip Bloom Inlay Square Coffee Table",
-    "description": "CasaGold \u201cTulip Bloom\u201d Inlay Square Coffee Table with Gold Metal Base Elevate your living room with the Tulip Bloom Coffee Table, a refined expression of luxury and artisan craftsmanship by CasaGold. This square inlay coffee table showcases a beautifully detailed tulip floral pattern, carefully hand",
+    "description": "CasaGold “Tulip Bloom” Inlay Square Coffee Table with Gold Metal Base Elevate your living room with the Tulip Bloom Coffee Table, a refined expression of luxury and artisan craftsmanship by CasaGold. This square inlay coffee table showcases a beautifully detailed tulip floral pattern, carefully hand",
     "brand": "casagold",
     "category": "coffee_table",
     "parentCategory": "table",
@@ -13884,7 +13884,7 @@
     "size": "medium",
     "material": "wood, fabric",
     "finish": "distressed",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/turned-wood-sphere-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/turned-wood-sphere-table-lamp/01-white-bg-studio.png",
     "styleTags": [
       "drum-shade",
       "sphere-base",
@@ -13918,7 +13918,7 @@
     "size": "large",
     "material": "iron, fabric",
     "finish": "patina",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/floor-lamps/twin-rod-floor-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/floor-lamps/twin-rod-floor-lamp/01-white-bg-studio.png",
     "styleTags": [
       "twin-rod",
       "minimal",
@@ -13952,7 +13952,7 @@
     "size": "large",
     "material": "brass, fabric",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/twisted-brass-drum-sconce/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/twisted-brass-drum-sconce/01-white-bg-studio.png",
     "styleTags": [
       "twisted",
       "elongated",
@@ -13987,12 +13987,12 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/twisted-linen/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/twisted-linen/studio.png"
   },
   {
     "slug": "unicorn-beige-figurine",
     "name": "Unicorn - Beige",
-    "description": "Add a touch of magic to your space with this Unicorn Beige Figurine , a charming d\u00e9cor piece crafted from durable paper mache. Designed with a soft beige finish and a playful unicorn form, it brings a whimsical character to kids\u2019 rooms, study tables, and creative spaces. The neutral tone allows it t",
+    "description": "Add a touch of magic to your space with this Unicorn Beige Figurine , a charming décor piece crafted from durable paper mache. Designed with a soft beige finish and a playful unicorn form, it brings a whimsical character to kids’ rooms, study tables, and creative spaces. The neutral tone allows it t",
     "brand": "fig_living",
     "category": "figurine",
     "parentCategory": "decor",
@@ -14008,7 +14008,7 @@
   {
     "slug": "white-unicorn-figurine",
     "name": "Unicorn - White",
-    "description": "Add a magical touch to your d\u00e9cor with this White Unicorn Figurine , a charming decorative piece crafted from durable paper mache. Designed with a clean silhouette and elegant white finish, it blends effortlessly into kids\u2019 rooms, play areas, and themed interiors while adding a whimsical accent to t",
+    "description": "Add a magical touch to your décor with this White Unicorn Figurine , a charming decorative piece crafted from durable paper mache. Designed with a clean silhouette and elegant white finish, it blends effortlessly into kids’ rooms, play areas, and themed interiors while adding a whimsical accent to t",
     "brand": "fig_living",
     "category": "figurine",
     "parentCategory": "decor",
@@ -14024,7 +14024,7 @@
   {
     "slug": "velocity-origami-paper-pendant-light",
     "name": "Velocity Pendant Lamp",
-    "description": "Standing 31cm tall with a 41cm diameter, the Velocity Origami Lamp is more than just a light source. It's a lightweight piece of art with clean lines and a dynamic form \u2014 the kind of pendant that makes a room feel curated rather than furnished. Handcrafted from origami paper using FIG Living's signa",
+    "description": "Standing 31cm tall with a 41cm diameter, the Velocity Origami Lamp is more than just a light source. It's a lightweight piece of art with clean lines and a dynamic form — the kind of pendant that makes a room feel curated rather than furnished. Handcrafted from origami paper using FIG Living's signa",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -14040,7 +14040,7 @@
   {
     "slug": "etherea-two-tier-origami-chandelier-pendant-light",
     "name": "Velocity Two-Tier Pendant Light",
-    "description": "Transform your living space with the Velocity Two-Tier Pendant Light \u2014 a chandelier-scale statement piece that doubles as hanging light, chandelier, or pendant lamp. Crafted using 100% premium European linen with accordion origami pleating , this two-tier lamp radiates a warm, even glow through 500 ",
+    "description": "Transform your living space with the Velocity Two-Tier Pendant Light — a chandelier-scale statement piece that doubles as hanging light, chandelier, or pendant lamp. Crafted using 100% premium European linen with accordion origami pleating , this two-tier lamp radiates a warm, even glow through 500 ",
     "brand": "fig_living",
     "category": "pendant",
     "parentCategory": "hanging_light",
@@ -14055,7 +14055,7 @@
   {
     "slug": "verdant-luxe-stripe-bone-inlay-bedside-table",
     "name": "Verdant Luxe Bone Inlay Bedside Table",
-    "description": "Verdant Luxe Bone Inlay Bedside Table \u2013 Handcrafted Elegance with CustomiSable Colours Introduce a touch of timeless artistry to your bedroom with the Verdant Luxe Bone Inlay Bedside Table. Handcrafted with exquisite bone inlay detailing, this elegant piece features a modern geometric pattern, accen",
+    "description": "Verdant Luxe Bone Inlay Bedside Table – Handcrafted Elegance with CustomiSable Colours Introduce a touch of timeless artistry to your bedroom with the Verdant Luxe Bone Inlay Bedside Table. Handcrafted with exquisite bone inlay detailing, this elegant piece features a modern geometric pattern, accen",
     "brand": "casagold",
     "category": "other",
     "parentCategory": "other",
@@ -14176,8 +14176,8 @@
   },
   {
     "slug": "eliska-mother-of-pearl-console-table",
-    "name": "White Mother of Pearl Inlay Console Table \u2013 Cleo Pattern Luxury Entryway Table",
-    "description": "Introducing our White Cleo Inlay Console Table \u2013 a refined statement piece designed to bring understated luxury and artistic craftsmanship into your interiors. Elegant yet functional, this console effortlessly enhances entryways, hallways, and living spaces with its sophisticated presence. Meticulou",
+    "name": "White Mother of Pearl Inlay Console Table – Cleo Pattern Luxury Entryway Table",
+    "description": "Introducing our White Cleo Inlay Console Table – a refined statement piece designed to bring understated luxury and artistic craftsmanship into your interiors. Elegant yet functional, this console effortlessly enhances entryways, hallways, and living spaces with its sophisticated presence. Meticulou",
     "brand": "casagold",
     "category": "console_table",
     "parentCategory": "table",
@@ -14199,7 +14199,7 @@
   {
     "slug": "wise-owl-figurine",
     "name": "Wise Owl",
-    "description": "Add a touch of character to your space with the Wise Owl Figurine , a distinctive d\u00e9cor piece crafted from durable paper mache. Designed with an artistic owl form, it brings a subtle decorative element to bookshelves, study desks, or styled corners of modern interiors. The handcrafted construction a",
+    "description": "Add a touch of character to your space with the Wise Owl Figurine , a distinctive décor piece crafted from durable paper mache. Designed with an artistic owl form, it brings a subtle decorative element to bookshelves, study desks, or styled corners of modern interiors. The handcrafted construction a",
     "brand": "fig_living",
     "category": "figurine",
     "parentCategory": "decor",
@@ -14223,7 +14223,7 @@
     "size": "large",
     "material": "wood, metal, fabric",
     "finish": "matte",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/wood-abacus-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/wood-abacus-table-lamp/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],
@@ -14240,7 +14240,7 @@
     "size": "small",
     "material": "wood, brass",
     "finish": "patina",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/wall-lights/wood-cylinder-picture-light/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/wood-cylinder-picture-light/01-white-bg-studio.png",
     "styleTags": [
       "cylinder",
       "picture-light",
@@ -14274,7 +14274,7 @@
     "size": "medium",
     "material": "wood, brass, fabric",
     "finish": "polished",
-    "imagePath": "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/images/table-lamps/wood-filigree-sphere-table-lamp/01-white-bg-studio.png",
+    "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/wood-filigree-sphere-table-lamp/01-white-bg-studio.png",
     "styleTags": [],
     "colorPalette": [],
     "vibes": [],

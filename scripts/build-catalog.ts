@@ -14,8 +14,8 @@ const DB_WEBSITE_ROOT = "/Users/dikshitakhullar/Desktop/delhi brass/delhi-brass-
 const WEBSITE_IMAGES_DIR = `${DB_WEBSITE_ROOT}/public/images/chandeliers`;
 const DB_WEBSITE_CATALOG = `${DB_WEBSITE_ROOT}/data/products.json`;
 const DB_DATA_DIR = `${DB_WEBSITE_ROOT}/data`;
-const IMAGE_BASE = "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers";
-const DB_IMAGE_BASE = "https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images";
+const IMAGE_BASE = "https://ik.imagekit.io/delhibrass/chandeliers";
+const DB_IMAGE_BASE = "https://ik.imagekit.io/delhibrass";
 
 // ─── Scraped data roots ───
 const SCRAPER_DATA = "/Users/dikshitakhullar/Desktop/nectar/scraper/data/raw";
@@ -296,11 +296,12 @@ function buildDelhiBrassFromJSON(): CatalogProduct[] {
     for (const item of items) {
       const category: ProductCategory = (item.category as ProductCategory) || defaultCategory;
 
-      // Find the best image — prefer first image path, or construct from slug
+      // Find the best image
       let imagePath = "";
       if (item.images && item.images.length > 0) {
-        // Images are relative paths like "/images/table-lamps/slug/01-white-bg-studio.png"
-        imagePath = `${DB_IMAGE_BASE}${item.images[0]}`;
+        const img = item.images[0];
+        // If already a full URL, use as-is. Otherwise construct from base.
+        imagePath = img.startsWith("http") ? img : `${DB_IMAGE_BASE}${img.replace(/^\/images\//, "/")}`;
       } else {
         imagePath = `${DB_IMAGE_BASE}/${imageFolder}/${item.slug}/01-white-bg-studio.png`;
       }

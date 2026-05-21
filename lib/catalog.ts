@@ -6,8 +6,11 @@ const allProducts: Product[] = catalogData as Product[];
 // Brands shown on the main product grid
 const GRID_BRANDS: Brand[] = ["delhi_brass", "house_of_samavar"];
 
-// Delhi Brass categories with images on GitHub (others pending upload)
-const DB_LIVE_CATEGORIES: ProductCategory[] = ["chandelier", "pendant", "lantern", "cluster", "flush_mount", "hanging_lamp"];
+// All Delhi Brass categories now live on ImageKit
+const DB_LIVE_CATEGORIES: ProductCategory[] = [
+  "chandelier", "pendant", "lantern", "cluster", "flush_mount", "hanging_lamp",
+  "table_lamp", "floor_lamp", "wall_light",
+];
 
 // === Product grid functions ===
 

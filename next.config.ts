@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "raw.githubusercontent.com",
-        pathname: "/dikshitakhullar/delhi-brass-website/**",
+        hostname: "ik.imagekit.io",
+        pathname: "/delhibrass/**",
       },
       {
         protocol: "https",
