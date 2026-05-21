@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import { PostHogProvider } from "./providers";
 import { BottomNav } from "./components/bottom-nav";
 
@@ -55,6 +56,7 @@ export default function RootLayout({
           <BottomNav />
         </div>
         </PostHogProvider>
+        <Analytics />
       </body>
     </html>
   );
