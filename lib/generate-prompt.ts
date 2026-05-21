@@ -179,7 +179,8 @@ PLACEMENT:
 - Show warm light glow from the fixture, casting soft ambient light.
 
 QUALITY:
-- Maintain the exact same camera angle, perspective, and lighting of the original photo.
+- Maintain the EXACT same camera angle, perspective, and lighting of the original photo.
+- CRITICAL: Keep the same image orientation and aspect ratio. If the input photo is PORTRAIT (vertical), the output MUST be portrait. If the input is LANDSCAPE (horizontal), the output MUST be landscape. Do NOT change the orientation.
 - This must look like a real photograph, not a CGI render or composite.
 - The fixture must look naturally integrated — proper shadows, reflections, lighting interaction with the room.`;
   } else {
@@ -219,7 +220,8 @@ ${getVibeDetails(styleDirection)}
 CRITICAL FLOORING RULE: If floor already has tiles/marble/stone — DO NOT CHANGE IT. Only apply new flooring to bare concrete/cement.
 
 QUALITY:
-- Maintain the exact same camera angle and perspective.
+- Maintain the EXACT same camera angle, perspective, and field of view.
+- CRITICAL: Keep the same image orientation and aspect ratio. If the input photo is PORTRAIT (vertical), the output MUST be portrait. If the input is LANDSCAPE (horizontal), the output MUST be landscape. Do NOT change the orientation.
 - This must look like a real photograph, not a CGI render.`;
   }
 
