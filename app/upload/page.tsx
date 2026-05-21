@@ -243,55 +243,53 @@ function UploadForm() {
       if (!recRes.ok) throw new Error("Recommendation failed");
       const { slugs } = await recRes.json();
 
-      // Step 2: Generate renders for all recommended products in parallel
-      setLoadingMessage(`Generating ${slugs.length} options...`);
+      // Step 2: Generate render for the FIRST recommended product only
+      // (other options stored as slugs — user can generate on demand from result page)
+      setLoadingMessage(`Generating visualization...`);
 
-      const renderPromises = slugs.map(async (slug: string) => {
-        const genFormData = new FormData();
-        genFormData.append("roomImage", roomImage);
-        genFormData.append("productSlug", slug);
-        genFormData.append("roomType", roomType);
-        genFormData.append("roomState", roomState);
-        if (vibe) genFormData.append("vibe", vibe);
-        if (notes) genFormData.append("notes", notes);
+      const firstSlug = slugs[0];
+      const genFormData = new FormData();
+      genFormData.append("roomImage", roomImage);
+      genFormData.append("productSlug", firstSlug);
+      genFormData.append("roomType", roomType);
+      genFormData.append("roomState", roomState);
+      if (vibe) genFormData.append("vibe", vibe);
+      if (notes) genFormData.append("notes", notes);
 
-        try {
-          const genRes = await fetch("/api/generate", {
-            method: "POST",
-            body: genFormData,
-            headers: { "X-POSTHOG-DISTINCT-ID": distinctId },
-          });
-          if (!genRes.ok) return null;
-          const blob = await genRes.blob();
-          const reader = new FileReader();
-          const dataUrl = await new Promise<string>((resolve) => {
-            reader.onload = () => resolve(reader.result as string);
-            reader.readAsDataURL(blob);
-          });
-          return { slug, imageUrl: dataUrl };
-        } catch {
-          return null;
-        }
+      const genRes = await fetch("/api/generate", {
+        method: "POST",
+        body: genFormData,
+        headers: { "X-POSTHOG-DISTINCT-ID": distinctId },
       });
+      if (!genRes.ok) throw new Error("Generation failed");
 
-      const settled = await Promise.all(renderPromises);
-      const results = settled.filter((r): r is { slug: string; imageUrl: string } => r !== null);
+      const blob = await genRes.blob();
+      let imageUrl: string;
+      try {
+        const reader = new FileReader();
+        imageUrl = await new Promise<string>((resolve, reject) => {
+          reader.onload = () => resolve(reader.result as string);
+          reader.onerror = reject;
+          reader.readAsDataURL(blob);
+        });
+        sessionStorage.removeItem("resultImage");
+        sessionStorage.removeItem("roomImagePreview");
+        sessionStorage.setItem(`aiResultImage_0`, imageUrl);
+      } catch {
+        imageUrl = URL.createObjectURL(blob);
+        sessionStorage.setItem(`aiResultImage_0`, imageUrl);
+      }
 
-      if (results.length === 0) throw new Error("No renders generated");
-
-      // Store all results
-      sessionStorage.setItem("aiResults", JSON.stringify(results.map((r) => r.slug)));
-      results.forEach((r, i) => {
-        sessionStorage.setItem(`aiResultImage_${i}`, r.imageUrl);
-        sessionStorage.setItem(`aiResultSlug_${i}`, r.slug);
-      });
-      sessionStorage.setItem("aiResultCount", String(results.length));
+      // Store first result + all recommended slugs for on-demand generation
+      sessionStorage.setItem(`aiResultSlug_0`, firstSlug);
+      sessionStorage.setItem("aiResultCount", "1");
+      sessionStorage.setItem("aiAllSlugs", JSON.stringify(slugs));
       posthog.capture("ai_visualization_completed", {
         product_type: productType,
         room_type: roomType,
         room_state: roomState,
         vibe: vibe || null,
-        renders_count: results.length,
+        renders_count: 1,
         recommended_slugs: slugs,
       });
       router.push("/result?mode=ai");

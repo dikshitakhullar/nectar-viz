@@ -24,6 +24,9 @@ function SingleResult() {
   const [aiOptions, setAiOptions] = useState<AiOption[]>([]);
   const [selectedAiIndex, setSelectedAiIndex] = useState(0);
 
+  const [allSlugs, setAllSlugs] = useState<string[]>([]);
+  const [generatingIndex, setGeneratingIndex] = useState<number | null>(null);
+
   useEffect(() => {
     if (isAiMode) {
       const count = parseInt(sessionStorage.getItem("aiResultCount") || "0");
@@ -33,6 +36,11 @@ function SingleResult() {
         const slug = sessionStorage.getItem(`aiResultSlug_${i}`);
         if (url && slug) options.push({ slug, imageUrl: url });
       }
+      // Load all recommended slugs (some may not have renders yet)
+      const slugsJson = sessionStorage.getItem("aiAllSlugs");
+      const slugs = slugsJson ? JSON.parse(slugsJson) : options.map((o) => o.slug);
+      setAllSlugs(slugs);
+
       if (options.length === 0) {
         router.push("/");
         return;
@@ -173,21 +181,77 @@ function SingleResult() {
       </div>
 
       {/* AI option tabs */}
-      {isAiMode && aiOptions.length > 1 && (
+      {isAiMode && allSlugs.length > 1 && (
         <div className="flex gap-2">
-          {aiOptions.map((opt, i) => (
-            <button
-              key={opt.slug}
-              onClick={() => selectAiOption(i)}
-              className={`flex-1 px-3 py-2.5 rounded-xl text-xs tracking-wider uppercase border transition-all duration-300 ${
-                selectedAiIndex === i
-                  ? "bg-gold text-black border-gold"
-                  : "border-neutral-700 text-neutral-400 hover:border-neutral-500"
-              }`}
-            >
-              Option {i + 1}
-            </button>
-          ))}
+          {allSlugs.map((slug, i) => {
+            const existing = aiOptions.find((o) => o.slug === slug);
+            const isSelected = productSlug === slug;
+            const isGenerating = generatingIndex === i;
+
+            return (
+              <button
+                key={slug}
+                disabled={isGenerating}
+                onClick={async () => {
+                  if (existing) {
+                    // Already generated — just switch
+                    const idx = aiOptions.indexOf(existing);
+                    selectAiOption(idx);
+                  } else {
+                    // Generate on demand
+                    setGeneratingIndex(i);
+                    try {
+                      const roomPreview = sessionStorage.getItem("roomImagePreview");
+                      if (!roomPreview) return;
+                      const roomBlob = await fetch(roomPreview).then((r) => r.blob());
+                      const formData = new FormData();
+                      formData.append("roomImage", new File([roomBlob], "room.jpg", { type: "image/jpeg" }));
+                      formData.append("productSlug", slug);
+                      formData.append("roomType", sessionStorage.getItem("roomType") || "formal_living");
+                      formData.append("roomState", sessionStorage.getItem("roomState") || "furnished");
+                      const vibe = sessionStorage.getItem("vibe");
+                      if (vibe) formData.append("vibe", vibe);
+
+                      const res = await fetch("/api/generate", { method: "POST", body: formData });
+                      if (!res.ok) throw new Error("Failed");
+                      const blob = await res.blob();
+                      const reader = new FileReader();
+                      const dataUrl = await new Promise<string>((resolve) => {
+                        reader.onload = () => resolve(reader.result as string);
+                        reader.readAsDataURL(blob);
+                      });
+
+                      const newOption = { slug, imageUrl: dataUrl };
+                      const newOptions = [...aiOptions, newOption];
+                      setAiOptions(newOptions);
+                      setImageUrl(dataUrl);
+                      setProductSlug(slug);
+                      setSelectedAiIndex(newOptions.length - 1);
+
+                      // Cache in sessionStorage
+                      const count = newOptions.length;
+                      sessionStorage.setItem(`aiResultImage_${count - 1}`, dataUrl);
+                      sessionStorage.setItem(`aiResultSlug_${count - 1}`, slug);
+                      sessionStorage.setItem("aiResultCount", String(count));
+                    } catch {
+                      alert("Failed to generate this option. Try again.");
+                    } finally {
+                      setGeneratingIndex(null);
+                    }
+                  }
+                }}
+                className={`flex-1 px-3 py-2.5 rounded-xl text-xs tracking-wider uppercase border transition-all duration-300 ${
+                  isSelected
+                    ? "bg-gold text-black border-gold"
+                    : isGenerating
+                    ? "border-gold/50 text-gold/50 animate-pulse"
+                    : "border-neutral-700 text-neutral-400 hover:border-neutral-500"
+                }`}
+              >
+                {isGenerating ? "..." : `Option ${i + 1}`}
+              </button>
+            );
+          })}
         </div>
       )}
 
