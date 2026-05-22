@@ -42,6 +42,9 @@ yarn-error.log*
 # visual search logs (user images + results for feedback)
 /data/search-logs/
 
+# generation logs (room images + renders for review)
+/data/generation-logs/
+
 # screenshots
 Screenshot*
 

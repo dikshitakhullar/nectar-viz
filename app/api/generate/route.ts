@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
+import fs from "fs";
+import path from "path";
 import { GoogleGenAI, Modality } from "@google/genai";
 import { getProductBySlug } from "@/lib/catalog";
 import { buildPrompt } from "@/lib/generate-prompt";
@@ -114,6 +116,34 @@ export async function POST(request: NextRequest) {
     for (const part of parts) {
       if (part.inlineData?.mimeType?.startsWith("image/")) {
         const imageBuffer = Buffer.from(part.inlineData.data!, "base64");
+
+        // Save generation log for review
+        try {
+          const logDir = path.join(process.cwd(), "data", "generation-logs");
+          fs.mkdirSync(logDir, { recursive: true });
+          const logId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+
+          // Save room input image
+          fs.writeFileSync(path.join(logDir, `${logId}-room.jpg`), Buffer.from(roomImageBase64, "base64"));
+          // Save generated output
+          fs.writeFileSync(path.join(logDir, `${logId}-output.jpg`), imageBuffer);
+          // Save metadata
+          fs.writeFileSync(path.join(logDir, `${logId}.json`), JSON.stringify({
+            id: logId,
+            timestamp: new Date().toISOString(),
+            productSlug,
+            productName: product.displayName || product.name,
+            productImage: product.imagePath,
+            roomType,
+            roomState,
+            vibe: vibe || null,
+            notes: notes || null,
+            feedback: null,
+          }, null, 2));
+        } catch (e) {
+          console.warn("Failed to save generation log:", e);
+        }
+
         posthog.capture({
           distinctId,
           event: "visualization_generated",
