@@ -1,30 +1,29 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
-
-const LOG_DIR = path.join(process.cwd(), "data", "generation-logs");
+import { list, put } from "@vercel/blob";
 
 export async function GET() {
   try {
-    if (!fs.existsSync(LOG_DIR)) {
-      return NextResponse.json({ logs: [] });
-    }
+    // List all .json metadata files in generations/
+    const { blobs } = await list({ prefix: "generations/", limit: 100 });
 
-    const files = fs.readdirSync(LOG_DIR)
-      .filter((f) => f.endsWith(".json"))
-      .sort()
-      .reverse(); // newest first
+    const jsonBlobs = blobs
+      .filter((b) => b.pathname.endsWith(".json"))
+      .sort((a, b) => b.uploadedAt.getTime() - a.uploadedAt.getTime()); // newest first
 
-    const logs = files.map((f) => {
-      try {
-        return JSON.parse(fs.readFileSync(path.join(LOG_DIR, f), "utf-8"));
-      } catch {
-        return null;
-      }
-    }).filter(Boolean);
+    const logs = await Promise.all(
+      jsonBlobs.map(async (b) => {
+        try {
+          const res = await fetch(b.url);
+          return await res.json();
+        } catch {
+          return null;
+        }
+      })
+    );
 
-    return NextResponse.json({ logs });
-  } catch {
+    return NextResponse.json({ logs: logs.filter(Boolean) });
+  } catch (e) {
+    console.warn("Review list failed:", e);
     return NextResponse.json({ logs: [] });
   }
 }
@@ -36,14 +35,22 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Missing id or feedback" }, { status: 400 });
     }
 
-    const logPath = path.join(LOG_DIR, `${id}.json`);
-    if (!fs.existsSync(logPath)) {
+    // Read existing metadata
+    const { blobs } = await list({ prefix: `generations/${id}.json` });
+    if (blobs.length === 0) {
       return NextResponse.json({ error: "Log not found" }, { status: 404 });
     }
 
-    const log = JSON.parse(fs.readFileSync(logPath, "utf-8"));
+    const res = await fetch(blobs[0].url);
+    const log = await res.json();
     log.feedback = feedback;
-    fs.writeFileSync(logPath, JSON.stringify(log, null, 2));
+
+    // Overwrite with feedback
+    await put(`generations/${id}.json`, JSON.stringify(log, null, 2), {
+      access: "public",
+      contentType: "application/json",
+      addRandomSuffix: false,
+    });
 
     return NextResponse.json({ ok: true });
   } catch {

@@ -12,6 +12,8 @@ interface GenerationLog {
   roomState: string;
   vibe: string | null;
   notes: string | null;
+  roomUrl: string;
+  outputUrl: string;
   feedback: string | null;
 }
 
@@ -77,7 +79,7 @@ export default function ReviewPage() {
           <div className="grid grid-cols-2 gap-px bg-neutral-800/30">
             <div className="relative">
               <img
-                src={`/api/review/image?id=${log.id}&type=room`}
+                src={log.roomUrl}
                 alt="Room input"
                 className="w-full aspect-square object-cover"
               />
@@ -87,7 +89,7 @@ export default function ReviewPage() {
             </div>
             <div className="relative">
               <img
-                src={`/api/review/image?id=${log.id}&type=output`}
+                src={log.outputUrl}
                 alt="Generated output"
                 className="w-full aspect-square object-cover"
               />

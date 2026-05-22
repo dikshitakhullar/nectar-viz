@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
 import { GoogleGenAI, Modality } from "@google/genai";
+import { put } from "@vercel/blob";
 import { getProductBySlug } from "@/lib/catalog";
 import { buildPrompt } from "@/lib/generate-prompt";
 import { RoomState, RoomType } from "@/lib/types";
@@ -117,29 +116,34 @@ export async function POST(request: NextRequest) {
       if (part.inlineData?.mimeType?.startsWith("image/")) {
         const imageBuffer = Buffer.from(part.inlineData.data!, "base64");
 
-        // Save generation log for review
+        // Save generation log to Vercel Blob for review
         try {
-          const logDir = path.join(process.cwd(), "data", "generation-logs");
-          fs.mkdirSync(logDir, { recursive: true });
           const logId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
 
-          // Save room input image
-          fs.writeFileSync(path.join(logDir, `${logId}-room.jpg`), Buffer.from(roomImageBase64, "base64"));
-          // Save generated output
-          fs.writeFileSync(path.join(logDir, `${logId}-output.jpg`), imageBuffer);
-          // Save metadata
-          fs.writeFileSync(path.join(logDir, `${logId}.json`), JSON.stringify({
-            id: logId,
-            timestamp: new Date().toISOString(),
-            productSlug,
-            productName: product.displayName || product.name,
-            productImage: product.imagePath,
-            roomType,
-            roomState,
-            vibe: vibe || null,
-            notes: notes || null,
-            feedback: null,
-          }, null, 2));
+          const [roomBlob, outputBlob, metaBlob] = await Promise.all([
+            put(`generations/${logId}-room.jpg`, Buffer.from(roomImageBase64, "base64"), { access: "public", addRandomSuffix: false }),
+            put(`generations/${logId}-output.jpg`, imageBuffer, { access: "public", addRandomSuffix: false }),
+            put(`generations/${logId}.json`, JSON.stringify({
+              id: logId,
+              timestamp: new Date().toISOString(),
+              productSlug,
+              productName: product.displayName || product.name,
+              productImage: product.imagePath,
+              roomType,
+              roomState,
+              vibe: vibe || null,
+              notes: notes || null,
+              roomUrl: "", // filled below
+              outputUrl: "",
+              feedback: null,
+            }), { access: "public", contentType: "application/json", addRandomSuffix: false }),
+          ]);
+
+          // Update metadata with blob URLs
+          const meta = JSON.parse(await (await fetch(metaBlob.url)).text());
+          meta.roomUrl = roomBlob.url;
+          meta.outputUrl = outputBlob.url;
+          await put(`generations/${logId}.json`, JSON.stringify(meta, null, 2), { access: "public", contentType: "application/json", addRandomSuffix: false });
         } catch (e) {
           console.warn("Failed to save generation log:", e);
         }
