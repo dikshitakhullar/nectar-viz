@@ -481,6 +481,27 @@ function main() {
     a.name.localeCompare(b.name)
   );
 
+  // Preserve existing enrichment data (styleTags, colorPalette, vibes, roomTypes, displayName)
+  // from the previous catalog.json — don't lose enrichment on rebuild
+  if (fs.existsSync(OUTPUT_JSON)) {
+    try {
+      const existing: any[] = JSON.parse(fs.readFileSync(OUTPUT_JSON, "utf-8"));
+      const existingBySlug = new Map(existing.map((p) => [p.slug, p]));
+      for (const p of all) {
+        const prev = existingBySlug.get(p.slug);
+        if (prev) {
+          if (prev.styleTags && !(p as any).styleTags) (p as any).styleTags = prev.styleTags;
+          if (prev.colorPalette && !(p as any).colorPalette) (p as any).colorPalette = prev.colorPalette;
+          if (prev.vibes && !(p as any).vibes) (p as any).vibes = prev.vibes;
+          if (prev.roomTypes && !(p as any).roomTypes) (p as any).roomTypes = prev.roomTypes;
+          if (prev.displayName && !(p as any).displayName) (p as any).displayName = prev.displayName;
+        }
+      }
+    } catch (e) {
+      console.warn("Could not preserve existing enrichment:", e);
+    }
+  }
+
   // Check for slug collisions
   const slugs = new Set<string>();
   for (const p of all) {

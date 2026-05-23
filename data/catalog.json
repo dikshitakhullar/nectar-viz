@@ -10,7 +10,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/amber-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/amber-cascade/studio.png",
+    "displayName": "Amber Cascade — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "organic",
+      "sculptural",
+      "ornate",
+      "tiered"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "amber gold",
+      "champagne"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "amber-hurricane-scroll-sconce",
@@ -55,9 +77,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
-    "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/antler-crown/studio.png"
+    "material": "resin",
+    "finish": "painted",
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/antler-crown/studio.png",
+    "displayName": "Antler Crown — Resin Chandelier",
+    "styleTags": [
+      "sculptural",
+      "organic",
+      "branching",
+      "antler-inspired",
+      "statement"
+    ],
+    "colorPalette": [
+      "off-white",
+      "cream",
+      "pale gray"
+    ],
+    "vibes": [
+      "Warm Rustic",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "arc-pendant-lamp-and-light",
@@ -72,7 +116,30 @@
     "tags": [
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/arc-pendant-lamp-and-light"
+    "sourceUrl": "https://figliving.com/products/arc-pendant-lamp-and-light",
+    "displayName": "Arc — Spandex Pendant Lamp",
+    "material": "spandex fabric",
+    "finish": "matte",
+    "styleTags": [
+      "sculptural",
+      "asymmetric",
+      "minimalist",
+      "curved",
+      "diffused"
+    ],
+    "colorPalette": [
+      "cream",
+      "off-white"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "passage"
+    ]
   },
   {
     "slug": "finnley-closed-nightstand",
@@ -141,9 +208,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass with glass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/aurum-frond/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/aurum-frond/studio.png",
+    "displayName": "Aurum Frond — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "sculptural",
+      "organic",
+      "contemporary",
+      "teardrop-shaped"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "amber gold",
+      "clear glass"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "sunstrike-oval-luxe-coffee-table-radial-inlay-with-gold-base",
@@ -197,7 +286,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/ballet-table-lamp-bedside-desk-lamp-mango-wood-base-handcrafted-bedside-lampshade"
+    "sourceUrl": "https://figliving.com/products/ballet-table-lamp-bedside-desk-lamp-mango-wood-base-handcrafted-bedside-lampshade",
+    "displayName": "Ballet — Wood Table Lamp",
+    "material": "wood, pleated paper",
+    "finish": "natural, matte",
+    "styleTags": [
+      "sculptural",
+      "pleated",
+      "minimalist",
+      "geometric",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "warm brown",
+      "cream",
+      "soft yellow"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "formal_living"
+    ]
   },
   {
     "slug": "baroque-amber-double-sconce",
@@ -313,9 +426,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "wood, brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/barrel-rustic/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/barrel-rustic/studio.png",
+    "displayName": "Barrel — Wood & Brass Chandelier",
+    "styleTags": [
+      "rustic",
+      "barrel-shaped",
+      "hand-forged",
+      "sculptural",
+      "vintage"
+    ],
+    "colorPalette": [
+      "weathered wood",
+      "antique brass",
+      "warm bronze"
+    ],
+    "vibes": [
+      "Warm Rustic",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "bead-cascade",
@@ -326,9 +461,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
-    "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/bead-cascade/studio.png"
+    "material": "brass, crystal",
+    "finish": "antique, matte",
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/bead-cascade/studio.png",
+    "displayName": "Bead Cascade — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "ornate",
+      "elegant",
+      "chandelier-style",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "clear crystal",
+      "matte black"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "big-pleat-linen-pendant-lamp",
@@ -343,7 +500,32 @@
     "tags": [
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/big-pleat-linen-pendant-lamp"
+    "sourceUrl": "https://figliving.com/products/big-pleat-linen-pendant-lamp",
+    "displayName": "Big Pleat — Paper Pendant Lamp",
+    "material": "special fibre paper",
+    "finish": "natural",
+    "styleTags": [
+      "geometric",
+      "pleated",
+      "sculptural",
+      "hand-folded",
+      "minimalist"
+    ],
+    "colorPalette": [
+      "warm amber",
+      "natural tan",
+      "soft gold"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "birds-nest-cane-rattan-floor-lamp",
@@ -358,7 +540,31 @@
     "tags": [
       "floor lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/birds-nest-cane-rattan-floor-lamp"
+    "sourceUrl": "https://figliving.com/products/birds-nest-cane-rattan-floor-lamp",
+    "displayName": "Bird's Nest — Rattan Floor Lamp",
+    "material": "rattan, powder-coated metal",
+    "finish": "natural woven, matte black",
+    "styleTags": [
+      "woven",
+      "sculptural",
+      "organic",
+      "minimalist",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "warm golden-yellow",
+      "matte black",
+      "neutral beige"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "formal_living",
+      "bedroom"
+    ]
   },
   {
     "slug": "birdcage-botanical-wall-sconce",
@@ -406,10 +612,28 @@
     "material": "ceramic, brass, fabric",
     "finish": "polished",
     "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/black-ceramic-torpedo-table-lamp/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "sculptural",
+      "geometric",
+      "sleek",
+      "Art Deco",
+      "tapered"
+    ],
+    "colorPalette": [
+      "glossy black",
+      "warm brass",
+      "charcoal gray"
+    ],
+    "vibes": [
+      "Art Deco",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "bedroom",
+      "entrance_lobby"
+    ],
+    "displayName": "Torpedo — Ceramic & Brass Table Lamp"
   },
   {
     "slug": "samavar-blue-medallion-heritage-vase",
@@ -632,7 +856,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/bouquet-origami-table-lamp"
+    "sourceUrl": "https://figliving.com/products/bouquet-origami-table-lamp",
+    "displayName": "Bouquet — Paper Table Lamp",
+    "material": "paper",
+    "finish": "matte",
+    "styleTags": [
+      "sculptural",
+      "pleated",
+      "organic",
+      "minimalist",
+      "geometric"
+    ],
+    "colorPalette": [
+      "warm yellow",
+      "black",
+      "cream"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-bell-linear",
@@ -645,7 +893,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-bell-linear/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-bell-linear/studio.png",
+    "displayName": "Bell Linear — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "bell-shaped",
+      "geometric",
+      "industrial-chic",
+      "linear"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "clear glass",
+      "champagne"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-bloom-cluster",
@@ -658,7 +928,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-bloom-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-bloom-cluster/studio.png",
+    "displayName": "Bloom Cluster — Brass Chandelier",
+    "styleTags": [
+      "sculptural",
+      "curved",
+      "multi-tiered",
+      "elegant",
+      "symmetrical"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "off-white",
+      "cream"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-blossom-cluster",
@@ -671,7 +963,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-blossom-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-blossom-cluster/studio.png",
+    "displayName": "Blossom Cluster — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "floral",
+      "sculptural",
+      "botanical"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm brass",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-bough",
@@ -684,7 +998,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-bough/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-bough/studio.png",
+    "displayName": "Bough — Brass Pendant Chandelier",
+    "styleTags": [
+      "sculptural",
+      "organic",
+      "cascading",
+      "hand-forged",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "dark bronze",
+      "warm gold"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-candelabra-bouillotte-table-lamp",
@@ -801,7 +1137,30 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-dome-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-dome-cluster/studio.png",
+    "displayName": "Dome Cluster — Brass Pendant",
+    "styleTags": [
+      "ornate",
+      "clustered",
+      "cascading",
+      "traditional",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm brass",
+      "cream white"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "brass-dome-pendant",
@@ -812,9 +1171,32 @@
     "parentCategory": "hanging_light",
     "type": "pendant",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, clear glass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-dome-pendant/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-dome-pendant/studio.png",
+    "displayName": "Dome Pendant — Brass with Clear Glass",
+    "styleTags": [
+      "sculptural",
+      "tiered",
+      "transitional",
+      "vintage-inspired",
+      "dome-shaped"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "antique gold",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "brass-facet-long",
@@ -827,7 +1209,30 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-facet-long/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-facet-long/studio.png",
+    "displayName": "Facet — Antique Brass Pendant",
+    "styleTags": [
+      "geometric",
+      "faceted",
+      "sculptural",
+      "art deco",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "antiqued mirror",
+      "warm gold"
+    ],
+    "vibes": [
+      "Art Deco",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "formal_living",
+      "dining_room",
+      "stairwell"
+    ]
   },
   {
     "slug": "brass-facet-short",
@@ -840,7 +1245,31 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-facet-short/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-facet-short/studio.png",
+    "displayName": "Facet — Brass Pendant Chandelier",
+    "styleTags": [
+      "geometric",
+      "faceted",
+      "sculptural",
+      "Art Deco",
+      "globe"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "antiqued mirror",
+      "off-white"
+    ],
+    "vibes": [
+      "Art Deco",
+      "Minimal & Elegant",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "brass-geometric-cluster",
@@ -853,7 +1282,31 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-geometric-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-geometric-cluster/studio.png",
+    "displayName": "Geometric Cluster — Brass Chandelier",
+    "styleTags": [
+      "geometric",
+      "sculptural",
+      "tiered",
+      "Art Deco",
+      "cascading"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "crystal clear"
+    ],
+    "vibes": [
+      "Art Deco",
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "entrance_lobby",
+      "dining_room",
+      "stairwell"
+    ]
   },
   {
     "slug": "brass-globe-sconce",
@@ -867,10 +1320,28 @@
     "material": "brass, glass",
     "finish": "antique",
     "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brass-globe-sconce/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "curved-arm",
+      "globe-shade",
+      "vintage-inspired",
+      "sculptural",
+      "transparent"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "clear glass",
+      "warm gold"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "entrance_lobby",
+      "passage"
+    ],
+    "displayName": "Globe — Brass Wall Sconce"
   },
   {
     "slug": "brass-hexagon-lantern",
@@ -883,7 +1354,30 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-hexagon-lantern/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-hexagon-lantern/studio.png",
+    "displayName": "Hexagon Lantern — Brass Pendant",
+    "styleTags": [
+      "geometric",
+      "hexagonal",
+      "tiered",
+      "lantern-style",
+      "transitional"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "stairwell",
+      "passage",
+      "formal_living"
+    ]
   },
   {
     "slug": "brass-lantern-cascade",
@@ -896,7 +1390,30 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lantern-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lantern-cascade/studio.png",
+    "displayName": "Cascade — Brass Pendant Lanterns",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "cylindrical",
+      "decorative",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm brass",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "stairwell",
+      "formal_living",
+      "dining_room"
+    ]
   },
   {
     "slug": "brass-lantern-tiered",
@@ -909,7 +1426,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lantern-tiered/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lantern-tiered/studio.png",
+    "displayName": "Tiered Brass Lantern — Antique Brass",
+    "styleTags": [
+      "tiered",
+      "geometric",
+      "linear",
+      "sculptural",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "off-white"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-lattice",
@@ -922,7 +1461,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lattice/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lattice/studio.png",
+    "displayName": "Lattice Lantern — Brass Pendant",
+    "styleTags": [
+      "geometric",
+      "tiered",
+      "latticed",
+      "linear",
+      "architectural"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "off-white",
+      "champagne gold"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-lattice-linear",
@@ -935,7 +1496,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lattice-linear/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-lattice-linear/studio.png",
+    "displayName": "Lattice Linear — Brass Chandelier",
+    "styleTags": [
+      "geometric",
+      "linear",
+      "tiered",
+      "minimalist",
+      "architectural"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "off-white"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "dining_room",
+      "formal_living",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-leaf-glass-lantern-sconce",
@@ -980,13 +1563,31 @@
     "parentCategory": "wall_light",
     "type": "wall_light",
     "size": "large",
-    "material": "brass, fabric",
+    "material": "brass, linen fabric",
     "finish": "antique",
     "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brass-leaf-triple-cylinder-sconce/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "sculptural",
+      "geometric",
+      "botanical",
+      "tiered",
+      "hand-forged"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "cream",
+      "warm gold"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ],
+    "displayName": "Leaf Accent — Brass Wall Sconce"
   },
   {
     "slug": "brass-linear-cluster",
@@ -999,7 +1600,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-linear-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-linear-cluster/studio.png",
+    "displayName": "Cascade — Brass Cluster Pendant",
+    "styleTags": [
+      "cascading",
+      "geometric",
+      "industrial",
+      "sculptural",
+      "linear"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "clear glass",
+      "cream"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "dining_room",
+      "formal_living",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-medallion-crystal-crown",
@@ -1010,10 +1633,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
     "collection": "Brass Medallion",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-medallion-crystal-crown/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-medallion-crystal-crown/studio.png",
+    "displayName": "Medallion Crystal Crown — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "sculptural",
+      "classical",
+      "shell-motif"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "clear crystal",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-medallion-shield",
@@ -1027,7 +1672,29 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Brass Medallion",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-medallion-shield/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-medallion-shield/studio.png",
+    "displayName": "Medallion Shield — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "neoclassical",
+      "sculptural",
+      "medallion",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "bronze"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "entrance_lobby",
+      "dining_room"
+    ]
   },
   {
     "slug": "brass-medallion-sunburst",
@@ -1041,7 +1708,28 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Brass Medallion",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-medallion-sunburst/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-medallion-sunburst/studio.png",
+    "displayName": "Medallion Sunburst — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "medallion-patterned",
+      "sunburst",
+      "sculptural",
+      "classical"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-petals",
@@ -1054,7 +1742,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-petals/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-petals/studio.png",
+    "displayName": "Brass Petals — Brass Chandelier",
+    "styleTags": [
+      "sculptural",
+      "floral",
+      "organic",
+      "tiered",
+      "ornamental"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "cream"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-ribbed-cylinder",
@@ -1067,7 +1777,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-ribbed-cylinder/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/brass-ribbed-cylinder/studio.png",
+    "displayName": "Ribbed Cylinder — Brass Chandelier",
+    "styleTags": [
+      "ribbed",
+      "cylindrical",
+      "tiered",
+      "geometric",
+      "vintage-inspired"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm brass",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "brass-ribbed-globe-sconce",
@@ -1128,10 +1860,28 @@
     "material": "brass",
     "finish": "antique",
     "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/brass-tiered-slat-sconce/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "geometric",
+      "tiered",
+      "architectural",
+      "sculptural",
+      "minimalist"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "bronze"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "entrance_lobby",
+      "passage"
+    ],
+    "displayName": "Tiered Slat — Brass Wall Sconce"
   },
   {
     "slug": "brass-torchiere-shade-sconce",
@@ -1367,12 +2117,30 @@
     "type": "floor_lamp",
     "size": "grand",
     "material": "wood, fabric",
-    "finish": "distressed",
+    "finish": "natural bleached",
     "imagePath": "https://ik.imagekit.io/delhibrass/floor-lamps/carved-wood-baluster-floor-lamp/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "sculptural",
+      "turned",
+      "classical",
+      "tiered",
+      "hand-carved"
+    ],
+    "colorPalette": [
+      "pale natural wood",
+      "charcoal black",
+      "warm brass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "entrance_lobby",
+      "family_lounge"
+    ],
+    "displayName": "Baluster Urn — Wood Floor Lamp"
   },
   {
     "slug": "carved-wood-column-floor-lamp",
@@ -1421,10 +2189,28 @@
     "material": "wood, fabric, brass",
     "finish": "distressed",
     "imagePath": "https://ik.imagekit.io/delhibrass/floor-lamps/carved-wood-column-floor-lamp-short/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "ornate",
+      "sculptural",
+      "classical",
+      "carved",
+      "tiered"
+    ],
+    "colorPalette": [
+      "dark brown",
+      "charcoal grey",
+      "warm wood"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "family_lounge",
+      "entrance_lobby"
+    ],
+    "displayName": "Acanthus — Carved Wood Floor Lamp"
   },
   {
     "slug": "carved-wood-urn-table-lamp",
@@ -1473,7 +2259,31 @@
     "tags": [
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/casablanca-modern-pendant-lamp"
+    "sourceUrl": "https://figliving.com/products/casablanca-modern-pendant-lamp",
+    "displayName": "Casablanca — Perforated Brass Pendant",
+    "material": "brass",
+    "finish": "antique",
+    "styleTags": [
+      "perforated",
+      "sculptural",
+      "geometric",
+      "minimalist",
+      "ambient"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "antique gold",
+      "cream"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "coffee-table-3",
@@ -1711,7 +2521,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/cherub-botanical/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/cherub-botanical/studio.png",
+    "displayName": "Cherub Botanical — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "botanical",
+      "sculptural",
+      "cherub-adorned",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "frosted ivory",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Indian Maximalist"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "samavar-chinar-autumn-vase",
@@ -1743,7 +2575,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/chrome-portable-lamp-in-gold"
+    "sourceUrl": "https://figliving.com/products/chrome-portable-lamp-in-gold",
+    "displayName": "Beacon — Brass Table Lamp",
+    "material": "brass",
+    "finish": "polished",
+    "styleTags": [
+      "sculptural",
+      "minimalist",
+      "conical",
+      "geometric",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "warm gold",
+      "antique brass"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "bedroom",
+      "family_lounge",
+      "formal_living",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "clear-glass-urn-table-lamp",
@@ -1754,13 +2610,31 @@
     "parentCategory": "table_lamp",
     "type": "table_lamp",
     "size": "large",
-    "material": "glass, brass, fabric",
+    "material": "clear glass, brass, linen",
     "finish": "polished",
     "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/clear-glass-urn-table-lamp/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "sculptural",
+      "transparent",
+      "minimalist",
+      "urn-shaped",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "clear glass",
+      "warm brass",
+      "charcoal gray"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "family_lounge",
+      "bedroom"
+    ],
+    "displayName": "Clear Urn — Glass Table Lamp"
   },
   {
     "slug": "clear-globe-glass-table-lamp",
@@ -1811,7 +2685,32 @@
       "badge_selling fast",
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/cloud-shaped-pendant-light"
+    "sourceUrl": "https://figliving.com/products/cloud-shaped-pendant-light",
+    "displayName": "Cloud — Paper Pendant Lamp",
+    "material": "paper",
+    "finish": "natural",
+    "styleTags": [
+      "sculptural",
+      "organic",
+      "soft",
+      "ethereal",
+      "minimalist"
+    ],
+    "colorPalette": [
+      "off-white",
+      "warm cream",
+      "pale ivory"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Bohemian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby",
+      "passage"
+    ]
   },
   {
     "slug": "cocoon-paper-pendant-lamp",
@@ -1826,7 +2725,32 @@
     "tags": [
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/cocoon-paper-pendant-lamp"
+    "sourceUrl": "https://figliving.com/products/cocoon-paper-pendant-lamp",
+    "displayName": "Cocoon — Fiber Pendant Lamp",
+    "material": "high-density artificial fiber",
+    "finish": "natural",
+    "styleTags": [
+      "organic",
+      "sculptural",
+      "minimalist",
+      "cocoon-inspired",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "cream",
+      "warm ivory",
+      "soft beige"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "dining_room",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "colour-story-300-table-lamp",
@@ -1843,7 +2767,32 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/colour-story-300-table-lamp"
+    "sourceUrl": "https://figliving.com/products/colour-story-300-table-lamp",
+    "displayName": "Colour Story — Woven Textile Table Lamp",
+    "material": "woven textile, wood base",
+    "finish": "natural, hand-dyed",
+    "styleTags": [
+      "geometric striping",
+      "handwoven",
+      "sculptural",
+      "multi-tonal",
+      "minimalist modern"
+    ],
+    "colorPalette": [
+      "terracotta",
+      "sage green",
+      "natural linen"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "passage"
+    ]
   },
   {
     "slug": "colour-story-400-table-lamp",
@@ -1859,7 +2808,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/colour-story-400-table-lamp"
+    "sourceUrl": "https://figliving.com/products/colour-story-400-table-lamp",
+    "displayName": "Colour Story — Threaded Paper Table Lamp",
+    "material": "paper",
+    "finish": "hand-threaded",
+    "styleTags": [
+      "geometric",
+      "colorblocked",
+      "minimalist",
+      "sculptural",
+      "handcrafted"
+    ],
+    "colorPalette": [
+      "sage green",
+      "periwinkle blue",
+      "coral red"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "colour-story-500-colourful-handwoven-table-lamp",
@@ -1875,7 +2848,32 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/colour-story-500-colourful-handwoven-table-lamp"
+    "sourceUrl": "https://figliving.com/products/colour-story-500-colourful-handwoven-table-lamp",
+    "displayName": "Colour Story — Textile Table Lamp",
+    "material": "textile",
+    "finish": "hand-threaded",
+    "styleTags": [
+      "geometric",
+      "color-blocked",
+      "minimalist",
+      "handcrafted",
+      "striped"
+    ],
+    "colorPalette": [
+      "teal green",
+      "warm gold",
+      "navy blue",
+      "soft cream"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Coastal & Fresh"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "family_lounge",
+      "bedroom"
+    ]
   },
   {
     "slug": "colour-weave-handmade-pendant-light",
@@ -1891,7 +2889,32 @@
       "pendant lamps",
       "threading lamp"
     ],
-    "sourceUrl": "https://figliving.com/products/colour-weave-handmade-pendant-light"
+    "sourceUrl": "https://figliving.com/products/colour-weave-handmade-pendant-light",
+    "displayName": "Colour Weave — Fabric Pendant Lamp",
+    "material": "fabric, wood",
+    "finish": "natural",
+    "styleTags": [
+      "handwoven",
+      "floral pattern",
+      "layered",
+      "textured",
+      "warm glow"
+    ],
+    "colorPalette": [
+      "warm cream",
+      "burgundy red",
+      "natural wood orange"
+    ],
+    "vibes": [
+      "Warm Rustic",
+      "Bohemian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "dining_room",
+      "bedroom",
+      "passage"
+    ]
   },
   {
     "slug": "colourway-100-pendant-lamp",
@@ -1906,7 +2929,32 @@
     "tags": [
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/colourway-100-pendant-lamp"
+    "sourceUrl": "https://figliving.com/products/colourway-100-pendant-lamp",
+    "displayName": "ColourWay — Raffia Pendant Lamp",
+    "material": "raffia",
+    "finish": "natural",
+    "styleTags": [
+      "hand-threaded",
+      "textural",
+      "sculptural",
+      "warm",
+      "artisanal"
+    ],
+    "colorPalette": [
+      "warm honey",
+      "deep brown",
+      "natural tan"
+    ],
+    "vibes": [
+      "Warm Rustic",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "dining_room",
+      "bedroom",
+      "passage"
+    ]
   },
   {
     "slug": "colourway100",
@@ -1921,7 +2969,31 @@
     "tags": [
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/colourway100"
+    "sourceUrl": "https://figliving.com/products/colourway100",
+    "displayName": "Striped Flare — Raffia Pendant Lamp",
+    "material": "raffia",
+    "finish": "natural with painted stripes",
+    "styleTags": [
+      "geometric",
+      "striped",
+      "sculptural",
+      "modern",
+      "flared"
+    ],
+    "colorPalette": [
+      "black",
+      "cream",
+      "warm gold"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "dining_room",
+      "family_lounge",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "decorative-interior-game-tic-tac-toe",
@@ -1937,7 +3009,31 @@
       "concrete",
       "decor"
     ],
-    "sourceUrl": "https://figliving.com/products/decorative-interior-game-tic-tac-toe"
+    "sourceUrl": "https://figliving.com/products/decorative-interior-game-tic-tac-toe",
+    "displayName": "Concrete Game — Concrete Tic-Tac-Toe Set",
+    "material": "concrete",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "minimalist",
+      "sculptural",
+      "monochromatic",
+      "functional art"
+    ],
+    "colorPalette": [
+      "white concrete",
+      "charcoal black",
+      "speckled grey"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "entrance_lobby",
+      "passage"
+    ]
   },
   {
     "slug": "cone-casa-black-brown-terracotta-table-lamp",
@@ -1953,7 +3049,32 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/cone-casa-black-brown-terracotta-table-lamp"
+    "sourceUrl": "https://figliving.com/products/cone-casa-black-brown-terracotta-table-lamp",
+    "displayName": "Cone Casa — Metal Table Lamp",
+    "material": "metal",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "sculptural",
+      "minimalist",
+      "cone-shaped",
+      "modern"
+    ],
+    "colorPalette": [
+      "matte black",
+      "warm gold",
+      "off-white"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "cone-pagen-black-table-lamp",
@@ -1969,7 +3090,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/cone-pagen-black-table-lamp"
+    "sourceUrl": "https://figliving.com/products/cone-pagen-black-table-lamp",
+    "displayName": "Cone Pagen — Metal Table Lamp",
+    "material": "metal",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "minimalist",
+      "sculptural",
+      "color-blocked",
+      "modern"
+    ],
+    "colorPalette": [
+      "chocolate brown",
+      "burnt orange",
+      "cream white"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "coral-reef-sconce",
@@ -2015,13 +3160,32 @@
     "parentCategory": "table_lamp",
     "type": "table_lamp",
     "size": "large",
-    "material": "metal, fabric",
+    "material": "brushed steel, linen fabric",
     "finish": "brushed",
     "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/corrugated-silver-cylinder-table-lamp/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "sculptural",
+      "geometric",
+      "textured",
+      "minimalist",
+      "modern"
+    ],
+    "colorPalette": [
+      "brushed silver",
+      "off-white",
+      "warm taupe"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ],
+    "displayName": "Corrugated Cylinder — Metal Table Lamp"
   },
   {
     "slug": "crystal-bell-pendant",
@@ -2032,9 +3196,32 @@
     "parentCategory": "hanging_light",
     "type": "pendant",
     "size": "medium",
-    "material": "brass",
+    "material": "brass and crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-bell-pendant/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-bell-pendant/studio.png",
+    "displayName": "Crystal Bell — Brass Pendant",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "bell-shaped",
+      "sculptural",
+      "vintage-inspired"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "clear crystal",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "dining_room",
+      "formal_living",
+      "stairwell"
+    ]
   },
   {
     "slug": "crystal-blossom",
@@ -2045,9 +3232,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass with crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-blossom/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-blossom/studio.png",
+    "displayName": "Crystal Blossom — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "floral",
+      "sculptural",
+      "organic",
+      "multi-colored crystal accents"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "clear crystal",
+      "jewel tones"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Indian Maximalist"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-bough",
@@ -2058,9 +3267,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass and crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-bough/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-bough/studio.png",
+    "displayName": "Crystal Bough — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "ornate",
+      "botanical",
+      "tiered",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique silver",
+      "warm brass",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-candelabra-floor-lamp",
@@ -2106,9 +3337,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cascade-chandelier/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cascade-chandelier/studio.png",
+    "displayName": "Crystal Cascade — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "ornate",
+      "tiered",
+      "elegant",
+      "glamorous"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "off-white",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-cascade-cluster",
@@ -2119,9 +3372,32 @@
     "parentCategory": "hanging_light",
     "type": "cluster",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cascade-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cascade-cluster/studio.png",
+    "displayName": "Crystal Cascade — Antique Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "geometric",
+      "tiered",
+      "luxurious",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "clear crystal",
+      "champagne gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-cascade-trio",
@@ -2134,7 +3410,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cascade-trio/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cascade-trio/studio.png",
+    "displayName": "Crystal Cascade Trio — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "tiered",
+      "geometric",
+      "ornate",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm brass",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-column-corinthian-table-lamp",
@@ -2181,9 +3479,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cylinder/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-cylinder/studio.png",
+    "displayName": "Crystal Cylinder — Brass Chandelier",
+    "styleTags": [
+      "tiered",
+      "cascading",
+      "geometric",
+      "glamorous",
+      "cylindrical"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "charcoal black",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-dome",
@@ -2196,7 +3517,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-dome/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-dome/studio.png",
+    "displayName": "Crystal Dome — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "beaded",
+      "geometric",
+      "dome-shaped"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "champagne",
+      "off-white"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-dome-pendant",
@@ -2207,9 +3550,32 @@
     "parentCategory": "hanging_light",
     "type": "pendant",
     "size": "medium",
-    "material": "brass",
+    "material": "brass and crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-dome-pendant/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-dome-pendant/studio.png",
+    "displayName": "Crystal Dome — Brass Pendant",
+    "styleTags": [
+      "ornate",
+      "neoclassical",
+      "swag details",
+      "faceted crystal",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "clear crystal",
+      "warm bronze"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "crystal-filigree-box-table-lamp",
@@ -2221,12 +3587,30 @@
     "type": "table_lamp",
     "size": "large",
     "material": "iron, crystal, fabric",
-    "finish": "matte_black",
+    "finish": "matte black",
     "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/crystal-filigree-box-table-lamp/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "ornate",
+      "filigree",
+      "floral",
+      "glamorous",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "matte black",
+      "cream",
+      "crystal clear"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "bedroom",
+      "entrance_lobby"
+    ],
+    "displayName": "Crystal Filigree — Iron Table Lamp"
   },
   {
     "slug": "crystal-fringe-solo",
@@ -2237,10 +3621,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
     "collection": "Crystal Fringe",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-fringe-solo/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-fringe-solo/studio.png",
+    "displayName": "Crystal Fringe — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "tiered",
+      "sculptural",
+      "glamorous"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "clear crystal",
+      "warm brass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-fringe-trio",
@@ -2251,10 +3657,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
     "collection": "Crystal Fringe",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-fringe-trio/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-fringe-trio/studio.png",
+    "displayName": "Crystal Fringe Trio — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "tiered",
+      "sculptural",
+      "chandelier"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "clear crystal",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-garden-amber-prism",
@@ -2265,10 +3693,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal glass",
     "finish": "antique",
     "collection": "Crystal Garden",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-amber-prism/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-amber-prism/studio.png",
+    "displayName": "Crystal Garden — Antique Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "scrollwork",
+      "crystalline",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "amber glass",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-garden-antique-scroll",
@@ -2279,10 +3729,33 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
     "collection": "Crystal Garden",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-antique-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-antique-scroll/studio.png",
+    "displayName": "Crystal Garden — Antique Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "scrolled",
+      "cascading",
+      "botanical",
+      "glamorous"
+    ],
+    "colorPalette": [
+      "antique silver",
+      "clear crystal",
+      "warm gray"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "crystal-garden-bloom",
@@ -2293,10 +3766,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
     "collection": "Crystal Garden",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-bloom/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-bloom/studio.png",
+    "displayName": "Crystal Garden Bloom — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "floral",
+      "cascading",
+      "botanical",
+      "chandelier"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "clear crystal",
+      "warm champagne"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-garden-floral-scroll",
@@ -2307,10 +3802,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
     "collection": "Crystal Garden",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-floral-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-garden-floral-scroll/studio.png",
+    "displayName": "Crystal Garden — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "scrollwork",
+      "cascading",
+      "floral-inspired",
+      "chandelier"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "clear crystal",
+      "champagne"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-grid-wall-sconce",
@@ -2355,9 +3872,32 @@
     "parentCategory": "hanging_light",
     "type": "lantern",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-lantern/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-lantern/studio.png",
+    "displayName": "Botanical Crystal — Brass Lantern",
+    "styleTags": [
+      "ornate",
+      "floral",
+      "botanical",
+      "tiered",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "clear crystal",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "formal_living",
+      "stairwell",
+      "dining_room"
+    ]
   },
   {
     "slug": "crystal-linear",
@@ -2368,9 +3908,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass with crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-linear/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-linear/studio.png",
+    "displayName": "Crystal Linear — Brass Chandelier",
+    "styleTags": [
+      "geometric",
+      "linear",
+      "tiered",
+      "cascading",
+      "sophisticated"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm brass",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Art Deco",
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-prism-leaf-sconce",
@@ -2415,9 +3978,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-shell-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-shell-cascade/studio.png",
+    "displayName": "Crystal Shell Cascade — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "ornate",
+      "sculptural",
+      "vintage-inspired",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "crystal-teardrop",
@@ -2428,9 +4013,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
-    "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-teardrop/studio.png"
+    "material": "iron, crystal",
+    "finish": "matte black, antique",
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/crystal-teardrop/studio.png",
+    "displayName": "Crystal Teardrop — Iron Chandelier",
+    "styleTags": [
+      "sculptural",
+      "geometric lattice",
+      "cascading",
+      "teardrop",
+      "ornate"
+    ],
+    "colorPalette": [
+      "matte black",
+      "clear crystal",
+      "pewter gray"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "cut-crystal-chandelier-table-lamp",
@@ -2480,7 +4087,32 @@
       "gift_box_with_notes",
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/daisy-3-cluster-ceiling-pendant-lamp"
+    "sourceUrl": "https://figliving.com/products/daisy-3-cluster-ceiling-pendant-lamp",
+    "displayName": "Daisy — Paper Pendant Cluster Light",
+    "material": "paper",
+    "finish": "natural",
+    "styleTags": [
+      "sculptural",
+      "floral",
+      "clustered",
+      "organic",
+      "minimalist"
+    ],
+    "colorPalette": [
+      "cream",
+      "warm white",
+      "natural beige"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Coastal & Fresh"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "family_lounge"
+    ]
   },
   {
     "slug": "daisy-origami-floor-lamp",
@@ -2496,7 +4128,31 @@
       "floor lamps",
       "gift_box_with_notes"
     ],
-    "sourceUrl": "https://figliving.com/products/daisy-origami-floor-lamp"
+    "sourceUrl": "https://figliving.com/products/daisy-origami-floor-lamp",
+    "displayName": "Daisy — Paper Floor Lamp",
+    "material": "paper",
+    "finish": "matte",
+    "styleTags": [
+      "sculptural",
+      "organic",
+      "petal-like",
+      "soft-diffusing",
+      "minimalist"
+    ],
+    "colorPalette": [
+      "cream",
+      "warm white",
+      "pale gold"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "daisy-artificial-fibre-pendant-lamp",
@@ -2512,7 +4168,32 @@
       "gift_box_with_notes",
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/daisy-artificial-fibre-pendant-lamp"
+    "sourceUrl": "https://figliving.com/products/daisy-artificial-fibre-pendant-lamp",
+    "displayName": "Daisy — Fiber Pendant Lamp",
+    "material": "high-density artificial fiber",
+    "finish": "matte",
+    "styleTags": [
+      "sculptural",
+      "accordion-pleated",
+      "organic",
+      "minimalist",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "cream",
+      "warm ivory",
+      "soft beige"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "dancing-figures-table-lamp-large",
@@ -2559,7 +4240,31 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/deco-lantern/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/deco-lantern/studio.png",
+    "displayName": "Deco Lantern — Brass Pendant Light",
+    "styleTags": [
+      "geometric",
+      "art deco",
+      "lantern-form",
+      "tiered",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "cream",
+      "warm black"
+    ],
+    "vibes": [
+      "Art Deco",
+      "Minimal & Elegant",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "formal_living",
+      "stairwell",
+      "dining_room"
+    ]
   },
   {
     "slug": "dinosaur-decorative-figure",
@@ -2575,7 +4280,31 @@
       "badge_new arrival##ff8c00",
       "figurines"
     ],
-    "sourceUrl": "https://figliving.com/products/dinosaur-decorative-figure"
+    "sourceUrl": "https://figliving.com/products/dinosaur-decorative-figure",
+    "displayName": "Dinorex — Paper Mâché Dinosaur Figurine",
+    "material": "paper mâché",
+    "finish": "natural",
+    "styleTags": [
+      "sculptural",
+      "playful",
+      "minimalist",
+      "hand-crafted",
+      "organic"
+    ],
+    "colorPalette": [
+      "cream",
+      "off-white",
+      "warm beige"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "distressed-scroll-baroque",
@@ -2589,7 +4318,30 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Distressed Scroll",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/distressed-scroll-baroque/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/distressed-scroll-baroque/studio.png",
+    "displayName": "Scroll Baroque — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "baroque",
+      "scrolled",
+      "sculptural",
+      "distressed"
+    ],
+    "colorPalette": [
+      "antique white",
+      "aged cream",
+      "weathered gray"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "distressed-scroll-frosted-sconce",
@@ -2635,10 +4387,33 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass with carved wood",
     "finish": "antique",
     "collection": "Distressed Scroll",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/distressed-scroll-shield/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/distressed-scroll-shield/studio.png",
+    "displayName": "Scroll Shield — Brass Pendant Chandelier",
+    "styleTags": [
+      "ornate",
+      "scrolled",
+      "sculptural",
+      "classical",
+      "distressed"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "weathered white",
+      "aged gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "distressed-white-crystal-candelabra-sconce",
@@ -2652,10 +4427,28 @@
     "material": "iron, crystal",
     "finish": "distressed",
     "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/distressed-white-crystal-candelabra-sconce/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "ornate",
+      "scrollwork",
+      "cascading",
+      "chandelier-style",
+      "farmhouse"
+    ],
+    "colorPalette": [
+      "antique white",
+      "warm taupe",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ],
+    "displayName": "Scrollwork — Iron & Crystal Wall Sconce"
   },
   {
     "slug": "dome-crystal",
@@ -2666,9 +4459,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/dome-crystal/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/dome-crystal/studio.png",
+    "displayName": "Dome Crystal — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "tiered",
+      "cascading",
+      "classical",
+      "chandelier"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "clear crystal",
+      "warm brass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "dome-pendant-light-linen-modern-design",
@@ -2683,7 +4499,32 @@
     "tags": [
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/dome-pendant-light-linen-modern-design"
+    "sourceUrl": "https://figliving.com/products/dome-pendant-light-linen-modern-design",
+    "displayName": "Dome Pendant — Linen Pendant Lamp",
+    "material": "linen",
+    "finish": "natural",
+    "styleTags": [
+      "geometric",
+      "minimalist",
+      "sculptural",
+      "pleated",
+      "modern"
+    ],
+    "colorPalette": [
+      "warm beige",
+      "golden yellow",
+      "charcoal grey"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "dining_room",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "dome-scroll",
@@ -2696,7 +4537,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/dome-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/dome-scroll/studio.png",
+    "displayName": "Dome Scroll — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "scrolled arms",
+      "domed bowl",
+      "classical",
+      "chandelier"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "charcoal grey",
+      "warm brass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "dragon-phoenix-double-sconce",
@@ -2782,7 +4645,32 @@
       "original origami collection",
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/drum-marble-print-decorative-pendant-light"
+    "sourceUrl": "https://figliving.com/products/drum-marble-print-decorative-pendant-light",
+    "displayName": "Drum Pendant — Printed Paper Lamp",
+    "material": "printed paper",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "sculptural",
+      "origami-inspired",
+      "minimalist",
+      "cylindrical"
+    ],
+    "colorPalette": [
+      "warm copper",
+      "cream",
+      "burnt sienna"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "family_lounge",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "earth-pendant-light-black-brown",
@@ -2798,7 +4686,31 @@
       "crochet lamps",
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/earth-pendant-light-black-brown"
+    "sourceUrl": "https://figliving.com/products/earth-pendant-light-black-brown",
+    "displayName": "Earth — Crocheted Cotton Pendant Lamp",
+    "material": "crocheted cotton",
+    "finish": "matte",
+    "styleTags": [
+      "sculptural",
+      "organic",
+      "textured",
+      "handcrafted",
+      "geometric"
+    ],
+    "colorPalette": [
+      "black",
+      "warm cream"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Bohemian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "dining_room",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "ebony-cascade-inlay-console",
@@ -2877,7 +4789,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/echo-sphere-paper-mache-table-lamp"
+    "sourceUrl": "https://figliving.com/products/echo-sphere-paper-mache-table-lamp",
+    "displayName": "Eco Sphere — Paper Mâché Table Lamp",
+    "material": "paper mâché",
+    "finish": "matte textured",
+    "styleTags": [
+      "sculptural",
+      "minimalist",
+      "geometric",
+      "handcrafted",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "off-white",
+      "warm yellow",
+      "soft gray"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "samavar-emerald-bloom-vase",
@@ -2940,7 +4876,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/faith-jute-lamp-bohemian-design-jute-lampshade-mango-wood-base"
+    "sourceUrl": "https://figliving.com/products/faith-jute-lamp-bohemian-design-jute-lampshade-mango-wood-base",
+    "displayName": "Faith — Mango Wood Table Lamp",
+    "material": "mango wood, jute",
+    "finish": "natural, hand-woven",
+    "styleTags": [
+      "sculptural",
+      "artisan-crafted",
+      "textured",
+      "warm-toned",
+      "organic"
+    ],
+    "colorPalette": [
+      "warm cognac",
+      "natural jute brown",
+      "golden amber"
+    ],
+    "vibes": [
+      "Warm Rustic",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "formal_living"
+    ]
   },
   {
     "slug": "farmhouse-baluster-double-sconce",
@@ -2951,13 +4911,32 @@
     "parentCategory": "wall_light",
     "type": "wall_light",
     "size": "medium",
-    "material": "wood, iron",
-    "finish": "distressed",
+    "material": "turned wood, iron",
+    "finish": "distressed whitewash",
     "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/farmhouse-baluster-double-sconce/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "ornate",
+      "rustic",
+      "hand-turned",
+      "sculptural",
+      "farmhouse"
+    ],
+    "colorPalette": [
+      "antique white",
+      "matte black",
+      "warm cream"
+    ],
+    "vibes": [
+      "Warm Rustic",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ],
+    "displayName": "Baluster — Wood & Iron Wall Sconce"
   },
   {
     "slug": "farmhouse-bead-cascade",
@@ -2968,10 +4947,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, wood beads",
     "finish": "antique",
     "collection": "Farmhouse Bead",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/farmhouse-bead-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/farmhouse-bead-cascade/studio.png",
+    "displayName": "Bead Cascade — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "beaded",
+      "ornate",
+      "farmhouse",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "whitewashed wood",
+      "cream"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "farmhouse-bead-crown",
@@ -2982,10 +4983,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
-    "finish": "antique",
+    "material": "wood, iron, beads",
+    "finish": "antique, weathered",
     "collection": "Farmhouse Bead",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/farmhouse-bead-crown/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/farmhouse-bead-crown/studio.png",
+    "displayName": "Bead Crown — Wood & Iron Chandelier",
+    "styleTags": [
+      "beaded",
+      "farmhouse",
+      "tiered",
+      "ornate",
+      "chandelier"
+    ],
+    "colorPalette": [
+      "whitewashed wood",
+      "matte black",
+      "natural beige"
+    ],
+    "vibes": [
+      "Warm Rustic",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "felt-ornaments-hanging-birds-decor-handmade-woolen",
@@ -3000,7 +5023,32 @@
     "tags": [
       "mobiles"
     ],
-    "sourceUrl": "https://figliving.com/products/felt-ornaments-hanging-birds-decor-handmade-woolen"
+    "sourceUrl": "https://figliving.com/products/felt-ornaments-hanging-birds-decor-handmade-woolen",
+    "displayName": "Aviary Garden — Wool Felt Mobile",
+    "material": "wool felt",
+    "finish": "hand-felted, natural",
+    "styleTags": [
+      "whimsical",
+      "sculptural",
+      "bird-themed",
+      "handcrafted",
+      "playful"
+    ],
+    "colorPalette": [
+      "cream",
+      "forest green",
+      "warm ochre",
+      "multi-colored accents"
+    ],
+    "vibes": [
+      "Bohemian",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "bedroom",
+      "family_lounge",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "ornaments-hanging-cloud-kids-decor",
@@ -3015,7 +5063,31 @@
     "tags": [
       "mobiles"
     ],
-    "sourceUrl": "https://figliving.com/products/ornaments-hanging-cloud-kids-decor"
+    "sourceUrl": "https://figliving.com/products/ornaments-hanging-cloud-kids-decor",
+    "displayName": "Cloud Dreams — Felt Hanging Mobile",
+    "material": "felt",
+    "finish": "natural",
+    "styleTags": [
+      "whimsical",
+      "sculptural",
+      "minimalist",
+      "handcrafted",
+      "cascading"
+    ],
+    "colorPalette": [
+      "cream",
+      "off-white",
+      "soft beige"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Bohemian"
+    ],
+    "roomTypes": [
+      "bedroom",
+      "family_lounge",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "fern-nocturne",
@@ -3028,7 +5100,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/fern-nocturne/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/fern-nocturne/studio.png",
+    "displayName": "Fern Nocturne — Brass Chandelier",
+    "styleTags": [
+      "botanical",
+      "cascading",
+      "ornate",
+      "sculptural",
+      "nature-inspired"
+    ],
+    "colorPalette": [
+      "antique bronze",
+      "soft white",
+      "warm brass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "samavar-festival-bloom-grand-vase",
@@ -3135,7 +5229,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/fluted-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/fluted-scroll/studio.png",
+    "displayName": "Fluted Scroll — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "scrolled arms",
+      "classical",
+      "tiered",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "fold-axis-table-lamp-lavender",
@@ -3152,7 +5268,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/fold-axis-table-lamp-lavender"
+    "sourceUrl": "https://figliving.com/products/fold-axis-table-lamp-lavender",
+    "displayName": "Fold Axis — Ceramic Table Lamp",
+    "material": "ceramic",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "sculptural",
+      "origami-inspired",
+      "angular",
+      "minimalist"
+    ],
+    "colorPalette": [
+      "warm beige",
+      "soft cream",
+      "pale yellow"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "fold-axis-table-lamp",
@@ -3169,7 +5309,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/fold-axis-table-lamp"
+    "sourceUrl": "https://figliving.com/products/fold-axis-table-lamp",
+    "displayName": "Fold Axis — Painted Metal Table Lamp",
+    "material": "metal",
+    "finish": "painted",
+    "styleTags": [
+      "geometric",
+      "origami-inspired",
+      "sculptural",
+      "angular",
+      "minimalist"
+    ],
+    "colorPalette": [
+      "lavender blue",
+      "soft pink gradient",
+      "navy"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "fold-cube-table-lamp",
@@ -3186,7 +5350,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/fold-cube-table-lamp"
+    "sourceUrl": "https://figliving.com/products/fold-cube-table-lamp",
+    "displayName": "Fold Cube — Wood Table Lamp",
+    "material": "wood",
+    "finish": "painted",
+    "styleTags": [
+      "geometric",
+      "minimalist",
+      "origami-inspired",
+      "sculptural",
+      "angular"
+    ],
+    "colorPalette": [
+      "cream",
+      "pale yellow",
+      "warm beige"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "fold-cube-table-lamp-ivory",
@@ -3203,7 +5391,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/fold-cube-table-lamp-ivory"
+    "sourceUrl": "https://figliving.com/products/fold-cube-table-lamp-ivory",
+    "displayName": "Fold Cube — Paper Table Lamp",
+    "material": "paper, metal",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "minimalist",
+      "origami-inspired",
+      "sculptural",
+      "architectural"
+    ],
+    "colorPalette": [
+      "ivory",
+      "gray-blue",
+      "warm white"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "bedroom",
+      "family_lounge",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "ash-grey-fold-delta-pendent-lamp",
@@ -3221,7 +5433,32 @@
       "pendant lamps",
       "pendant light"
     ],
-    "sourceUrl": "https://figliving.com/products/ash-grey-fold-delta-pendent-lamp"
+    "sourceUrl": "https://figliving.com/products/ash-grey-fold-delta-pendent-lamp",
+    "displayName": "Fold Delta — Metal Pendant Lamp",
+    "material": "metal",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "minimalist",
+      "origami-inspired",
+      "sculptural",
+      "angular"
+    ],
+    "colorPalette": [
+      "ash grey",
+      "warm cream",
+      "brushed metal"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "dining_room",
+      "entrance_lobby",
+      "passage"
+    ]
   },
   {
     "slug": "fold-delta-pendent-lamp",
@@ -3239,7 +5476,32 @@
       "pendant lamps",
       "pendant light"
     ],
-    "sourceUrl": "https://figliving.com/products/fold-delta-pendent-lamp"
+    "sourceUrl": "https://figliving.com/products/fold-delta-pendent-lamp",
+    "displayName": "Fold Delta — Paper Pendant Lamp",
+    "material": "paper",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "origami-inspired",
+      "minimalist",
+      "sculptural",
+      "angular"
+    ],
+    "colorPalette": [
+      "warm beige",
+      "off-white",
+      "taupe"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby",
+      "passage"
+    ]
   },
   {
     "slug": "beige-fold-hexa-pendent-lamp",
@@ -3257,7 +5519,31 @@
       "pendant lamps",
       "pendant light"
     ],
-    "sourceUrl": "https://figliving.com/products/beige-fold-hexa-pendent-lamp"
+    "sourceUrl": "https://figliving.com/products/beige-fold-hexa-pendent-lamp",
+    "displayName": "Fold Hexa — Paper Pendant Lamp",
+    "material": "paper",
+    "finish": "matte",
+    "styleTags": [
+      "origami-inspired",
+      "geometric",
+      "sculptural",
+      "minimalist",
+      "hexagonal"
+    ],
+    "colorPalette": [
+      "warm beige",
+      "natural cream"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Coastal & Fresh"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "tangerine-fold-hexa-pendent-lamp",
@@ -3275,7 +5561,32 @@
       "pendant lamps",
       "pendant light"
     ],
-    "sourceUrl": "https://figliving.com/products/tangerine-fold-hexa-pendent-lamp"
+    "sourceUrl": "https://figliving.com/products/tangerine-fold-hexa-pendent-lamp",
+    "displayName": "Fold Hexa — Paper Pendant Lamp",
+    "material": "paper",
+    "finish": "painted",
+    "styleTags": [
+      "origami-inspired",
+      "geometric",
+      "hexagonal",
+      "sculptural",
+      "modern"
+    ],
+    "colorPalette": [
+      "tangerine",
+      "golden yellow",
+      "muted teal"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "dining_room",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "fold-prism-table-lamp-beige",
@@ -3292,7 +5603,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/fold-prism-table-lamp-beige"
+    "sourceUrl": "https://figliving.com/products/fold-prism-table-lamp-beige",
+    "displayName": "Fold Prism — Paper Table Lamp",
+    "material": "paper",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "origami-inspired",
+      "sculptural",
+      "minimalist",
+      "angular"
+    ],
+    "colorPalette": [
+      "warm beige",
+      "pale yellow",
+      "soft gray"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "tangerine-fold-prism-table-lamp",
@@ -3309,7 +5644,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/tangerine-fold-prism-table-lamp"
+    "sourceUrl": "https://figliving.com/products/tangerine-fold-prism-table-lamp",
+    "displayName": "Fold Prism — Painted Metal Table Lamp",
+    "material": "painted metal",
+    "finish": "matte painted",
+    "styleTags": [
+      "geometric",
+      "sculptural",
+      "origami-inspired",
+      "angular",
+      "minimalist"
+    ],
+    "colorPalette": [
+      "tangerine orange",
+      "burnt orange",
+      "warm apricot"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "fold-trapezium-table-lamp-beige",
@@ -3326,7 +5685,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/fold-trapezium-table-lamp-beige"
+    "sourceUrl": "https://figliving.com/products/fold-trapezium-table-lamp-beige",
+    "displayName": "Fold Trapezium — Paper Table Lamp",
+    "material": "paper",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "sculptural",
+      "minimalist",
+      "origami-inspired",
+      "angular"
+    ],
+    "colorPalette": [
+      "warm beige",
+      "soft cream",
+      "pale yellow"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "fold-trapezium-tangerine",
@@ -3343,7 +5726,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/fold-trapezium-tangerine"
+    "sourceUrl": "https://figliving.com/products/fold-trapezium-tangerine",
+    "displayName": "Fold Trapezium — Leather Table Lamp",
+    "material": "leather",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "sculptural",
+      "minimalist",
+      "origami-inspired",
+      "angular"
+    ],
+    "colorPalette": [
+      "tangerine orange",
+      "burnt sienna",
+      "soft gray"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "foldplay-table-lamp-foldable-touch-sensor-lamp",
@@ -3360,7 +5767,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/foldplay-table-lamp-foldable-touch-sensor-lamp"
+    "sourceUrl": "https://figliving.com/products/foldplay-table-lamp-foldable-touch-sensor-lamp",
+    "displayName": "Foldplay — Wood Table Lamp",
+    "material": "wood, paper",
+    "finish": "natural, matte",
+    "styleTags": [
+      "geometric",
+      "origami-inspired",
+      "sculptural",
+      "minimalist",
+      "angular"
+    ],
+    "colorPalette": [
+      "warm cream",
+      "natural wood brown",
+      "soft gold glow"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "foliate-cascade",
@@ -3373,7 +5804,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/foliate-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/foliate-cascade/studio.png",
+    "displayName": "Foliate Cascade — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "ornate",
+      "botanical",
+      "tiered",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm brass",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "foliate-crown",
@@ -3384,9 +5837,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/foliate-crown/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/foliate-crown/studio.png",
+    "displayName": "Foliate Crown — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "scrollwork",
+      "cascading",
+      "neoclassical",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "clear crystal",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "fossil-texture-urn-table-lamp",
@@ -3536,9 +6011,30 @@
     "parentCategory": "hanging_light",
     "type": "pendant",
     "size": "medium",
-    "material": "brass",
+    "material": "glass, brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/glass-bell-pendant/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/glass-bell-pendant/studio.png",
+    "displayName": "Bell — Clear Glass Pendant",
+    "styleTags": [
+      "sculptural",
+      "geometric",
+      "tiered",
+      "vintage-inspired",
+      "minimalist"
+    ],
+    "colorPalette": [
+      "clear glass",
+      "antique black brass"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "golden-curve-chandelier",
@@ -3551,7 +6047,28 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/golden-curve-chandelier/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/golden-curve-chandelier/studio.png",
+    "displayName": "Golden Curve — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "curved",
+      "sculptural",
+      "tiered",
+      "elegant"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm brass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "samavar-golden-medallion-grand-vase",
@@ -3659,7 +6176,30 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Grand Lantern",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-crown/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-crown/studio.png",
+    "displayName": "Grand Lantern Crown — Brass Pendant",
+    "styleTags": [
+      "ornate",
+      "classical",
+      "sculptural",
+      "crown-topped",
+      "hexagonal"
+    ],
+    "colorPalette": [
+      "antique bronze",
+      "charcoal black",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "formal_living",
+      "stairwell",
+      "dining_room"
+    ]
   },
   {
     "slug": "grand-lantern-cylinder",
@@ -3673,7 +6213,30 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Grand Lantern",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-cylinder/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-cylinder/studio.png",
+    "displayName": "Grand Lantern Cylinder — Brass Pendant",
+    "styleTags": [
+      "ornate",
+      "cylindrical",
+      "scrollwork",
+      "classical",
+      "lantern-style"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "stairwell",
+      "formal_living",
+      "dining_room"
+    ]
   },
   {
     "slug": "grand-lantern-glass",
@@ -3687,7 +6250,30 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Grand Lantern",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-glass/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-glass/studio.png",
+    "displayName": "Grand Lantern — Brass Pendant Light",
+    "styleTags": [
+      "ornate",
+      "classical",
+      "lantern-style",
+      "decorative scrollwork",
+      "cylindrical"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "clear glass",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "formal_living",
+      "stairwell",
+      "dining_room"
+    ]
   },
   {
     "slug": "grand-lantern-pavilion",
@@ -3701,7 +6287,30 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Grand Lantern",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-pavilion/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/grand-lantern-pavilion/studio.png",
+    "displayName": "Grand Pavilion — Brass Pendant Lantern",
+    "styleTags": [
+      "ornate",
+      "classical",
+      "cylindrical",
+      "scrollwork",
+      "candelabra-inspired"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm bronze",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "formal_living",
+      "stairwell",
+      "dining_room"
+    ]
   },
   {
     "slug": "samavar-gulzar-wide-rim-vase-3",
@@ -3871,13 +6480,31 @@
     "parentCategory": "table_lamp",
     "type": "table_lamp",
     "size": "medium",
-    "material": "glass, brass, fabric",
+    "material": "hammered glass, brass, fabric",
     "finish": "antique",
     "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/hammered-glass-pot-table-lamp/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "sculptural",
+      "honeycomb texture",
+      "dimpled",
+      "pleated",
+      "vintage-inspired"
+    ],
+    "colorPalette": [
+      "smoked amber",
+      "warm brass",
+      "cream"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Classical / Ornate"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "bedroom",
+      "family_lounge"
+    ],
+    "displayName": "Hammered Amber — Glass & Brass Table Lamp"
   },
   {
     "slug": "hammered-glass-sphere-table-lamp",
@@ -3954,7 +6581,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/harmony-table-lamp-natural-desk-lamp"
+    "sourceUrl": "https://figliving.com/products/harmony-table-lamp-natural-desk-lamp",
+    "displayName": "Harmony — Wood Table Lamp",
+    "material": "wood, raffia",
+    "finish": "natural",
+    "styleTags": [
+      "sculptural",
+      "conical",
+      "minimalist",
+      "artisanal",
+      "warm-toned"
+    ],
+    "colorPalette": [
+      "warm honey",
+      "natural wood brown",
+      "cream"
+    ],
+    "vibes": [
+      "Warm Rustic",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "formal_living"
+    ]
   },
   {
     "slug": "heritage-shade-acanthus-crown",
@@ -3968,7 +6619,29 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-acanthus-crown/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-acanthus-crown/studio.png",
+    "displayName": "Acanthus Crown — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "classical",
+      "acanthus-leaf",
+      "scrolled-arms",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "cream"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "heritage-shade-baroque-foliage",
@@ -3982,7 +6655,29 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-baroque-foliage/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-baroque-foliage/studio.png",
+    "displayName": "Heritage Shade — Antique Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "baroque",
+      "cascading",
+      "foliage-inspired",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "cream",
+      "crystal clear"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "heritage-shade-curved-linen",
@@ -3996,7 +6691,29 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-curved-linen/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-curved-linen/studio.png",
+    "displayName": "Heritage Shade — Antique Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "curved",
+      "classical",
+      "scrolled arms",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm cream",
+      "off-white"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "heritage-shade-drum-luminaire",
@@ -4010,7 +6727,29 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-drum-luminaire/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-drum-luminaire/studio.png",
+    "displayName": "Heritage Shade — Brass Chandelier",
+    "styleTags": [
+      "classical",
+      "ornate",
+      "curved arms",
+      "drum shades",
+      "finial details"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "off-white",
+      "antique gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "heritage-shade-frosted-scroll",
@@ -4024,7 +6763,29 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-frosted-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-frosted-scroll/studio.png",
+    "displayName": "Heritage Scroll — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "scrollwork",
+      "cascading crystals",
+      "classical",
+      "theatrical"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm brass",
+      "off-white"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "heritage-shade-gilt-ornament",
@@ -4038,7 +6799,30 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-gilt-ornament/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-gilt-ornament/studio.png",
+    "displayName": "Heritage Shade — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "tiered",
+      "cascading",
+      "scrollwork",
+      "classical"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "cream",
+      "champagne"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "heritage-shade-gilt-plume",
@@ -4049,10 +6833,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
-    "finish": "antique",
+    "material": "brass, crystal",
+    "finish": "antique gilt",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-gilt-plume/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-gilt-plume/studio.png",
+    "displayName": "Heritage Plume — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "classical",
+      "chandelier with crystal drops",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm brass",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "heritage-shade-ivory-descent",
@@ -4063,10 +6869,33 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal, fabric",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-ivory-descent/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-ivory-descent/studio.png",
+    "displayName": "Ivory Descent — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "tiered",
+      "cascading",
+      "classical",
+      "chandelier"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "ivory cream",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "heritage-shade-prism-drift",
@@ -4077,10 +6906,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass with crystal accents",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-prism-drift/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-prism-drift/studio.png",
+    "displayName": "Heritage Shade Prism — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "tiered",
+      "classical",
+      "embellished"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "cream",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "heritage-shade-scrolled-orb",
@@ -4091,10 +6942,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal, fabric",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-scrolled-orb/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-scrolled-orb/studio.png",
+    "displayName": "Heritage Shade Scrolled Orb — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "scrolled",
+      "tiered",
+      "classical",
+      "decorative"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "cream",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "heritage-shade-scrolled-prism",
@@ -4105,10 +6978,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "iron",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-scrolled-prism/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-scrolled-prism/studio.png",
+    "displayName": "Heritage Shade — Iron Chandelier",
+    "styleTags": [
+      "ornate",
+      "scrolled",
+      "cascading",
+      "hand-forged",
+      "crystalline"
+    ],
+    "colorPalette": [
+      "antique brown",
+      "cream",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "heritage-shade-scrollwork-radiance",
@@ -4122,7 +7017,29 @@
     "material": "brass",
     "finish": "antique",
     "collection": "Heritage Mini Shade",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-scrollwork-radiance/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/heritage-shade-scrollwork-radiance/studio.png",
+    "displayName": "Heritage Scrollwork — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "scrollwork",
+      "tiered",
+      "classical"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "cream",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "hexagon-cascade-rectangular",
@@ -4135,7 +7052,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/hexagon-cascade-rectangular/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/hexagon-cascade-rectangular/studio.png",
+    "displayName": "Hexagon Cascade — Brass Chandelier",
+    "styleTags": [
+      "geometric",
+      "tiered",
+      "cascading",
+      "architectural",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm cream",
+      "bronze-black"
+    ],
+    "vibes": [
+      "Art Deco",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "hexagon-cascade-square",
@@ -4148,7 +7087,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/hexagon-cascade-square/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/hexagon-cascade-square/studio.png",
+    "displayName": "Hexagon Cascade — Brass Chandelier",
+    "styleTags": [
+      "geometric",
+      "tiered",
+      "cascading",
+      "sculptural",
+      "Art Deco"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "cream"
+    ],
+    "vibes": [
+      "Art Deco",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "copy-of-hexagon-sunflower-coffee-table",
@@ -4219,7 +7180,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/hikari-linen-origami-table-lamp"
+    "sourceUrl": "https://figliving.com/products/hikari-linen-origami-table-lamp",
+    "displayName": "Hikari — Wood Table Lamp",
+    "material": "wood, linen",
+    "finish": "natural, matte",
+    "styleTags": [
+      "sculptural",
+      "hand-pleated",
+      "minimalist",
+      "geometric",
+      "tapered base"
+    ],
+    "colorPalette": [
+      "warm cream",
+      "dark walnut",
+      "soft beige"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "formal_living"
+    ]
   },
   {
     "slug": "hippoceros-decorative-figurine",
@@ -4235,7 +7220,30 @@
       "badge_new arrival##ff8c00",
       "figurines"
     ],
-    "sourceUrl": "https://figliving.com/products/hippoceros-decorative-figurine"
+    "sourceUrl": "https://figliving.com/products/hippoceros-decorative-figurine",
+    "displayName": "Hippoceros — Paper Mache Figurine",
+    "material": "paper mache",
+    "finish": "matte",
+    "styleTags": [
+      "sculptural",
+      "minimalist",
+      "geometric",
+      "hand-carved",
+      "artistic"
+    ],
+    "colorPalette": [
+      "cream white",
+      "off-white"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "hoa-sphere-black-table-lamp",
@@ -4252,7 +7260,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/hoa-sphere-black-table-lamp"
+    "sourceUrl": "https://figliving.com/products/hoa-sphere-black-table-lamp",
+    "displayName": "Hoa Sphere — Metal Table Lamp",
+    "material": "powder-coated metal",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "minimalist",
+      "sculptural",
+      "spherical",
+      "modern"
+    ],
+    "colorPalette": [
+      "matte black",
+      "off-white",
+      "warm neutral"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "bedroom",
+      "family_lounge"
+    ]
   },
   {
     "slug": "honeycomb-ceramic-urn-table-lamp",
@@ -4303,7 +7335,32 @@
     "tags": [
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/horizon-collection-long-pendant-lamp"
+    "sourceUrl": "https://figliving.com/products/horizon-collection-long-pendant-lamp",
+    "displayName": "Horizon — Glass Pendant Lamp",
+    "material": "glass",
+    "finish": "satin",
+    "styleTags": [
+      "gradient",
+      "cylindrical",
+      "minimalist",
+      "sculptural",
+      "soft-diffusing"
+    ],
+    "colorPalette": [
+      "warm orange",
+      "soft cream",
+      "pale blue-grey"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "dining_room",
+      "bedroom",
+      "passage"
+    ]
   },
   {
     "slug": "horizon-collection-table-lamp",
@@ -4319,7 +7376,31 @@
       "table lamp",
       "table lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/horizon-collection-table-lamp"
+    "sourceUrl": "https://figliving.com/products/horizon-collection-table-lamp",
+    "displayName": "Horizon — Fabric Table Lamp",
+    "material": "fabric",
+    "finish": "satin",
+    "styleTags": [
+      "sculptural",
+      "gradient",
+      "organic",
+      "minimalist",
+      "glowing"
+    ],
+    "colorPalette": [
+      "warm orange",
+      "soft cream",
+      "dusty blue"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "horizon-collection-floor-lamp",
@@ -4335,7 +7416,31 @@
       "badge_selling fast",
       "floor lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/horizon-collection-floor-lamp"
+    "sourceUrl": "https://figliving.com/products/horizon-collection-floor-lamp",
+    "displayName": "Horizon — Paper Floor Lamp",
+    "material": "paper",
+    "finish": "painted",
+    "styleTags": [
+      "ombré gradient",
+      "minimalist",
+      "sculptural",
+      "soft transitional",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "burnt orange",
+      "cream white",
+      "warm gradient"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "formal_living"
+    ]
   },
   {
     "slug": "horizon-pendant-lamp",
@@ -4350,7 +7455,31 @@
     "tags": [
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/horizon-pendant-lamp"
+    "sourceUrl": "https://figliving.com/products/horizon-pendant-lamp",
+    "displayName": "Horizon — Fabric Pendant Lamp",
+    "material": "fabric",
+    "finish": "painted",
+    "styleTags": [
+      "sculptural",
+      "gradient",
+      "organic",
+      "soft-glow",
+      "minimalist"
+    ],
+    "colorPalette": [
+      "warm orange",
+      "soft yellow",
+      "pale cream"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "passage"
+    ]
   },
   {
     "slug": "ikkat-floor-lamp-100-tripod-standing-lamp",
@@ -4365,7 +7494,32 @@
     "tags": [
       "floor lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/ikkat-floor-lamp-100-tripod-standing-lamp"
+    "sourceUrl": "https://figliving.com/products/ikkat-floor-lamp-100-tripod-standing-lamp",
+    "displayName": "Ikkat 100 — Fabric Floor Lamp",
+    "material": "fabric, iron",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "ikat pattern",
+      "vibrant",
+      "handwoven aesthetic",
+      "minimalist frame"
+    ],
+    "colorPalette": [
+      "deep navy",
+      "burnt orange",
+      "mauve purple",
+      "cream"
+    ],
+    "vibes": [
+      "Modern Indian",
+      "Bohemian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "formal_living",
+      "bedroom"
+    ]
   },
   {
     "slug": "ikkat-floor-lamp-tripod-standing-lamp-online",
@@ -4380,7 +7534,31 @@
     "tags": [
       "floor lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/ikkat-floor-lamp-tripod-standing-lamp-online"
+    "sourceUrl": "https://figliving.com/products/ikkat-floor-lamp-tripod-standing-lamp-online",
+    "displayName": "Ikkat — Iron Floor Lamp",
+    "material": "iron",
+    "finish": "matte",
+    "styleTags": [
+      "geometric",
+      "minimalist",
+      "hand-woven",
+      "vibrant",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "burnt orange",
+      "red",
+      "matte black"
+    ],
+    "vibes": [
+      "Modern Indian",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "formal_living",
+      "bedroom"
+    ]
   },
   {
     "slug": "industrial-gear-sconce",
@@ -10367,10 +13545,33 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
-    "finish": "antique",
+    "material": "iron and brass",
+    "finish": "matte black and antique brass",
     "collection": "Iron Brass",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/iron-brass-cage/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/iron-brass-cage/studio.png",
+    "displayName": "Cage — Iron & Brass Chandelier",
+    "styleTags": [
+      "geometric",
+      "caged",
+      "candlestick",
+      "structured",
+      "transitional"
+    ],
+    "colorPalette": [
+      "matte black",
+      "antique brass",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "iron-brass-ring",
@@ -10381,10 +13582,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "iron and brass",
     "finish": "antique",
     "collection": "Iron Brass",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/iron-brass-ring/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/iron-brass-ring/studio.png",
+    "displayName": "Ring — Iron & Brass Chandelier",
+    "styleTags": [
+      "geometric",
+      "tiered",
+      "hand-forged",
+      "minimalist",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "matte black",
+      "antique brass",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "iron-scroll",
@@ -10395,9 +13618,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, iron",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/iron-scroll/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/iron-scroll/studio.png",
+    "displayName": "Iron Scroll — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "scrollwork",
+      "classical",
+      "tiered",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "matte black",
+      "warm brass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "iron-scroll-floor-lamp",
@@ -10580,7 +13826,33 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/jewel-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/jewel-cascade/studio.png",
+    "displayName": "Jewel Cascade — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "colorful",
+      "sculptural",
+      "tiered",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "ruby red",
+      "emerald green",
+      "amber gold",
+      "magenta"
+    ],
+    "vibes": [
+      "Indian Maximalist",
+      "Art Deco",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "jeweled-curve",
@@ -10593,7 +13865,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/jeweled-curve/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/jeweled-curve/studio.png",
+    "displayName": "Jeweled Curve — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "jeweled",
+      "classical",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "cream",
+      "dusty rose"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "jordan-nesting-coffee-table-waterfall",
@@ -10656,7 +13950,32 @@
     "tags": [
       "pendant lamps"
     ],
-    "sourceUrl": "https://figliving.com/products/juglar-off-white-modern-pendant-lights"
+    "sourceUrl": "https://figliving.com/products/juglar-off-white-modern-pendant-lights",
+    "displayName": "Juglar — Spandex Pendant Lamp",
+    "material": "spandex fabric",
+    "finish": "matte",
+    "styleTags": [
+      "sculptural",
+      "geometric",
+      "minimalist",
+      "soft-edged",
+      "contemporary"
+    ],
+    "colorPalette": [
+      "cream",
+      "off-white",
+      "warm ivory"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "dining_room",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "jumbo-elephant-decor-grey",
@@ -10672,7 +13991,30 @@
       "badge_new arrival##ff8c00",
       "figurines"
     ],
-    "sourceUrl": "https://figliving.com/products/jumbo-elephant-decor-grey"
+    "sourceUrl": "https://figliving.com/products/jumbo-elephant-decor-grey",
+    "displayName": "Jumbo — Paper Mache Elephant Figurine",
+    "material": "paper mache",
+    "finish": "matte",
+    "styleTags": [
+      "sculptural",
+      "minimalist",
+      "geometric",
+      "handcrafted",
+      "abstract"
+    ],
+    "colorPalette": [
+      "charcoal grey",
+      "warm beige"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "jumbo-elephant-decor-white",
@@ -10688,7 +14030,30 @@
       "badge_new arrival##ff8c00",
       "figurines"
     ],
-    "sourceUrl": "https://figliving.com/products/jumbo-elephant-decor-white"
+    "sourceUrl": "https://figliving.com/products/jumbo-elephant-decor-white",
+    "displayName": "Jumbo — Paper Mache Elephant Figurine",
+    "material": "paper mache",
+    "finish": "matte",
+    "styleTags": [
+      "sculptural",
+      "minimalist",
+      "handcrafted",
+      "geometric",
+      "abstract"
+    ],
+    "colorPalette": [
+      "off-white",
+      "cream"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "jute-weave-table-lamp-handcrafted-desk-lamp",
@@ -10758,7 +14123,30 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/lantern-cluster/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/lantern-cluster/studio.png",
+    "displayName": "Lantern Cluster — Brass Pendant Lights",
+    "styleTags": [
+      "geometric",
+      "traditional",
+      "tiered",
+      "hand-forged",
+      "architectural"
+    ],
+    "colorPalette": [
+      "antique black",
+      "warm brass",
+      "frosted glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "stairwell",
+      "formal_living",
+      "passage"
+    ]
   },
   {
     "slug": "laurel-wreath-double-shade-sconce",
@@ -10772,10 +14160,29 @@
     "material": "brass, fabric",
     "finish": "antique",
     "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/laurel-wreath-double-shade-sconce/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "ornate",
+      "neoclassical",
+      "floral",
+      "sculptural",
+      "symmetrical"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "cream"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "passage"
+    ],
+    "displayName": "Laurel Wreath — Brass Wall Sconce"
   },
   {
     "slug": "layered-edition-dawn-table-lamp-3d-printed",
@@ -10834,9 +14241,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/leaf-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/leaf-cascade/studio.png",
+    "displayName": "Leaf Cascade — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "ornate",
+      "botanical",
+      "tiered",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "clear crystal",
+      "warm bronze"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "leaf-frosted-glass-sconce",
@@ -10847,13 +14276,32 @@
     "parentCategory": "wall_light",
     "type": "wall_light",
     "size": "small",
-    "material": "brass, glass",
+    "material": "brass, frosted glass",
     "finish": "antique",
     "imagePath": "https://ik.imagekit.io/delhibrass/wall-lights/leaf-frosted-glass-sconce/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "ornate",
+      "botanical",
+      "sculptural",
+      "upturned shade",
+      "hand-finished"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "frosted cream",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "bedroom",
+      "formal_living",
+      "passage",
+      "entrance_lobby"
+    ],
+    "displayName": "Leaf Motif — Brass & Glass Wall Sconce"
   },
   {
     "slug": "lifo-floor-lamp-origami-tripod-standing-lamp",
@@ -11243,7 +14691,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/meridian-brass/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/meridian-brass/studio.png",
+    "displayName": "Meridian — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "classical",
+      "sculptural",
+      "tiered",
+      "curved-arms"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "antique gold",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "midnight-cylinder",
@@ -11255,8 +14725,29 @@
     "type": "chandelier",
     "size": "medium",
     "material": "brass",
-    "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/midnight-cylinder/studio.png"
+    "finish": "matte black",
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/midnight-cylinder/studio.png",
+    "displayName": "Midnight Cylinder — Brass Chandelier",
+    "styleTags": [
+      "cylindrical",
+      "tiered",
+      "sculptural",
+      "contemporary",
+      "multi-arm"
+    ],
+    "colorPalette": [
+      "matte black",
+      "charcoal"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "samavar-midnight-gold-vine-vase",
@@ -11823,7 +15314,30 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/nautilus-lantern/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/nautilus-lantern/studio.png",
+    "displayName": "Nautilus — Brass Semi-Flush Lantern",
+    "styleTags": [
+      "ornate",
+      "classical",
+      "sculptural",
+      "tiered",
+      "bell-shaped"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "warm gold",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "formal_living",
+      "stairwell",
+      "passage"
+    ]
   },
   {
     "slug": "nimbus-pendant-light-off-white",
@@ -11849,10 +15363,32 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
-    "finish": "antique",
+    "material": "iron, crystal",
+    "finish": "matte black",
     "collection": "Noir Crystal",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/noir-crystal-cascade/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/noir-crystal-cascade/studio.png",
+    "displayName": "Crystal Cascade — Black Metal Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "tiered",
+      "dramatic",
+      "statement-making"
+    ],
+    "colorPalette": [
+      "matte black",
+      "clear crystal",
+      "warm brass accents"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "noir-lantern",
@@ -11863,9 +15399,32 @@
     "parentCategory": "hanging_light",
     "type": "lantern",
     "size": "medium",
-    "material": "brass",
-    "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/noir-lantern/studio.png"
+    "material": "brass, iron, glass",
+    "finish": "antique brass, matte black",
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/noir-lantern/studio.png",
+    "displayName": "Noir Lantern — Brass Pendant",
+    "styleTags": [
+      "ornate",
+      "lantern-inspired",
+      "architectural",
+      "scrolled details",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "matte black",
+      "clear glass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "entrance_lobby",
+      "formal_living",
+      "stairwell",
+      "dining_room"
+    ]
   },
   {
     "slug": "noir-scroll-crystal-sconce",
@@ -12521,7 +16080,30 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/peacock-dome/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/peacock-dome/studio.png",
+    "displayName": "Peacock Dome — Brass Pendant",
+    "styleTags": [
+      "ornate",
+      "sculptural",
+      "vintage-inspired",
+      "decorative metalwork",
+      "domed glass"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm amber glass",
+      "burnished brass"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "passage"
+    ]
   },
   {
     "slug": "petal-bloom-flower-bouquet-floor-lamp",
@@ -12731,9 +16313,32 @@
     "parentCategory": "hanging_light",
     "type": "pendant",
     "size": "medium",
-    "material": "brass",
-    "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/pleated-pendant/studio.png"
+    "material": "fabric",
+    "finish": "natural",
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/pleated-pendant/studio.png",
+    "displayName": "Pleated — Fabric Pendant",
+    "styleTags": [
+      "pleated",
+      "sculptural",
+      "organic",
+      "soft-form",
+      "diffused-light"
+    ],
+    "colorPalette": [
+      "cream",
+      "warm beige",
+      "off-white"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "family_lounge",
+      "dining_room",
+      "bedroom"
+    ]
   },
   {
     "slug": "porto-table-lamp-001",
@@ -12760,9 +16365,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/prism-filigree/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/prism-filigree/studio.png",
+    "displayName": "Prism Filigree — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "filigree",
+      "tiered",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "antique brass",
+      "clear crystal",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "prism-tier",
@@ -12773,9 +16400,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
+    "material": "brass, crystal glass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/prism-tier/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/prism-tier/studio.png",
+    "displayName": "Prism Tier — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "cascading",
+      "tiered",
+      "chandelier drops",
+      "crystalline"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "clear crystal",
+      "warm amber"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "purple-glass-urn-table-lamp",
@@ -12822,7 +16471,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/radiant-geometry/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/radiant-geometry/studio.png",
+    "displayName": "Radiant Geometry — Brass Chandelier",
+    "styleTags": [
+      "geometric",
+      "tiered",
+      "symmetrical",
+      "mid-century modern",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "warm brass",
+      "black",
+      "cream"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "samavar-rainbow-festival-vase",
@@ -13047,13 +16718,31 @@
     "parentCategory": "table_lamp",
     "type": "table_lamp",
     "size": "medium",
-    "material": "wood, brass, fabric",
+    "material": "rosewood, brass, fabric",
     "finish": "polished",
     "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/rosewood-fluted-urn-table-lamp/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "sculptural",
+      "fluted",
+      "classical",
+      "urn-form",
+      "pleated"
+    ],
+    "colorPalette": [
+      "dark rosewood brown",
+      "warm brass",
+      "cream"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "bedroom",
+      "entrance_lobby"
+    ],
+    "displayName": "Rosewood Fluted Urn — Table Lamp"
   },
   {
     "slug": "royal-crown-pendant",
@@ -13064,9 +16753,32 @@
     "parentCategory": "hanging_light",
     "type": "pendant",
     "size": "medium",
-    "material": "brass",
-    "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/royal-crown-pendant/studio.png"
+    "material": "wood, iron",
+    "finish": "antique, distressed",
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/royal-crown-pendant/studio.png",
+    "displayName": "Royal Crown — Wood Pendant",
+    "styleTags": [
+      "sculptural",
+      "crown-shaped",
+      "vintage",
+      "ornate",
+      "tiered"
+    ],
+    "colorPalette": [
+      "antique white",
+      "aged cream",
+      "blackened iron"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby",
+      "stairwell"
+    ]
   },
   {
     "slug": "rustic-scroll-hurricane-sconce",
@@ -13274,10 +16986,29 @@
     "material": "metal, fabric",
     "finish": "brushed",
     "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/ribbed-silver-cylinder-table-lamp/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "geometric",
+      "industrial",
+      "textured",
+      "contemporary",
+      "sculptural"
+    ],
+    "colorPalette": [
+      "brushed silver",
+      "charcoal black",
+      "gunmetal gray"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ],
+    "displayName": "Silver Mesh — Metal Table Lamp"
   },
   {
     "slug": "silver-ribbed-gourd-table-lamp",
@@ -13291,10 +17022,28 @@
     "material": "metal, fabric",
     "finish": "polished",
     "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/silver-ribbed-gourd-table-lamp/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "sculptural",
+      "ribbed",
+      "tiered",
+      "classical",
+      "geometric"
+    ],
+    "colorPalette": [
+      "polished silver",
+      "cream",
+      "charcoal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "bedroom",
+      "entrance_lobby"
+    ],
+    "displayName": "Silver Ribbed Gourd — Metal Table Lamp"
   },
   {
     "slug": "cloud-shaped-sky-pendant-light",
@@ -13538,7 +17287,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/suspended-foliage/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/suspended-foliage/studio.png",
+    "displayName": "Suspended Foliage — Brass Chandelier",
+    "styleTags": [
+      "cascading",
+      "sculptural",
+      "organic",
+      "leaf-motif",
+      "artisanal"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "warm bronze",
+      "champagne"
+    ],
+    "vibes": [
+      "Modern Indian",
+      "Minimal & Elegant"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "entrance_lobby",
+      "dining_room"
+    ]
   },
   {
     "slug": "swag-constellation",
@@ -13549,9 +17320,31 @@
     "parentCategory": "hanging_light",
     "type": "chandelier",
     "size": "medium",
-    "material": "brass",
-    "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/swag-constellation/studio.png"
+    "material": "brass, crystal beads",
+    "finish": "antique brass, matte black",
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/swag-constellation/studio.png",
+    "displayName": "Constellation — Brass Crystal Chandelier",
+    "styleTags": [
+      "cascading",
+      "ornate",
+      "glamorous",
+      "tiered",
+      "beaded"
+    ],
+    "colorPalette": [
+      "antique gold",
+      "matte black",
+      "clear crystal"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Art Deco"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "tabla-origami-pendant-light",
@@ -13987,7 +17780,29 @@
     "size": "medium",
     "material": "brass",
     "finish": "antique",
-    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/twisted-linen/studio.png"
+    "imagePath": "https://ik.imagekit.io/delhibrass/chandeliers/twisted-linen/studio.png",
+    "displayName": "Twisted Linen — Brass Chandelier",
+    "styleTags": [
+      "ornate",
+      "sculptural",
+      "twisted",
+      "classical",
+      "hand-forged"
+    ],
+    "colorPalette": [
+      "antique bronze",
+      "cream",
+      "warm gold"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "dining_room",
+      "entrance_lobby"
+    ]
   },
   {
     "slug": "unicorn-beige-figurine",
@@ -14221,13 +18036,32 @@
     "parentCategory": "table_lamp",
     "type": "table_lamp",
     "size": "large",
-    "material": "wood, metal, fabric",
-    "finish": "matte",
+    "material": "mango wood, chrome metal, linen fabric",
+    "finish": "natural wood, polished chrome, matte fabric",
     "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/wood-abacus-table-lamp/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "geometric",
+      "sculptural",
+      "stacked",
+      "contemporary",
+      "minimalist"
+    ],
+    "colorPalette": [
+      "warm honey wood",
+      "polished chrome silver",
+      "cream linen"
+    ],
+    "vibes": [
+      "Minimal & Elegant",
+      "Modern Indian"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ],
+    "displayName": "Abacus — Wood & Metal Table Lamp"
   },
   {
     "slug": "wood-cylinder-picture-light",
@@ -14272,12 +18106,31 @@
     "parentCategory": "table_lamp",
     "type": "table_lamp",
     "size": "medium",
-    "material": "wood, brass, fabric",
+    "material": "dark wood, brass, fabric",
     "finish": "polished",
     "imagePath": "https://ik.imagekit.io/delhibrass/table-lamps/wood-filigree-sphere-table-lamp/01-white-bg-studio.png",
-    "styleTags": [],
-    "colorPalette": [],
-    "vibes": [],
-    "roomTypes": []
+    "styleTags": [
+      "sculptural",
+      "ornate",
+      "filigree",
+      "geometric",
+      "traditional"
+    ],
+    "colorPalette": [
+      "warm brown",
+      "antique brass",
+      "cream"
+    ],
+    "vibes": [
+      "Classical / Ornate",
+      "Warm Rustic"
+    ],
+    "roomTypes": [
+      "formal_living",
+      "family_lounge",
+      "bedroom",
+      "entrance_lobby"
+    ],
+    "displayName": "Filigree Sphere — Wood & Brass Table Lamp"
   }
 ]

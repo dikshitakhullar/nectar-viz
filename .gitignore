@@ -48,6 +48,12 @@ yarn-error.log*
 # screenshots
 Screenshot*
 
+# internal docs (strategy, specs, research) — keep out while repo is public
+/docs/
+
+# claude code config (agents, skills, local settings)
+/.claude/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
