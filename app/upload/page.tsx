@@ -951,7 +951,7 @@ function UploadForm() {
                   canSubmit ? "hover:border-neutral-500" : "opacity-40 cursor-not-allowed"
                 }`}
               >
-                📚 Browse catalog →
+                📷 Find a product →
               </button>
               <button
                 type="button"
