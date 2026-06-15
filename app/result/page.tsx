@@ -84,13 +84,15 @@ function SingleResult() {
         const logo = new Image();
         logo.crossOrigin = "anonymous";
         logo.onload = () => {
-          // Logo in bottom-right, ~8% of image width, with some padding
-          const logoWidth = Math.max(80, img.width * 0.08);
+          // Logo centered horizontally, lifted slightly from the bottom edge.
+          // ~18% of image width (larger + more visible than the prior corner watermark).
+          const logoWidth = Math.max(160, img.width * 0.18);
           const logoHeight = (logo.height / logo.width) * logoWidth;
-          const padding = img.width * 0.02;
-          const x = img.width - logoWidth - padding;
-          const y = img.height - logoHeight - padding;
-          ctx.globalAlpha = 0.7;
+          const x = (img.width - logoWidth) / 2;
+          // Bottom margin = ~5% of image height (visible breathing room, not flush)
+          const bottomMargin = img.height * 0.05;
+          const y = img.height - logoHeight - bottomMargin;
+          ctx.globalAlpha = 0.85;
           ctx.drawImage(logo, x, y, logoWidth, logoHeight);
           ctx.globalAlpha = 1;
           canvas.toBlob((blob) => resolve(blob!), "image/png");
