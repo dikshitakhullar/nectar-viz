@@ -2,98 +2,338 @@ import { Product, RoomType, RoomState } from "./types";
 
 const DEFAULT_STYLE = "Modern Indian";
 
-const VIBE_DETAILS: Record<string, string> = {
-  "Modern Indian": `AESTHETIC — Modern Indian Luxury:
-- Walls: cream/warm white paneled walls with thin brass trim or molding frames. Walnut wood accent paneling with jali-screen cutouts or beaded vertical trim. Some walls in smooth warm plaster or microcement.
-- Flooring: polished Italian marble — white/grey with dramatic veining (Calacatta or Statuario style) OR warm sand-toned stone. Never dark floors.
-- Ceiling: layered tray ceiling with fluted/ribbed border details and warm LED cove lighting. Cream or warm taupe tones.
-- Furniture: cream/off-white contemporary sofas with clean curved lines. Green marble or onyx coffee tables on gold/brass conical bases. Ribbed/fluted cream dining chairs. Walnut side tables with brass accents. Low-profile but substantial.
-- Decor: Indian figurative art is the HERO — Pichwai paintings (Krishna, cows, lotus), M.F. Husain-style figures, Kalighat paintings, Mughal miniatures in ornate frames. Silver or brass figurines (Nandi, elephants). Red crystal bowls. Embroidered cushions in navy/black with Indian motifs. Coffee table books. Kashmiri shawls framed as wall art.
-- Curtains: elegant sheer curtains in champagne/cream with pleated valance — NOT velvet, NOT jewel-tone
-- Color palette: cream, warm white, gold/brass, sage/jade green, warm walnut brown. Pops of vivid color ONLY from artwork (blues, reds, greens). Base stays neutral.
-- DO NOT add: brass pots/urlis/jars, jute rugs, block prints, velvet curtains/sofas, jewel-tone furniture, olive green sofas, temple bells`,
+// ─── SHARED CONSTANTS ─────────────────────────────────────────────────────────
 
-  "Minimal & elegant": `AESTHETIC — Minimal & Elegant:
-- Walls: smooth warm beige/sand plaster or microcement. One dramatic feature: backlit onyx/marble slab panel OR a large-scale organic art installation (river-shaped cutouts, abstract landscape murals). Sheer curtains as soft dividers.
-- Flooring: light marble or pale limestone with subtle veining. Light oak hardwood as alternative. Soft wave-pattern or organic-shaped area rugs in cream/sand.
-- Ceiling: sculptural tray ceilings with organic flowing plaster forms. Painted sky/cloud panels in soft blue-grey for dreamy effect. Warm LED cove lighting. Rounded, never angular.
-- Furniture: curved serpentine sofas in white/cream boucle. Organic-shaped coffee tables in light stone or cream. Rounded poufs/ottomans. Everything low-profile with soft edges. NO sharp geometric forms.
-- Decor: ONE dramatic art piece (backlit installation, abstract mural, or large sculpture). A single white floral arrangement. One or two hardcover books. LEAVE BREATHING ROOM — surfaces should be mostly empty. The architecture IS the decoration.
-- Curtains: floor-to-ceiling sheer white or champagne linen panels
-- Color palette: cream, warm sand, soft beige, pale grey, touches of blue-grey. Entirely monochromatic warm neutrals. ONE muted accent maximum.
-- DO NOT add: heavy ornate pieces, busy patterns, brass detailing, dark colors, cluttered surfaces, multiple art pieces, decorative objects on every surface`,
+const ORIENTATION_RULE =
+  "Preserve the input photo's exact aspect ratio and orientation. " +
+  "Portrait input = portrait output; landscape = landscape. " +
+  "Do not crop, rotate, or change the field of view.";
 
-  "Classical / ornate": `AESTHETIC — Classical Ornate:
-- Walls: classical raised panel molding with deep crown profiles in cream/ivory. Deep teal or petrol blue paint as a rich alternative. Antique European pastoral tapestries in ornate frames as focal walls. Arched niches and doorways with carved trim.
-- Flooring: dark marble (Nero Marquina, dark emperador) OR polished dark wood parquet/herringbone. Black-and-white geometric marble inlays (star/pinwheel patterns) for foyers/hallways.
-- Ceiling: coffered/paneled with classical plaster medallions, acanthus leaf molding, deep crown profiles. Cream/warm white. High and grand.
-- Furniture: cream skirted sofas with wood-trimmed arms (English style). Gilt-frame bergere chairs. Glass-top brass coffee tables. Wingback chairs in neutral fabric. Dark wood dining table with carved legs, upholstered dining chairs. Crystal balustrades on staircases.
-- Decor: ornate gilt-frame mirrors, antique European tapestries, crystal candlesticks with black tapers, blue-and-white chinoiserie plates, silver tea service, classical white marble figurines/busts, heavy silk curtains with tassels. Oil paintings in gold frames.
-- Curtains: layered — sheer underneath with heavier silk/damask drapes in champagne or taupe. Full-height, puddling slightly.
-- Color palette: cream, deep teal, antique gold, dark wood, burgundy accents, black-and-white marble. Rich but not garish.
-- DO NOT add: modern minimalist pieces, industrial elements, plastic/acrylic, chrome`,
+const STRUCTURE_PRESERVATION =
+  "Count walls, windows, doors, columns, beams, and ceiling structure in " +
+  "the input photo. Output MUST have the SAME count and SAME positions. " +
+  "Do not add, remove, move, or resize any of these.";
 
-  "Warm & cozy": `AESTHETIC — Warm & Cozy:
-- Walls: channel-tufted fabric or upholstered panels in champagne/beige behind beds. Warm walnut wood paneling. Warm plaster in soft clay/terracotta tones. Fluted/ribbed panel details.
-- Flooring: warm-toned wood (walnut, honey oak) with layered rugs — Persian rug underneath, textured cream/sand rug on top. Chevron or parquet patterns.
-- Ceiling: dark painted ceiling (chocolate brown or warm taupe) to COMPRESS the space into a cocoon. Tray ceiling with gold accent trim and warm LED cove lighting. Low and intimate.
-- Furniture: deep channel-tufted sofas and headboards in cream/beige. Cognac leather Chesterfield or barrel chairs. Chunky walnut coffee tables. Upholstered benches at foot of bed. Everything invites sinking in.
-- Decor: lit candles (multiple, pillar style), cashmere/knit throw blankets in dusty blue or camel, stacked books, warm-toned pottery, smoked glass table lamps with amber glow, reed diffusers, olive branches in simple vases, autumn-toned botanical art.
-- Curtains: natural linen in warm oatmeal/camel tones, heavy enough to feel cocooning
-- Color palette: cognac, camel, champagne, warm walnut brown, soft terracotta/rust accents, dusty blue as one cool accent. Everything warm-toned.
-- DO NOT add: cold grey tones, chrome/steel, stark white, clinical modern pieces, bright overhead lighting`,
+const FIXTURE_FIDELITY =
+  "Match the fixture EXACTLY to the reference image — same design, " +
+  "same number of arms/shades/crystals, same proportions between parts. " +
+  "Do not add, remove, or reinterpret any element of the fixture.";
 
-  "Contemporary": `AESTHETIC — Contemporary:
-- Walls: flat walnut wood paneling with clean seams (NOT ornate). 3D sculptural relief panels in cream/white with abstract organic shapes. Backlit marble or onyx slab feature walls. Fluted/ribbed vertical panels. Crane/nature murals for artistic accent.
-- Flooring: light warm stone or concrete-look tiles in sand/beige. Large-format. Textured area rugs in neutral tones with abstract or wave patterns.
-- Ceiling: flat modern in warm taupe/grey with black recessed linear track lighting. Stepped false ceiling with warm cove lighting. Clean and architectural.
-- Furniture: large curved/modular sectional sofas in olive/sage, cream boucle, or chocolate brown. Sculptural coffee tables in green marble, travertine, or bronze. Mushroom-shaped walnut stools. Houndstooth or bold-pattern accent pieces. Organic flowing forms mixed with geometric.
-- Decor: ONE bold abstract or figurative painting (pop-art, surrealist, Cubist style in vivid colors). Sculptural objects. Tall ceramic cacti or single dramatic plant. Dried branches in dark vases. Architectural coffee table books. MINIMAL objects — let materials speak.
-- Curtains: heavy taupe curtains for windows OR minimal roller shades. Not fussy.
-- Color palette: warm sand, walnut brown, olive/sage green, terracotta, charcoal, cream. Earth tones with ONE bold art-driven color pop.
-- DO NOT add: traditional ornate pieces, busy textile patterns, brass urlis, chinoiserie, multiple small decorative objects`,
+const LIGHTING_INTEGRATION =
+  "LIGHTING INTEGRATION (fixture must look LIT and INTEGRATED, not pasted on):\n" +
+  "- Fixture appears ON — bulbs glowing warmly\n" +
+  "- Soft warm light spill on nearby ceiling and upper walls\n" +
+  "- Subtle shadow cast on nearby surfaces (floor for ceiling fixtures, wall behind for sconces)\n" +
+  "- Match the room's existing color temperature\n" +
+  "- Reflective surfaces (brass, crystal) pick up the room's light direction\n" +
+  "- No hard cutout edges — camera captured fixture WITH the room";
 
-  "Rustic": `AESTHETIC — Rustic:
-- Walls: exposed brick (one or two walls), remaining walls in warm lime-wash plaster or raw plaster finish
-- Flooring: reclaimed wood planks with visible grain or aged terracotta tiles
-- Furniture: solid wood tables with visible grain and natural imperfections (not polished), aged brown leather sofas, wrought iron accents. Farmhouse dining table with bench seating. Chunky proportions.
-- Decor: woven baskets, terracotta pots with trailing greenery, wrought iron candle holders, vintage frames, linen napkins, wooden cutting boards displayed, dried herbs
-- Curtains: simple cotton or burlap panels, or no curtains — wooden shutters
-- Color palette: earth tones — warm brown, terracotta, sage green, cream, charcoal
-- DO NOT add: shiny chrome, velvet, crystal, ornate gilding, overly polished surfaces, glass furniture`,
+const PRODUCT_HERO_BALANCE =
+  "PRODUCT HERO (fixture must be the visual hero of the shot):\n" +
+  "- If bright daylight in the photo would overpower the fixture's glow, " +
+  "use natural compositional darkening — subtle vignetting toward the fixture, " +
+  "shift midday to late-afternoon warmth, reduce direct sunlight intensity\n" +
+  "- Fixture brightness always reads INTENTIONAL and WARM — never washed out\n" +
+  "- Do NOT overdramatically dim (no night-from-daytime); keep the photo's character";
 
-  "Indian Maximalist": `AESTHETIC — Indian Maximalist:
-- Walls: BOLD saturated wall color — coral-red/vermilion lacquer, deep teal/hunter green, or rich navy. Salon-style gallery hanging with MULTIPLE framed artworks covering the wall (Indian miniatures, landscape oils, figurative art in ornate gold and dark frames). Antique tapestries in warm sepia/gold tones. Lacquered built-in bookshelves.
-- Flooring: deep red/navy Persian or Oriental rugs with intricate traditional patterns. Navy-and-white striped dhurrie rugs as alternative. Geometric marble inlays for grand spaces.
-- Ceiling: varied — natural wood plank, woven cane/rattan barrel vault, or dark painted to match walls. Not minimal.
-- Furniture: eclectic MIX is key — toile-upholstered daybed with hunting scenes ALONGSIDE carved cane-back colonial chairs ALONGSIDE tufted Chesterfield in gold/olive. Black lacquer chests with brass hardware. Gothic-carved side cabinets. Chinoiserie X-leg tables. Red leather bar stools. Vintage leather travel trunks as side tables.
-- Decor: blue-and-white chinoiserie porcelain (ginger jars, vases, plates — ESSENTIAL). Brass foo-dog or griffin figural lamps with green tole shades. Ikat, kilim, and floral-embroidered cushions mixed together. Silver elephant/Nandi figurines. Red berries and white hydrangea arrangements. Stacked Chanel/Louis Vuitton coffee table books. Black tapers in crystal holders. Red military jacket on mannequin form.
-- Curtains: heavy drapes in dark teal or cream silk. Layered with sheers.
-- Color palette: coral-red, deep teal, navy, cream, sepia gold, black lacquer. BOLD and saturated — warm undertones throughout. Many colors coexisting confidently.
-- DO NOT add: minimalist furniture, bare walls, monochrome palette, modern track lighting, empty surfaces. This vibe is about ABUNDANCE and LAYERING.`,
+const ROOM_ASSESSMENT =
+  "ASSESS THE ROOM STATE FIRST:\n" +
+  "For each visible surface, classify it:\n" +
+  "- FINISHED = painted walls, installed tiles/marble/stone, completed ceiling " +
+  "(painted, with cornice/cove/false-ceiling work), installed doors with frames, " +
+  "polished floors → LOCK and preserve EXACTLY as photographed\n" +
+  "- BARE = raw cement/plaster, exposed brick, raw concrete ceiling without finish, " +
+  "exposed beams, missing flooring (subfloor or protective covering only) → " +
+  "FAIR GAME to treat per the style direction\n" +
+  "Exposed structural elements (steel framing, scaffolding) are STRUCTURAL — stay visible.\n" +
+  "Then scale your creative liberty:\n" +
+  "- MOSTLY FINISHED → respect ALL finished surfaces; only treat bare ones; add fixture + 1-2 light decor touches\n" +
+  "- PARTIAL MIX → treat only bare surfaces; preserve finished; add fixture + 2-3 decor touches\n" +
+  "- FULLY RAW → full liberty on materials/finishes/decor per style direction";
 
-  "Art Deco": `AESTHETIC — Art Deco:
-- Walls: warm taupe or putty-colored smooth plaster. Archways with curved molding. Sage green paneled cabinetry with glass-fronted displays. Geometric carved or relief details.
-- Flooring: geometric marble inlay — star/pinwheel/chevron patterns using white marble with dark grey or burgundy stone. Ornamental and high-contrast.
-- Ceiling: mirrored or reflective glass panels with geometric brass/gold Art Deco framing. Woven natural cane barrel-vault ceilings with backlit center panels. Dramatic and glamorous.
-- Furniture: oval-back chairs in dark wood with chinoiserie/floral upholstered seats. Barley-sugar or twisted carved columns. Houndstooth-check upholstered benches in pink-red and cream. Marble-topped vanity islands. Dark wood pieces with strong geometric silhouettes.
-- Decor: crystal multi-arm chandeliers, globe/orb wall sconces in brass, Indian deity paintings as focal art, geometric brass framing on everything, perfume bottles, displayed accessories as decor.
-- Curtains: silk or satin in champagne/gold tones, geometric pleating
-- Color palette: warm taupe, black, white marble, gold/brass, sage green, burgundy, houndstooth patterns. Glamorous geometry.
-- DO NOT add: rustic elements, distressed finishes, casual fabrics, minimal/bare surfaces`,
+const DECOR_LIVED_IN =
+  "DECOR — lived-in and personal, like a recently-moved-into home, not staged.\n" +
+  "ALWAYS add at least 1-2 decor touches for under-construction renders. An empty " +
+  "room or hallway feels unfinished — even a single framed artwork transforms it.\n" +
+  "Empty-surface heuristics (apply each that matches):\n" +
+  "- EMPTY WALLS visible? Add framed art (1 piece for short walls, 2-3 for long " +
+  "walls) OR wall paneling/molding per the vibe (cleaner choice for hallways).\n" +
+  "- EMPTY CORNERS? Add a plant in a simple pot.\n" +
+  "- LONG CORRIDORS or empty floor stretches? Add a textured runner.\n" +
+  "- EMPTY console/shelf area? A small vase or stack of books.\n" +
+  "Volume guidance:\n" +
+  "- Mostly-finished: 1-2 touches MINIMUM\n" +
+  "- Partial mix: 2-3 touches\n" +
+  "- Fully raw: full styling per vibe, but UNDER-stated\n" +
+  "NEVER: sofas blocking walls, big tables obscuring views, clutter, more than " +
+  "3-4 decor items in a small space.";
+
+const CONSTRUCTION_CLEANUP =
+  "REMOVE CONSTRUCTION DEBRIS: If the photo shows removable construction-stage " +
+  "coverings on top of otherwise-finished surfaces — brown protective paper on " +
+  "floors, drop cloths, plastic sheets, painter's tape, scattered tools, stacked " +
+  "materials — REMOVE these in the render. Show the finished surface underneath " +
+  "(which counts as FINISHED for assessment). The customer clears these before " +
+  "move-in; the render previews the finished state.";
+
+const FURNISHED_PRESERVATION =
+  "FURNISHED PRESERVATION: do NOT move, alter, add, or remove ANY existing " +
+  "furniture, rug, curtain, artwork, or decor. The ONLY change allowed is " +
+  "adding this ONE light fixture. If there's an existing ceiling fan or basic " +
+  "light where the fixture should go, replace ONLY that element.";
+
+const GLOBAL_NEGATIVES =
+  "AVOID: pasted-on or composite look, CGI render appearance, hard cutout " +
+  "edges around the fixture, fixture lost in ambient, sterile empty space, " +
+  "structural changes to the room.";
+
+// ─── VIBE BLOCKS ──────────────────────────────────────────────────────────────
+
+interface VibeBlock {
+  toneSummary: string;
+  walls: string;
+  ceiling: string;
+  flooring: string;
+  furniture: string;
+  curtains: string;
+  decor: string;
+  colorPalette: string;
+  doNotAdd: string;
+}
+
+export const VIBES: Record<string, VibeBlock> = {
+  "Modern Indian": {
+    toneSummary:
+      "Modern Indian Luxury — cream warm-whites with brass trim, polished marble, layered tray ceilings with warm cove light, Indian figurative art as the hero. Restrained luxury, never garish.",
+    walls:
+      "Walls: cream/warm-white paneled with thin brass trim or molding frames. Walnut accent paneling with jali-screen cutouts or beaded vertical trim. Or smooth warm plaster/microcement.",
+    ceiling:
+      "Ceiling: layered tray with fluted/ribbed border details, warm LED cove lighting. Cream or warm-taupe tones.",
+    flooring:
+      "Flooring: polished Italian marble — white/grey with dramatic veining (Calacatta or Statuario) OR warm sand-toned stone. Never dark floors.",
+    furniture:
+      "Furniture: cream/off-white contemporary sofas with curved lines. Green marble or onyx coffee tables on brass conical bases. Walnut side tables with brass accents. Low-profile but substantial.",
+    curtains:
+      "Curtains: sheer champagne/cream with pleated valance. Never velvet or jewel-tone.",
+    decor:
+      "Decor: Indian figurative art as hero — Pichwai paintings, Mughal miniatures, M.F. Husain-style figures in ornate frames. Silver/brass figurines (Nandi, elephants). Embroidered cushions in navy/black with Indian motifs.",
+    colorPalette:
+      "Palette: cream, warm white, gold/brass, sage/jade green, warm walnut brown. Vivid color pops ONLY from artwork.",
+    doNotAdd:
+      "AVOID: brass pots/urlis/jars, jute rugs, block prints, velvet, jewel-tone furniture, olive green sofas, temple bells.",
+  },
+
+  "Minimal & elegant": {
+    toneSummary:
+      "Minimal & Elegant — warm beige plaster, sculptural curves, monochromatic neutrals, breathing room as the design. Architecture IS the decoration.",
+    walls:
+      "Walls: smooth warm beige/sand plaster or microcement. One dramatic feature — backlit onyx/marble slab panel OR a large-scale organic art installation (river cutouts, abstract landscape mural).",
+    ceiling:
+      "Ceiling: sculptural tray with organic flowing plaster forms. Soft blue-grey painted sky/cloud panels optional. Warm LED cove. Rounded, never angular.",
+    flooring:
+      "Flooring: light marble or pale limestone with subtle veining. Light oak hardwood as alternative. Soft wave-pattern or organic-shaped rugs in cream/sand.",
+    furniture:
+      "Furniture: curved serpentine sofas in white/cream boucle. Organic light-stone or cream coffee tables. Rounded poufs/ottomans. Everything low-profile with soft edges. No sharp geometry.",
+    curtains:
+      "Curtains: floor-to-ceiling sheer white or champagne linen panels.",
+    decor:
+      "Decor: ONE dramatic art piece (backlit installation, abstract mural, or large sculpture). A single white floral arrangement. One or two hardcover books. Surfaces mostly empty — leave breathing room.",
+    colorPalette:
+      "Palette: cream, warm sand, soft beige, pale grey, touches of blue-grey. Monochromatic warm neutrals with ONE muted accent maximum.",
+    doNotAdd:
+      "AVOID: heavy ornate pieces, busy patterns, brass detailing, dark colors, cluttered surfaces, multiple art pieces.",
+  },
+
+  "Classical / ornate": {
+    toneSummary:
+      "Classical Ornate — raised panel molding, coffered ceilings, gilt mirrors and oil paintings, deep teal and antique gold. Grand and richly layered without being garish.",
+    walls:
+      "Walls: classical raised-panel molding with deep crown profiles in cream/ivory. Deep teal or petrol blue as a rich alternative. Antique European pastoral tapestries in ornate frames. Arched niches with carved trim.",
+    ceiling:
+      "Ceiling: coffered/paneled with classical plaster medallions, acanthus leaf molding, deep crown profiles. Cream/warm white. High and grand.",
+    flooring:
+      "Flooring: dark marble (Nero Marquina, dark emperador) OR polished dark wood parquet/herringbone. Black-and-white geometric marble inlays (star/pinwheel) for foyers.",
+    furniture:
+      "Furniture: cream skirted sofas with wood-trimmed arms (English style). Gilt-frame bergere chairs. Glass-top brass coffee tables. Dark wood dining table with carved legs and upholstered chairs.",
+    curtains:
+      "Curtains: layered — sheer under heavier silk/damask in champagne or taupe. Full-height, puddling slightly.",
+    decor:
+      "Decor: ornate gilt-frame mirrors, antique European tapestries, crystal candlesticks with black tapers, blue-and-white chinoiserie plates, silver tea service, classical white marble busts. Oil paintings in gold frames.",
+    colorPalette:
+      "Palette: cream, deep teal, antique gold, dark wood, burgundy accents, black-and-white marble. Rich but not garish.",
+    doNotAdd:
+      "AVOID: modern minimalist pieces, industrial elements, plastic/acrylic, chrome.",
+  },
+
+  "Warm & cozy": {
+    toneSummary:
+      "Warm & Cozy — channel-tufted upholstery, walnut wood, layered Persian rugs, dark cocooning ceilings, candlelit and lived-in. Everything invites sinking in.",
+    walls:
+      "Walls: channel-tufted fabric or upholstered panels in champagne/beige. Warm walnut wood paneling. Warm plaster in soft clay/terracotta. Fluted/ribbed panel details.",
+    ceiling:
+      "Ceiling: dark painted (chocolate brown or warm taupe) to compress space into a cocoon. Tray with gold accent trim and warm LED cove. Low and intimate.",
+    flooring:
+      "Flooring: warm-toned wood (walnut, honey oak) with layered rugs — Persian underneath, textured cream/sand on top. Chevron or parquet.",
+    furniture:
+      "Furniture: deep channel-tufted sofas and headboards in cream/beige. Cognac leather Chesterfield or barrel chairs. Chunky walnut coffee tables. Upholstered benches at the foot of the bed.",
+    curtains:
+      "Curtains: natural linen in warm oatmeal/camel, heavy enough to feel cocooning.",
+    decor:
+      "Decor: multiple lit pillar candles, cashmere/knit throws in dusty blue or camel, stacked books, warm-toned pottery, smoked-glass amber-glow lamps, olive branches in simple vases, autumn-toned botanical art.",
+    colorPalette:
+      "Palette: cognac, camel, champagne, warm walnut brown, soft terracotta/rust accents, dusty blue as the one cool accent. Everything warm-toned.",
+    doNotAdd:
+      "AVOID: cold grey tones, chrome/steel, stark white, clinical modern pieces, bright overhead lighting.",
+  },
+
+  "Contemporary": {
+    toneSummary:
+      "Contemporary — flat walnut paneling, sculptural relief walls, large-format stone floors, curved modular seating, ONE bold art piece. Earth tones with restraint, materials speak.",
+    walls:
+      "Walls: flat walnut paneling with clean seams (not ornate). 3D sculptural relief panels in cream/white with abstract organic shapes. Backlit marble/onyx feature walls. Fluted vertical panels or crane/nature murals.",
+    ceiling:
+      "Ceiling: flat modern in warm taupe/grey with black recessed linear track lighting. Stepped false ceiling with warm cove. Clean and architectural.",
+    flooring:
+      "Flooring: light warm stone or concrete-look tiles in sand/beige. Large-format. Textured neutral rugs with abstract or wave patterns.",
+    furniture:
+      "Furniture: large curved/modular sectional sofas in olive/sage, cream boucle, or chocolate brown. Sculptural coffee tables in green marble, travertine, or bronze. Mushroom-shaped walnut stools. Organic forms mixed with geometric.",
+    curtains:
+      "Curtains: heavy taupe drapes OR minimal roller shades. Not fussy.",
+    decor:
+      "Decor: ONE bold abstract/figurative painting (pop-art, surrealist, or Cubist in vivid colors). Sculptural objects. Tall ceramic cactus or single dramatic plant. Dried branches in dark vases. Minimal objects — let materials speak.",
+    colorPalette:
+      "Palette: warm sand, walnut brown, olive/sage green, terracotta, charcoal, cream. Earth tones with ONE bold art-driven color pop.",
+    doNotAdd:
+      "AVOID: traditional ornate pieces, busy textile patterns, brass urlis, chinoiserie, multiple small decorative objects.",
+  },
+
+  "Rustic": {
+    toneSummary:
+      "Rustic — exposed brick, lime-wash plaster, reclaimed wood, aged leather, wrought iron. Honest materials, visible grain, lived-in farmhouse warmth.",
+    walls:
+      "Walls: exposed brick on one or two walls; remaining walls in warm lime-wash or raw plaster finish.",
+    ceiling:
+      "Ceiling: exposed wooden beams or raw plaster. Warm and unfussy.",
+    flooring:
+      "Flooring: reclaimed wood planks with visible grain OR aged terracotta tiles.",
+    furniture:
+      "Furniture: solid wood tables with visible grain and natural imperfections (not polished). Aged brown leather sofas. Wrought iron accents. Farmhouse dining table with bench seating. Chunky proportions.",
+    curtains:
+      "Curtains: simple cotton or burlap panels — or no curtains, wooden shutters instead.",
+    decor:
+      "Decor: woven baskets, terracotta pots with trailing greenery, wrought iron candle holders, vintage frames, linen napkins, wooden cutting boards displayed, dried herbs hanging.",
+    colorPalette:
+      "Palette: earth tones — warm brown, terracotta, sage green, cream, charcoal.",
+    doNotAdd:
+      "AVOID: shiny chrome, velvet, crystal, ornate gilding, overly polished surfaces, glass furniture.",
+  },
+
+  "Indian Maximalist": {
+    toneSummary:
+      "Indian Maximalist — saturated lacquered walls, salon-style gallery hangs, chinoiserie porcelain, eclectic furniture mix, layered Persian rugs. Abundance and confident layering.",
+    walls:
+      "Walls: bold saturated color — coral-red/vermilion lacquer, deep teal/hunter green, or rich navy. Salon-style gallery hang with MULTIPLE framed artworks (Indian miniatures, landscape oils, figurative in ornate gold/dark frames). Lacquered built-in bookshelves.",
+    ceiling:
+      "Ceiling: natural wood plank, woven cane/rattan barrel vault, or dark painted to match walls. Not minimal.",
+    flooring:
+      "Flooring: deep red/navy Persian or Oriental rugs with intricate patterns. Navy-and-white striped dhurrie as alternative. Geometric marble inlays for grand spaces.",
+    furniture:
+      "Furniture: eclectic MIX is key — toile-upholstered daybed with hunting scenes ALONGSIDE carved cane-back colonial chairs ALONGSIDE tufted Chesterfield in gold/olive. Black lacquer chests with brass hardware. Chinoiserie X-leg tables. Red leather bar stools. Vintage leather trunks as side tables.",
+    curtains:
+      "Curtains: heavy drapes in dark teal or cream silk, layered with sheers.",
+    decor:
+      "Decor: blue-and-white chinoiserie porcelain (ginger jars, vases, plates — ESSENTIAL). Brass foo-dog or griffin figural lamps with green tole shades. Ikat, kilim, and floral-embroidered cushions mixed. Silver elephant/Nandi figurines. Red berries with white hydrangea. Stacked designer coffee table books. Black tapers in crystal holders.",
+    colorPalette:
+      "Palette: coral-red, deep teal, navy, cream, sepia gold, black lacquer. Bold and saturated with warm undertones — many colors coexisting confidently.",
+    doNotAdd:
+      "AVOID: minimalist furniture, bare walls, monochrome palette, modern track lighting, empty surfaces.",
+  },
+
+  "Art Deco": {
+    toneSummary:
+      "Art Deco — warm taupe plaster, geometric marble inlay floors, mirrored or cane-vault ceilings, twisted carved columns, glamorous geometry in brass and burgundy.",
+    walls:
+      "Walls: warm taupe or putty-colored smooth plaster. Curved-molding archways. Sage green paneled cabinetry with glass-fronted displays. Geometric carved relief details.",
+    ceiling:
+      "Ceiling: mirrored or reflective glass panels with geometric brass/gold Art Deco framing. Woven cane barrel-vault with backlit center panels as alternative. Dramatic and glamorous.",
+    flooring:
+      "Flooring: geometric marble inlay — star/pinwheel/chevron in white marble with dark grey or burgundy stone. Ornamental and high-contrast.",
+    furniture:
+      "Furniture: oval-back chairs in dark wood with chinoiserie/floral upholstered seats. Barley-sugar or twisted carved columns. Houndstooth-check benches in pink-red and cream. Marble-topped vanity islands. Strong geometric silhouettes in dark wood.",
+    curtains:
+      "Curtains: silk or satin in champagne/gold with geometric pleating.",
+    decor:
+      "Decor: crystal multi-arm chandeliers, globe/orb wall sconces in brass, Indian deity paintings as focal art, geometric brass framing on everything, perfume bottles and displayed accessories as decor.",
+    colorPalette:
+      "Palette: warm taupe, black, white marble, gold/brass, sage green, burgundy, houndstooth patterns. Glamorous geometry.",
+    doNotAdd:
+      "AVOID: rustic elements, distressed finishes, casual fabrics, minimal/bare surfaces.",
+  },
 };
 
-function getVibeDetails(vibe: string): string {
-  // Check for exact match first
-  if (VIBE_DETAILS[vibe]) return VIBE_DETAILS[vibe];
-  // Check for partial match
-  const lower = vibe.toLowerCase();
-  for (const [key, value] of Object.entries(VIBE_DETAILS)) {
-    if (lower.includes(key.toLowerCase()) || key.toLowerCase().includes(lower)) return value;
+// ─── VIBE CONTENT SELECTOR ────────────────────────────────────────────────────
+
+export type PreserveMode = "auto" | "on" | "off";
+export type AddDecorMode = "auto" | "on" | "off";
+
+export function buildVibeContent(
+  vibeName: string | undefined,
+  roomState: RoomState,
+  preserveFinishes: PreserveMode = "auto",
+  addDecor: AddDecorMode = "auto",
+  addCurtains: boolean = false,
+): string {
+  const effectiveName = vibeName || DEFAULT_STYLE;
+  const v = VIBES[effectiveName];
+
+  // Custom vibe fallback — model handles named styles well, no need for full reference
+  if (!v) {
+    return `Apply this style: "${effectiveName}". Use best judgment for materials, furniture, and decor that fit this description.`;
   }
-  // If user typed a custom vibe, wrap it with the default as fallback
-  return `AESTHETIC — ${vibe}:\nApply this style: "${vibe}". Use your best judgment for furniture, materials, and decor that match this description.\n\nFallback reference (if unsure):\n${VIBE_DETAILS["Modern Indian"]}`;
+
+  if (roomState === "furnished") {
+    return `STYLE: Fixture should feel at home in a ${v.toneSummary} Bulb tone and reflective finishes align with this style.`;
+  }
+
+  // Under-construction — depth controlled by preserveFinishes
+  const includeDecor = addDecor !== "off";
+
+  if (preserveFinishes === "on") {
+    const parts = [`STYLE: ${v.toneSummary}`];
+    if (includeDecor) parts.push(v.decor);
+    return parts.join("\n");
+  }
+
+  if (preserveFinishes === "off") {
+    // Fully raw — full block
+    const parts = [
+      `STYLE — full direction:`,
+      v.toneSummary,
+      v.walls,
+      v.ceiling,
+      v.flooring,
+      v.furniture,
+    ];
+    if (addCurtains) parts.push(v.curtains);
+    if (includeDecor) parts.push(v.decor);
+    parts.push(v.colorPalette);
+    parts.push(v.doNotAdd);
+    return parts.join("\n");
+  }
+
+  // AUTO — partial mix, surfaces likely treated
+  const parts = [
+    `STYLE: ${v.toneSummary}`,
+    `Bare walls: ${v.walls.replace(/^Walls:\s*/, "")}`,
+    `Bare ceiling: ${v.ceiling.replace(/^Ceiling:\s*/, "")}`,
+  ];
+  if (includeDecor) parts.push(v.decor);
+  parts.push(v.colorPalette);
+  parts.push(v.doNotAdd);
+  return parts.join("\n");
 }
+
+// ─── ROOM TYPE LABELS (kept as-is per constraints) ────────────────────────────
 
 const ROOM_TYPE_LABELS: Record<RoomType, string> = {
   formal_living: "formal living room / drawing room",
@@ -108,138 +348,96 @@ const ROOM_TYPE_LABELS: Record<RoomType, string> = {
   bar: "bar / home bar area",
   other: "room",
 };
+// ROOM_TYPE_LABELS retained for any future use; not referenced in the new builder.
+void ROOM_TYPE_LABELS;
 
-function getScaleInstruction(product: Product, roomType: RoomType): string {
-  let instruction = `PRODUCT INTEGRITY: The ${product.name} must look EXACTLY like the reference image — same design, same number of arms/shades/crystals, same proportions between parts. Do NOT add or remove any elements. Do NOT redesign or reinterpret the fixture.`;
+// ─── SCALE INSTRUCTION ────────────────────────────────────────────────────────
 
-  instruction += "\n\nSCALE — COMMON MISTAKE: AI tends to make fixtures TOO SMALL. Err on the side of LARGER rather than smaller. A light fixture should be a prominent design element, not a tiny afterthought lost in the room.";
-
-  instruction += "\n\nSize by room type:";
-
-  const sizeByRoom: Record<string, string> = {
-    formal_living: "For a formal living room: the fixture should be substantial — at least 24-36 inches wide. It is the centerpiece of the room. Hang it centered in the main seating area, not off to the side or in front of a wall.",
-    family_lounge: "For a family lounge: 24-30 inches wide. Centered over the main seating area.",
-    dining_room: "For a dining room: centered directly above the dining table, spanning about 1/2 to 2/3 the width of the table. Hang 30-36 inches above the table surface.",
-    bedroom: "For a bedroom: 20-28 inches wide. Centered in the room or over the bed.",
-    entrance_lobby: "For an entrance lobby/foyer: the fixture should be LARGE and dramatic — 28-40 inches wide. This is the first thing visitors see. Hang it centered in the entrance space, NOT in front of a console or wall — in the CENTER of the open area where people walk in.",
-    mandir: "For a mandir: 16-24 inches wide, centered above the prayer area.",
-    stairwell: "For a stairwell/double-height space: the fixture can be very large — 36-60 inches. Hang on a long chain so it occupies the vertical space dramatically.",
-    passage: "For a passage/corridor: 14-20 inches wide. If multiple fixtures, space them evenly along the passage.",
-    terrace: "For a terrace: 24-32 inches wide. Centered in the covered area.",
-    bar: "For a bar/home bar: 18-28 inches wide. Hang directly above the bar counter, 30-36 inches above the counter surface. If using multiple pendants, space 24-30 inches apart along the bar length.",
-    other: "Place the fixture centered in the main area of the room at a proportionate size — at least 24 inches wide for standard rooms.",
+export function getScaleInstruction(_product: Product, roomType: RoomType): string {
+  const sizeByRoom: Record<RoomType, string> = {
+    formal_living: '24-36" wide, centered in main seating area',
+    family_lounge: '24-30" wide, centered over main seating',
+    dining_room: '½ to ⅔ the table width, 30-36" above tabletop',
+    bedroom: '20-28" wide, centered in room or over bed',
+    entrance_lobby: '28-40" wide, centered in OPEN entrance area (not over console)',
+    mandir: '16-24" wide, centered above prayer area',
+    stairwell: '36-60" wide, hung on long chain for vertical drama',
+    passage: '14-20" wide, spaced evenly if multiple',
+    terrace: '24-32" wide, centered in covered area',
+    bar: '18-28" wide, 30-36" above bar counter; 24-30" apart if multiple',
+    other: 'at least 24" wide for standard rooms, centered in main area',
   };
-
-  instruction += "\n" + (sizeByRoom[roomType] || sizeByRoom["other"]);
-
-  instruction += "\n\nPlacement rules:";
-  instruction += "\n- ALWAYS center the fixture in the PRIMARY open area of the room — where people gather or walk through.";
-  instruction += "\n- Do NOT place the fixture in front of a wall, console, or artwork. It belongs in the CENTER of the space.";
-  instruction += "\n- For reference: a standard sofa is ~7 feet wide, a dining table ~3-4 feet wide, a door is ~7 feet tall.";
-
-  return instruction;
+  const sizeText = sizeByRoom[roomType] ?? sizeByRoom.other;
+  return (
+    "SCALE — err LARGER not smaller. Fixture should be a prominent design " +
+    `element, not a tiny afterthought. Size: ${sizeText}. ` +
+    "Always center in the main open area where people gather/walk — " +
+    "NEVER in front of a wall or console."
+  );
 }
+
+// ─── PRODUCT DESCRIPTION (kept as-is per constraints) ─────────────────────────
 
 function getProductDescription(product: Product): string {
   if (product.description) return product.description;
   return `${product.name} — a ${product.size || "medium"} ${product.material || "brass"} ${product.category} with ${product.finish || "antique"} finish`;
 }
 
+// ─── MAIN PROMPT BUILDER ──────────────────────────────────────────────────────
+
 export function buildPrompt(
   product: Product,
   roomType: RoomType,
   roomState: RoomState,
-  vibe?: string
+  vibe?: string,
+  options: {
+    preserveFinishes?: PreserveMode;
+    addDecor?: AddDecorMode;
+    addCurtains?: boolean;
+  } = {},
 ): { prompt: string; negativePrompt: string } {
-  const roomLabel = ROOM_TYPE_LABELS[roomType];
   const productDesc = getProductDescription(product);
-  const scaleInstruction = getScaleInstruction(product, roomType);
+  const isFurnished = roomState === "furnished";
 
-  let prompt: string;
+  const intro = isFurnished
+    ? `Edit this room photograph to add this exact light fixture: ${productDesc}.`
+    : `Edit this under-construction room photograph to add this exact light fixture: ${productDesc}.`;
 
-  if (roomState === "furnished") {
-    prompt = `Edit this room photograph to add this exact light fixture: ${productDesc}.
+  // ─── MUST PRESERVE ───
+  const mustPreserve = [
+    "MUST PRESERVE (these override everything below):",
+    `1. ${ORIENTATION_RULE}`,
+    `2. ${STRUCTURE_PRESERVATION}`,
+    `3. ${FIXTURE_FIDELITY}`,
+  ].join("\n");
 
-⚠️ ABSOLUTE RULE — DO NOT MODIFY THE ROOM STRUCTURE:
-- Do NOT add, remove, move, resize, or alter ANY wall, window, door, column, or ceiling.
-- Do NOT change the number of windows. Do NOT add windows that don't exist. Do NOT remove windows that do exist.
-- Do NOT change wall colors, wall textures, or wall finishes — they stay EXACTLY as photographed.
-- Do NOT change flooring, ceiling, or any surface finish.
-- Do NOT move, remove, or alter ANY furniture, rug, curtain, artwork, or decor.
-- The ONLY change allowed is: add this ONE light fixture. Nothing else changes. NOTHING.
-- If there is an existing ceiling fan or basic light where this fixture should go, replace ONLY that element.
-
-SCALE — THIS IS CRITICAL:
-${scaleInstruction}
-- For reference: compare the fixture to the furniture in the room. A standard sofa is about 7 feet wide, a dining table about 3-4 feet wide, a door is about 7 feet tall.
-- The fixture must look like a real interior designer chose it for this specific room size.
-
-PLACEMENT:
-- Hang from the ceiling in the natural center point for a ${roomLabel}.
-- Show warm light glow from the fixture, casting soft ambient light.
-
-QUALITY:
-- Maintain the EXACT same camera angle, perspective, and lighting of the original photo.
-- CRITICAL: Keep the same image orientation and aspect ratio. If the input photo is PORTRAIT (vertical), the output MUST be portrait. If the input is LANDSCAPE (horizontal), the output MUST be landscape. Do NOT change the orientation.
-- This must look like a real photograph, not a CGI render or composite.
-- The fixture must look naturally integrated — proper shadows, reflections, lighting interaction with the room.`;
+  // ─── INTEGRATE WELL ───
+  const integrateParts: string[] = ["INTEGRATE WELL:"];
+  if (isFurnished) {
+    integrateParts.push(FURNISHED_PRESERVATION);
   } else {
-    const styleDirection = vibe || DEFAULT_STYLE;
-
-    prompt = `Edit this under-construction room photograph to add this exact light fixture: ${productDesc}.
-
-⚠️ ABSOLUTE RULE #1 — STRUCTURAL PRESERVATION (THIS OVERRIDES EVERYTHING BELOW):
-- COUNT the walls in the photo. The output MUST have the SAME number of walls.
-- COUNT the windows in the photo. The output MUST have the SAME number of windows in the SAME positions.
-- COUNT the doors in the photo. The output MUST have the SAME number of doors in the SAME positions.
-- Do NOT add, remove, move, resize, or alter ANY wall, window, door, column, beam, or ceiling structure.
-- Exposed steel framing, metal studs, construction scaffolding, false ceiling grid = STRUCTURAL. Keep visible exactly as-is.
-- Already-installed finishes (stone, tiles, woodwork, marble, flooring) = DONE. Keep exactly as-is.
-- If the style instructions below mention "walls" (e.g., "cream paneled walls") — that means PAINT or TREATMENT on existing bare plaster walls ONLY. It does NOT mean add new walls or change the room layout.
-
-WHAT YOU MAY DO:
-- Add this light fixture to the ceiling in the appropriate position for a ${roomLabel}
-- Apply paint, wall treatment, or paneling ONLY on bare plaster/concrete surfaces
-- Add furniture and movable decor items on empty floor areas
-- Add curtains/window treatments over EXISTING windows (do NOT add new windows)
-- Minor ceiling finishing where there is bare plaster
-
-WHAT YOU MAY NOT DO:
-- Add walls that don't exist in the photo
-- Remove walls that exist in the photo
-- Add windows that don't exist in the photo
-- Remove or fill in windows that exist in the photo
-- Change the room shape or layout in ANY way
-
-SCALE — THIS IS CRITICAL:
-${scaleInstruction}
-
-STYLE DIRECTION (apply ONLY to bare surfaces and added furniture — NOT to room structure):
-${getVibeDetails(styleDirection)}
-
-CRITICAL FLOORING RULE: If floor already has tiles/marble/stone — DO NOT CHANGE IT. Only apply new flooring to bare concrete/cement.
-
-QUALITY:
-- Maintain the EXACT same camera angle, perspective, and field of view.
-- CRITICAL: Keep the same image orientation and aspect ratio. If the input photo is PORTRAIT (vertical), the output MUST be portrait. If the input is LANDSCAPE (horizontal), the output MUST be landscape. Do NOT change the orientation.
-- This must look like a real photograph, not a CGI render.`;
+    integrateParts.push(ROOM_ASSESSMENT);
+    integrateParts.push(CONSTRUCTION_CLEANUP);
   }
-
-  if (roomState === "furnished" && vibe) {
-    prompt += `\n\nNote: The customer describes their preferred style as "${vibe}". The fixture should feel at home in this aesthetic.`;
+  integrateParts.push(getScaleInstruction(product, roomType));
+  integrateParts.push(LIGHTING_INTEGRATION);
+  integrateParts.push(PRODUCT_HERO_BALANCE);
+  if (!isFurnished) {
+    integrateParts.push(DECOR_LIVED_IN);
   }
+  const integrateWell = integrateParts.join("\n\n");
 
-  const negativePrompt = [
-    "oversized fixture", "wrong scale", "too large",
-    "CGI", "3D render", "composite look", "pasted look",
-    "new walls added", "walls moved", "walls removed",
-    "window changed", "window filled in", "door moved",
-    "structural changes", "different room layout", "different room shape",
-    "exposed framing hidden", "steel studs covered",
-    "brass pots", "urli", "jute rug", "block print",
-    "velvet curtains", "velvet sofa", "olive green sofa",
-    "jewel-tone furniture", "bohemian", "kitchen island",
-  ].join(", ");
+  // ─── STYLE ───
+  const style = buildVibeContent(
+    vibe,
+    roomState,
+    options.preserveFinishes,
+    options.addDecor,
+    options.addCurtains,
+  );
 
-  return { prompt, negativePrompt };
+  const prompt = [intro, mustPreserve, integrateWell, style, GLOBAL_NEGATIVES].join("\n\n");
+
+  // Negative prompt absorbed into GLOBAL_NEGATIVES; caller no longer needs to append.
+  return { prompt, negativePrompt: "" };
 }

@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
     const productImageBase64 = Buffer.from(productImageBuffer).toString("base64");
 
     // Build prompt
-    const { prompt, negativePrompt } = buildPrompt(
+    const { prompt } = buildPrompt(
       product,
       roomType,
       roomState,
@@ -64,9 +64,9 @@ export async function POST(request: NextRequest) {
     let fullPrompt: string;
 
     if (notes) {
-      fullPrompt = `HIGHEST PRIORITY — THE CUSTOMER HAS SPECIFIC INSTRUCTIONS. FOLLOW THESE ABOVE ALL ELSE:\n"${notes}"\n\nNow generate the image following these instructions while also applying the guidelines below:\n\n${prompt}\n\nAvoid: ${negativePrompt}`;
+      fullPrompt = `HIGHEST PRIORITY — THE CUSTOMER HAS SPECIFIC INSTRUCTIONS. FOLLOW THESE ABOVE ALL ELSE:\n"${notes}"\n\nNow generate the image following these instructions while also applying the guidelines below:\n\n${prompt}`;
     } else {
-      fullPrompt = `${prompt}\n\nAvoid: ${negativePrompt}`;
+      fullPrompt = prompt;
     }
 
     // Call Gemini image generation
