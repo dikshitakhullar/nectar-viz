@@ -1,23 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Suspense } from "react";
 
-type NavItem = {
-  key: string;
-  href: string;
-  label: string;
-  isActive: (pathname: string, search: URLSearchParams) => boolean;
-  icon: (active: boolean) => React.ReactNode;
-};
-
-const NAV_ITEMS: NavItem[] = [
+const NAV_ITEMS = [
   {
-    key: "home",
     href: "/",
     label: "Home",
-    isActive: (pathname) => pathname === "/",
     icon: (active: boolean) => (
       <svg
         className="w-5 h-5"
@@ -35,33 +25,8 @@ const NAV_ITEMS: NavItem[] = [
     ),
   },
   {
-    key: "browse",
-    href: "/upload?browse=open",
-    label: "Browse",
-    isActive: (pathname, search) =>
-      pathname === "/upload" && search.get("mode") !== "ai",
-    icon: (active: boolean) => (
-      <svg
-        className="w-5 h-5"
-        fill={active ? "currentColor" : "none"}
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth={active ? 0 : 1.5}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"
-        />
-      </svg>
-    ),
-  },
-  {
-    key: "ai-pick",
-    href: "/upload?mode=ai",
-    label: "AI Pick",
-    isActive: (pathname, search) =>
-      pathname === "/upload" && search.get("mode") === "ai",
+    href: "/inspire",
+    label: "Inspire",
     icon: (active: boolean) => (
       <svg
         className="w-5 h-5"
@@ -78,11 +43,10 @@ const NAV_ITEMS: NavItem[] = [
       </svg>
     ),
   },
-];
+] as const;
 
 function BottomNavInner() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   // Hide on result page (full-screen experience)
   if (pathname === "/result") return null;
@@ -91,22 +55,20 @@ function BottomNavInner() {
     <nav className="fixed bottom-0 left-0 right-0 z-40 bg-bg/80 backdrop-blur-xl border-t border-white/[0.06]">
       <div className="max-w-lg mx-auto flex items-center justify-around py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
         {NAV_ITEMS.map((item) => {
-          const isActive = item.isActive(pathname, searchParams);
-
+          const isActive =
+            item.href === "/"
+              ? pathname === "/"
+              : pathname.startsWith(item.href);
           return (
             <Link
-              key={item.key}
+              key={item.href}
               href={item.href}
-              className={`flex flex-col items-center gap-0.5 px-4 py-1.5 rounded-lg transition-colors duration-200 ${
-                isActive
-                  ? "text-gold"
-                  : "text-neutral-500 hover:text-neutral-300"
+              className={`flex flex-col items-center gap-1 px-6 py-2 transition-colors ${
+                isActive ? "text-gold" : "text-neutral-600 hover:text-neutral-400"
               }`}
             >
               {item.icon(isActive)}
-              <span className="text-[9px] tracking-[0.1em] uppercase font-medium">
-                {item.label}
-              </span>
+              <span className="text-[10px] tracking-wider uppercase">{item.label}</span>
             </Link>
           );
         })}
@@ -116,7 +78,6 @@ function BottomNavInner() {
 }
 
 export function BottomNav() {
-  // useSearchParams requires a Suspense boundary in app router.
   return (
     <Suspense fallback={null}>
       <BottomNavInner />
