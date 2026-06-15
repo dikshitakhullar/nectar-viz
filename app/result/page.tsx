@@ -288,37 +288,54 @@ function SingleResult() {
       </div>
 
       {/* Navigation */}
-      <div className="space-y-2 pt-2">
-        <button
-          onClick={() => {
-            posthog.capture("try_different_room_clicked", {
-              product_slug: productSlug,
-              mode: isAiMode ? "ai" : "specific",
-            });
-            sessionStorage.removeItem("resultImage");
-            if (isAiMode) {
-              router.push("/upload?mode=ai");
-            } else {
-              router.push(`/upload?product=${productSlug}`);
-            }
-          }}
-          className="w-full border border-neutral-800 rounded-xl py-3 text-xs tracking-wider uppercase text-neutral-400 hover:border-neutral-600 transition-colors"
-        >
-          Try a Different Room
-        </button>
+      <div className="grid grid-cols-2 gap-2 pt-2">
         <button
           onClick={() => {
             posthog.capture("try_another_product_clicked", {
               current_product_slug: productSlug,
               mode: isAiMode ? "ai" : "specific",
             });
+            // Keep room + form sticky state — only clear the current result.
             sessionStorage.removeItem("resultImage");
             sessionStorage.removeItem("productSlug");
             router.push("/");
           }}
-          className="w-full border border-neutral-800 rounded-xl py-3 text-xs tracking-wider uppercase text-neutral-400 hover:border-neutral-600 transition-colors"
+          className="border border-neutral-700 rounded-md py-3 text-xs tracking-wider uppercase text-neutral-300 hover:border-neutral-500 transition-colors"
         >
-          Try Another Product
+          Try a Different Product
+        </button>
+        <button
+          onClick={() => {
+            const ok = window.confirm(
+              "This will clear your room and start fresh. Continue?",
+            );
+            if (!ok) return;
+            posthog.capture("use_different_room_clicked", {
+              product_slug: productSlug,
+              mode: isAiMode ? "ai" : "specific",
+            });
+            // Clear new sticky-room state
+            sessionStorage.removeItem("nectar.currentRoomBase64");
+            [
+              "nectar.lastRoomState",
+              "nectar.lastRoomType",
+              "nectar.lastVibe",
+              "nectar.lastNotes",
+              "nectar.lastPreserveFinishes",
+              "nectar.lastAddDecor",
+              "nectar.lastTimeOfDay",
+            ].forEach((k) => localStorage.removeItem(k));
+            // Clear legacy/back-compat keys too
+            sessionStorage.removeItem("resultImage");
+            sessionStorage.removeItem("roomImagePreview");
+            sessionStorage.removeItem("roomType");
+            sessionStorage.removeItem("roomState");
+            sessionStorage.removeItem("vibe");
+            router.push("/upload");
+          }}
+          className="border border-neutral-700 rounded-md py-3 text-xs tracking-wider uppercase text-neutral-300 hover:border-neutral-500 transition-colors"
+        >
+          Use a Different Room
         </button>
       </div>
     </div>

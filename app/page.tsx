@@ -1,160 +1,35 @@
-import { getAllProducts, getProductTypes } from "@/lib/catalog";
-import { Product, ProductType } from "@/lib/types";
-import Image from "next/image";
-import Link from "next/link";
+import { RoomBanner } from "./components/room-banner";
+import { UploadCallout } from "./components/upload-callout";
 
-function TypeFilter({
-  types,
-  selected,
-}: {
-  types: ProductType[];
-  selected?: string;
-}) {
+export default function ProductPage() {
   return (
-    <div className="flex gap-2 overflow-x-auto pb-2 -mx-5 px-5 scrollbar-hide">
-      <Link
-        href="/"
-        className={`shrink-0 px-4 py-1.5 rounded-full text-xs tracking-wider uppercase border transition-all duration-300 ${
-          !selected
-            ? "bg-gold text-black border-gold"
-            : "border-neutral-700 text-neutral-400 hover:border-neutral-500"
-        }`}
-      >
-        All
-      </Link>
-      {types.map((type) => (
-        <Link
-          key={type}
-          href={`/?type=${type}`}
-          className={`shrink-0 px-4 py-1.5 rounded-full text-xs tracking-wider uppercase border transition-all duration-300 ${
-            selected === type
-              ? "bg-gold text-black border-gold"
-              : "border-neutral-700 text-neutral-400 hover:border-neutral-500"
-          }`}
-        >
-          {type.replace("_", " ")}
-        </Link>
-      ))}
-    </div>
-  );
-}
-
-function ProductCard({ product }: { product: Product }) {
-  return (
-    <Link
-      href={`/upload?product=${product.slug}`}
-      className="group block bg-neutral-900/50 rounded-xl border border-neutral-800/50 overflow-hidden transition-all duration-300 hover:border-gold/30 hover:shadow-[0_0_30px_rgba(201,168,76,0.05)]"
-    >
-      <div className="aspect-square relative bg-neutral-900 overflow-hidden">
-        <Image
-          src={product.imagePath}
-          alt={product.name}
-          fill
-          className="object-contain p-3 transition-transform duration-500 group-hover:scale-105"
-          sizes="(max-width: 768px) 50vw, 200px"
-          unoptimized
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      </div>
-      <div className="p-3 border-t border-neutral-800/30">
-        <p className="font-light text-sm text-neutral-200 tracking-wide">{product.name}</p>
-        <p className="text-[11px] text-neutral-500 mt-0.5 uppercase tracking-wider">
-          {product.category.replace("_", " ")} · {product.material}
-        </p>
-      </div>
-    </Link>
-  );
-}
-
-export default async function ProductPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ type?: string }>;
-}) {
-  const params = await searchParams;
-  const typeFilter = params.type as ProductType | undefined;
-  const types = getProductTypes();
-  const allProducts = getAllProducts();
-  const products = typeFilter
-    ? allProducts.filter((p) => p.category === typeFilter)
-    : allProducts;
-
-  return (
-    <div className="space-y-6 animate-fade-in-up">
+    <div className="space-y-10 animate-fade-in-up py-12">
       {/* Intro */}
-      <div className="text-center py-4">
-        <h2 className="text-2xl font-extralight tracking-wide text-neutral-200">
+      <div className="text-center">
+        <h2 className="text-xl font-extralight tracking-wide text-neutral-200">
           See It In Your Room
         </h2>
         <p className="text-sm text-neutral-500 mt-2 max-w-sm mx-auto leading-relaxed">
-          Pick a light you love, upload a photo of your room, and see how it looks in your space.
+          Pick a light, upload your room, see it in your space.
         </p>
         <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-4" />
       </div>
 
-      {/* Header */}
-      <div>
-        <div className="w-12 h-[1px] bg-gradient-to-r from-gold to-transparent mb-4" />
-        <h2 className="text-lg font-extralight tracking-wide text-neutral-200">
-          Browse Collection
-        </h2>
-        <p className="text-sm text-neutral-500 mt-1">
-          {products.length} products · Tap to visualize in your room
-        </p>
+      {/* Upload callout — only renders when NO room is in sessionStorage */}
+      <UploadCallout />
+
+      {/* Room banner — only renders when a room IS in sessionStorage */}
+      <RoomBanner />
+
+      {/* Atmospheric footer mark — fills the negative space without adding a CTA */}
+      <div className="flex items-center justify-center gap-4 pt-6">
+        <div className="h-[1px] flex-1 max-w-[80px] bg-gradient-to-r from-transparent to-gold/30" />
+        <span className="text-gold/60 text-xs">✦</span>
+        <div className="h-[1px] flex-1 max-w-[80px] bg-gradient-to-l from-transparent to-gold/30" />
       </div>
-
-      {/* Quick actions */}
-      <div className="space-y-3">
-        <Link
-          href="/inspire"
-          className="block bg-gradient-to-r from-gold/10 to-transparent rounded-xl border border-gold/20 p-4 hover:border-gold/40 transition-all duration-300 group"
-        >
-          <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors">
-              <svg className="w-4 h-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </div>
-            <div>
-              <p className="text-sm font-light text-neutral-200 tracking-wide">
-                Find Similar Products
-              </p>
-              <p className="text-[11px] text-neutral-500 mt-0.5">
-                Upload an inspo image — we&apos;ll find matching products
-              </p>
-            </div>
-          </div>
-        </Link>
-
-        <Link
-          href="/upload?mode=ai"
-          className="block bg-gradient-to-r from-gold/10 to-transparent rounded-xl border border-gold/20 p-4 hover:border-gold/40 transition-all duration-300 group"
-        >
-          <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors">
-              <span className="text-gold text-lg">✦</span>
-            </div>
-            <div>
-              <p className="text-sm font-light text-neutral-200 tracking-wide">
-                Let AI Choose For You
-              </p>
-              <p className="text-[11px] text-neutral-500 mt-0.5">
-                Upload your room & tell us the vibe — we&apos;ll pick the 3 best options
-              </p>
-            </div>
-          </div>
-        </Link>
-      </div>
-
-      {/* Type filters */}
-      <TypeFilter types={types} selected={typeFilter} />
-
-      {/* Product grid */}
-      <div className="grid grid-cols-2 gap-3">
-        {products.map((product) => (
-          <ProductCard key={product.slug} product={product} />
-        ))}
-      </div>
+      <p className="text-center text-[11px] text-neutral-600 uppercase tracking-widest -mt-6">
+        Every product, finally visible in your space.
+      </p>
     </div>
   );
 }

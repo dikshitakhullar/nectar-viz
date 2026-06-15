@@ -223,6 +223,24 @@ html {
   animation: shimmer 2s ease-in-out infinite;
 }
 
+@keyframes catalog-backdrop-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-catalog-backdrop {
+  animation: catalog-backdrop-in 200ms ease-out forwards;
+}
+
+@keyframes catalog-modal-in {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-catalog-modal {
+  animation: catalog-modal-in 250ms ease-out forwards;
+}
+
 /* Scrollbar hide utility */
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
@@ -232,7 +250,9 @@ html {
   .animate-fade-in-up,
   .animate-subtle-pulse,
   .animate-slide-up,
-  .animate-shimmer {
+  .animate-shimmer,
+  .animate-catalog-backdrop,
+  .animate-catalog-modal {
     animation: none !important;
   }
   .liquid-bg, .liquid-bg::before, .liquid-bg::after,
