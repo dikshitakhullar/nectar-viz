@@ -603,318 +603,338 @@ function UploadForm() {
         </p>
       </div>
 
-      {/* AI mode badge (if ?mode=ai) */}
-      {isAiMode && !hasProduct && (
-        <div className="bg-gradient-to-r from-gold/10 to-transparent rounded-xl border border-gold/20 p-4">
-          <div className="flex items-center gap-3">
-            <span className="text-gold text-lg">✦</span>
-            <div>
-              <p className="text-sm font-light text-neutral-200 tracking-wide">
-                AI Pick
-              </p>
-              <p className="text-[11px] text-neutral-500 mt-0.5">
-                We&apos;ll pick the 3 best products for your space
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* 2-column grid on md+: left = photo, right = form fields */}
+      <div className="grid grid-cols-1 md:grid-cols-[minmax(0,420px)_1fr] gap-8 lg:gap-12 items-start">
 
-      {/* C. Room photo */}
-      <section>
-        <label className="block text-xs tracking-wider uppercase text-neutral-400 mb-3">
-          Your room
-        </label>
+        {/* ── LEFT COLUMN: room photo ── */}
+        <div className="md:sticky md:top-24 space-y-0">
 
-        {roomPreview ? (
-          <div className="space-y-2">
-            <div className="rounded-xl overflow-hidden border border-neutral-800/50 bg-neutral-900">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={roomPreview} alt="Room preview" className="w-full" />
-            </div>
-            <div className="flex items-center justify-between">
-              <button
-                type="button"
-                onClick={() => fileInputRef.current?.click()}
-                className="text-[11px] tracking-wider uppercase text-gold hover:text-gold-light transition-colors"
-                style={{ minHeight: "unset", minWidth: "unset" }}
-              >
-                Change photo
-              </button>
-              <button
-                type="button"
-                onClick={handleUseDifferentRoom}
-                className="text-[11px] tracking-wider uppercase text-neutral-500 hover:text-neutral-300 transition-colors"
-                style={{ minHeight: "unset", minWidth: "unset" }}
-              >
-                Use a different room
-              </button>
-            </div>
-          </div>
-        ) : (
-          <div className="border border-dashed border-neutral-700 rounded-xl p-6 sm:p-10 text-center bg-neutral-900/30 transition-colors hover:border-gold/30">
-            <CameraIcon className="w-10 h-10 mx-auto mb-3 text-neutral-600" />
-            <div className="flex gap-2 justify-center flex-wrap">
-              <button
-                type="button"
-                onClick={() => fileInputRef.current?.click()}
-                className="px-4 rounded-md bg-surface border border-neutral-700 text-neutral-200 text-xs tracking-wider uppercase hover:border-gold/40 transition-colors"
-              >
-                Choose photo
-              </button>
-              <button
-                type="button"
-                onClick={() => cameraInputRef.current?.click()}
-                className="px-4 rounded-md bg-surface border border-neutral-700 text-neutral-200 text-xs tracking-wider uppercase hover:border-gold/40 transition-colors"
-              >
-                Camera
-              </button>
-            </div>
-            <p className="text-[11px] text-neutral-500 mt-3">
-              JPG, PNG, HEIC · up to 25MB
-            </p>
-          </div>
-        )}
+          {/* C. Room photo */}
+          <section>
+            <label className="block text-xs tracking-wider uppercase text-neutral-400 mb-3">
+              Your room
+            </label>
 
-        <input
-          ref={fileInputRef}
-          type="file"
-          accept="image/*"
-          onChange={handleFileChange}
-          className="hidden"
-        />
-        <input
-          ref={cameraInputRef}
-          type="file"
-          accept="image/*"
-          capture="environment"
-          onChange={handleFileChange}
-          className="hidden"
-        />
-      </section>
-
-      {/* D. Room state cards */}
-      <section>
-        <label className="block text-xs tracking-wider uppercase text-neutral-400 mb-3">
-          What kind of photo is this?
-        </label>
-        <div
-          role="radiogroup"
-          aria-label="Room state"
-          className="grid grid-cols-1 sm:grid-cols-3 gap-3"
-        >
-          {ROOM_STATE_CARDS.map((card) => {
-            const isSelected = roomStateUi === card.value;
-            return (
-              <button
-                key={card.value}
-                type="button"
-                role="radio"
-                aria-checked={isSelected}
-                onClick={() => setRoomStateUi(card.value)}
-                className={`text-left bg-neutral-900/50 border rounded-xl p-4 transition-all duration-300 ${
-                  isSelected
-                    ? "border-gold shadow-[0_0_30px_rgba(201,168,76,0.05)]"
-                    : "border-neutral-800/50 hover:border-gold/30"
-                }`}
-              >
-                <span className="text-lg block mb-1">{card.icon}</span>
-                <p className="text-sm font-light text-neutral-200 tracking-wide">
-                  {card.label}
+            {roomPreview ? (
+              <div className="space-y-2">
+                <div className="rounded-xl overflow-hidden border border-neutral-800/50 bg-neutral-900 md:max-h-[60vh]">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={roomPreview}
+                    alt="Room preview"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex items-center justify-between">
+                  <button
+                    type="button"
+                    onClick={() => fileInputRef.current?.click()}
+                    className="text-[11px] tracking-wider uppercase text-gold hover:text-gold-light transition-colors"
+                    style={{ minHeight: "unset", minWidth: "unset" }}
+                  >
+                    Change photo
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleUseDifferentRoom}
+                    className="text-[11px] tracking-wider uppercase text-neutral-500 hover:text-neutral-300 transition-colors"
+                    style={{ minHeight: "unset", minWidth: "unset" }}
+                  >
+                    Use a different room
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <div className="border border-dashed border-neutral-700 rounded-xl p-6 sm:p-10 text-center bg-neutral-900/30 transition-colors hover:border-gold/30">
+                <CameraIcon className="w-10 h-10 mx-auto mb-3 text-neutral-600" />
+                <div className="flex gap-2 justify-center flex-wrap">
+                  <button
+                    type="button"
+                    onClick={() => fileInputRef.current?.click()}
+                    className="px-4 rounded-md bg-surface border border-neutral-700 text-neutral-200 text-xs tracking-wider uppercase hover:border-gold/40 transition-colors"
+                  >
+                    Choose photo
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => cameraInputRef.current?.click()}
+                    className="px-4 rounded-md bg-surface border border-neutral-700 text-neutral-200 text-xs tracking-wider uppercase hover:border-gold/40 transition-colors"
+                  >
+                    Camera
+                  </button>
+                </div>
+                <p className="text-[11px] text-neutral-500 mt-3">
+                  JPG, PNG, HEIC · up to 25MB
                 </p>
-                <p className="text-[11px] text-neutral-500 mt-1">{card.desc}</p>
-              </button>
-            );
-          })}
+              </div>
+            )}
+
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/*"
+              onChange={handleFileChange}
+              className="hidden"
+            />
+            <input
+              ref={cameraInputRef}
+              type="file"
+              accept="image/*"
+              capture="environment"
+              onChange={handleFileChange}
+              className="hidden"
+            />
+          </section>
         </div>
-      </section>
 
-      {/* E. Room type */}
-      <section>
-        <label
-          htmlFor="room-type-select"
-          className="block text-xs tracking-wider uppercase text-neutral-400 mb-3"
-        >
-          Room type
-        </label>
-        <select
-          id="room-type-select"
-          value={roomType}
-          onChange={(e) => setRoomType(e.target.value as RoomType)}
-          className="w-full bg-surface border border-neutral-800 rounded-md px-3 h-11 text-sm text-neutral-200 focus:border-gold/50 focus:outline-none transition-colors"
-        >
-          {ROOM_TYPES.map((rt) => (
-            <option key={rt.value} value={rt.value}>
-              {rt.label}
-            </option>
-          ))}
-        </select>
-      </section>
+        {/* ── RIGHT COLUMN: form fields ── */}
+        <div className="space-y-8">
 
-      {/* F. Vibe chips */}
-      <section>
-        <label className="block text-xs tracking-wider uppercase text-neutral-400 mb-3">
-          Vibe
-        </label>
-        <div
-          role="radiogroup"
-          aria-label="Vibe"
-          className="grid grid-cols-2 sm:grid-cols-3 gap-2"
-        >
-          {VIBE_OPTIONS.map((v) => {
-            const isSelected = vibe === v;
-            return (
-              <button
-                key={v}
-                type="button"
-                role="radio"
-                aria-checked={isSelected}
-                onClick={() => setVibe(v)}
-                className={`px-3 rounded-full text-xs tracking-wider uppercase border transition-all duration-300 ${
-                  isSelected
-                    ? "bg-gold text-black border-gold"
-                    : "border-neutral-700 text-neutral-400 hover:border-neutral-500"
-                }`}
-              >
-                {v}
-              </button>
-            );
-          })}
+          {/* AI mode badge (if ?mode=ai) */}
+          {isAiMode && !hasProduct && (
+            <div className="bg-gradient-to-r from-gold/10 to-transparent rounded-xl border border-gold/20 p-4">
+              <div className="flex items-center gap-3">
+                <span className="text-gold text-lg">✦</span>
+                <div>
+                  <p className="text-sm font-light text-neutral-200 tracking-wide">
+                    AI Pick
+                  </p>
+                  <p className="text-[11px] text-neutral-500 mt-0.5">
+                    We&apos;ll pick the 3 best products for your space
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* D. Room state cards */}
+          <section>
+            <label className="block text-xs tracking-wider uppercase text-neutral-400 mb-3">
+              What kind of photo is this?
+            </label>
+            <div
+              role="radiogroup"
+              aria-label="Room state"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-3"
+            >
+              {ROOM_STATE_CARDS.map((card) => {
+                const isSelected = roomStateUi === card.value;
+                return (
+                  <button
+                    key={card.value}
+                    type="button"
+                    role="radio"
+                    aria-checked={isSelected}
+                    onClick={() => setRoomStateUi(card.value)}
+                    className={`text-left bg-neutral-900/50 border rounded-xl p-4 transition-all duration-300 ${
+                      isSelected
+                        ? "border-gold shadow-[0_0_30px_rgba(201,168,76,0.05)]"
+                        : "border-neutral-800/50 hover:border-gold/30"
+                    }`}
+                  >
+                    <span className="text-lg block mb-1">{card.icon}</span>
+                    <p className="text-sm font-light text-neutral-200 tracking-wide">
+                      {card.label}
+                    </p>
+                    <p className="text-[11px] text-neutral-500 mt-1">{card.desc}</p>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+
+          {/* E. Room type */}
+          <section>
+            <label
+              htmlFor="room-type-select"
+              className="block text-xs tracking-wider uppercase text-neutral-400 mb-3"
+            >
+              Room type
+            </label>
+            <select
+              id="room-type-select"
+              value={roomType}
+              onChange={(e) => setRoomType(e.target.value as RoomType)}
+              className="w-full bg-surface border border-neutral-800 rounded-md px-3 h-11 text-sm text-neutral-200 focus:border-gold/50 focus:outline-none transition-colors"
+            >
+              {ROOM_TYPES.map((rt) => (
+                <option key={rt.value} value={rt.value}>
+                  {rt.label}
+                </option>
+              ))}
+            </select>
+          </section>
+
+          {/* F. Vibe chips */}
+          <section>
+            <label className="block text-xs tracking-wider uppercase text-neutral-400 mb-3">
+              Vibe
+            </label>
+            <div
+              role="radiogroup"
+              aria-label="Vibe"
+              className="grid grid-cols-2 sm:grid-cols-3 gap-2"
+            >
+              {VIBE_OPTIONS.map((v) => {
+                const isSelected = vibe === v;
+                return (
+                  <button
+                    key={v}
+                    type="button"
+                    role="radio"
+                    aria-checked={isSelected}
+                    onClick={() => setVibe(v)}
+                    className={`px-3 rounded-full text-xs tracking-wider uppercase border transition-all duration-300 ${
+                      isSelected
+                        ? "bg-gold text-black border-gold"
+                        : "border-neutral-700 text-neutral-400 hover:border-neutral-500"
+                    }`}
+                  >
+                    {v}
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+
+          {/* G. Notes */}
+          <section>
+            <label
+              htmlFor="notes-textarea"
+              className="block text-xs tracking-wider uppercase text-neutral-400 mb-2"
+            >
+              Notes <span className="text-neutral-600 normal-case tracking-normal">(optional)</span>
+            </label>
+            <p className="text-[11px] text-neutral-500 mb-2">
+              e.g. warm tones, no dark wood, keep the painting on the right untouched
+            </p>
+            <textarea
+              id="notes-textarea"
+              value={notes}
+              onChange={(e) => setNotes(e.target.value)}
+              rows={4}
+              className="w-full bg-surface border border-neutral-800 rounded-md p-3 min-h-[100px] text-sm text-neutral-200 placeholder:text-neutral-600 focus:border-gold/50 focus:outline-none transition-colors resize-none"
+            />
+          </section>
+
+          {/* H. Advanced options */}
+          <section>
+            <button
+              type="button"
+              onClick={() => setAdvancedOpen((o) => !o)}
+              className="flex items-center gap-2 text-xs tracking-wider uppercase text-neutral-400 hover:text-neutral-200 transition-colors"
+              style={{ minHeight: "unset", minWidth: "unset" }}
+              aria-expanded={advancedOpen}
+            >
+              <ChevronIcon open={advancedOpen} />
+              Advanced options
+            </button>
+
+            {advancedOpen && (
+              <div className="mt-4 space-y-5 pt-2">
+                <div>
+                  <p className="text-xs tracking-wider uppercase text-neutral-400 mb-1">
+                    Preserve existing finishes
+                  </p>
+                  <p className="text-[11px] text-neutral-500 mb-2">
+                    Lock in your finished walls, flooring, and ceiling work — only treat what&apos;s bare.
+                  </p>
+                  <SegmentedControl<PreserveMode>
+                    value={preserveFinishes}
+                    onChange={setPreserveFinishes}
+                    options={AUTO_ON_OFF}
+                    ariaLabel="Preserve existing finishes"
+                  />
+                </div>
+
+                <div>
+                  <p className="text-xs tracking-wider uppercase text-neutral-400 mb-1">
+                    Add movable decor
+                  </p>
+                  <p className="text-[11px] text-neutral-500 mb-2">
+                    Art, plants, runners, vases — we&apos;ll add a few thoughtful touches to fit the vibe.
+                  </p>
+                  <SegmentedControl<AddDecorMode>
+                    value={addDecor}
+                    onChange={setAddDecor}
+                    options={AUTO_ON_OFF}
+                    ariaLabel="Add movable decor"
+                  />
+                </div>
+
+                <div>
+                  <p className="text-xs tracking-wider uppercase text-neutral-400 mb-1">
+                    Time of day
+                  </p>
+                  <p className="text-[11px] text-neutral-500 mb-2">
+                    When in the day should the room read as? Auto follows the photo.
+                  </p>
+                  <SegmentedControl<TimeOfDay>
+                    value={timeOfDay}
+                    onChange={setTimeOfDay}
+                    options={TIME_OPTIONS}
+                    ariaLabel="Time of day"
+                  />
+                </div>
+              </div>
+            )}
+          </section>
+
+          {/* I. Selected product preview (only when ?product=) — sits where the
+                  empty-form shows its "Browse catalog / Let AI pick" CTA pair. */}
+          {hasProduct && (
+            <section>
+              <label className="block text-xs tracking-wider uppercase text-neutral-400 mb-3">
+                Product
+              </label>
+              <div className="bg-neutral-900/50 border border-neutral-800/50 rounded-2xl p-4 flex gap-4">
+                <div className="w-24 h-24 relative shrink-0 bg-neutral-900 rounded-xl overflow-hidden">
+                  <Image
+                    src={
+                      catalogProduct?.imagePath ||
+                      `https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/${productSlug}/studio.png`
+                    }
+                    alt={catalogProduct?.name || productSlug}
+                    fill
+                    className="object-contain p-2"
+                    sizes="96px"
+                    unoptimized
+                  />
+                </div>
+                <div className="min-w-0 flex-1 flex flex-col">
+                  <p className="text-base font-light text-neutral-200 tracking-wide truncate">
+                    {catalogProduct?.name || formatTitleCase(productSlug)}
+                  </p>
+                  <p className="text-xs text-neutral-500 uppercase tracking-wider mt-1 truncate">
+                    {[
+                      catalogProduct?.brand
+                        ? BRAND_LABELS[catalogProduct.brand] ||
+                          formatTitleCase(catalogProduct.brand)
+                        : null,
+                      catalogProduct?.category
+                        ? formatTitleCase(catalogProduct.category)
+                        : null,
+                    ]
+                      .filter(Boolean)
+                      .join(" · ")}
+                  </p>
+                  <Link
+                    href="/"
+                    className="text-xs text-gold hover:text-gold-light mt-3 tracking-wide transition-colors"
+                    style={{ minHeight: "unset", minWidth: "unset" }}
+                  >
+                    Change product →
+                  </Link>
+                </div>
+              </div>
+            </section>
+          )}
+
         </div>
-      </section>
+        {/* ── end RIGHT COLUMN ── */}
 
-      {/* G. Notes */}
-      <section>
-        <label
-          htmlFor="notes-textarea"
-          className="block text-xs tracking-wider uppercase text-neutral-400 mb-2"
-        >
-          Notes <span className="text-neutral-600 normal-case tracking-normal">(optional)</span>
-        </label>
-        <p className="text-[11px] text-neutral-500 mb-2">
-          e.g. warm tones, no dark wood, keep the painting on the right untouched
-        </p>
-        <textarea
-          id="notes-textarea"
-          value={notes}
-          onChange={(e) => setNotes(e.target.value)}
-          rows={4}
-          className="w-full bg-surface border border-neutral-800 rounded-md p-3 min-h-[100px] text-sm text-neutral-200 placeholder:text-neutral-600 focus:border-gold/50 focus:outline-none transition-colors resize-none"
-        />
-      </section>
-
-      {/* H. Advanced options */}
-      <section>
-        <button
-          type="button"
-          onClick={() => setAdvancedOpen((o) => !o)}
-          className="flex items-center gap-2 text-xs tracking-wider uppercase text-neutral-400 hover:text-neutral-200 transition-colors"
-          style={{ minHeight: "unset", minWidth: "unset" }}
-          aria-expanded={advancedOpen}
-        >
-          <ChevronIcon open={advancedOpen} />
-          Advanced options
-        </button>
-
-        {advancedOpen && (
-          <div className="mt-4 space-y-5 pt-2">
-            <div>
-              <p className="text-xs tracking-wider uppercase text-neutral-400 mb-1">
-                Preserve existing finishes
-              </p>
-              <p className="text-[11px] text-neutral-500 mb-2">
-                Lock in your finished walls, flooring, and ceiling work — only treat what&apos;s bare.
-              </p>
-              <SegmentedControl<PreserveMode>
-                value={preserveFinishes}
-                onChange={setPreserveFinishes}
-                options={AUTO_ON_OFF}
-                ariaLabel="Preserve existing finishes"
-              />
-            </div>
-
-            <div>
-              <p className="text-xs tracking-wider uppercase text-neutral-400 mb-1">
-                Add movable decor
-              </p>
-              <p className="text-[11px] text-neutral-500 mb-2">
-                Art, plants, runners, vases — we&apos;ll add a few thoughtful touches to fit the vibe.
-              </p>
-              <SegmentedControl<AddDecorMode>
-                value={addDecor}
-                onChange={setAddDecor}
-                options={AUTO_ON_OFF}
-                ariaLabel="Add movable decor"
-              />
-            </div>
-
-            <div>
-              <p className="text-xs tracking-wider uppercase text-neutral-400 mb-1">
-                Time of day
-              </p>
-              <p className="text-[11px] text-neutral-500 mb-2">
-                When in the day should the room read as? Auto follows the photo.
-              </p>
-              <SegmentedControl<TimeOfDay>
-                value={timeOfDay}
-                onChange={setTimeOfDay}
-                options={TIME_OPTIONS}
-                ariaLabel="Time of day"
-              />
-            </div>
-          </div>
-        )}
-      </section>
-
-      {/* I. Selected product preview (only when ?product=) — sits where the
-              empty-form shows its "Browse catalog / Let AI pick" CTA pair. */}
-      {hasProduct && (
-        <section>
-          <label className="block text-xs tracking-wider uppercase text-neutral-400 mb-3">
-            Product
-          </label>
-          <div className="bg-neutral-900/50 border border-neutral-800/50 rounded-2xl p-4 flex gap-4">
-            <div className="w-24 h-24 relative shrink-0 bg-neutral-900 rounded-xl overflow-hidden">
-              <Image
-                src={
-                  catalogProduct?.imagePath ||
-                  `https://raw.githubusercontent.com/dikshitakhullar/delhi-brass-website/main/public/images/chandeliers/${productSlug}/studio.png`
-                }
-                alt={catalogProduct?.name || productSlug}
-                fill
-                className="object-contain p-2"
-                sizes="96px"
-                unoptimized
-              />
-            </div>
-            <div className="min-w-0 flex-1 flex flex-col">
-              <p className="text-base font-light text-neutral-200 tracking-wide truncate">
-                {catalogProduct?.name || formatTitleCase(productSlug)}
-              </p>
-              <p className="text-xs text-neutral-500 uppercase tracking-wider mt-1 truncate">
-                {[
-                  catalogProduct?.brand
-                    ? BRAND_LABELS[catalogProduct.brand] ||
-                      formatTitleCase(catalogProduct.brand)
-                    : null,
-                  catalogProduct?.category
-                    ? formatTitleCase(catalogProduct.category)
-                    : null,
-                ]
-                  .filter(Boolean)
-                  .join(" · ")}
-              </p>
-              <Link
-                href="/"
-                className="text-xs text-gold hover:text-gold-light mt-3 tracking-wide transition-colors"
-                style={{ minHeight: "unset", minWidth: "unset" }}
-              >
-                Change product →
-              </Link>
-            </div>
-          </div>
-        </section>
-      )}
+      </div>
+      {/* ── end 2-column grid ── */}
 
       {/* J. CTAs — sticky on mobile, sits above bottom-nav */}
       <div className="fixed bottom-16 left-0 right-0 z-30 bg-bg/85 backdrop-blur-xl border-t border-white/[0.04] pb-3 pt-3 px-5">
