@@ -31,7 +31,7 @@ export function HomeContent() {
       : "Upload your room. Pick a product or let AI suggest the best ones.";
 
   return (
-    <div className="w-full max-w-md mx-auto px-5 py-10 space-y-6">
+    <div className="w-full max-w-md mx-auto px-5 py-6 space-y-4">
       {/* Room banner (only when room is in session) */}
       {hydrated && hasRoom && <RoomBanner />}
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 
 interface GeneratingOverlayProps {
   /** When provided, uses the AI-mode message rotation + longer interval. */
@@ -27,6 +28,15 @@ const AI_MESSAGES = [
 export function GeneratingOverlay({ message }: GeneratingOverlayProps) {
   const activeMessages = message ? AI_MESSAGES : DEFAULT_MESSAGES;
   const [msgIndex, setMsgIndex] = useState(0);
+  const [mounted, setMounted] = useState(false);
+
+  // Portal to document.body so the overlay escapes any transformed ancestor
+  // (animate-fade-in-up uses `transform`, which would otherwise re-anchor
+  // `position: fixed` to that ancestor instead of the viewport).
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true);
+  }, []);
 
   // Lock body scroll while the overlay is mounted, scroll to top once on mount,
   // and restore the previous overflow value on unmount.
@@ -51,7 +61,9 @@ export function GeneratingOverlay({ message }: GeneratingOverlayProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [message]);
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <div
       role="status"
       aria-live="polite"
@@ -74,6 +86,7 @@ export function GeneratingOverlay({ message }: GeneratingOverlayProps) {
           {message ? "This takes about a minute" : "This usually takes 15-30 seconds"}
         </p>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

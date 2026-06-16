@@ -2,16 +2,9 @@ import { HomeContent } from "./components/home-content";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Brand wordmark — page-level, not the doc-level <h1> (that lives in app/layout.tsx). */}
-      <section className="pt-10 pb-4">
-        <p className="text-center font-serif text-base text-gold tracking-[0.18em] uppercase font-light">
-          Nectar
-        </p>
-      </section>
-
+    <div>
       {/* Pitch headline */}
-      <section className="px-5">
+      <section className="px-5 pt-6">
         <p className="text-center font-serif text-[26px] leading-[1.25] font-light text-neutral-200">
           Find products
           <br />

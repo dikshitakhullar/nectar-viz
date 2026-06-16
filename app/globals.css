@@ -6,6 +6,21 @@
   --color-gold-dim: rgba(201,168,76,0.2);
   --color-bg: #0a0a0a;
   --color-surface: #141414;
+
+  /* ── Additions used by /upload only (don't touch prod classes) ── */
+  --color-canvas: #0a0a0a;
+  --color-surface-1: #141311;
+  --color-surface-2: #1d1b17;
+  --color-surface-3: #262320;
+  --color-gold-bright: #e0c674;
+  --color-line: rgb(255 255 255 / 0.08);
+  --color-line-gold: rgb(201 168 76 / 0.22);
+  --color-text-primary: #ece7db;
+  --color-text-secondary: #a8a195;
+  --color-text-tertiary: #6f695d;
+  --color-on-gold: #0a0a0a;
+
+  --font-mono: var(--font-plex-mono), 'IBM Plex Mono', ui-monospace, 'SF Mono', monospace;
 }
 
 :root {
@@ -40,6 +55,11 @@
   --gold: var(--color-gold);
   --gold-light: var(--color-gold-light);
   --gold-dim: rgba(138,116,52,1);
+
+  /* Chrome heights — used by /upload only */
+  --chrome-header-h:    88px;
+  --chrome-bottomnav-h: calc(60px + env(safe-area-inset-bottom));
+  --chrome-cta-h:       72px;
 }
 
 body {

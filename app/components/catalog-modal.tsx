@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 
 import { getAllProducts, getProductTypes } from "@/lib/catalog";
 import type { Product, ProductType } from "@/lib/types";
@@ -16,6 +17,15 @@ interface CatalogModalProps {
 
 export function CatalogModal({ open, onClose, onSelect, initialTypeFilter }: CatalogModalProps) {
   const [typeFilter, setTypeFilter] = useState<ProductType | null>(null);
+  const [mounted, setMounted] = useState(false);
+
+  // Portal to document.body so the modal escapes any transformed ancestor
+  // (e.g. animate-fade-in-up on the upload page would otherwise re-anchor
+  // `position: fixed` to that ancestor instead of the viewport).
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true);
+  }, []);
 
   const types = useMemo(() => getProductTypes(), []);
   const allProducts = useMemo(() => getAllProducts(), []);
@@ -53,9 +63,9 @@ export function CatalogModal({ open, onClose, onSelect, initialTypeFilter }: Cat
     };
   }, [open, onClose]);
 
-  if (!open) return null;
+  if (!open || !mounted) return null;
 
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-[60] flex items-stretch md:items-center md:justify-center bg-black/85 backdrop-blur-md animate-catalog-backdrop"
       onClick={onClose}
@@ -153,7 +163,8 @@ export function CatalogModal({ open, onClose, onSelect, initialTypeFilter }: Cat
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
 
