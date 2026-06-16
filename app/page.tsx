@@ -2,13 +2,13 @@ import { HomeContent } from "./components/home-content";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col">
-      {/* Brand wordmark */}
-      <header className="pt-10 pb-4">
-        <h1 className="text-center font-serif text-base text-gold tracking-[0.18em] uppercase font-light">
+    <div className="min-h-screen flex flex-col">
+      {/* Brand wordmark — page-level, not the doc-level <h1> (that lives in app/layout.tsx). */}
+      <section className="pt-10 pb-4">
+        <p className="text-center font-serif text-base text-gold tracking-[0.18em] uppercase font-light">
           Nectar
-        </h1>
-      </header>
+        </p>
+      </section>
 
       {/* Pitch headline */}
       <section className="px-5">
@@ -24,6 +24,6 @@ export default function HomePage() {
 
       {/* Cards + room banner (client component reads sessionStorage) */}
       <HomeContent />
-    </main>
+    </div>
   );
 }

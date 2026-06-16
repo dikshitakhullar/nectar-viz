@@ -38,13 +38,13 @@ export default function InspirePage() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col">
-      {/* Brand wordmark */}
-      <header className="pt-10 pb-4">
-        <h1 className="text-center font-serif text-base text-gold tracking-[0.18em] uppercase font-light">
+    <div className="min-h-screen flex flex-col">
+      {/* Brand wordmark — page-level (doc-level <h1> is in app/layout.tsx) */}
+      <section className="pt-10 pb-4">
+        <p className="text-center font-serif text-base text-gold tracking-[0.18em] uppercase font-light">
           Nectar
-        </h1>
-      </header>
+        </p>
+      </section>
 
       <div className="w-full max-w-md mx-auto px-5 py-8 space-y-6">
         {/* Hero icon */}
@@ -125,6 +125,6 @@ export default function InspirePage() {
           — Save the screenshot for later —
         </p>
       </div>
-    </main>
+    </div>
   );
 }

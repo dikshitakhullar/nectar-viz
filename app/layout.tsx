@@ -33,7 +33,7 @@ export default function RootLayout({
         <PostHogProvider>
         <div className="relative z-10">
           <header className="px-5 py-4 bg-bg/60 backdrop-blur-xl sticky top-0 z-40">
-            <div className="max-w-lg mx-auto flex items-baseline justify-between">
+            <div className="max-w-lg md:max-w-3xl lg:max-w-4xl mx-auto flex items-baseline justify-between">
               <div>
                 <h1 className="text-lg font-light tracking-[0.25em] uppercase text-neutral-200">
                   Nectar
@@ -49,7 +49,7 @@ export default function RootLayout({
             <div className="gold-line mt-3" />
           </header>
 
-          <main className="max-w-lg mx-auto px-5 py-8 pb-28">
+          <main className="max-w-lg md:max-w-3xl lg:max-w-4xl mx-auto px-5 md:px-8 py-8 pb-28">
             {children}
           </main>
 
