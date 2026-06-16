@@ -645,22 +645,33 @@ function UploadForm() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="flex items-center justify-between">
+                {/* Two clearly-distinct actions on the photo */}
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                  {/* PRIMARY: swap the photo of the same room. Gold inline link. */}
                   <button
                     type="button"
                     onClick={() => fileInputRef.current?.click()}
-                    className="text-[11px] tracking-wider uppercase text-gold hover:text-gold-light transition-colors"
+                    className="group inline-flex items-center gap-1.5 text-[11px] tracking-wider uppercase text-gold hover:text-gold-light transition-colors self-start"
                     style={{ minHeight: "unset", minWidth: "unset" }}
                   >
+                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                    </svg>
                     Change photo
+                    <span className="hidden sm:inline normal-case tracking-normal text-[10px] text-neutral-600 ml-1">same room, new shot</span>
                   </button>
+                  {/* DESTRUCTIVE: clears room + all sticky form state. Muted destructive treatment. */}
                   <button
                     type="button"
                     onClick={handleUseDifferentRoom}
-                    className="text-[11px] tracking-wider uppercase text-neutral-500 hover:text-neutral-300 transition-colors"
+                    className="group inline-flex items-center gap-1.5 text-[11px] tracking-wider uppercase text-neutral-500 hover:text-red-300 transition-colors self-start"
                     style={{ minHeight: "unset", minWidth: "unset" }}
                   >
-                    Use a different room
+                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                    </svg>
+                    Start over
+                    <span className="hidden sm:inline normal-case tracking-normal text-[10px] text-neutral-600 ml-1">resets the whole form</span>
                   </button>
                 </div>
               </div>
