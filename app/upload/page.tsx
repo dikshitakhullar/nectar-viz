@@ -583,21 +583,16 @@ function UploadForm() {
     <div className="space-y-8 animate-fade-in-up pb-44">
       {isSubmitting && <GeneratingOverlay message={loadingMessage} />}
 
-      {/* A. Sub-header bar */}
-      <div className="flex items-center justify-between -mt-2">
-        <p className="text-[10px] tracking-[0.2em] uppercase text-neutral-500">
-          Visualize
-        </p>
-        <p className="text-[10px] tracking-[0.2em] uppercase text-neutral-500">
-          10 renders left
-        </p>
-      </div>
-
-      {/* B. Page title */}
+      {/* A. Page title — quota indicator inline on the same row */}
       <div>
-        <h1 className="text-2xl font-light tracking-wide text-neutral-200">
-          Visualize a product in your room
-        </h1>
+        <div className="flex items-baseline justify-between gap-4">
+          <h1 className="text-2xl font-light tracking-wide text-neutral-200">
+            Visualize a product in your room
+          </h1>
+          <p className="shrink-0 text-[10px] tracking-[0.2em] uppercase text-neutral-500">
+            10 renders left
+          </p>
+        </div>
         <p className="text-sm text-neutral-500 mt-2">
           Upload your room, tell us your style, and pick a product
         </p>
