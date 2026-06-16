@@ -55,7 +55,7 @@ export function CatalogModal({ open, onClose, onSelect }: CatalogModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-[60] flex items-stretch md:items-center md:justify-center bg-black/70 backdrop-blur-md animate-catalog-backdrop"
+      className="fixed inset-0 z-[60] flex items-stretch md:items-center md:justify-center bg-black/85 backdrop-blur-md animate-catalog-backdrop"
       onClick={onClose}
       role="presentation"
     >
@@ -64,10 +64,10 @@ export function CatalogModal({ open, onClose, onSelect }: CatalogModalProps) {
         aria-modal="true"
         aria-labelledby="catalog-modal-title"
         onClick={(e) => e.stopPropagation()}
-        className="relative flex flex-col w-full h-full md:h-[85vh] md:max-h-[85vh] md:max-w-5xl md:w-[92vw] bg-bg md:rounded-3xl md:border md:border-white/[0.06] md:shadow-[0_30px_80px_rgba(0,0,0,0.6)] overflow-hidden animate-catalog-modal"
+        className="relative flex flex-col w-full h-full md:h-[85vh] md:max-h-[85vh] md:max-w-5xl md:w-[92vw] bg-surface md:rounded-3xl md:border md:border-gold/20 md:shadow-[0_30px_100px_rgba(0,0,0,0.8),0_0_0_1px_rgba(201,168,76,0.06)] overflow-hidden animate-catalog-modal"
       >
         {/* Sticky header */}
-        <div className="sticky top-0 z-10 bg-bg/90 backdrop-blur-xl border-b border-white/[0.06]">
+        <div className="sticky top-0 z-10 bg-surface/95 backdrop-blur-xl border-b border-white/[0.08]">
           <div className="flex items-start justify-between gap-4 px-5 py-4 pt-[max(1rem,env(safe-area-inset-top))] md:px-7 md:py-5">
             <div className="min-w-0">
               <h2
