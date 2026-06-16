@@ -10,9 +10,11 @@ interface CatalogModalProps {
   open: boolean;
   onClose: () => void;
   onSelect: (productSlug: string) => void;
+  /** Pre-seed the type filter when the modal opens. Null = show all. */
+  initialTypeFilter?: ProductType | null;
 }
 
-export function CatalogModal({ open, onClose, onSelect }: CatalogModalProps) {
+export function CatalogModal({ open, onClose, onSelect, initialTypeFilter }: CatalogModalProps) {
   const [typeFilter, setTypeFilter] = useState<ProductType | null>(null);
 
   const types = useMemo(() => getProductTypes(), []);
@@ -25,13 +27,13 @@ export function CatalogModal({ open, onClose, onSelect }: CatalogModalProps) {
     [allProducts, typeFilter],
   );
 
-  // Reset filter each time the modal opens — prop→state sync, the canonical
-  // setState-in-effect pattern.
+  // Seed filter from initialTypeFilter each time the modal opens — prop→state
+  // sync, the canonical setState-in-effect pattern.
   useEffect(() => {
     /* eslint-disable react-hooks/set-state-in-effect */
-    if (open) setTypeFilter(null);
+    if (open) setTypeFilter(initialTypeFilter ?? null);
     /* eslint-enable react-hooks/set-state-in-effect */
-  }, [open]);
+  }, [open, initialTypeFilter]);
 
   // Body scroll lock + ESC handler — only active while open.
   useEffect(() => {

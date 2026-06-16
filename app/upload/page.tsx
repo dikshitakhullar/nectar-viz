@@ -7,7 +7,7 @@ import Link from "next/link";
 import posthog from "posthog-js";
 
 import catalogData from "@/data/catalog.json";
-import type { RoomState, RoomType } from "@/lib/types";
+import type { ProductCategory, RoomState, RoomType } from "@/lib/types";
 import { CatalogModal } from "@/app/components/catalog-modal";
 import { GeneratingOverlay } from "@/app/components/generating-overlay";
 import { SegmentedControl } from "@/app/components/segmented-control";
@@ -95,12 +95,23 @@ const TIME_OPTIONS: { value: TimeOfDay; label: string }[] = [
 const LS_KEYS = {
   roomState: "nectar.lastRoomState",
   roomType: "nectar.lastRoomType",
+  productType: "nectar.lastProductType",
   vibe: "nectar.lastVibe",
   notes: "nectar.lastNotes",
   preserveFinishes: "nectar.lastPreserveFinishes",
   addDecor: "nectar.lastAddDecor",
   timeOfDay: "nectar.lastTimeOfDay",
 } as const;
+
+// Product types visible in prod (Delhi Brass + House of Samavar only)
+const VISIBLE_BRANDS = new Set(["delhi_brass", "house_of_samavar"]);
+const PRODUCT_TYPES: ProductCategory[] = Array.from(
+  new Set(
+    (catalogData as Array<{ brand: string; category: ProductCategory }>)
+      .filter((p) => VISIBLE_BRANDS.has(p.brand))
+      .map((p) => p.category),
+  ),
+).sort();
 
 const SS_ROOM_KEY = "nectar.currentRoomBase64";
 
@@ -204,6 +215,7 @@ function UploadForm() {
   const [preserveFinishes, setPreserveFinishes] = useState<PreserveMode>("auto");
   const [addDecor, setAddDecor] = useState<AddDecorMode>("auto");
   const [timeOfDay, setTimeOfDay] = useState<TimeOfDay>("auto");
+  const [productType, setProductType] = useState<ProductCategory | null>(null); // null = "Any"
   const [advancedOpen, setAdvancedOpen] = useState(false);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -232,6 +244,7 @@ function UploadForm() {
     /* eslint-disable react-hooks/set-state-in-effect */
     const savedRoomState = readLs(LS_KEYS.roomState) as RoomStateUi | null;
     const savedRoomType = readLs(LS_KEYS.roomType) as RoomType | null;
+    const savedProductType = readLs(LS_KEYS.productType) as ProductCategory | "any" | null;
     const savedVibe = readLs(LS_KEYS.vibe);
     const savedNotes = readLs(LS_KEYS.notes);
     const savedPreserve = readLs(LS_KEYS.preserveFinishes) as PreserveMode | null;
@@ -246,6 +259,7 @@ function UploadForm() {
       setRoomStateUi(savedRoomState);
     }
     if (savedRoomType) setRoomType(savedRoomType);
+    if (savedProductType && savedProductType !== "any") setProductType(savedProductType);
     if (savedVibe) setVibe(savedVibe);
     if (savedNotes) setNotes(savedNotes);
     if (savedPreserve) setPreserveFinishes(savedPreserve);
@@ -324,6 +338,15 @@ function UploadForm() {
     const t = setTimeout(() => writeLs(LS_KEYS.timeOfDay, timeOfDay), 300);
     return () => clearTimeout(t);
   }, [timeOfDay, hydrated]);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    const t = setTimeout(
+      () => writeLs(LS_KEYS.productType, productType ?? "any"),
+      300,
+    );
+    return () => clearTimeout(t);
+  }, [productType, hydrated]);
 
   // ── Room upload handling ───────────────────────────────────────────────────
   const persistRoomBase64 = useCallback((file: File) => {
@@ -466,6 +489,7 @@ function UploadForm() {
 
     posthog.capture("generate_started", {
       mode: "ai",
+      product_type: productType,
       room_type: roomType,
       room_state: roomState,
       room_state_ui: roomStateUi,
@@ -482,8 +506,9 @@ function UploadForm() {
       // Step 1: recommend products
       const recFormData = new FormData();
       recFormData.append("roomImage", roomFile);
-      // Default product type for AI Pick — chandelier (existing behaviour).
-      recFormData.append("productType", "chandelier");
+      // Use user-selected type; fall back to chandelier when "Any" (null) since
+      // /api/recommend still expects a concrete type today.
+      recFormData.append("productType", productType ?? "chandelier");
       recFormData.append("roomType", roomType);
       if (vibe) recFormData.append("vibe", vibe);
 
@@ -738,7 +763,55 @@ function UploadForm() {
             </div>
           </section>
 
-          {/* E. Room type */}
+          {/* E. Product type chips */}
+          <section>
+            <label className="block text-[10px] tracking-[0.2em] uppercase text-neutral-500 mb-3">
+              Type
+            </label>
+            <div
+              role="radiogroup"
+              aria-label="Product type"
+              className="flex flex-wrap gap-2"
+            >
+              {/* "Any" chip */}
+              <button
+                type="button"
+                role="radio"
+                aria-checked={productType === null}
+                onClick={() => setProductType(null)}
+                className={`px-4 rounded-full text-xs tracking-wider uppercase border transition-all duration-300 ${
+                  productType === null
+                    ? "bg-gold text-black border-gold scale-[1.04]"
+                    : "border-neutral-700 text-neutral-400 hover:border-neutral-500"
+                }`}
+                style={{ minHeight: "44px" }}
+              >
+                Any
+              </button>
+              {PRODUCT_TYPES.map((type) => {
+                const isSelected = productType === type;
+                return (
+                  <button
+                    key={type}
+                    type="button"
+                    role="radio"
+                    aria-checked={isSelected}
+                    onClick={() => setProductType(type)}
+                    className={`px-4 rounded-full text-xs tracking-wider uppercase border transition-all duration-300 ${
+                      isSelected
+                        ? "bg-gold text-black border-gold scale-[1.04]"
+                        : "border-neutral-700 text-neutral-400 hover:border-neutral-500"
+                    }`}
+                    style={{ minHeight: "44px" }}
+                  >
+                    {type.replace(/_/g, " ")}
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+
+          {/* F. Room type */}
           <section>
             <label
               htmlFor="room-type-select"
@@ -760,7 +833,7 @@ function UploadForm() {
             </select>
           </section>
 
-          {/* F. Vibe chips */}
+          {/* G. Vibe chips */}
           <section>
             <label className="block text-xs tracking-wider uppercase text-neutral-400 mb-3">
               Vibe
@@ -993,6 +1066,7 @@ function UploadForm() {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }
         }}
+        initialTypeFilter={productType}
       />
     </div>
   );
