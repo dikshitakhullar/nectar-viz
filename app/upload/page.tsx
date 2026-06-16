@@ -587,7 +587,7 @@ function UploadForm() {
       <div>
         <div className="flex items-baseline justify-between gap-4">
           <h1 className="text-2xl font-light tracking-wide text-neutral-200">
-            Visualize a product in your room
+            Visualize a decorative light in your room
           </h1>
           <p className="shrink-0 text-[10px] tracking-[0.2em] uppercase text-neutral-500">
             10 renders left
@@ -931,9 +931,9 @@ function UploadForm() {
       </div>
       {/* ── end 2-column grid ── */}
 
-      {/* J. CTAs — sticky on mobile, sits above bottom-nav */}
-      <div className="fixed bottom-16 left-0 right-0 z-30 bg-bg/85 backdrop-blur-xl border-t border-white/[0.04] pb-3 pt-3 px-5">
-        <div className="max-w-lg mx-auto">
+      {/* J. CTAs — float over a soft gradient fade, sit just above bottom-nav */}
+      <div className="fixed bottom-[3.75rem] left-0 right-0 z-30 px-5 pb-2 pt-10 pointer-events-none bg-gradient-to-t from-bg from-30% via-bg/75 to-transparent">
+        <div className="max-w-lg mx-auto pointer-events-auto">
           {hasProduct ? (
             <button
               type="button"
