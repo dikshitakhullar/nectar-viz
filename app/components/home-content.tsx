@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { RoomBanner } from "./room-banner";
 
 export function HomeContent() {
   const [hasRoom, setHasRoom] = useState(false);
@@ -32,9 +31,6 @@ export function HomeContent() {
 
   return (
     <div className="w-full max-w-md mx-auto px-5 py-6 space-y-4">
-      {/* Room banner (only when room is in session) */}
-      {hydrated && hasRoom && <RoomBanner />}
-
       {/* Card 1 — primary */}
       <Link
         href="/upload"

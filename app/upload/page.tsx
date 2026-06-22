@@ -11,6 +11,10 @@ import type { ProductCategory, RoomState, RoomType } from "@/lib/types";
 import { CatalogModal } from "@/app/components/catalog-modal";
 import { GeneratingOverlay } from "@/app/components/generating-overlay";
 import { SegmentedControl } from "@/app/components/segmented-control";
+import { SignInModal } from "@/app/components/sign-in-modal";
+import { useAuth } from "@/app/components/auth-provider";
+import { hasQuotaRemaining, isProfileComplete, incrementGenerationsUsed, FREE_QUOTA } from "@/lib/user-profile";
+import { saveGeneration } from "@/lib/generations";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
@@ -195,6 +199,12 @@ function UploadForm() {
   const [hydrated, setHydrated] = useState(false);
   const [catalogOpen, setCatalogOpen] = useState(false);
 
+  // Auth gating: when an unauthenticated user clicks a CTA, open the sign-in
+  // modal and remember which action to run on completion.
+  const { user, profile, refreshProfile } = useAuth();
+  const [signInOpen, setSignInOpen] = useState(false);
+  const [pendingAction, setPendingAction] = useState<"catalog" | "ai" | "specific" | null>(null);
+
   useEffect(() => {
     /* eslint-disable react-hooks/set-state-in-effect */
     if (searchParams.get("browse") === "open") {
@@ -308,6 +318,8 @@ function UploadForm() {
     try {
       const res = await fetch("/api/generate", { method: "POST", body: formData, headers: { "X-POSTHOG-DISTINCT-ID": distinctId } });
       if (!res.ok) throw new Error("Generation failed");
+      const roomBlobUrl = res.headers.get("X-Room-Blob-Url") || "";
+      const outputBlobUrl = res.headers.get("X-Output-Blob-Url") || "";
       const blob = await res.blob();
       const blobUrl = URL.createObjectURL(blob);
       try {
@@ -321,6 +333,36 @@ function UploadForm() {
       sessionStorage.setItem("roomState", roomState);
       sessionStorage.setItem("vibe", vibe);
       if (roomPreview) { try { sessionStorage.setItem("roomImagePreview", roomPreview); } catch {} }
+
+      // Persist saved-render doc to Firestore + bump quota counter.
+      // Counter increments regardless of Blob upload success — image URL may be
+      // empty if Blob is misconfigured; we still record the render + count.
+      console.log("[save] specific:", { hasUser: !!user, roomBlobUrl, outputBlobUrl });
+      if (user) {
+        try {
+          const genId = await saveGeneration({
+            userId: user.uid,
+            mode: "specific",
+            productSlug,
+            productName: catalogProduct?.name ?? null,
+            productImage: catalogProduct?.imagePath ?? null,
+            roomType,
+            roomState,
+            vibe,
+            notes,
+            roomImageUrl: roomBlobUrl,
+            resultImageUrl: outputBlobUrl,
+          });
+          console.log("[save] saved generation", genId);
+          await incrementGenerationsUsed(user.uid);
+          console.log("[save] incremented quota");
+          await refreshProfile();
+          console.log("[save] refreshed profile");
+        } catch (e) {
+          console.error("[save] FAILED:", e);
+        }
+      }
+
       posthog.capture("visualization_completed", { product_slug: productSlug, room_type: roomType, room_state: roomState, vibe });
       router.push("/result");
     } catch (err) {
@@ -364,6 +406,8 @@ function UploadForm() {
 
       const genRes = await fetch("/api/generate", { method: "POST", body: genFormData, headers: { "X-POSTHOG-DISTINCT-ID": distinctId } });
       if (!genRes.ok) throw new Error("Generation failed");
+      const roomBlobUrl = genRes.headers.get("X-Room-Blob-Url") || "";
+      const outputBlobUrl = genRes.headers.get("X-Output-Blob-Url") || "";
 
       const blob = await genRes.blob();
       let imageUrl: string;
@@ -383,6 +427,34 @@ function UploadForm() {
       sessionStorage.setItem("roomState", roomState);
       sessionStorage.setItem("vibe", vibe);
       if (roomPreview) { try { sessionStorage.setItem("roomImagePreview", roomPreview); } catch {} }
+
+      // Persist saved-render doc to Firestore + bump quota counter.
+      // Counter increments regardless of Blob upload success.
+      console.log("[save] ai:", { hasUser: !!user, roomBlobUrl, outputBlobUrl });
+      if (user) {
+        try {
+          const genId = await saveGeneration({
+            userId: user.uid,
+            mode: "ai",
+            productSlug: firstSlug,
+            roomType,
+            roomState,
+            vibe,
+            notes,
+            roomImageUrl: roomBlobUrl,
+            resultImageUrl: outputBlobUrl,
+            recommendedSlugs: slugs,
+          });
+          console.log("[save] saved generation", genId);
+          await incrementGenerationsUsed(user.uid);
+          console.log("[save] incremented quota");
+          await refreshProfile();
+          console.log("[save] refreshed profile");
+        } catch (e) {
+          console.error("[save] FAILED:", e);
+        }
+      }
+
       posthog.capture("ai_visualization_completed", { room_type: roomType, room_state: roomState, vibe, renders_count: 1, recommended_slugs: slugs });
       router.push("/result?mode=ai");
     } catch (err) {
@@ -392,6 +464,38 @@ function UploadForm() {
       setIsSubmitting(false);
       setLoadingMessage(undefined);
     }
+  }
+
+  // ─── Auth-gated CTA wrappers ──────────────────────────────────────────────
+  // If unauthenticated OR profile is incomplete, open sign-in modal and stash
+  // the intended action — fire it on modal `onComplete`.
+  function requireAuth(action: "catalog" | "ai" | "specific") {
+    if (!user || !isProfileComplete(profile)) {
+      setPendingAction(action);
+      setSignInOpen(true);
+      return;
+    }
+    if (!hasQuotaRemaining(profile)) {
+      alert(
+        "You've used all 10 free renders. Subscription coming soon — drop your email and we'll let you know.",
+      );
+      return;
+    }
+    runAction(action);
+  }
+
+  function runAction(action: "catalog" | "ai" | "specific") {
+    if (action === "catalog") setCatalogOpen(true);
+    else if (action === "ai") void handleSubmitAi();
+    else if (action === "specific") void handleSubmitSpecific();
+  }
+
+  function handleSignInComplete() {
+    const a = pendingAction;
+    setPendingAction(null);
+    if (!a) return;
+    // Use a microtask so React has applied auth state updates before action runs.
+    setTimeout(() => runAction(a), 0);
   }
 
   // ─── Render ──────────────────────────────────────────────────────────────
@@ -416,7 +520,9 @@ function UploadForm() {
                 Visualize a decorative light in your room
               </h1>
               <p className="shrink-0 font-mono text-[11px] tracking-[0.16em] uppercase text-text-tertiary">
-                10 renders left
+                {profile?.plan === "member"
+                  ? "Member"
+                  : `${Math.max(0, FREE_QUOTA - (profile?.generationsUsed ?? 0))} of ${FREE_QUOTA} renders left`}
               </p>
             </div>
             <p className="font-sans text-[13px] text-text-secondary mt-2">
@@ -638,7 +744,7 @@ function UploadForm() {
                 {hasProduct ? (
                   <button
                     type="button"
-                    onClick={handleSubmitSpecific}
+                    onClick={() => requireAuth("specific")}
                     disabled={!canSubmit}
                     className={`h-12 px-7 rounded-sm font-sans font-semibold text-[14px] transition-colors duration-150 ${
                       canSubmit ? "bg-gold text-on-gold hover:bg-gold-bright" : "bg-gold/16 text-text-tertiary cursor-not-allowed"
@@ -651,7 +757,7 @@ function UploadForm() {
                   <>
                     <button
                       type="button"
-                      onClick={handleSubmitAi}
+                      onClick={() => requireAuth("ai")}
                       disabled={!canSubmit}
                       className={`h-12 px-6 rounded-sm border font-sans font-medium text-[14px] transition-colors duration-150 ${
                         canSubmit ? "bg-surface-2 border-white/14 text-text-primary hover:bg-surface-3 hover:border-gold/40" : "bg-surface-1 border-line text-text-tertiary cursor-not-allowed"
@@ -662,7 +768,7 @@ function UploadForm() {
                     </button>
                     <button
                       type="button"
-                      onClick={() => setCatalogOpen(true)}
+                      onClick={() => requireAuth("catalog")}
                       className="h-12 px-7 rounded-sm bg-gold text-on-gold hover:bg-gold-bright font-sans font-semibold text-[14px] transition-colors duration-150"
                       style={{ minHeight: "unset", minWidth: "unset" }}
                     >
@@ -679,6 +785,15 @@ function UploadForm() {
         {/* close inner max-w container */}
       </div>
       {/* close split-pane wrapper */}
+
+      <SignInModal
+        open={signInOpen}
+        onClose={() => {
+          setSignInOpen(false);
+          setPendingAction(null);
+        }}
+        onComplete={handleSignInComplete}
+      />
 
       <CatalogModal
         open={catalogOpen}

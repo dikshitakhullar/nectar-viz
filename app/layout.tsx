@@ -3,7 +3,9 @@ import { Cormorant_Garamond, Hanken_Grotesk, IBM_Plex_Mono } from "next/font/goo
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { PostHogProvider } from "./providers";
+import { AuthProvider } from "./components/auth-provider";
 import { BottomNav } from "./components/bottom-nav";
+import { UserMenu } from "./components/user-menu";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -57,6 +59,7 @@ export default function RootLayout({
 
         {/* Content */}
         <PostHogProvider>
+        <AuthProvider>
         <div className="relative z-10">
           <header className="px-5 py-4 bg-bg/60 backdrop-blur-xl sticky top-0 z-40">
             <div className="max-w-lg md:max-w-3xl lg:max-w-4xl mx-auto flex items-baseline justify-between">
@@ -68,9 +71,12 @@ export default function RootLayout({
                   Visualizer
                 </p>
               </div>
-              <span className="text-[10px] tracking-widest uppercase text-neutral-600">
-                for Delhi Brass
-              </span>
+              <div className="flex items-center gap-4">
+                <span className="text-[10px] tracking-widest uppercase text-neutral-600">
+                  for Delhi Brass
+                </span>
+                <UserMenu />
+              </div>
             </div>
             <div className="gold-line mt-3" />
           </header>
@@ -81,6 +87,7 @@ export default function RootLayout({
 
           <BottomNav />
         </div>
+        </AuthProvider>
         </PostHogProvider>
         <Analytics />
       </body>

@@ -5,8 +5,13 @@ import { getProductBySlug } from "@/lib/catalog";
 import { buildPrompt } from "@/lib/generate-prompt";
 import { RoomState, RoomType } from "@/lib/types";
 import { createPostHogClient } from "@/lib/posthog-server";
+import { uploadImage } from "@/lib/imagekit-upload";
 
 const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
+
+// Vercel Blob token (used for legacy JSON log persistence only).
+const BLOB_TOKEN =
+  process.env.PUBLIC_BLOB_READ_WRITE_TOKEN || process.env.BLOB_READ_WRITE_TOKEN;
 
 export async function POST(request: NextRequest) {
   const distinctId = request.headers.get("X-POSTHOG-DISTINCT-ID") || "anonymous";
@@ -116,14 +121,34 @@ export async function POST(request: NextRequest) {
       if (part.inlineData?.mimeType?.startsWith("image/")) {
         const imageBuffer = Buffer.from(part.inlineData.data!, "base64");
 
-        // Save generation log to Vercel Blob for review
-        try {
-          const logId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+        // Upload room + result images to ImageKit (public CDN URLs).
+        // The JSON metadata log still goes to Vercel Blob since that's
+        // already working there for /review.
+        let roomBlobUrl = "";
+        let outputBlobUrl = "";
+        const logId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
 
-          const [roomBlob, outputBlob, metaBlob] = await Promise.all([
-            put(`generations/${logId}-room.jpg`, Buffer.from(roomImageBase64, "base64"), { access: "public", addRandomSuffix: false }),
-            put(`generations/${logId}-output.jpg`, imageBuffer, { access: "public", addRandomSuffix: false }),
-            put(`generations/${logId}.json`, JSON.stringify({
+        try {
+          const [roomUrl, outputUrl] = await Promise.all([
+            uploadImage({
+              buffer: Buffer.from(roomImageBase64, "base64"),
+              fileName: `${logId}-room.jpg`,
+            }),
+            uploadImage({
+              buffer: imageBuffer,
+              fileName: `${logId}-output.jpg`,
+            }),
+          ]);
+          roomBlobUrl = roomUrl;
+          outputBlobUrl = outputUrl;
+        } catch (e) {
+          console.warn("Failed to upload images to ImageKit:", e);
+        }
+
+        // Best-effort metadata log to Vercel Blob (existing /review flow).
+        if (BLOB_TOKEN) {
+          try {
+            await put(`generations/${logId}.json`, JSON.stringify({
               id: logId,
               timestamp: new Date().toISOString(),
               productSlug,
@@ -133,19 +158,13 @@ export async function POST(request: NextRequest) {
               roomState,
               vibe: vibe || null,
               notes: notes || null,
-              roomUrl: "", // filled below
-              outputUrl: "",
+              roomUrl: roomBlobUrl,
+              outputUrl: outputBlobUrl,
               feedback: null,
-            }), { access: "public", contentType: "application/json", addRandomSuffix: false }),
-          ]);
-
-          // Update metadata with blob URLs
-          const meta = JSON.parse(await (await fetch(metaBlob.url)).text());
-          meta.roomUrl = roomBlob.url;
-          meta.outputUrl = outputBlob.url;
-          await put(`generations/${logId}.json`, JSON.stringify(meta, null, 2), { access: "public", contentType: "application/json", addRandomSuffix: false });
-        } catch (e) {
-          console.warn("Failed to save generation log:", e);
+            }, null, 2), { access: "public", contentType: "application/json", addRandomSuffix: false, token: BLOB_TOKEN });
+          } catch (e) {
+            console.warn("Failed to save generation log to Vercel Blob:", e);
+          }
         }
 
         posthog.capture({
@@ -166,6 +185,10 @@ export async function POST(request: NextRequest) {
           headers: {
             "Content-Type": part.inlineData.mimeType,
             "Cache-Control": "no-store",
+            // Expose for the client so it can persist a Firestore generation doc.
+            "X-Room-Blob-Url": roomBlobUrl,
+            "X-Output-Blob-Url": outputBlobUrl,
+            "Access-Control-Expose-Headers": "X-Room-Blob-Url, X-Output-Blob-Url",
           },
         });
       }

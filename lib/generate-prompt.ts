@@ -19,6 +19,20 @@ const FIXTURE_FIDELITY =
   "same number of arms/shades/crystals, same proportions between parts. " +
   "Do not add, remove, or reinterpret any element of the fixture.";
 
+const INSTALLATION_GEOMETRY =
+  "INSTALLATION GEOMETRY (critical — fixture must look installed by a " +
+  "professional, not tilted/swinging):\n" +
+  "- Ceiling-mounted fixtures (chandeliers, pendants, clusters, linear bars) " +
+  "MUST hang perfectly LEVEL — long axis exactly parallel to the floor and ceiling, " +
+  "perpendicular to gravity. No tilt, no skew, no rotation off the horizontal plane.\n" +
+  "- Suspension rod/chain/cable hangs straight DOWN (true vertical, perpendicular " +
+  "to the floor). Never angled. Never curving.\n" +
+  "- Linear / rectangular fixtures: their long edge must be PARALLEL to the room's " +
+  "longest wall or the dining/console below them, not at a random angle.\n" +
+  "- Wall sconces: mounted FLUSH and PLUMB on the wall, perfectly vertical.\n" +
+  "- Centered on the natural focal axis (above table/console center, room center, " +
+  "or bay center) — never offset from that axis.";
+
 const LIGHTING_INTEGRATION =
   "LIGHTING INTEGRATION (fixture must look LIT and INTEGRATED, not pasted on):\n" +
   "- Fixture appears ON — bulbs glowing warmly\n" +
@@ -420,6 +434,7 @@ export function buildPrompt(
     integrateParts.push(CONSTRUCTION_CLEANUP);
   }
   integrateParts.push(getScaleInstruction(product, roomType));
+  integrateParts.push(INSTALLATION_GEOMETRY);
   integrateParts.push(LIGHTING_INTEGRATION);
   integrateParts.push(PRODUCT_HERO_BALANCE);
   if (!isFurnished) {
