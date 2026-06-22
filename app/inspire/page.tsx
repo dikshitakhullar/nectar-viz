@@ -2,21 +2,26 @@
 
 import { useState } from "react";
 import posthog from "posthog-js";
+import { useAuth } from "@/app/components/auth-provider";
 
 export default function InspirePage() {
+  const { user, profile } = useAuth();
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  // If signed in with a profile email, skip the email input entirely —
+  // one-tap "Notify me" using the email already on file.
+  const authedEmail = (user && profile?.email?.trim()) || "";
+
+  async function submitWaitlist(emailToUse: string) {
     setStatus("submitting");
     setErrorMsg("");
     try {
       const res = await fetch("/api/inspire/waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email: emailToUse }),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
@@ -26,7 +31,10 @@ export default function InspirePage() {
       }
       setStatus("success");
       try {
-        posthog.capture("inspire_waitlist_signup", { source: "inspire-teaser" });
+        posthog.capture("inspire_waitlist_signup", {
+          source: "inspire-teaser",
+          authed: !!user,
+        });
       } catch {
         // posthog optional
       }
@@ -35,6 +43,16 @@ export default function InspirePage() {
       setErrorMsg("Network error. Try again?");
       setStatus("error");
     }
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    await submitWaitlist(email);
+  };
+
+  const handleAuthedNotify = async () => {
+    if (!authedEmail) return;
+    await submitWaitlist(authedEmail);
   };
 
   return (
@@ -81,6 +99,27 @@ export default function InspirePage() {
             >
               You&apos;re on the list. We&apos;ll be in touch.
             </p>
+          ) : authedEmail ? (
+            // Authed path: one-tap, use the email we already have on file.
+            <div className="space-y-3">
+              <p className="text-xs text-neutral-500">
+                Get early access — we&apos;ll notify you at{" "}
+                <span className="text-neutral-300">{authedEmail}</span>.
+              </p>
+              <button
+                type="button"
+                onClick={handleAuthedNotify}
+                disabled={status === "submitting"}
+                className="w-full bg-gold text-black px-4 py-3 rounded-xl text-sm font-medium shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] hover:bg-gold-light transition-colors disabled:opacity-40"
+              >
+                {status === "submitting" ? "Saving…" : "Notify me →"}
+              </button>
+              {status === "error" && (
+                <p role="alert" aria-live="assertive" className="text-xs text-red-400">
+                  {errorMsg}
+                </p>
+              )}
+            </div>
           ) : (
             <>
               <p className="text-xs text-neutral-500">Sign up to get early access.</p>
