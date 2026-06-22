@@ -11,55 +11,18 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-// Lazy init — defer initializeApp() until the first use so a missing config
-// (e.g. during a Vercel build before env vars are set) doesn't crash module
-// import time. All callers should access via `getFirebaseAuth()` / `getDb()`.
-let _app: FirebaseApp | null = null;
-let _auth: Auth | null = null;
-let _db: Firestore | null = null;
+// Skip init at module load when config is missing (e.g. Vercel build before
+// env vars are populated). At runtime the env vars are always present, so
+// `auth` and `db` will be real instances by the time anything calls them.
+const hasConfig = !!firebaseConfig.apiKey;
 
-function getApp_(): FirebaseApp {
-  if (_app) return _app;
-  if (getApps().length) {
-    _app = getApp();
-    return _app;
-  }
-  if (!firebaseConfig.apiKey) {
-    throw new Error(
-      "Firebase not configured — NEXT_PUBLIC_FIREBASE_API_KEY missing. " +
-        "Set Firebase env vars in your environment.",
-    );
-  }
-  _app = initializeApp(firebaseConfig);
-  return _app;
-}
+const _app: FirebaseApp | null = hasConfig
+  ? getApps().length ? getApp() : initializeApp(firebaseConfig)
+  : null;
 
-export function getFirebaseAuth(): Auth {
-  if (_auth) return _auth;
-  _auth = getAuth(getApp_());
-  return _auth;
-}
-
-export function getDb(): Firestore {
-  if (_db) return _db;
-  _db = getFirestore(getApp_());
-  return _db;
-}
-
-// Back-compat exports used by existing code — these use Proxy so the actual
-// SDK call is deferred until property access at runtime (not module import).
-export const auth: Auth = new Proxy({} as Auth, {
-  get(_t, prop) {
-    const a = getFirebaseAuth();
-    const v = (a as unknown as Record<string | symbol, unknown>)[prop as string];
-    return typeof v === "function" ? (v as (...args: unknown[]) => unknown).bind(a) : v;
-  },
-});
-
-export const db: Firestore = new Proxy({} as Firestore, {
-  get(_t, prop) {
-    const d = getDb();
-    const v = (d as unknown as Record<string | symbol, unknown>)[prop as string];
-    return typeof v === "function" ? (v as (...args: unknown[]) => unknown).bind(d) : v;
-  },
-});
+// Real instances when configured, null otherwise. Callers in client code
+// will always run with config present at runtime; only the build phase ever
+// sees null, and the build doesn't touch these (they live behind useEffect).
+export const firebaseApp: FirebaseApp = _app as FirebaseApp;
+export const auth: Auth = _app ? getAuth(_app) : (null as unknown as Auth);
+export const db: Firestore = _app ? getFirestore(_app) : (null as unknown as Firestore);
