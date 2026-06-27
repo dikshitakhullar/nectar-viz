@@ -171,6 +171,22 @@ function formatTitleCase(s: string): string {
   return s.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+// Build a detailed error from a non-OK API response: status + response body.
+async function describeFailedResponse(res: Response, label: string): Promise<string> {
+  let body = "";
+  try {
+    body = (await res.text()).trim();
+  } catch {
+    // ignore — body may be unavailable
+  }
+  return `${label} (HTTP ${res.status})${body ? ": " + body.slice(0, 300) : ""}`;
+}
+
+function errorMessage(err: unknown): string {
+  if (err instanceof Error) return err.message || err.name;
+  return String(err);
+}
+
 // ─── Main form ────────────────────────────────────────────────────────────────
 
 function UploadForm() {
@@ -317,7 +333,7 @@ function UploadForm() {
     const distinctId = posthog.get_distinct_id();
     try {
       const res = await fetch("/api/generate", { method: "POST", body: formData, headers: { "X-POSTHOG-DISTINCT-ID": distinctId } });
-      if (!res.ok) throw new Error("Generation failed");
+      if (!res.ok) throw new Error(await describeFailedResponse(res, "Generation failed"));
       const roomBlobUrl = res.headers.get("X-Room-Blob-Url") || "";
       const outputBlobUrl = res.headers.get("X-Output-Blob-Url") || "";
       const blob = await res.blob();
@@ -366,9 +382,10 @@ function UploadForm() {
       posthog.capture("visualization_completed", { product_slug: productSlug, room_type: roomType, room_state: roomState, vibe });
       router.push("/result");
     } catch (err) {
-      posthog.capture("visualization_failed", { mode: "specific", product_slug: productSlug, room_type: roomType });
+      const msg = errorMessage(err);
+      posthog.capture("visualization_failed", { mode: "specific", product_slug: productSlug, room_type: roomType, error_message: msg, room_file_type: roomFile?.type || null, room_file_size: roomFile?.size ?? null });
       posthog.captureException(err);
-      alert("Something went wrong. Please try again.");
+      alert(`Something went wrong:\n\n${msg}`);
       setIsSubmitting(false);
     }
   }
@@ -388,7 +405,7 @@ function UploadForm() {
       if (vibe) recFormData.append("vibe", vibe);
 
       const recRes = await fetch("/api/recommend", { method: "POST", body: recFormData, headers: { "X-POSTHOG-DISTINCT-ID": distinctId } });
-      if (!recRes.ok) throw new Error("Recommendation failed");
+      if (!recRes.ok) throw new Error(await describeFailedResponse(recRes, "Recommendation failed"));
       const { slugs } = (await recRes.json()) as { slugs: string[] };
 
       setLoadingMessage("Generating visualization...");
@@ -405,7 +422,7 @@ function UploadForm() {
       genFormData.append("timeOfDay", timeOfDay);
 
       const genRes = await fetch("/api/generate", { method: "POST", body: genFormData, headers: { "X-POSTHOG-DISTINCT-ID": distinctId } });
-      if (!genRes.ok) throw new Error("Generation failed");
+      if (!genRes.ok) throw new Error(await describeFailedResponse(genRes, "Generation failed"));
       const roomBlobUrl = genRes.headers.get("X-Room-Blob-Url") || "";
       const outputBlobUrl = genRes.headers.get("X-Output-Blob-Url") || "";
 
@@ -458,9 +475,10 @@ function UploadForm() {
       posthog.capture("ai_visualization_completed", { room_type: roomType, room_state: roomState, vibe, renders_count: 1, recommended_slugs: slugs });
       router.push("/result?mode=ai");
     } catch (err) {
-      posthog.capture("visualization_failed", { mode: "ai", room_type: roomType });
+      const msg = errorMessage(err);
+      posthog.capture("visualization_failed", { mode: "ai", room_type: roomType, error_message: msg, room_file_type: roomFile?.type || null, room_file_size: roomFile?.size ?? null });
       posthog.captureException(err);
-      alert("Something went wrong. Please try again.");
+      alert(`Something went wrong:\n\n${msg}`);
       setIsSubmitting(false);
       setLoadingMessage(undefined);
     }
