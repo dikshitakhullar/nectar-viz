@@ -6,7 +6,7 @@ export default function HomePage() {
       {/* Pitch headline */}
       <section className="px-5 pt-6">
         <p className="text-center font-serif text-[26px] leading-[1.25] font-light text-neutral-200">
-          Find products
+          Find home decor
           <br />
           tailored to your space.
         </p>
