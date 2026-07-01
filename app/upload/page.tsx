@@ -15,6 +15,7 @@ import { SignInModal } from "@/app/components/sign-in-modal";
 import { useAuth } from "@/app/components/auth-provider";
 import { hasQuotaRemaining, isProfileComplete, incrementGenerationsUsed, FREE_QUOTA } from "@/lib/user-profile";
 import { saveGeneration } from "@/lib/generations";
+import { downscaleImage } from "@/lib/downscale-image";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
@@ -288,15 +289,22 @@ function UploadForm() {
     reader.readAsDataURL(file);
   }, []);
 
-  function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
+  async function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
-    setRoomFile(file);
-    persistRoomBase64(file);
+    const source = e.target === cameraInputRef.current ? "camera" : "library";
+    // Compress + JPEG-encode before upload: keeps the request under Vercel's
+    // ~4.5MB body limit (HTTP 413) and makes HEIC previewable.
+    const processed = await downscaleImage(file);
+    setRoomFile(processed);
+    persistRoomBase64(processed);
     posthog.capture("room_photo_uploaded", {
       mode: hasProduct ? "specific" : "browse",
       product_slug: productSlug || null,
-      source: e.target === cameraInputRef.current ? "camera" : "library",
+      source,
+      original_type: file.type,
+      original_size: file.size,
+      processed_size: processed.size,
     });
   }
 
